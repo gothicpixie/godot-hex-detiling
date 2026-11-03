@@ -15,7 +15,21 @@ func _initialize() -> void:
 		return
 	var material := demo.get_node("Surface").material_override as ShaderMaterial
 	assert(material != null and material.get_shader_parameter("albedo_map") != null)
+	var uniforms := material.shader.get_shader_uniform_list()
+	var names: Array[String] = []
+	for uniform in uniforms:
+		names.append(uniform.name)
+	for required in ["rotation_strength", "blend_contrast", "roughness_map", "use_roughness_map"]:
+		if not names.has(required):
+			push_error("Missing material control: " + required)
+			quit(1)
+			return
 	assert(material.get_shader_parameter("detile_enabled") == true)
+	var first_texture: Variant = material.get_shader_parameter("albedo_map")
+	demo.set_texture_set(1)
+	assert(material.get_shader_parameter("albedo_map") != first_texture)
+	assert(material.get_shader_parameter("roughness_map") != null)
+	demo.set_texture_set(0)
 	demo.set_detile(false)
 	assert(material.get_shader_parameter("detile_enabled") == false)
 	demo.set_detile(true)

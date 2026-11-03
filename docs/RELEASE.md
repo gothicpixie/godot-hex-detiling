@@ -11,7 +11,7 @@ Suggested topics: `godot`, `godot4`, `godot-shader`, `shader`, `texture-tiling`,
 **License:** MIT for code; example textures CC0  
 **Godot version:** 4.7.2 tested; do not claim a lower minimum until tested.
 
-Reduce obvious repetition on large rock, dirt, and other organic surfaces. This shader combines stochastic offset sampling with world-space triplanar projection and keeps albedo and normal maps aligned. Includes a comparison demo with front, oblique, and elevated views. No editor plugin needs enabling. Adjust the scale, blend, and tone normalization to fit your material. Additional texture samples have a GPU cost; benchmark in your own scene.
+Reduce obvious repetition on large rock, dirt, and other organic surfaces. This shader combines stochastic offset sampling with world-space triplanar projection and uses shared transforms for albedo, normal, and optional roughness maps. Includes two texture sets, a comparison demo, and an optional editor dock. Adjust the scale, rotation, and blend controls to fit your material. Additional texture samples have a GPU cost; benchmark in your own scene.
 
 Use the comparison GIF and paired screenshots in `docs/` for the listing. Choose a public repository URL, release version and stable archive, verify the license and credits, and check the current [Godot Asset Store submission guidelines](https://docs.godotengine.org/en/stable/community/asset_store/submitting_to_asset_store.html) before submitting. A listing has not been created.
 

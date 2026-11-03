@@ -5,14 +5,14 @@ This is a reproducible **whole-scene frame pacing measurement**, not an isolated
 ## Result recorded November 2, 2026
 
 - MacBook Pro, Apple M5, 24 GB unified memory, macOS 26.6.2; Godot 4.7.2 stable.
-- Compatibility renderer, OpenGL 4.1 through Metal; requested 1280 × 720 window; procedural terrain and light, UI hidden, two 2K textures with mipmaps. The window may be subject to OS display scaling.
+- Compatibility renderer, OpenGL 4.1 through Metal; requested 1280 × 720 window; procedural terrain and light, UI hidden, two 2K textures with mipmaps; rotation and roughness sampling off, neutral blend contrast. The window may be subject to OS display scaling.
 - V-sync disabled by command line and FPS uncapped as requested. Driver or OS behavior can still affect pacing.
 - Three alternating rounds per mode, 180 warm-up frames and 600 measured frames per round. The script records elapsed time between process-frame callbacks; it includes engine, CPU scheduling, presentation behavior, and asynchronous rendering. It is not a GPU timer.
 
 | Mode | Median frame interval by round (ms) | Mean interval by round (ms) |
 | --- | --- | --- |
-| Periodic | 0.870, 0.865, 0.862 | 1.013, 1.053, 1.001 |
-| Detiled | 2.389, 2.383, 2.394 | 2.510, 2.481, 2.498 |
+| Periodic | 0.866, 0.864, 0.864 | 0.998, 0.966, 1.067 |
+| Detiled | 2.362, 2.366, 2.361 | 2.436, 2.467, 2.440 |
 
 The measured frame intervals were longer in the detiled mode for this scene, but these numbers do not establish an isolated GPU cost or a generally applicable speed ratio. Different screen coverage, textures, GPUs, drivers, and renderers can change the result substantially. A Forward+ trial appeared refresh-limited at roughly 8.3 ms and also produced zero GPU samples; it was not used for a comparison. Profile GPU time with a supported hardware profiler in your target scene before deciding whether to ship the effect. Raw Compatibility output is in [apple-m5-compatibility.txt](apple-m5-compatibility.txt).
 

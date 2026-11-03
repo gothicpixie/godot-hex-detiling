@@ -2,6 +2,10 @@ extends Node3D
 
 var detiled := true
 var toggle: Button
+const TEXTURE_SETS := [
+	["res://assets/rock_albedo.png", "res://assets/rock_normal.png", "res://assets/rock_roughness.png"],
+	["res://assets/sandstone_albedo.png", "res://assets/sandstone_normal.png", "res://assets/sandstone_roughness.png"],
+]
 
 func _ready() -> void:
 	$Surface.mesh = make_terrain()
@@ -48,11 +52,50 @@ func _ready() -> void:
 	toggle = Button.new()
 	toggle.pressed.connect(func(): set_detile(not detiled))
 	box.add_child(toggle)
+	var selector := OptionButton.new()
+	selector.add_item("Rocks Ground 04")
+	selector.add_item("Sandstone Cracks")
+	selector.item_selected.connect(set_texture_set)
+	box.add_child(selector)
+	var rotation_label := Label.new()
+	rotation_label.text = "Tile rotation"
+	box.add_child(rotation_label)
+	var rotation_slider := HSlider.new()
+	rotation_slider.min_value = 0.0
+	rotation_slider.max_value = 1.0
+	rotation_slider.step = 0.01
+	rotation_slider.value = 0.0
+	rotation_slider.custom_minimum_size = Vector2(280, 20)
+	rotation_slider.value_changed.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("rotation_strength", value))
+	box.add_child(rotation_slider)
+	var contrast_label := Label.new()
+	contrast_label.text = "Blend contrast"
+	box.add_child(contrast_label)
+	var contrast_slider := HSlider.new()
+	contrast_slider.min_value = 0.01
+	contrast_slider.max_value = 0.99
+	contrast_slider.step = 0.01
+	contrast_slider.value = 0.5
+	contrast_slider.value_changed.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("blend_contrast", value))
+	box.add_child(contrast_slider)
+	var roughness_toggle := CheckButton.new()
+	roughness_toggle.text = "Use roughness map"
+	roughness_toggle.toggled.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("use_roughness_map", value))
+	box.add_child(roughness_toggle)
+	set_texture_set(0)
 	var help := Label.new()
 	help.text = "SPACE  compare   ·   1 / 2 / 3  viewpoints   ·   scroll  zoom"
 	help.add_theme_color_override("font_color", Color("abb9b7"))
 	box.add_child(help)
 	set_detile(true)
+
+func set_texture_set(index: int) -> void:
+	if index < 0 or index >= TEXTURE_SETS.size():
+		return
+	var material := $Surface.material_override as ShaderMaterial
+	material.set_shader_parameter("albedo_map", load(TEXTURE_SETS[index][0]))
+	material.set_shader_parameter("normal_map", load(TEXTURE_SETS[index][1]))
+	material.set_shader_parameter("roughness_map", load(TEXTURE_SETS[index][2]))
 
 func set_detile(enabled: bool) -> void:
 	detiled = enabled
