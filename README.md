@@ -76,6 +76,7 @@ The shader is a complete spatial material. To use it in an existing custom mater
 | --- | --- |
 | `detile_enabled` | Compare stochastic and ordinary periodic sampling. |
 | `texture_scale_m` | Size of one repeat in world units, normally meters. |
+| `variation_seed` | Choose a different deterministic cell-offset and rotation pattern; 0 preserves the original pattern. Matching maps share the seed. Duplicate the material to give different surfaces different seeds. |
 | `rotation_strength` | Rotate cell samples; zero preserves the source orientation. |
 | `blend_contrast` | Adjust the color and roughness weight curve (and normals in shared-weight mode); 0.5 is neutral. Higher values may reveal the lattice. |
 | `paper_blend` | Enable luminance-weighted color and roughness blending and slope-weighted normal blending. Off by default. |
@@ -92,6 +93,10 @@ The shader is a complete spatial material. To use it in an existing custom mater
 The shader samples three randomly offset copies of a repeatable texture on a triangular lattice, blends them, and projects the result along three world axes. The material maps share cell offsets and rotations. In the default mode they also share geometric blend weights; optional paper-inspired weighting calculates weights separately for color, roughness, and normals, which can shift how corresponding features blend. Optional rotation transforms texture derivatives for mip selection and rotates sampled normal components back into projection space. Rotation is off by default; directional textures may work better without it. `blend_contrast` changes the blend-weight curve to retain more definition, but high values can expose the grid; it does not guarantee contrast preservation. Optional tone normalization can reduce broad patches but can change color or suppress features; it defaults to off. World-space projection means moving or rotating an object moves it through the texture. In paper-inspired mode, color and roughness weights use sample luminance; normal samples are converted to slopes, weighted by slope magnitude, and blended before normal reconstruction. The implementation reconstructs normal Z from XY and caps grazing slopes for stability. This adapts the paper to the triplanar material; it is not a complete or exact reproduction. Normal mapping remains an approximation based on the geometric normal and sampled tangent components, not a general substitute for a mesh's tangent-space material.
 
 Large organic surfaces are a useful starting point. Strong, recognizable features can still repeat or form patches. Triplanar projection, multiple texture samples, and normalization add GPU work; this demo has no distance-based optimization. See the [benchmark and its limitations](benchmarks/README.md), and profile on your target hardware.
+
+## Research and experiments
+
+The [experiments](experiments/) notes describe later texture-blending research and an exploratory two-band prototype that did not demonstrate a clear improvement on the current material set. The supported shader retains the existing modes.
 
 ## Project checks
 

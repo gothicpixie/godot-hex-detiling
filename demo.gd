@@ -92,6 +92,18 @@ func _ready() -> void:
 	contrast_slider.value = 0.5
 	contrast_slider.value_changed.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("blend_contrast", value))
 	box.add_child(contrast_slider)
+	var seed_row := HBoxContainer.new()
+	var seed_label := Label.new()
+	seed_label.text = "Variation seed"
+	seed_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	seed_row.add_child(seed_label)
+	var seed_input := SpinBox.new()
+	seed_input.min_value = 0.0
+	seed_input.max_value = 999.0
+	seed_input.step = 1.0
+	seed_input.value_changed.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("variation_seed", value))
+	seed_row.add_child(seed_input)
+	box.add_child(seed_row)
 	var paper_toggle := CheckButton.new()
 	paper_toggle.text = "Paper-inspired weighting"
 	paper_toggle.toggled.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("paper_blend", value))

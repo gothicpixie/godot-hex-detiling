@@ -10,6 +10,7 @@ uniform float blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
 uniform bool paper_blend = false;
 uniform float paper_falloff : hint_range(0.0, 0.99, 0.01) = 0.6;
 uniform float normal_blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
+uniform float variation_seed : hint_range(0.0, 999.0, 1.0) = 0.0;
 uniform bool detile_enabled = true;
 uniform float texture_scale_m : hint_range(0.1, 10.0, 0.1) = 1.5;
 uniform float normal_strength : hint_range(0.0, 1.0, 0.01) = 0.5;
@@ -25,6 +26,7 @@ float axis_sign(float value) {
 
 // Stochastic triangular lattice. Cell transforms are shared across PBR maps.
 vec2 detile_hash2(vec2 p) {
+	p += variation_seed * vec2(19.19, 13.17);
 	mat2 m = mat2(vec2(127.1, 269.5), vec2(311.7, 183.3));
 	return fract(sin(m * p) * 43758.5453);
 }

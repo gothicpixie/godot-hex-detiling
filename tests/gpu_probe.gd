@@ -63,7 +63,29 @@ func _initialize() -> void:
 		push_error("Paper toggle produced no measurable difference on cobblestone")
 		quit(1)
 		return
-	print("PASS: flat normals remain flat, textured normals affect lighting, and paper mode changes output")
+	material.set_shader_parameter("variation_seed", 1.0)
+	await process_frame
+	await process_frame
+	await create_timer(0.3).timeout
+	var other_seed := root.get_texture().get_image()
+	var seed_difference := mean_difference(paper_image, other_seed)
+	print("Seed change mean RGB difference: ", seed_difference)
+	if seed_difference < 0.005:
+		push_error("Changing seed did not change the sampling pattern")
+		quit(1)
+		return
+	material.set_shader_parameter("variation_seed", 0.0)
+	await process_frame
+	await process_frame
+	await create_timer(0.3).timeout
+	var reset_image := root.get_texture().get_image()
+	var reset_difference := mean_difference(paper_image, reset_image)
+	print("Seed reset mean RGB difference: ", reset_difference)
+	if reset_difference > 0.001:
+		push_error("Resetting seed did not restore the original pattern")
+		quit(1)
+		return
+	print("PASS: normal, blend, and deterministic seed checks")
 	quit()
 
 func max_difference(a: Image, b: Image) -> float:

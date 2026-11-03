@@ -1,0 +1,80 @@
+diff --git a/addons/hex_detile/hex_detile.gdshader b/addons/hex_detile/hex_detile.gdshader
+index 98b44d1..6805a32 100644
+--- a/addons/hex_detile/hex_detile.gdshader
++++ b/addons/hex_detile/hex_detile.gdshader
+@@ -8,6 +8,10 @@ uniform bool use_roughness_map = false;
+ uniform float rotation_strength : hint_range(0.0, 1.0, 0.01) = 0.0;
+ uniform float blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
+ uniform bool paper_blend = false;
++// Experimental two-band approximation inspired by Wronski (2025), not the
++// paper's full Laplacian pyramid. Uses existing mipmaps, only for albedo.
++uniform bool multiscale_color = false;
++uniform float multiscale_levels : hint_range(1.0, 4.0, 1.0) = 2.0;
+ uniform float paper_falloff : hint_range(0.0, 0.99, 0.01) = 0.6;
+ uniform float normal_blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
+ uniform bool detile_enabled = true;
+@@ -97,6 +101,7 @@ vec3 detile_sample_color(sampler2D tex, vec2 st, vec2 dx, vec2 dy) {
+ 	if (paper_blend) {
+ 		W = paper_color_weights(base, c1, c2, c3);
+ 	}
++	vec3 correction1 = vec3(1.0); vec3 correction2 = vec3(1.0); vec3 correction3 = vec3(1.0);
+ 	if (detile_detrend > 0.0) {
+ 		vec3 target = textureLod(tex, vec2(0.5), 16.0).rgb;
+ 		ivec2 map_size = textureSize(tex, 0);
+@@ -105,9 +110,21 @@ vec3 detile_sample_color(sampler2D tex, vec2 st, vec2 dx, vec2 dy) {
+ 		vec3 l1 = textureLod(tex, p1, effective_lod).rgb;
+ 		vec3 l2 = textureLod(tex, p2, effective_lod).rgb;
+ 		vec3 l3 = textureLod(tex, p3, effective_lod).rgb;
+-		c1 *= mix(vec3(1.0), target / max(l1, vec3(0.04)), detile_detrend);
+-		c2 *= mix(vec3(1.0), target / max(l2, vec3(0.04)), detile_detrend);
+-		c3 *= mix(vec3(1.0), target / max(l3, vec3(0.04)), detile_detrend);
++		correction1 = mix(vec3(1.0), target / max(l1, vec3(0.04)), detile_detrend);
++		correction2 = mix(vec3(1.0), target / max(l2, vec3(0.04)), detile_detrend);
++		correction3 = mix(vec3(1.0), target / max(l3, vec3(0.04)), detile_detrend);
++		c1 *= correction1; c2 *= correction2; c3 *= correction3;
++	}
++	if (multiscale_color) {
++		// Blend high-frequency residuals with sharp cell weights and the
++		// lower-frequency component with continuous barycentric weights.
++		float footprint = exp2(multiscale_levels);
++		vec3 low1 = textureGrad(tex, p1, r1 * dx * footprint, r1 * dy * footprint).rgb * correction1;
++		vec3 low2 = textureGrad(tex, p2, r2 * dx * footprint, r2 * dy * footprint).rgb * correction2;
++		vec3 low3 = textureGrad(tex, p3, r3 * dx * footprint, r3 * dy * footprint).rgb * correction3;
++		vec3 smooth_weights = vec3(w1, w2, w3);
++		return (c1 - low1) * W.x + (c2 - low2) * W.y + (c3 - low3) * W.z
++			+ low1 * smooth_weights.x + low2 * smooth_weights.y + low3 * smooth_weights.z;
+ 	}
+ 	return c1 * W.x + c2 * W.y + c3 * W.z;
+ }
+diff --git a/tests/smoke.gd b/tests/smoke.gd
+index fb25805..ba0758b 100644
+--- a/tests/smoke.gd
++++ b/tests/smoke.gd
+@@ -19,7 +19,7 @@ func _initialize() -> void:
+ 	var names: Array[String] = []
+ 	for uniform in uniforms:
+ 		names.append(uniform.name)
+-	for required in ["rotation_strength", "blend_contrast", "roughness_map", "use_roughness_map", "paper_blend", "paper_falloff", "normal_blend_contrast"]:
++	for required in ["rotation_strength", "blend_contrast", "roughness_map", "use_roughness_map", "paper_blend", "paper_falloff", "normal_blend_contrast", "multiscale_color", "multiscale_levels"]:
+ 		if not names.has(required):
+ 			push_error("Missing material control: " + required)
+ 			quit(1)
+diff --git a/tests/variety_gallery.gd b/tests/variety_gallery.gd
+index 0807e62..790524e 100644
+--- a/tests/variety_gallery.gd
++++ b/tests/variety_gallery.gd
+@@ -37,10 +37,11 @@ func _initialize() -> void:
+ 		camera.position = item.camera
+ 		camera.look_at(Vector3.ZERO, Vector3.UP)
+ 		mat.set_shader_parameter("texture_scale_m", item.scale)
+-		for mode in ["periodic", "offset", "rotated", "paper"]:
++		for mode in ["periodic", "offset", "rotated", "paper", "multiscale"]:
+ 			demo.set_detile(mode != "periodic")
+-			mat.set_shader_parameter("rotation_strength", 0.65 if mode == "rotated" or mode == "paper" else 0.0)
+-			mat.set_shader_parameter("paper_blend", mode == "paper")
++			mat.set_shader_parameter("rotation_strength", 0.65 if mode == "rotated" or mode == "paper" or mode == "multiscale" else 0.0)
++			mat.set_shader_parameter("paper_blend", mode == "paper" or mode == "multiscale")
++			mat.set_shader_parameter("multiscale_color", mode == "multiscale")
+ 			await process_frame
+ 			await process_frame
+ 			await create_timer(0.5).timeout
