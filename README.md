@@ -10,7 +10,7 @@ The loop alternates two actual captures of the same terrain, camera, lights, and
 
 1. Open `project.godot` in Godot 4 and allow the textures to import.
 2. Press **F5** to run. Press **Space** or click the button to toggle the effect.
-3. Press **1**, **2**, or **3** for camera views. Choose one of three texture sets, adjust rotation and blend contrast, and toggle the roughness map in the panel. Drag to rotate the surface and use the mouse wheel to zoom.
+3. Press **1**, **2**, or **3** for camera views. Choose one of nine texture sets, adjust rotation and blend contrast, and toggle the roughness map in the panel. Drag to rotate the surface and use the mouse wheel to zoom.
 
 Tested with Godot **4.7.2**, Compatibility renderer, on macOS. Other versions and hardware need testing. From a terminal, run `godot --path . --editor --quit` to import, then `godot --path .`.
 
@@ -43,6 +43,21 @@ These GPU captures compare the same camera, lighting, mesh, and material setting
 
 The cracked-rock wall makes the regular grid especially easy to see; the detiled version breaks it up, but changes and softens some detail. The sandstone sphere has less prominent repetition to begin with, so the difference is subtler. These are three rock or sandstone materials; they do not establish performance on wood, brick, or strongly directional textures. Sphere and box examples are controlled primitive meshes, not scans or detailed production assets.
 
+### Wider material stress test
+
+These examples use six additional CC0 materials on a vertical box, terrain, or sphere. Each row holds the camera, lighting, maps, roughness sampling, and blend contrast (0.65) fixed. The middle column enables detiling with **rotation 0**; the last uses **rotation 0.65**. Texture repeat size is 2.5 m for brick, wood, paving, and cobblestone and 1.5 m for grass and denim. Images were captured in Godot 4.7.2 Compatibility on Apple M5.
+
+| Material / mesh | Regular tiling | Detiled, no rotation | Detiled, rotation 0.65 |
+| --- | --- | --- | --- |
+| Brick / box | ![Regular brick](docs/variety/brick-periodic.jpg) | ![Brick with offsets](docs/variety/brick-offset.jpg) | ![Brick with offsets and rotation](docs/variety/brick-rotated.jpg) |
+| Wood planks / box | ![Regular wood](docs/variety/wood-periodic.jpg) | ![Wood with offsets](docs/variety/wood-offset.jpg) | ![Wood with offsets and rotation](docs/variety/wood-rotated.jpg) |
+| Grass / terrain | ![Regular grass](docs/variety/grass-periodic.jpg) | ![Grass with offsets](docs/variety/grass-offset.jpg) | ![Grass with offsets and rotation](docs/variety/grass-rotated.jpg) |
+| Denim / sphere | ![Regular denim](docs/variety/denim-periodic.jpg) | ![Denim with offsets](docs/variety/denim-offset.jpg) | ![Denim with offsets and rotation](docs/variety/denim-rotated.jpg) |
+| Checkered paving / box | ![Regular paving](docs/variety/paving-periodic.jpg) | ![Paving with offsets](docs/variety/paving-offset.jpg) | ![Paving with offsets and rotation](docs/variety/paving-rotated.jpg) |
+| Cobblestone / terrain | ![Regular cobblestone](docs/variety/cobble-periodic.jpg) | ![Cobblestone with offsets](docs/variety/cobble-offset.jpg) | ![Cobblestone with offsets and rotation](docs/variety/cobble-rotated.jpg) |
+
+**What to look for:** The stochastic sampling disrupts the regular mortar lines, planks, and checkerboard; rotation makes that especially obvious. Turning rotation off preserves orientation but random offsets can still break alignment. These are failure cases for architecture that must retain its pattern, not examples of a seamless structural fix. Grass, denim, and irregular stone are less constrained, although blending can still soften details or create patches. The terrain, sphere, and box are controlled examples; results will vary with scale, lighting, source textures, and geometry.
+
 ## Add it to your project
 
 Copy [`addons/hex_detile`](addons/hex_detile) to your project's `addons` folder. Create a **ShaderMaterial**, select `hex_detile.gdshader`, and assign a repeatable albedo map and its matching OpenGL-style normal map. Enable mipmaps on both textures in the Godot Import dock. Set `texture_scale_m` to control the world-space repeat size, and tune the other controls in the inspector. Optionally enable **Hex Detiling** under Project Settings → Plugins. Select one MeshInstance3D without a material override and use the dock to create a ShaderMaterial; assign its textures and tune its parameters in the Inspector. The action is undoable and will not replace an existing override. The shader also works without enabling the plugin.
@@ -69,10 +84,12 @@ Large organic surfaces are a useful starting point. Strong, recognizable feature
 
 ## Project checks
 
-After importing assets, run `godot --headless --path . --script res://tests/smoke.gd` to check scene loading, texture binding, and the sampling toggle. On a machine with a graphics display, `godot --path . --script res://tests/gpu_probe.gd` checks that a flat normal map leaves lighting unchanged at full rotation. Run `godot --path . --script res://tests/capture.gd` to regenerate the initial stills, or `godot --path . --script res://tests/material_gallery.gd` for the paired material and mesh gallery in `docs/gallery/`. These checks do not establish correctness for every normal map or renderer.
+After importing assets, run `godot --headless --path . --script res://tests/smoke.gd` to check scene loading, texture binding, and the sampling toggle. On a machine with a graphics display, `godot --path . --script res://tests/gpu_probe.gd` checks that a flat normal map leaves lighting unchanged at full rotation. Run `godot --path . --script res://tests/capture.gd` to regenerate the initial stills, or `godot --path . --script res://tests/material_gallery.gd` for the paired material and mesh gallery in `docs/gallery/`. Run `godot --path . --script res://tests/variety_gallery.gd` to regenerate the six-material stress test in `docs/variety/`. These checks do not establish correctness for every normal map or renderer.
 
 ## Credits and license
 
 Adapted from the author's `chain-racing` material and cliff study. Based on Morten S. Mikkelsen's [Practical Real-Time Hex-Tiling](https://jcgt.org/published/0011/03/05/), JCGT, 2022. This adaptation adds optional cell rotation, a shared blend-weight curve, and multiplicative color normalization; it is not a verbatim implementation of every technique in the paper. See [third-party notices](addons/hex_detile/THIRD_PARTY_NOTICES.md) for the original Godot reference and its license.
 
 Code and documentation: [MIT License](LICENSE). The example texture sets are [Rocks Ground 04](https://polyhaven.com/a/rocks_ground_04) and [Sandstone Cracks](https://polyhaven.com/a/sandstone_cracks), by Rob Tuytel / Poly Haven, plus [Rock Boulder Cracked](https://polyhaven.com/a/rock_boulder_cracked), photography by Dimitrios Savva and processing by Dario Barresi / Poly Haven. All are [CC0](https://polyhaven.com/license). The sandstone and boulder maps were resized to 1024 pixels for this demo. Screenshots depict those textures. Godot is distributed separately under its own license.
+
+Additional gallery maps are from Poly Haven under [CC0](https://polyhaven.com/license): [Brick 4](https://polyhaven.com/a/brick_4) and [Denim Fabric](https://polyhaven.com/a/denim_fabric) by Rob Tuytel; [Dark Wooden Planks](https://polyhaven.com/a/dark_wooden_planks) and [Checkered Pavement Tiles](https://polyhaven.com/a/checkered_pavement_tiles) by Amal Kumar; [Grass Ground](https://polyhaven.com/a/grass_ground) by Charlotte Baglioni; and [Cobblestone 01](https://polyhaven.com/a/cobblestone_01) by Rob Tuytel. The 1K maps and their source URLs and checksums are listed in [SOURCES.json](assets/gallery/SOURCES.json).

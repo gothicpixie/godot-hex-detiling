@@ -6,6 +6,12 @@ const TEXTURE_SETS := [
 	["res://assets/rock_albedo.png", "res://assets/rock_normal.png", "res://assets/rock_roughness.png"],
 	["res://assets/sandstone_albedo.png", "res://assets/sandstone_normal.png", "res://assets/sandstone_roughness.png"],
 	["res://assets/boulder_albedo.png", "res://assets/boulder_normal.png", "res://assets/boulder_roughness.png"],
+	["res://assets/gallery/brick_4_albedo.jpg", "res://assets/gallery/brick_4_normal.jpg", "res://assets/gallery/brick_4_roughness.jpg"],
+	["res://assets/gallery/dark_wooden_planks_albedo.jpg", "res://assets/gallery/dark_wooden_planks_normal.jpg", "res://assets/gallery/dark_wooden_planks_roughness.jpg"],
+	["res://assets/gallery/grass_ground_albedo.jpg", "res://assets/gallery/grass_ground_normal.jpg", "res://assets/gallery/grass_ground_roughness.jpg"],
+	["res://assets/gallery/denim_fabric_albedo.jpg", "res://assets/gallery/denim_fabric_normal.jpg", "res://assets/gallery/denim_fabric_roughness.jpg"],
+	["res://assets/gallery/checkered_pavement_tiles_albedo.jpg", "res://assets/gallery/checkered_pavement_tiles_normal.jpg", "res://assets/gallery/checkered_pavement_tiles_roughness.jpg"],
+	["res://assets/gallery/cobblestone_01_albedo.jpg", "res://assets/gallery/cobblestone_01_normal.jpg", "res://assets/gallery/cobblestone_01_roughness.jpg"],
 ]
 
 func _ready() -> void:
@@ -57,6 +63,12 @@ func _ready() -> void:
 	selector.add_item("Rocks Ground 04")
 	selector.add_item("Sandstone Cracks")
 	selector.add_item("Rock Boulder Cracked")
+	selector.add_item("Brick 4")
+	selector.add_item("Dark Wooden Planks")
+	selector.add_item("Grass Ground")
+	selector.add_item("Denim Fabric")
+	selector.add_item("Checkered Pavement Tiles")
+	selector.add_item("Cobblestone 01")
 	selector.item_selected.connect(set_texture_set)
 	box.add_child(selector)
 	var rotation_label := Label.new()

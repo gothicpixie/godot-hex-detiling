@@ -1,0 +1,158 @@
+[
+  {
+    "asset": "brick_4",
+    "name": "Brick 4",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/brick_4",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_4/brick_4_diff_1k.jpg",
+        "md5": "17cc077fda6e2d7dd7a25a4f983d92d6",
+        "bytes": 331598
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_4/brick_4_nor_gl_1k.jpg",
+        "md5": "db5c953bc1ca96ea6861a0a354624a85",
+        "bytes": 328125
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_4/brick_4_rough_1k.jpg",
+        "md5": "bcfc53932ebfbc2af3ea1c5ca8c0440d",
+        "bytes": 342151
+      }
+    }
+  },
+  {
+    "asset": "dark_wooden_planks",
+    "name": "Dark Wooden Planks",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "source": "https://polyhaven.com/a/dark_wooden_planks",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_wooden_planks/dark_wooden_planks_diff_1k.jpg",
+        "md5": "7ec8fe3e0b84289a4add3b10a54090bb",
+        "bytes": 701221
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_wooden_planks/dark_wooden_planks_nor_gl_1k.jpg",
+        "md5": "4093b4023a4270b3a06b762076106d58",
+        "bytes": 658444
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_wooden_planks/dark_wooden_planks_rough_1k.jpg",
+        "md5": "6eaec29bb24d157dde74d38bc5a63018",
+        "bytes": 673968
+      }
+    }
+  },
+  {
+    "asset": "grass_ground",
+    "name": "Grass Ground",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "source": "https://polyhaven.com/a/grass_ground",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_diff_1k.jpg",
+        "md5": "299047258586c762735b7284d3c662c3",
+        "bytes": 876584
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_nor_gl_1k.jpg",
+        "md5": "d518c5b2af6f2c0297bc807b351f511f",
+        "bytes": 1310516
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_ground/grass_ground_rough_1k.jpg",
+        "md5": "2e6afca246cf6b80bdb53f46fe7e5ce5",
+        "bytes": 328190
+      }
+    }
+  },
+  {
+    "asset": "denim_fabric",
+    "name": "Denim Fabric",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/denim_fabric",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_diff_1k.jpg",
+        "md5": "3835b5e277dd99784bfe68d985da14ae",
+        "bytes": 886486
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_nor_gl_1k.jpg",
+        "md5": "9008fe723671f9cb3e6d0889eab9adb0",
+        "bytes": 474669
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_rough_1k.jpg",
+        "md5": "7eebb4a6185f2e6805976bc356dd1b41",
+        "bytes": 467773
+      }
+    }
+  },
+  {
+    "asset": "checkered_pavement_tiles",
+    "name": "Checkered Pavement Tiles",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "source": "https://polyhaven.com/a/checkered_pavement_tiles",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/checkered_pavement_tiles/checkered_pavement_tiles_diff_1k.jpg",
+        "md5": "2cbdcaa72c9ea6311961b6d8b9c5b50a",
+        "bytes": 631215
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/checkered_pavement_tiles/checkered_pavement_tiles_nor_gl_1k.jpg",
+        "md5": "b577b48ff54bbe646cc0cdf432d36f8e",
+        "bytes": 276757
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/checkered_pavement_tiles/checkered_pavement_tiles_rough_1k.jpg",
+        "md5": "0db873a7330ec9eed9dfe081411a80ac",
+        "bytes": 506691
+      }
+    }
+  },
+  {
+    "asset": "cobblestone_01",
+    "name": "Cobblestone 01",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/cobblestone_01",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_01/cobblestone_01_diff_1k.jpg",
+        "md5": "d2010396dc4aa96d54d5f76176e51eee",
+        "bytes": 487258
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_01/cobblestone_01_nor_gl_1k.jpg",
+        "md5": "3caec9559b848a24d67576881642dc72",
+        "bytes": 543090
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_01/cobblestone_01_rough_1k.jpg",
+        "md5": "c1ef829c1e28f375f93c34e464fc41d9",
+        "bytes": 429061
+      }
+    }
+  }
+]
