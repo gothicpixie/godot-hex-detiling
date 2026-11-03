@@ -1,0 +1,20 @@
+[
+  {
+    "scale": 2,
+    "lattice_units_per_pixel": 0.05412658773652741,
+    "point_rmse": 0.0039369766622181605,
+    "relaxed_rmse": 0.0039369766622181605
+  },
+  {
+    "scale": 8,
+    "lattice_units_per_pixel": 0.21650635094610965,
+    "point_rmse": 0.03629613574356666,
+    "relaxed_rmse": 0.028586660337182934
+  },
+  {
+    "scale": 20,
+    "lattice_units_per_pixel": 0.5412658773652741,
+    "point_rmse": 0.09085000496784594,
+    "relaxed_rmse": 0.054711043567258644
+  }
+]

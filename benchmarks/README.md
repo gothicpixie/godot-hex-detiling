@@ -43,3 +43,23 @@ Reproduce on a graphics display after importing:
 ```sh
 godot --path . --resolution 1280x720 --disable-vsync --max-fps 0 --script res://benchmarks/paper_compare.gd
 ```
+
+## Optional coherent-mode comparison — November 3, 2026
+
+The final run used Godot 4.7.2 Compatibility / OpenGL 4.1 through Metal on Apple M5, a requested 1280 × 720 window, V-sync disabled, and uncapped FPS. The default rock terrain retained its lights and material, with UI hidden, rotation 0.65, blend contrast 0.65, and roughness-map sampling on. Coherent filtering remained enabled and detrending disabled. Nine alternating rounds measured shared, paper-inspired, and coherent modes three times each, with 180 warm-up frames and 600 measured process-frame intervals per round. No other GPU task ran concurrently.
+
+| Mode | Median frame intervals by round (ms) | 95th-percentile intervals by round (ms) |
+| --- | --- | --- |
+| Shared weights | 3.276, 3.295, 3.281 | 3.658, 3.636, 3.672 |
+| Paper-inspired | 3.328, 3.343, 3.325 | 3.689, 3.774, 3.679 |
+| Coherent material | 3.089, 3.100, 3.092 | 3.449, 3.463, 3.479 |
+
+Every round returned **zero GPU timing samples**. These are whole-scene process-frame intervals, including CPU scheduling and presentation behavior, not isolated shader GPU times. Coherent mode had shorter recorded intervals in this run, but these measurements do not establish a general GPU speedup or a performance ordering on other hardware. At equal roughness/detrending settings, coherent mode adds no source-level texture reads; it changes arithmetic and sampling organization, whose cost depends on compiler and hardware.
+
+The [raw final output](apple-m5-coherent-compare.txt) includes the exact invocation, date, all means, and result JSON. Reproduce on a graphics display after importing:
+
+```sh
+godot --path . --rendering-method gl_compatibility --resolution 1280x720 --disable-vsync --max-fps 0 --script res://benchmarks/coherent_compare.gd
+```
+
+See [method and bounded quality checks](../docs/coherent/README.md) before interpreting this as a visual-quality comparison.

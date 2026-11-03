@@ -19,7 +19,7 @@ func _initialize() -> void:
 	var names: Array[String] = []
 	for uniform in uniforms:
 		names.append(uniform.name)
-	for required in ["rotation_strength", "blend_contrast", "roughness_map", "use_roughness_map", "paper_blend", "paper_falloff", "normal_blend_contrast", "variation_seed"]:
+	for required in ["rotation_strength", "blend_contrast", "roughness_map", "use_roughness_map", "paper_blend", "paper_falloff", "normal_blend_contrast", "variation_seed", "coherent_blend", "coherent_filter"]:
 		if not names.has(required):
 			push_error("Missing material control: " + required)
 			quit(1)

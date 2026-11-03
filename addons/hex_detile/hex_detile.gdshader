@@ -8,6 +8,9 @@ uniform bool use_roughness_map = false;
 uniform float rotation_strength : hint_range(0.0, 1.0, 0.01) = 0.0;
 uniform float blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
 uniform bool paper_blend = false;
+// Coherent mode takes precedence over paper_blend; legacy defaults are unchanged.
+uniform bool coherent_blend = false;
+uniform bool coherent_filter = true;
 uniform float paper_falloff : hint_range(0.0, 0.99, 0.01) = 0.6;
 uniform float normal_blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
 uniform float variation_seed : hint_range(0.0, 999.0, 1.0) = 0.0;
@@ -224,6 +227,8 @@ vec3 triplanar_normal_perturb(
 }
 
 
+#include "coherent_blend.gdshaderinc"
+
 void vertex() {
  world_position = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
  geometric_world_normal = normalize(MODEL_NORMAL_MATRIX * NORMAL);
@@ -233,7 +238,10 @@ void fragment() {
  vec3 weights = pow(abs(n), vec3(4.0));
  weights /= max(weights.x + weights.y + weights.z, 0.0001);
  vec3 perturb;
- if (detile_enabled) {
+ float coherent_roughness = roughness;
+ if (detile_enabled && coherent_blend) {
+  coherent_triplanar_material(world_position, texture_scale_m, n, weights, ALBEDO, perturb, coherent_roughness);
+ } else if (detile_enabled) {
   ALBEDO = detile_triplanar_color(albedo_map, world_position, texture_scale_m, n, weights);
   perturb = detile_triplanar_normal_perturb(normal_map, world_position, texture_scale_m, n, weights);
  } else {
@@ -243,8 +251,8 @@ void fragment() {
  perturb *= normal_strength;
  perturb -= n * dot(n, perturb);
  NORMAL = normalize((VIEW_MATRIX * vec4(normalize(n + perturb), 0.0)).xyz);
- ROUGHNESS = roughness;
- if (use_roughness_map) {
+ ROUGHNESS = coherent_roughness;
+ if (use_roughness_map && !(detile_enabled && coherent_blend)) {
   ROUGHNESS = detile_enabled ? detile_triplanar_data(roughness_map, world_position, texture_scale_m, n, weights).r : triplanar_sample(roughness_map, world_position, texture_scale_m, n, weights).r;
  }
 }

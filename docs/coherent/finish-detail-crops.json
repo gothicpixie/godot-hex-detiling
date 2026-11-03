@@ -1,0 +1,58 @@
+{
+  "source_size": [
+    960,
+    540
+  ],
+  "pixel_scale": "1:1",
+  "resampling": "none",
+  "color_adjustment": "none",
+  "rect_format": [
+    "x",
+    "y",
+    "width",
+    "height"
+  ],
+  "modes": [
+    "shared",
+    "paper",
+    "coherent"
+  ],
+  "crops": [
+    {
+      "id": "plaster",
+      "rect": [
+        280,
+        120,
+        400,
+        300
+      ]
+    },
+    {
+      "id": "leather",
+      "rect": [
+        368,
+        130,
+        224,
+        300
+      ]
+    },
+    {
+      "id": "terrazzo",
+      "rect": [
+        280,
+        120,
+        400,
+        300
+      ]
+    },
+    {
+      "id": "rubber",
+      "rect": [
+        368,
+        130,
+        224,
+        300
+      ]
+    }
+  ]
+}

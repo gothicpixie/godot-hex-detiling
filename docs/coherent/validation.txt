@@ -1,0 +1,189 @@
+Final coherent validation UTC 2026-11-03T13:33:51.298673+00:00
+Working directory: /Users/gabrielphoenix/Documents/vscode-projects/godot-hex-detiling
+
+COMMAND: /opt/homebrew/bin/godot --headless --path . --editor --import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Reopening scenes...[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Loading central editor layout...[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Loading plugin window layout...[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Editor layout ready.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+
+EXIT: 0
+
+COMMAND: /opt/homebrew/bin/godot --headless --path . --script tests/smoke.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: scene loads, sample texture is bound, and toggle changes shader mode
+
+EXIT: 0
+
+COMMAND: /opt/homebrew/bin/godot --path . --rendering-method gl_compatibility --resolution 128x128 --script tests/gpu_probe.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+Textured normal max channel difference: 0.16078433394432
+Flat normal max channel difference, paper=false: 0.0
+Flat normal max channel difference, paper=true: 0.0
+Shared vs paper mean RGB difference: 0.00005744485922
+ERROR: Paper toggle produced no measurable difference on cobblestone
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _initialize (res://tests/gpu_probe.gd:63)
+
+EXIT: 1
+
+Invocation correction: existing gpu_probe renders full demo/UI and must run at native1280x720;128x128 caused paper/shared threshold failure. No code changes.
+
+COMMAND: /opt/homebrew/bin/godot --path . --rendering-method gl_compatibility --resolution 1280x720 --script tests/gpu_probe.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+Textured normal max channel difference: 0.258823543787
+Flat normal max channel difference, paper=false: 0.00392156839371
+Flat normal max channel difference, paper=true: 0.0
+Shared vs paper mean RGB difference: 0.00045690362402
+Seed change mean RGB difference: 0.05399210622553
+Seed reset mean RGB difference: 0.0
+PASS: normal, blend, and deterministic seed checks
+
+EXIT: 0
+
+COMMAND: /opt/homebrew/bin/godot --path . --rendering-method gl_compatibility --resolution 128x128 --script tests/coherent_probe.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+PASS: weights sum to one
+PASS: far weights relax to barycentric
+PASS: footprint changes sharp near weights
+PASS: zero barycentric support stays zero
+PASS: candidate permutation preserves weights
+PASS: disabled normal does not guide weights
+PASS: maximum contrast preserves normalized equal mixture
+PASS: correlated color and roughness stay aligned; max=0.0
+PASS: flat normals remain flat; max=0.0
+PASS: fixture detects independent paper weights; max=0.34509804844856
+PASS: nonflat normal shares color weights and inverse rotation; max=0.0
+PASS: quarter-turn inverse rotation leaves zero X slope
+PASS: nonflat fixture rejects independent normal weights; max=0.60000002384186
+PASS: nonflat fixture rejects forward normal rotation; max=1.0
+PASS: disabled roughness map uses constant
+PASS: footprint transition is continuous
+Coherent GPU checks: 0 failures
+
+EXIT: 0
+
+COMMAND: /opt/homebrew/bin/godot --path . --rendering-method gl_compatibility --resolution 960x540 --script tests/coherent_gallery.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+Captured rocks-shared
+Captured rocks-paper
+Captured rocks-coherent
+Captured sandstone-shared
+Captured sandstone-paper
+Captured sandstone-coherent
+Captured boulder-shared
+Captured boulder-paper
+Captured boulder-coherent
+Captured brick-shared
+Captured brick-paper
+Captured brick-coherent
+Captured wood-shared
+Captured wood-paper
+Captured wood-coherent
+Captured grass-shared
+Captured grass-paper
+Captured grass-coherent
+Captured denim-shared
+Captured denim-paper
+Captured denim-coherent
+Captured paving-shared
+Captured paving-paper
+Captured paving-coherent
+Captured cobble-shared
+Captured cobble-paper
+Captured cobble-coherent
+Captured snow-shared
+Captured snow-paper
+Captured snow-coherent
+Captured mud-shared
+Captured mud-paper
+Captured mud-coherent
+Captured plaster-shared
+Captured plaster-paper
+Captured plaster-coherent
+Captured leather-shared
+Captured leather-paper
+Captured leather-coherent
+Captured rubber-shared
+Captured rubber-paper
+Captured rubber-coherent
+Captured sand-shared
+Captured sand-paper
+Captured sand-coherent
+Captured mossy-rock-shared
+Captured mossy-rock-paper
+Captured mossy-rock-coherent
+Captured terrazzo-shared
+Captured terrazzo-paper
+Captured terrazzo-coherent
+Captured cobble-grazing-shared
+Captured cobble-grazing-paper
+Captured cobble-grazing-coherent
+Captured cobble-elevated-shared
+Captured cobble-elevated-paper
+Captured cobble-elevated-coherent
+Captured boulder-oblique-shared
+Captured boulder-oblique-paper
+Captured boulder-oblique-coherent
+
+EXIT: 0
+
+COMMAND: /opt/homebrew/bin/godot --path . --rendering-method gl_compatibility --resolution 128x128 --script tests/coherent_footprint.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+Captured isolated footprint probe at three scales
+
+EXIT: 0
+
+COMMAND: /opt/homebrew/bin/python3 tests/coherent_media.py
+[
+  {
+    "scale": 2,
+    "lattice_units_per_pixel": 0.05412658773652741,
+    "point_rmse": 0.0039369766622181605,
+    "relaxed_rmse": 0.0039369766622181605
+  },
+  {
+    "scale": 8,
+    "lattice_units_per_pixel": 0.21650635094610965,
+    "point_rmse": 0.03629613574356666,
+    "relaxed_rmse": 0.028586660337182934
+  },
+  {
+    "scale": 20,
+    "lattice_units_per_pixel": 0.5412658773652741,
+    "point_rmse": 0.09085000496784594,
+    "relaxed_rmse": 0.054711043567258644
+  }
+]
+
+EXIT: 0
+
+POSTCHECK: Verified 60 raw 960x540 captures, 20 cases, 17 unique materials, 4 mesh types against capture-settings.json. Visually inspected all 7 contact sheets, footprint-comparison.png and representative loop frame. Loop 840x186, 46 frames, 4,381,098 bytes.

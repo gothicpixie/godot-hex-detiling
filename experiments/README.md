@@ -9,3 +9,7 @@ Relevant later work includes:
 - Pharr et al., [Filtering After Shading with Stochastic Texture Filtering](https://research.nvidia.com/labs/rtr/publication/pharr2024stochtex/) (2024): addresses filtering after shading, a different problem from suppressing visible texture repetition. It should not be presented as a drop-in detiling improvement.
 
 None of these references imply that this project implements or reproduces their results. Improvements need matched visual comparisons, temporal checks, and target-device GPU profiling before being described as better.
+
+## Shipped optional synthesis
+
+The [coherent material mode](../docs/coherent/README.md) combines shared content guidance with footprint-dependent relaxation using the existing PBR samples. This is a project-specific engineering synthesis of known ideas, separate from the unshipped multiband experiment. The old shared mode already keeps map weights aligned; the extension changes how that shared mixture is chosen. Controlled checks and matched seventeen-material captures describe both its behavior and its limits.

@@ -154,5 +154,213 @@
         "bytes": 429061
       }
     }
+  },
+  {
+    "asset": "snow_02",
+    "name": "Snow 02",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/snow_02",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/snow_02/snow_02_diff_1k.jpg",
+        "md5": "fc54766c6b36ff298699115a619d440b",
+        "bytes": 325497
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/snow_02/snow_02_nor_gl_1k.jpg",
+        "md5": "f16b5701f9ad521cdd6af10c1d6d2b48",
+        "bytes": 1081858
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/snow_02/snow_02_rough_1k.jpg",
+        "md5": "1dbae0269e53dbf80d4fd1c4335f25a2",
+        "bytes": 146089
+      }
+    }
+  },
+  {
+    "asset": "brown_mud_02",
+    "name": "Brown Mud 02",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/brown_mud_02",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_02/brown_mud_02_diff_1k.jpg",
+        "md5": "c3842f023e11a08c8cf521c947ce08c8",
+        "bytes": 527741
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_02/brown_mud_02_nor_gl_1k.jpg",
+        "md5": "880720109b4fe95652137b2243e41ca4",
+        "bytes": 1397011
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_02/brown_mud_02_rough_1k.jpg",
+        "md5": "a9d397c45a366da1c62d78ca72340ab0",
+        "bytes": 422119
+      }
+    }
+  },
+  {
+    "asset": "blue_plaster_wall",
+    "name": "Blue Plaster Wall",
+    "authors": {
+      "Dimitrios Savva": "All"
+    },
+    "source": "https://polyhaven.com/a/blue_plaster_wall",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/blue_plaster_wall/blue_plaster_wall_diff_1k.jpg",
+        "md5": "88f91871d26d251b544530f6f121c39b",
+        "bytes": 593044
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/blue_plaster_wall/blue_plaster_wall_nor_gl_1k.jpg",
+        "md5": "bf9f6229257bdbc6be625b652a34f716",
+        "bytes": 698350
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/blue_plaster_wall/blue_plaster_wall_rough_1k.jpg",
+        "md5": "1cbba93fc849e201586ba652c42448dd",
+        "bytes": 317512
+      }
+    }
+  },
+  {
+    "asset": "brown_leather",
+    "name": "Brown Leather",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/brown_leather",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_albedo_1k.jpg",
+        "md5": "080b3bf1372766ff2c7ff121ed07b5e8",
+        "bytes": 503348
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_nor_gl_1k.jpg",
+        "md5": "b63ae0121a415c23d74eed0b07fc6065",
+        "bytes": 863280
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_rough_1k.jpg",
+        "md5": "0f3a0148c8d2d25fbeca67e64e79bca0",
+        "bytes": 686142
+      }
+    }
+  },
+  {
+    "asset": "rubber_tiles",
+    "name": "Rubber Tiles",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "source": "https://polyhaven.com/a/rubber_tiles",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rubber_tiles/rubber_tiles_diff_1k.jpg",
+        "md5": "2a2cc9b5e06639c7fb6cc26c263c00ff",
+        "bytes": 351085
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rubber_tiles/rubber_tiles_nor_gl_1k.jpg",
+        "md5": "4ed5fac176252df9dde7d0fbf8a9b76d",
+        "bytes": 477716
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rubber_tiles/rubber_tiles_rough_1k.jpg",
+        "md5": "d6b5978530f81121c2e9812c4732d8b0",
+        "bytes": 590975
+      }
+    }
+  },
+  {
+    "asset": "sand_03",
+    "name": "Sand 03",
+    "authors": {
+      "Charlotte Baglioni": "All"
+    },
+    "source": "https://polyhaven.com/a/sand_03",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/sand_03/sand_03_diff_1k.jpg",
+        "md5": "84bde2b8bea6351805f67a15682b36b2",
+        "bytes": 703132
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/sand_03/sand_03_nor_gl_1k.jpg",
+        "md5": "ad8d6ce28344b1d8f241cbd7796243dc",
+        "bytes": 884706
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/sand_03/sand_03_rough_1k.jpg",
+        "md5": "b09beddb9981ec5fb402c12f04751c15",
+        "bytes": 291218
+      }
+    }
+  },
+  {
+    "asset": "mossy_rock",
+    "name": "Mossy Rock",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/mossy_rock",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_diff_1k.jpg",
+        "md5": "a57fbbf55269eb64f8d40708fe3af26c",
+        "bytes": 1124438
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_nor_gl_1k.jpg",
+        "md5": "59370f9b3d068271c2bccfb414dc325b",
+        "bytes": 995727
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/mossy_rock/mossy_rock_rough_1k.jpg",
+        "md5": "7eadb38815ad2569104d827ad8ac1572",
+        "bytes": 780918
+      }
+    }
+  },
+  {
+    "asset": "terrazzo_tiles",
+    "name": "Terrazzo Tiles",
+    "authors": {
+      "Amal Kumar": "All"
+    },
+    "source": "https://polyhaven.com/a/terrazzo_tiles",
+    "license": "https://polyhaven.com/license",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terrazzo_tiles/terrazzo_tiles_diff_1k.jpg",
+        "md5": "12c27a579c2ed49de854b8a86e33647b",
+        "bytes": 1166107
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terrazzo_tiles/terrazzo_tiles_nor_gl_1k.jpg",
+        "md5": "a5f6d05f27db4151227535bdbc82c048",
+        "bytes": 77954
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terrazzo_tiles/terrazzo_tiles_rough_1k.jpg",
+        "md5": "e34bfd2f4fee1b2b9f310a71588aad17",
+        "bytes": 459022
+      }
+    }
   }
 ]

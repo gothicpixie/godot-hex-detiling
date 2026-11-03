@@ -1,0 +1,181 @@
+{
+  "caption": "Source albedo textures \u2014 not shader renders",
+  "patch_size": [
+    208,
+    208
+  ],
+  "resampling": "Lanczos",
+  "color_adjustment": "none",
+  "materials": [
+    {
+      "texture_index": 0,
+      "name": "Rocks Ground 04",
+      "source": "res://assets/rock_albedo.png",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "sha256": "6af69d3db4e62698d11191ae9bf8865fcbfd47280b2b8f2011f5e7d8957aad38"
+    },
+    {
+      "texture_index": 1,
+      "name": "Sandstone Cracks",
+      "source": "res://assets/sandstone_albedo.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "0f07c336151e84d1b8f653fb8d87a430c8a36f6c294bf7ebffe1c45a7ed63ea0"
+    },
+    {
+      "texture_index": 2,
+      "name": "Rock Boulder Cracked",
+      "source": "res://assets/boulder_albedo.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "d6e3cf7d1bd687f89280ee6a09f76abe19292c7764fb650907e39ef09ca10881"
+    },
+    {
+      "texture_index": 3,
+      "name": "Brick 4",
+      "source": "res://assets/gallery/brick_4_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "8b2492a0483446093038c5620dce1fa7c9f66c4824985030b3c95dba77ac0269"
+    },
+    {
+      "texture_index": 4,
+      "name": "Dark Wooden Planks",
+      "source": "res://assets/gallery/dark_wooden_planks_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "e8216baa6b2d701b5523fcb904d45570acf7b96d160ef815e96e2dbfa82bdd9b"
+    },
+    {
+      "texture_index": 5,
+      "name": "Grass Ground",
+      "source": "res://assets/gallery/grass_ground_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "a79cc5ed65af0f80261b39a383b64a8c5272c5144d724deb43dbc29f0e4cd19b"
+    },
+    {
+      "texture_index": 6,
+      "name": "Denim Fabric",
+      "source": "res://assets/gallery/denim_fabric_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "d6d0254e2c90768482b0be8cfdc16e18117acc92bad00d406fd4b9be24facdec"
+    },
+    {
+      "texture_index": 7,
+      "name": "Checkered Pavement Tiles",
+      "source": "res://assets/gallery/checkered_pavement_tiles_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "5d5215863853738771dc1ef2f96aa5bfb6740e2f98688c53d82f66f20d672588"
+    },
+    {
+      "texture_index": 8,
+      "name": "Cobblestone 01",
+      "source": "res://assets/gallery/cobblestone_01_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "aab330227974aadbc477b2022351112f5696fa7048d99dc776c2e6f23f4e0d2a"
+    },
+    {
+      "texture_index": 9,
+      "name": "Snow 02",
+      "source": "res://assets/gallery/snow_02_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "523a4e69c90b96d787dd69b897f29a2b3761a017024405c60aa630d1e8e9009a"
+    },
+    {
+      "texture_index": 10,
+      "name": "Brown Mud 02",
+      "source": "res://assets/gallery/brown_mud_02_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "058b6f12493305ec6b47cb5ea77f013c9e7e58216b34af3700a3d3d7d821732d"
+    },
+    {
+      "texture_index": 11,
+      "name": "Blue Plaster Wall",
+      "source": "res://assets/gallery/blue_plaster_wall_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "e578c59abefcc0c2a1f95af5b16b3c3ba561efa5f0bc10d825e3a787fde84924"
+    },
+    {
+      "texture_index": 12,
+      "name": "Brown Leather",
+      "source": "res://assets/gallery/brown_leather_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "7e9e1d6566d1fd91d4ceb4966c4820361e85d53a7a828b6bab3b2a093a876cd1"
+    },
+    {
+      "texture_index": 13,
+      "name": "Rubber Tiles",
+      "source": "res://assets/gallery/rubber_tiles_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "07c66caf17f14b1eae8a60bfd11a3b00a88af0101d51aab370609a2f13bb8c04"
+    },
+    {
+      "texture_index": 14,
+      "name": "Sand 03",
+      "source": "res://assets/gallery/sand_03_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "e72144f9d7b81bdb7bbdb34222b53431738dcef79346dd89412d2abd541e4d30"
+    },
+    {
+      "texture_index": 15,
+      "name": "Mossy Rock",
+      "source": "res://assets/gallery/mossy_rock_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "4dbf37f1b0465c9c8914213163923be159716f5b97fb6946437b6c5e143ef540"
+    },
+    {
+      "texture_index": 16,
+      "name": "Terrazzo Tiles",
+      "source": "res://assets/gallery/terrazzo_tiles_albedo.jpg",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "sha256": "462e3e719cda0472a33152523cf5ca2fc660e1c5869348be1609ba3dca12a2ef"
+    }
+  ]
+}

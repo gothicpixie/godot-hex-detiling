@@ -2,6 +2,25 @@ extends Node3D
 
 var detiled := true
 var toggle: Button
+const TEXTURE_NAMES := [
+	"Rocks Ground 04",
+	"Sandstone Cracks",
+	"Rock Boulder Cracked",
+	"Brick 4",
+	"Dark Wooden Planks",
+	"Grass Ground",
+	"Denim Fabric",
+	"Checkered Pavement Tiles",
+	"Cobblestone 01",
+	"Snow 02",
+	"Brown Mud 02",
+	"Blue Plaster Wall",
+	"Brown Leather",
+	"Rubber Tiles",
+	"Sand 03",
+	"Mossy Rock",
+	"Terrazzo Tiles",
+]
 const TEXTURE_SETS := [
 	["res://assets/rock_albedo.png", "res://assets/rock_normal.png", "res://assets/rock_roughness.png"],
 	["res://assets/sandstone_albedo.png", "res://assets/sandstone_normal.png", "res://assets/sandstone_roughness.png"],
@@ -12,6 +31,14 @@ const TEXTURE_SETS := [
 	["res://assets/gallery/denim_fabric_albedo.jpg", "res://assets/gallery/denim_fabric_normal.jpg", "res://assets/gallery/denim_fabric_roughness.jpg"],
 	["res://assets/gallery/checkered_pavement_tiles_albedo.jpg", "res://assets/gallery/checkered_pavement_tiles_normal.jpg", "res://assets/gallery/checkered_pavement_tiles_roughness.jpg"],
 	["res://assets/gallery/cobblestone_01_albedo.jpg", "res://assets/gallery/cobblestone_01_normal.jpg", "res://assets/gallery/cobblestone_01_roughness.jpg"],
+	["res://assets/gallery/snow_02_albedo.jpg", "res://assets/gallery/snow_02_normal.jpg", "res://assets/gallery/snow_02_roughness.jpg"],
+	["res://assets/gallery/brown_mud_02_albedo.jpg", "res://assets/gallery/brown_mud_02_normal.jpg", "res://assets/gallery/brown_mud_02_roughness.jpg"],
+	["res://assets/gallery/blue_plaster_wall_albedo.jpg", "res://assets/gallery/blue_plaster_wall_normal.jpg", "res://assets/gallery/blue_plaster_wall_roughness.jpg"],
+	["res://assets/gallery/brown_leather_albedo.jpg", "res://assets/gallery/brown_leather_normal.jpg", "res://assets/gallery/brown_leather_roughness.jpg"],
+	["res://assets/gallery/rubber_tiles_albedo.jpg", "res://assets/gallery/rubber_tiles_normal.jpg", "res://assets/gallery/rubber_tiles_roughness.jpg"],
+	["res://assets/gallery/sand_03_albedo.jpg", "res://assets/gallery/sand_03_normal.jpg", "res://assets/gallery/sand_03_roughness.jpg"],
+	["res://assets/gallery/mossy_rock_albedo.jpg", "res://assets/gallery/mossy_rock_normal.jpg", "res://assets/gallery/mossy_rock_roughness.jpg"],
+	["res://assets/gallery/terrazzo_tiles_albedo.jpg", "res://assets/gallery/terrazzo_tiles_normal.jpg", "res://assets/gallery/terrazzo_tiles_roughness.jpg"],
 ]
 
 func _ready() -> void:
@@ -60,15 +87,8 @@ func _ready() -> void:
 	toggle.pressed.connect(func(): set_detile(not detiled))
 	box.add_child(toggle)
 	var selector := OptionButton.new()
-	selector.add_item("Rocks Ground 04")
-	selector.add_item("Sandstone Cracks")
-	selector.add_item("Rock Boulder Cracked")
-	selector.add_item("Brick 4")
-	selector.add_item("Dark Wooden Planks")
-	selector.add_item("Grass Ground")
-	selector.add_item("Denim Fabric")
-	selector.add_item("Checkered Pavement Tiles")
-	selector.add_item("Cobblestone 01")
+	for texture_name in TEXTURE_NAMES:
+		selector.add_item(texture_name)
 	selector.item_selected.connect(set_texture_set)
 	box.add_child(selector)
 	var rotation_label := Label.new()
@@ -104,10 +124,20 @@ func _ready() -> void:
 	seed_input.value_changed.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("variation_seed", value))
 	seed_row.add_child(seed_input)
 	box.add_child(seed_row)
-	var paper_toggle := CheckButton.new()
-	paper_toggle.text = "Paper-inspired weighting"
-	paper_toggle.toggled.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("paper_blend", value))
-	box.add_child(paper_toggle)
+	var blend_selector := OptionButton.new()
+	blend_selector.add_item("Blend: shared weights")
+	blend_selector.add_item("Blend: paper-inspired")
+	blend_selector.add_item("Blend: coherent material (experimental)")
+	blend_selector.item_selected.connect(func(index):
+		var mat := $Surface.material_override as ShaderMaterial
+		mat.set_shader_parameter("paper_blend", index == 1)
+		mat.set_shader_parameter("coherent_blend", index == 2))
+	box.add_child(blend_selector)
+	var filter_toggle := CheckButton.new()
+	filter_toggle.text = "Relax distant blends (coherent mode)"
+	filter_toggle.button_pressed = true
+	filter_toggle.toggled.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("coherent_filter", value))
+	box.add_child(filter_toggle)
 	var roughness_toggle := CheckButton.new()
 	roughness_toggle.text = "Use roughness map"
 	roughness_toggle.toggled.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("use_roughness_map", value))
