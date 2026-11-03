@@ -1,0 +1,32 @@
+[
+  {
+    "seed": 0,
+    "actual_regions_with_core": 1328,
+    "alpha_bad_pixels": 0,
+    "protected_rgb_bad_pixels": 0,
+    "protected_pixels_checked": 6801920,
+    "between_brick_linear_rgb_variance_source": 0.005711426495419787,
+    "between_brick_linear_rgb_variance_atlas": 0.005998376564984408,
+    "palette_variance_ratio": 1.0502414011271504,
+    "between_brick_opponent_chroma_variance_ratio": 1.0762734041803874,
+    "median_relative_fine_detail_contrast_ratio": 1.0038205031652636,
+    "p05_relative_fine_detail_contrast_ratio": 0.9610591060656675,
+    "mean_core_luminance_ratio": 0.9886987211540088,
+    "definition": "region means across alpha255 cores; between-region RGB variance=sum channel population variances; fine detail=Gaussian sigma2 native-pixel highpass luminance RMS divided by region mean luminance, per-region median"
+  },
+  {
+    "seed": 7,
+    "actual_regions_with_core": 1328,
+    "alpha_bad_pixels": 0,
+    "protected_rgb_bad_pixels": 0,
+    "protected_pixels_checked": 6801920,
+    "between_brick_linear_rgb_variance_source": 0.005711426495419787,
+    "between_brick_linear_rgb_variance_atlas": 0.006007458514186966,
+    "palette_variance_ratio": 1.0518315378836756,
+    "between_brick_opponent_chroma_variance_ratio": 1.0756144521949185,
+    "median_relative_fine_detail_contrast_ratio": 1.003696428343906,
+    "p05_relative_fine_detail_contrast_ratio": 0.9636877094286787,
+    "mean_core_luminance_ratio": 0.9887649600644615,
+    "definition": "region means across alpha255 cores; between-region RGB variance=sum channel population variances; fine detail=Gaussian sigma2 native-pixel highpass luminance RMS divided by region mean luminance, per-region median"
+  }
+]

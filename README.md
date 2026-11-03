@@ -28,7 +28,7 @@ Brick 4 now offers a separate **Protect mortar** option after enabling Preserve 
 
 [Earlier unguarded brick, wood and paving comparisons](docs/structure/native-detail-crops.png).
 
-This local branch also contains a default-off [distant brick tone experiment](docs/distant_brick/README.md). It reduces selected periodic color energy but leaves obvious repeated patches and misses the overall repetition target; it is not part of the published addon.
+This local branch also contains a default-off [individual brick color experiment](docs/individual_brick/README.md), with native before/after comparisons. It reduces the measured repeating color pattern while retaining sharp mortar in the tested views, but uses a large atlas and retains repeated joint geometry. The [earlier macro-tone experiment](docs/distant_brick/README.md) remains available for comparison. Neither experiment is part of the published addon.
 
 ## Try the demo
 

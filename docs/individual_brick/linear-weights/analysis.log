@@ -1,0 +1,290 @@
+{
+  "comparisons": [
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "previous",
+      "chroma_periodic_energy_ratio": 0.6968884525427625,
+      "luma_periodic_energy_ratio": 0.3130803092172172,
+      "chroma_correlation_ratio": 1.0492994412992545,
+      "luma_correlation_ratio": 1.0186322121634637,
+      "mean_luminance_ratio": 0.9443975479857258,
+      "variance_ratio": 0.9069106745120294,
+      "between_brick_rgb_palette_variance_ratio": 0.986839014787633,
+      "between_brick_chromatic_palette_variance_ratio": 0.9597136526756842
+    },
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "direct",
+      "chroma_periodic_energy_ratio": 0.5377463563058135,
+      "luma_periodic_energy_ratio": 0.7678939438025206,
+      "chroma_correlation_ratio": 0.3340556493748941,
+      "luma_correlation_ratio": 0.4970829347564256,
+      "mean_luminance_ratio": 0.9873102937664212,
+      "variance_ratio": 1.0639349759500336,
+      "between_brick_rgb_palette_variance_ratio": 2.2811298924359704,
+      "between_brick_chromatic_palette_variance_ratio": 2.346281634805239
+    },
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "individual",
+      "chroma_periodic_energy_ratio": 0.5006375452504458,
+      "luma_periodic_energy_ratio": 0.7855472177559183,
+      "chroma_correlation_ratio": 0.5785508481388453,
+      "luma_correlation_ratio": 0.7324771939839118,
+      "mean_luminance_ratio": 0.9832282986789976,
+      "variance_ratio": 1.0279095274884493,
+      "between_brick_rgb_palette_variance_ratio": 1.232201273196122,
+      "between_brick_chromatic_palette_variance_ratio": 1.2506698058641879
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "previous",
+      "chroma_periodic_energy_ratio": 0.6900591263491941,
+      "luma_periodic_energy_ratio": 0.3070473779233312,
+      "chroma_correlation_ratio": 0.9615061406325818,
+      "luma_correlation_ratio": 0.9098747959556369,
+      "mean_luminance_ratio": 0.9084999120045365,
+      "variance_ratio": 0.836759004405712,
+      "between_brick_rgb_palette_variance_ratio": 0.9090639713651332,
+      "between_brick_chromatic_palette_variance_ratio": 0.8864025762024076
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "direct",
+      "chroma_periodic_energy_ratio": 0.3972237082448785,
+      "luma_periodic_energy_ratio": 0.5263296659934431,
+      "chroma_correlation_ratio": 0.3108405116593476,
+      "luma_correlation_ratio": 0.40135360519309593,
+      "mean_luminance_ratio": 0.9873484799955767,
+      "variance_ratio": 1.0641137376298908,
+      "between_brick_rgb_palette_variance_ratio": 2.429142023861885,
+      "between_brick_chromatic_palette_variance_ratio": 2.4791708764230926
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "individual",
+      "chroma_periodic_energy_ratio": 0.4138858992680041,
+      "luma_periodic_energy_ratio": 0.48129625187129116,
+      "chroma_correlation_ratio": 0.5323578125574217,
+      "luma_correlation_ratio": 0.6058428829817901,
+      "mean_luminance_ratio": 0.9847999920664018,
+      "variance_ratio": 1.0244338950082525,
+      "between_brick_rgb_palette_variance_ratio": 1.2713989482150838,
+      "between_brick_chromatic_palette_variance_ratio": 1.3041260917861
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "previous",
+      "chroma_periodic_energy_ratio": 0.7070156774772908,
+      "luma_periodic_energy_ratio": 0.3463739032065869,
+      "chroma_correlation_ratio": 0.891145128419578,
+      "luma_correlation_ratio": 0.8473348360230226,
+      "mean_luminance_ratio": 0.9684325627000766,
+      "variance_ratio": 1.0717420057754676,
+      "between_brick_rgb_palette_variance_ratio": 1.0523699964596531,
+      "between_brick_chromatic_palette_variance_ratio": 1.0276181270286928
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "direct",
+      "chroma_periodic_energy_ratio": 0.22184517538787873,
+      "luma_periodic_energy_ratio": 0.3892267840387151,
+      "chroma_correlation_ratio": 0.2895697478279258,
+      "luma_correlation_ratio": 0.42705695915169883,
+      "mean_luminance_ratio": 0.9821441583102233,
+      "variance_ratio": 0.9308183381531541,
+      "between_brick_rgb_palette_variance_ratio": 0.8741486054507233,
+      "between_brick_chromatic_palette_variance_ratio": 0.933493123711886
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "individual",
+      "chroma_periodic_energy_ratio": 0.2097856068470641,
+      "luma_periodic_energy_ratio": 0.38769001851938006,
+      "chroma_correlation_ratio": 0.4886963119269092,
+      "luma_correlation_ratio": 0.6289748940719394,
+      "mean_luminance_ratio": 0.9804808869393382,
+      "variance_ratio": 0.8148386790755722,
+      "between_brick_rgb_palette_variance_ratio": 0.4713303714826521,
+      "between_brick_chromatic_palette_variance_ratio": 0.505085797272107
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "previous",
+      "chroma_periodic_energy_ratio": 0.7022630261215926,
+      "luma_periodic_energy_ratio": 0.34379978603619593,
+      "chroma_correlation_ratio": 0.8980235702806378,
+      "luma_correlation_ratio": 0.860857274657069,
+      "mean_luminance_ratio": 0.9595520838791385,
+      "variance_ratio": 1.0722364978733603,
+      "between_brick_rgb_palette_variance_ratio": 1.0519536029236567,
+      "between_brick_chromatic_palette_variance_ratio": 1.0202732913166253
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "direct",
+      "chroma_periodic_energy_ratio": 0.18812503335351882,
+      "luma_periodic_energy_ratio": 0.2831850787953867,
+      "chroma_correlation_ratio": 0.25623994980645387,
+      "luma_correlation_ratio": 0.3350799190783245,
+      "mean_luminance_ratio": 0.9821756397316128,
+      "variance_ratio": 0.9235606206821803,
+      "between_brick_rgb_palette_variance_ratio": 0.8703092386950614,
+      "between_brick_chromatic_palette_variance_ratio": 0.9208842458099578
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "individual",
+      "chroma_periodic_energy_ratio": 0.1917283111693784,
+      "luma_periodic_energy_ratio": 0.29068036298473077,
+      "chroma_correlation_ratio": 0.4643762117493345,
+      "luma_correlation_ratio": 0.5644599511893449,
+      "mean_luminance_ratio": 0.9798777142203703,
+      "variance_ratio": 0.811775203304294,
+      "between_brick_rgb_palette_variance_ratio": 0.48214757255475066,
+      "between_brick_chromatic_palette_variance_ratio": 0.5120179781711893
+    }
+  ],
+  "channels": [
+    {
+      "view": "close",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 367300,
+      "protected_max": 0.007843137254901933,
+      "all_pixel_max": 0.2901960784313726,
+      "all_pixel_mean": 0.008804900258714596
+    },
+    {
+      "view": "close",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 367300,
+      "protected_max": 0.019607843137254832,
+      "all_pixel_max": 0.7843137254901961,
+      "all_pixel_mean": 0.03696741387527233
+    },
+    {
+      "view": "close",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 367300,
+      "protected_max": 0.0039215686274510775,
+      "all_pixel_max": 0.2745098039215686,
+      "all_pixel_mean": 0.009290253948801742
+    },
+    {
+      "view": "close",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 367300,
+      "protected_max": 0.01176470588235301,
+      "all_pixel_max": 0.7725490196078431,
+      "all_pixel_mean": 0.03871873723447712
+    },
+    {
+      "view": "grazing",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 186810,
+      "protected_max": 0.007843137254901988,
+      "all_pixel_max": 0.26274509803921564,
+      "all_pixel_mean": 0.002841857865831518
+    },
+    {
+      "view": "grazing",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 186810,
+      "protected_max": 0.011764705882352955,
+      "all_pixel_max": 0.7372549019607844,
+      "all_pixel_mean": 0.01399922981345316
+    },
+    {
+      "view": "grazing",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 186810,
+      "protected_max": 0.0039215686274510775,
+      "all_pixel_max": 0.26666666666666666,
+      "all_pixel_mean": 0.0029275201978939723
+    },
+    {
+      "view": "grazing",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 186810,
+      "protected_max": 0.007843137254902044,
+      "all_pixel_max": 0.7372549019607844,
+      "all_pixel_mean": 0.01382806117238562
+    },
+    {
+      "view": "distant",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    }
+  ],
+  "edges": [
+    {
+      "seed": 0,
+      "edge_neighborhood_count": 243,
+      "median_peak_shift_px": 0.0,
+      "p95_peak_shift_px": 17.0,
+      "median_edge_profile_width_proxy_ratio": 1.017154809511974,
+      "median_local_contrast_ratio": 1.0044442856214089,
+      "p05_local_contrast_ratio": 0.7334881596348943
+    },
+    {
+      "seed": 7,
+      "edge_neighborhood_count": 243,
+      "median_peak_shift_px": 0.0,
+      "p95_peak_shift_px": 17.0,
+      "median_edge_profile_width_proxy_ratio": 0.9993854105964439,
+      "median_local_contrast_ratio": 1.0171785926305208,
+      "p05_local_contrast_ratio": 0.8011781559751632
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "matched_camera_poses": 64,
+  "maximum_camera_position_difference": 0.0,
+  "trajectories": [
+    "approach",
+    "pan"
+  ],
+  "seed_cases": "atlas0/hash0 and atlas7/hash7",
+  "moving_frame_difference_is_not_used_as_flicker": true
+}

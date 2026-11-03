@@ -1,0 +1,74 @@
+[
+  {
+    "seed": 0,
+    "x_mask_crossing": 760,
+    "y": 372,
+    "baseline_peak_x": 745,
+    "candidate_peak_x": 775,
+    "peak_shift_px": 30,
+    "contrast_ratio": 0.8043284457417457,
+    "kind": "peak-shift",
+    "image": "edge-tail-peak-shift-seed0.png",
+    "crop": [
+      560,
+      272,
+      960,
+      472
+    ],
+    "annotation": "yellow=33px profile; cyan=mask0.5 crossing; magenta=strongest luminance gradient (proxy, not physical joint)"
+  },
+  {
+    "seed": 0,
+    "x_mask_crossing": 73,
+    "y": 349,
+    "baseline_peak_x": 57,
+    "candidate_peak_x": 57,
+    "peak_shift_px": 0,
+    "contrast_ratio": 0.47638418702199026,
+    "kind": "contrast-loss",
+    "image": "edge-tail-contrast-loss-seed0.png",
+    "crop": [
+      0,
+      249,
+      400,
+      449
+    ],
+    "annotation": "yellow=33px profile; cyan=mask0.5 crossing; magenta=strongest luminance gradient (proxy, not physical joint)"
+  },
+  {
+    "seed": 7,
+    "x_mask_crossing": 1089,
+    "y": 372,
+    "baseline_peak_x": 1078,
+    "candidate_peak_x": 1104,
+    "peak_shift_px": 26,
+    "contrast_ratio": 0.4715087621235315,
+    "kind": "peak-shift",
+    "image": "edge-tail-peak-shift-seed7.png",
+    "crop": [
+      880,
+      272,
+      1280,
+      472
+    ],
+    "annotation": "yellow=33px profile; cyan=mask0.5 crossing; magenta=strongest luminance gradient (proxy, not physical joint)"
+  },
+  {
+    "seed": 7,
+    "x_mask_crossing": 897,
+    "y": 372,
+    "baseline_peak_x": 906,
+    "candidate_peak_x": 891,
+    "peak_shift_px": 15,
+    "contrast_ratio": 0.4595519215383728,
+    "kind": "contrast-loss",
+    "image": "edge-tail-contrast-loss-seed7.png",
+    "crop": [
+      697,
+      272,
+      1097,
+      472
+    ],
+    "annotation": "yellow=33px profile; cyan=mask0.5 crossing; magenta=strongest luminance gradient (proxy, not physical joint)"
+  }
+]

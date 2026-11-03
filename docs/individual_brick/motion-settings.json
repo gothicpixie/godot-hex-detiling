@@ -1,0 +1,1556 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"gpu": "Apple M5",
+	"records": [
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 0.0,
+			"id": "approach-seed0-baseline-00",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.5133843421936
+			],
+			"frame": 1.0,
+			"id": "approach-seed0-baseline-01",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				12.9420919418335
+			],
+			"frame": 2.0,
+			"id": "approach-seed0-baseline-02",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				33.7755737304688
+			],
+			"frame": 3.0,
+			"id": "approach-seed0-baseline-03",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				76.9289474487305
+			],
+			"frame": 4.0,
+			"id": "approach-seed0-baseline-04",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				147.516876220703
+			],
+			"frame": 5.0,
+			"id": "approach-seed0-baseline-05",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				231.473266601562
+			],
+			"frame": 6.0,
+			"id": "approach-seed0-baseline-06",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				291.417724609375
+			],
+			"frame": 7.0,
+			"id": "approach-seed0-baseline-07",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				291.417724609375
+			],
+			"frame": 8.0,
+			"id": "approach-seed0-baseline-08",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				231.473266601562
+			],
+			"frame": 9.0,
+			"id": "approach-seed0-baseline-09",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				147.516876220703
+			],
+			"frame": 10.0,
+			"id": "approach-seed0-baseline-10",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				76.9289474487305
+			],
+			"frame": 11.0,
+			"id": "approach-seed0-baseline-11",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				33.7755737304688
+			],
+			"frame": 12.0,
+			"id": "approach-seed0-baseline-12",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				12.9420919418335
+			],
+			"frame": 13.0,
+			"id": "approach-seed0-baseline-13",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.5133843421936
+			],
+			"frame": 14.0,
+			"id": "approach-seed0-baseline-14",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 15.0,
+			"id": "approach-seed0-baseline-15",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 0.0,
+			"id": "approach-seed7-baseline-00",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.5133843421936
+			],
+			"frame": 1.0,
+			"id": "approach-seed7-baseline-01",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				12.9420919418335
+			],
+			"frame": 2.0,
+			"id": "approach-seed7-baseline-02",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				33.7755737304688
+			],
+			"frame": 3.0,
+			"id": "approach-seed7-baseline-03",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				76.9289474487305
+			],
+			"frame": 4.0,
+			"id": "approach-seed7-baseline-04",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				147.516876220703
+			],
+			"frame": 5.0,
+			"id": "approach-seed7-baseline-05",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				231.473266601562
+			],
+			"frame": 6.0,
+			"id": "approach-seed7-baseline-06",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				291.417724609375
+			],
+			"frame": 7.0,
+			"id": "approach-seed7-baseline-07",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				291.417724609375
+			],
+			"frame": 8.0,
+			"id": "approach-seed7-baseline-08",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				231.473266601562
+			],
+			"frame": 9.0,
+			"id": "approach-seed7-baseline-09",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				147.516876220703
+			],
+			"frame": 10.0,
+			"id": "approach-seed7-baseline-10",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				76.9289474487305
+			],
+			"frame": 11.0,
+			"id": "approach-seed7-baseline-11",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				33.7755737304688
+			],
+			"frame": 12.0,
+			"id": "approach-seed7-baseline-12",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				12.9420919418335
+			],
+			"frame": 13.0,
+			"id": "approach-seed7-baseline-13",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.5133843421936
+			],
+			"frame": 14.0,
+			"id": "approach-seed7-baseline-14",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 15.0,
+			"id": "approach-seed7-baseline-15",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 0.0,
+			"id": "pan-seed0-baseline-00",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 1.0,
+			"id": "pan-seed0-baseline-01",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 2.0,
+			"id": "pan-seed0-baseline-02",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 3.0,
+			"id": "pan-seed0-baseline-03",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 4.0,
+			"id": "pan-seed0-baseline-04",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 5.0,
+			"id": "pan-seed0-baseline-05",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 6.0,
+			"id": "pan-seed0-baseline-06",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 7.0,
+			"id": "pan-seed0-baseline-07",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 8.0,
+			"id": "pan-seed0-baseline-08",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 9.0,
+			"id": "pan-seed0-baseline-09",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 10.0,
+			"id": "pan-seed0-baseline-10",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 11.0,
+			"id": "pan-seed0-baseline-11",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 12.0,
+			"id": "pan-seed0-baseline-12",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 13.0,
+			"id": "pan-seed0-baseline-13",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 14.0,
+			"id": "pan-seed0-baseline-14",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 15.0,
+			"id": "pan-seed0-baseline-15",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 0.0,
+			"id": "pan-seed7-baseline-00",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 1.0,
+			"id": "pan-seed7-baseline-01",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 2.0,
+			"id": "pan-seed7-baseline-02",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 3.0,
+			"id": "pan-seed7-baseline-03",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 4.0,
+			"id": "pan-seed7-baseline-04",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 5.0,
+			"id": "pan-seed7-baseline-05",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 6.0,
+			"id": "pan-seed7-baseline-06",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 7.0,
+			"id": "pan-seed7-baseline-07",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 8.0,
+			"id": "pan-seed7-baseline-08",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 9.0,
+			"id": "pan-seed7-baseline-09",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 10.0,
+			"id": "pan-seed7-baseline-10",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 11.0,
+			"id": "pan-seed7-baseline-11",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 12.0,
+			"id": "pan-seed7-baseline-12",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 13.0,
+			"id": "pan-seed7-baseline-13",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 14.0,
+			"id": "pan-seed7-baseline-14",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 15.0,
+			"id": "pan-seed7-baseline-15",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 0,
+			"id": "approach-seed0-individual-00",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.5133843421936
+			],
+			"frame": 1,
+			"id": "approach-seed0-individual-01",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				12.9420919418335
+			],
+			"frame": 2,
+			"id": "approach-seed0-individual-02",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				33.7755737304688
+			],
+			"frame": 3,
+			"id": "approach-seed0-individual-03",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				76.9289474487305
+			],
+			"frame": 4,
+			"id": "approach-seed0-individual-04",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				147.516876220703
+			],
+			"frame": 5,
+			"id": "approach-seed0-individual-05",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				231.473266601562
+			],
+			"frame": 6,
+			"id": "approach-seed0-individual-06",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				291.417724609375
+			],
+			"frame": 7,
+			"id": "approach-seed0-individual-07",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				291.417724609375
+			],
+			"frame": 8,
+			"id": "approach-seed0-individual-08",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				231.473266601562
+			],
+			"frame": 9,
+			"id": "approach-seed0-individual-09",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				147.516876220703
+			],
+			"frame": 10,
+			"id": "approach-seed0-individual-10",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				76.9289474487305
+			],
+			"frame": 11,
+			"id": "approach-seed0-individual-11",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				33.7755737304688
+			],
+			"frame": 12,
+			"id": "approach-seed0-individual-12",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				12.9420919418335
+			],
+			"frame": 13,
+			"id": "approach-seed0-individual-13",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.5133843421936
+			],
+			"frame": 14,
+			"id": "approach-seed0-individual-14",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 15,
+			"id": "approach-seed0-individual-15",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 0,
+			"id": "approach-seed7-individual-00",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.5133843421936
+			],
+			"frame": 1,
+			"id": "approach-seed7-individual-01",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				12.9420919418335
+			],
+			"frame": 2,
+			"id": "approach-seed7-individual-02",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				33.7755737304688
+			],
+			"frame": 3,
+			"id": "approach-seed7-individual-03",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				76.9289474487305
+			],
+			"frame": 4,
+			"id": "approach-seed7-individual-04",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				147.516876220703
+			],
+			"frame": 5,
+			"id": "approach-seed7-individual-05",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				231.473266601562
+			],
+			"frame": 6,
+			"id": "approach-seed7-individual-06",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				291.417724609375
+			],
+			"frame": 7,
+			"id": "approach-seed7-individual-07",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				291.417724609375
+			],
+			"frame": 8,
+			"id": "approach-seed7-individual-08",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				231.473266601562
+			],
+			"frame": 9,
+			"id": "approach-seed7-individual-09",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				147.516876220703
+			],
+			"frame": 10,
+			"id": "approach-seed7-individual-10",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				76.9289474487305
+			],
+			"frame": 11,
+			"id": "approach-seed7-individual-11",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				33.7755737304688
+			],
+			"frame": 12,
+			"id": "approach-seed7-individual-12",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				12.9420919418335
+			],
+			"frame": 13,
+			"id": "approach-seed7-individual-13",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.5133843421936
+			],
+			"frame": 14,
+			"id": "approach-seed7-individual-14",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 15,
+			"id": "approach-seed7-individual-15",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 0,
+			"id": "pan-seed0-individual-00",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 1,
+			"id": "pan-seed0-individual-01",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 2,
+			"id": "pan-seed0-individual-02",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 3,
+			"id": "pan-seed0-individual-03",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 4,
+			"id": "pan-seed0-individual-04",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 5,
+			"id": "pan-seed0-individual-05",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 6,
+			"id": "pan-seed0-individual-06",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 7,
+			"id": "pan-seed0-individual-07",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 8,
+			"id": "pan-seed0-individual-08",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 9,
+			"id": "pan-seed0-individual-09",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 10,
+			"id": "pan-seed0-individual-10",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 11,
+			"id": "pan-seed0-individual-11",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 12,
+			"id": "pan-seed0-individual-12",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 13,
+			"id": "pan-seed0-individual-13",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 14,
+			"id": "pan-seed0-individual-14",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 15,
+			"id": "pan-seed0-individual-15",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 0,
+			"id": "pan-seed7-individual-00",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 1,
+			"id": "pan-seed7-individual-01",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 2,
+			"id": "pan-seed7-individual-02",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 3,
+			"id": "pan-seed7-individual-03",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 4,
+			"id": "pan-seed7-individual-04",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 5,
+			"id": "pan-seed7-individual-05",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 6,
+			"id": "pan-seed7-individual-06",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				-0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 7,
+			"id": "pan-seed7-individual-07",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 8,
+			"id": "pan-seed7-individual-08",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 9,
+			"id": "pan-seed7-individual-09",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 10,
+			"id": "pan-seed7-individual-10",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 11,
+			"id": "pan-seed7-individual-11",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 12,
+			"id": "pan-seed7-individual-12",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 13,
+			"id": "pan-seed7-individual-13",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 14,
+			"id": "pan-seed7-individual-14",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "individual",
+			"camera": [
+				8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 15,
+			"id": "pan-seed7-individual-15",
+			"seed": 7.0,
+			"trajectory": "pan"
+		}
+	],
+	"resolution": [
+		640,
+		360
+	]
+}

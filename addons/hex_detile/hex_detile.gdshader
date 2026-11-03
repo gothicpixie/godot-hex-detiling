@@ -24,6 +24,11 @@ uniform bool structure_guard_enabled = false;
 uniform bool structure_guard_in_albedo_alpha = false;
 // Local experiment: a filtered, world-anchored scalar color field; off by default.
 uniform bool brick_macro_enabled = false;
+// Local finite-atlas experiment: aligned original source PBR, independently recolored bricks.
+uniform bool brick_individual_enabled = false;
+// Direct atlas remains a test ablation; aligned integer shifts keep geometry phase.
+uniform bool brick_individual_stochastic = true;
+uniform sampler2D brick_individual_map : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform float brick_macro_strength : hint_range(0.0, 1.0, 0.01) = 0.18;
 uniform sampler2D structure_guard_map : hint_default_black, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform vec2 structure_period = vec2(1.0);
@@ -273,14 +278,91 @@ float brick_macro_gain(vec3 p, vec3 dx, vec3 dy) {
 	return exp2(brick_macro_strength * field / 3.0);
 }
 
+// Full-resolution atlas spans four source repeats. Every integer SOURCE-tile
+// offset keeps mortar and fine-detail geometry at the same phase. Only palettes vary.
+float brick_individual_detail(vec2 dx, vec2 dy) {
+	// Triangle grid uses st/2; start fading only as individual bricks become unresolved.
+	float footprint = max(length(dx), length(dy)) * sqrt(3.0);
+	return 1.0 - smoothstep(0.125, 0.5, footprint);
+}
+vec3 brick_individual_color(vec2 uv, vec2 dx, vec2 dy, vec3 atlas_mean) {
+	if (!brick_individual_stochastic) {
+		return textureGrad(brick_individual_map, uv / 4.0, dx / 4.0, dy / 4.0).rgb;
+	}
+	float detail = brick_individual_detail(dx, dy);
+	if (detail == 0.0) {
+		return atlas_mean;
+	}
+	float w1, w2, w3;
+	ivec2 v1, v2, v3;
+	detile_triangle_grid(uv / 2.0, w1, w2, w3, v1, v2, v3);
+	vec3 W = vec3(w1, w2, w3);
+	W *= W;
+	W /= max(W.x + W.y + W.z, 1e-20);
+	vec2 o1 = floor(detile_hash2(vec2(v1) + vec2(83.71, 27.13)) * 4.0);
+	vec2 o2 = floor(detile_hash2(vec2(v2) + vec2(83.71, 27.13)) * 4.0);
+	vec2 o3 = floor(detile_hash2(vec2(v3) + vec2(83.71, 27.13)) * 4.0);
+	vec4 c1 = textureGrad(brick_individual_map, (uv + o1) / 4.0, dx / 4.0, dy / 4.0);
+	vec4 c2 = textureGrad(brick_individual_map, (uv + o2) / 4.0, dx / 4.0, dy / 4.0);
+	vec4 c3 = textureGrad(brick_individual_map, (uv + o3) / 4.0, dx / 4.0, dy / 4.0);
+	vec3 color = c1.rgb * W.x + c2.rgb * W.y + c3.rgb * W.z;
+	// All palette variants preserve native protected RGB. Select one to avoid
+	// rounding their identical colors; never let this bypass the coarse fade.
+	if (c1.a == 0.0) {
+		color = c1.rgb;
+	}
+	if (detail < 1.0) {
+		color = mix(atlas_mean, color, detail);
+	}
+	return color;
+}
+void brick_individual_sample(vec2 uv, vec2 dx, vec2 dy, vec3 atlas_mean,
+		out vec3 color, out vec3 normal, out float material_roughness) {
+	color = brick_individual_color(uv, dx, dy, atlas_mean);
+	vec2 slope = paper_normal_slope(textureGrad(normal_map, uv, dx, dy).rgb,
+		mat2(vec2(1.0, 0.0), vec2(0.0, 1.0)));
+	normal = normalize(vec3(slope, 1.0));
+	material_roughness = roughness;
+	if (use_roughness_map) {
+		material_roughness = textureGrad(roughness_map, uv, dx, dy).r;
+	}
+}
+void brick_individual_triplanar_material(vec3 p, vec3 n, vec3 weights,
+		out vec3 color, out vec3 perturb, out float material_roughness) {
+	float sx = axis_sign(n.x); float sy = axis_sign(n.y); float sz = axis_sign(n.z);
+	vec2 x = vec2(sx * p.z, -p.y) / texture_scale_m;
+	vec2 y = vec2(-sy * p.x, p.z) / texture_scale_m;
+	vec2 z = vec2(sz * p.x, p.y) / texture_scale_m;
+	vec2 dx_x = dFdx(x); vec2 dy_x = dFdy(x);
+	vec2 dx_y = dFdx(y); vec2 dy_y = dFdy(y);
+	vec2 dx_z = dFdx(z); vec2 dy_z = dFdy(z);
+	// One shared last-mip mean read, only when any projection needs the coarse fade.
+	vec3 atlas_mean = vec3(0.0);
+	if (brick_individual_stochastic && (brick_individual_detail(dx_x, dy_x) < 1.0
+			|| brick_individual_detail(dx_y, dy_y) < 1.0 || brick_individual_detail(dx_z, dy_z) < 1.0)) {
+		atlas_mean = textureLod(brick_individual_map, vec2(0.5), 16.0).rgb;
+	}
+	vec3 cx, cy, cz, nx, ny, nz;
+	float rx, ry, rz;
+	brick_individual_sample(x, dx_x, dy_x, atlas_mean, cx, nx, rx);
+	brick_individual_sample(y, dx_y, dy_y, atlas_mean, cy, ny, ry);
+	brick_individual_sample(z, dx_z, dy_z, atlas_mean, cz, nz, rz);
+	color = cx * weights.x + cy * weights.y + cz * weights.z;
+	perturb = vec3(0.0, -nx.y, sx * nx.x) * weights.x
+		+ vec3(-sy * ny.x, 0.0, ny.y) * weights.y
+		+ vec3(sz * nz.x, nz.y, 0.0) * weights.z;
+	material_roughness = dot(vec3(rx, ry, rz), weights);
+}
+
 void vertex() {
  world_position = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
  geometric_world_normal = normalize(MODEL_NORMAL_MATRIX * NORMAL);
 }
 void fragment() {
+ bool individual_active = brick_individual_enabled && detile_enabled && structure_enabled && structure_guard_enabled;
  // Compute derivatives before any data-dependent return inside material sampling.
  vec3 macro_dx = vec3(0.0); vec3 macro_dy = vec3(0.0);
- if (brick_macro_enabled && brick_macro_strength > 0.0) {
+ if (brick_macro_enabled && !individual_active && brick_macro_strength > 0.0) {
   macro_dx = dFdx(world_position); macro_dy = dFdy(world_position);
  }
  vec3 n = normalize(geometric_world_normal);
@@ -288,7 +370,9 @@ void fragment() {
  weights /= max(weights.x + weights.y + weights.z, 0.0001);
  vec3 perturb;
  float coherent_roughness = roughness;
- if (detile_enabled && (coherent_blend || (structure_enabled && structure_guard_enabled))) {
+ if (individual_active) {
+  brick_individual_triplanar_material(world_position, n, weights, ALBEDO, perturb, coherent_roughness);
+ } else if (detile_enabled && (coherent_blend || (structure_enabled && structure_guard_enabled))) {
   coherent_triplanar_material(world_position, texture_scale_m, n, weights, ALBEDO, perturb, coherent_roughness);
  } else if (detile_enabled) {
   ALBEDO = detile_triplanar_color(albedo_map, world_position, texture_scale_m, n, weights);
@@ -297,7 +381,7 @@ void fragment() {
   ALBEDO = triplanar_sample(albedo_map, world_position, texture_scale_m, n, weights).rgb;
   perturb = triplanar_normal_perturb(normal_map, world_position, texture_scale_m, n, weights);
  }
- if (brick_macro_enabled && brick_macro_strength > 0.0) {
+ if (brick_macro_enabled && !individual_active && brick_macro_strength > 0.0) {
   ALBEDO *= brick_macro_gain(world_position, macro_dx, macro_dy);
  }
  perturb *= normal_strength;

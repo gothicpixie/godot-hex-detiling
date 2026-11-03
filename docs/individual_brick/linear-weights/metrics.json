@@ -1,0 +1,1429 @@
+{
+  "method": "linear luminance and R-G/B-G; Gaussian sigma=sourceperiod/16 suppresses brick pitch; exact known source and4xatlas lags; raw Fourier source harmonics1..6; no dropped cases",
+  "records": [
+    {
+      "arm": "baseline",
+      "id": "ortho-7.5-seed0-baseline",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 0.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.1945165641108555,
+      "linear_luminance_std": 0.07246490780643813,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.8361848508939491,
+            0.8111784500638868
+          ],
+          "source_repeat_correlation_mean": 0.823681650478918,
+          "atlas_repeat_correlation_xy": [
+            0.8547394057821096,
+            null
+          ],
+          "source_periodic_energy": 7.462151607843845e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005251162863395579
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.7697523343878391,
+            0.7079517355798639
+          ],
+          "source_repeat_correlation_mean": 0.7388520349838514,
+          "atlas_repeat_correlation_xy": [
+            0.7758818091338201,
+            null
+          ],
+          "source_periodic_energy": 0.00010261375456887006,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005447614067288103
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.8352124667810571,
+            0.7829799285041584
+          ],
+          "source_repeat_correlation_mean": 0.8090961976426078,
+          "atlas_repeat_correlation_xy": [
+            0.8581824375288278,
+            null
+          ],
+          "source_periodic_energy": 2.7263567737644382e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0011695295033146312
+        }
+      },
+      "chroma_correlation_mean": 0.7739741163132297,
+      "chroma_periodic_energy": 0.00012987732230651443,
+      "mean_normalized_chroma_periodic_energy": 0.003432575882289636,
+      "mean_normalized_luma_periodic_energy": 0.0019721997023177647,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 1414,
+        "between_brick_linear_rgb_variance": 0.002564979109282367,
+        "between_brick_opponent_chroma_variance": 0.0014334475037916026,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "previous",
+      "id": "ortho-7.5-seed0-previous",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 0.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.18370096618890017,
+      "linear_luminance_std": 0.06900967797645924,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.8254494159929191,
+            0.852607907498667
+          ],
+          "source_repeat_correlation_mean": 0.839028661745793,
+          "atlas_repeat_correlation_xy": [
+            0.06681863425845555,
+            null
+          ],
+          "source_periodic_energy": 2.0836728071451207e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.004762335654414604
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.7985372625793393,
+            0.8202721384726668
+          ],
+          "source_repeat_correlation_mean": 0.809404700526003,
+          "atlas_repeat_correlation_xy": [
+            0.46937958496747434,
+            null
+          ],
+          "source_periodic_energy": 6.862262110071952e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.004907809090685947
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.8218338400194078,
+            0.8078791902388104
+          ],
+          "source_repeat_correlation_mean": 0.8148565151291092,
+          "atlas_repeat_correlation_xy": [
+            0.5556098003006097,
+            null
+          ],
+          "source_periodic_energy": 1.2102052204945542e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0010533519973710073
+        }
+      },
+      "chroma_correlation_mean": 0.8121306078275561,
+      "chroma_periodic_energy": 8.072467330566506e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0023921224948444324,
+      "mean_normalized_luma_periodic_energy": 0.0006174568926397495,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 1414,
+        "between_brick_linear_rgb_variance": 0.0025312214571550713,
+        "between_brick_opponent_chroma_variance": 0.0013756991397826806,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "direct",
+      "id": "ortho-7.5-seed0-direct",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 0.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.19204820605472364,
+      "linear_luminance_std": 0.07474554056782574,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.47275176584855766,
+            0.3461244184015962
+          ],
+          "source_repeat_correlation_mean": 0.4094380921250769,
+          "atlas_repeat_correlation_xy": [
+            0.9885329032412362,
+            null
+          ],
+          "source_periodic_energy": 5.5856361316114345e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005586895834776485
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.1733441962490191,
+            -0.017045368635938134
+          ],
+          "source_repeat_correlation_mean": 0.07814941380654047,
+          "atlas_repeat_correlation_xy": [
+            0.992396645079218,
+            null
+          ],
+          "source_periodic_energy": 5.398953093123728e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.006522537644393655
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.5044083967708644,
+            0.3734944797135577
+          ],
+          "source_repeat_correlation_mean": 0.43895143824221106,
+          "atlas_repeat_correlation_xy": [
+            0.9914470031149714,
+            null
+          ],
+          "source_periodic_energy": 1.4090247327934626e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0012261903426500481
+        }
+      },
+      "chroma_correlation_mean": 0.2585504260243758,
+      "chroma_periodic_energy": 6.807977825917191e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0018458551734444645,
+      "mean_normalized_luma_periodic_energy": 0.0015144402073789455,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 1414,
+        "between_brick_linear_rgb_variance": 0.005851050519657797,
+        "between_brick_opponent_chroma_variance": 0.0033632715526036505,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "individual",
+      "id": "ortho-7.5-seed0-individual",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 0.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.19125419039560063,
+      "linear_luminance_std": 0.07346917950867453,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.6399302325816654,
+            0.5667258155760047
+          ],
+          "source_repeat_correlation_mean": 0.603328024078835,
+          "atlas_repeat_correlation_xy": [
+            0.63419206323627,
+            null
+          ],
+          "source_periodic_energy": 5.6668941726173415e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005397720337677842
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.29706707541389893,
+            0.2510315189496753
+          ],
+          "source_repeat_correlation_mean": 0.2740492971817871,
+          "atlas_repeat_correlation_xy": [
+            0.2908469731948598,
+            null
+          ],
+          "source_periodic_energy": 4.631567411113841e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005506932627449677
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.6514387484389894,
+            0.5915961829195657
+          ],
+          "source_repeat_correlation_mean": 0.6215174656792776,
+          "atlas_repeat_correlation_xy": [
+            0.7249857234713345,
+            null
+          ],
+          "source_periodic_energy": 1.6543038455996794e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.001167336726306676
+        }
+      },
+      "chroma_correlation_mean": 0.4477833814305323,
+      "chroma_periodic_energy": 6.285871256713521e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0017184763635953665,
+      "mean_normalized_luma_periodic_energy": 0.0015492559890147703,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 1414,
+        "between_brick_linear_rgb_variance": 0.003160570524179187,
+        "between_brick_opponent_chroma_variance": 0.0017927695112835483,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "baseline",
+      "id": "ortho-7.5-seed7-baseline",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 7.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.1940455992870162,
+      "linear_luminance_std": 0.07255056782432087,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.8342071848530326,
+            0.7803059440131183
+          ],
+          "source_repeat_correlation_mean": 0.8072565644330754,
+          "atlas_repeat_correlation_xy": [
+            0.8201929873945468,
+            null
+          ],
+          "source_periodic_energy": 7.407898483888062e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005263584891631383
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.7585034832160281,
+            0.6726208638437181
+          ],
+          "source_repeat_correlation_mean": 0.7155621735298732,
+          "atlas_repeat_correlation_xy": [
+            0.7939380606728358,
+            null
+          ],
+          "source_periodic_energy": 0.00010108757058179885,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005421829878315355
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.8440282831773493,
+            0.799467077783127
+          ],
+          "source_repeat_correlation_mean": 0.8217476804802382,
+          "atlas_repeat_correlation_xy": [
+            0.8359346560590215,
+            null
+          ],
+          "source_periodic_energy": 2.7721766307264888e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.001166545901362314
+        }
+      },
+      "chroma_correlation_mean": 0.7686549270050557,
+      "chroma_periodic_energy": 0.00012880933688906373,
+      "mean_normalized_chroma_periodic_energy": 0.003420895034294284,
+      "mean_normalized_luma_periodic_energy": 0.0019673762593711793,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 1414,
+        "between_brick_linear_rgb_variance": 0.0024183768873872304,
+        "between_brick_opponent_chroma_variance": 0.0013299142065313324,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "previous",
+      "id": "ortho-7.5-seed7-previous",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 7.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.17629040987712177,
+      "linear_luminance_std": 0.06636529253703644,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.5657940824100932,
+            0.9032107212846926
+          ],
+          "source_repeat_correlation_mean": 0.7345024018473929,
+          "atlas_repeat_correlation_xy": [
+            -0.15261221499886476,
+            null
+          ],
+          "source_periodic_energy": 1.8773713866217947e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.004404352053526425
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.674629726196415,
+            0.7609361392942773
+          ],
+          "source_repeat_correlation_mean": 0.7177829327453462,
+          "atlas_repeat_correlation_xy": [
+            0.5174959891299717,
+            null
+          ],
+          "source_periodic_energy": 6.098617297545682e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.004496023887371008
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.6424889722781283,
+            0.8782108916025791
+          ],
+          "source_repeat_correlation_mean": 0.7603499319403537,
+          "atlas_repeat_correlation_xy": [
+            0.3286357409181772,
+            null
+          ],
+          "source_periodic_energy": 1.237789889343147e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0009727376646352261
+        }
+      },
+      "chroma_correlation_mean": 0.73906643234285,
+      "chroma_periodic_energy": 7.336407186888829e-05,
+      "mean_normalized_chroma_periodic_energy": 0.00236061983869741,
+      "mean_normalized_luma_periodic_energy": 0.0006040777218285321,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 1414,
+        "between_brick_linear_rgb_variance": 0.002198459297505885,
+        "between_brick_opponent_chroma_variance": 0.0011788393787975538,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "direct",
+      "id": "ortho-7.5-seed7-direct",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 7.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.19159062750586622,
+      "linear_luminance_std": 0.07484018300596341,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.3824274566011639,
+            0.2655632083008511
+          ],
+          "source_repeat_correlation_mean": 0.32399533245100753,
+          "atlas_repeat_correlation_xy": [
+            0.9882950045811801,
+            null
+          ],
+          "source_periodic_energy": 3.800964341518944e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005601052992366095
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.07420527949350159,
+            -0.0036846262369091384
+          ],
+          "source_repeat_correlation_mean": 0.03526032662829622,
+          "atlas_repeat_correlation_xy": [
+            0.9924280155567348,
+            null
+          ],
+          "source_periodic_energy": 3.758520674391035e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.006365464731997184
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.4623669251082041,
+            0.4228287848341235
+          ],
+          "source_repeat_correlation_mean": 0.4425978549711638,
+          "atlas_repeat_correlation_xy": [
+            0.9916228340451431,
+            null
+          ],
+          "source_periodic_energy": 1.2294446966733839e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0012377649452105684
+        }
+      },
+      "chroma_correlation_mean": 0.23892909079973,
+      "chroma_periodic_energy": 4.9879653710644184e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0013588606110388664,
+      "mean_normalized_luma_periodic_energy": 0.0010354884894782624,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 1414,
+        "between_brick_linear_rgb_variance": 0.005874580926688623,
+        "between_brick_opponent_chroma_variance": 0.003297084568973805,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "individual",
+      "id": "ortho-7.5-seed7-individual",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 7.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.19109610463837373,
+      "linear_luminance_std": 0.07343156523076795,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.4861857155806697,
+            0.49195557302354953
+          ],
+          "source_repeat_correlation_mean": 0.4890706443021096,
+          "atlas_repeat_correlation_xy": [
+            0.4347745776209383,
+            null
+          ],
+          "source_periodic_energy": 3.457829496657151e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005392194772240529
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.3025741534440171,
+            0.21536783397946457
+          ],
+          "source_repeat_correlation_mean": 0.2589709937117408,
+          "atlas_repeat_correlation_xy": [
+            0.2982364751880707,
+            null
+          ],
+          "source_periodic_energy": 3.885539222843462e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005610084170680446
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.5537089020465539,
+            0.5651469327375488
+          ],
+          "source_repeat_correlation_mean": 0.5594279173920513,
+          "atlas_repeat_correlation_xy": [
+            0.48913158233402204,
+            null
+          ],
+          "source_periodic_energy": 1.2848596466241036e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0011754328235845204
+        }
+      },
+      "chroma_correlation_mean": 0.4091994555518961,
+      "chroma_periodic_energy": 5.170398869467565e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0014158602175703397,
+      "mean_normalized_luma_periodic_energy": 0.0009468908196559098,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 1414,
+        "between_brick_linear_rgb_variance": 0.0030747218310117927,
+        "between_brick_opponent_chroma_variance": 0.0017343758165745187,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "baseline",
+      "id": "ortho-30.0-seed0-baseline",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 0.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.18963304295363242,
+      "linear_luminance_std": 0.039781461118020806,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.999580458234418,
+            0.9902958646856964
+          ],
+          "source_repeat_correlation_mean": 0.9949381614600572,
+          "atlas_repeat_correlation_xy": [
+            0.9995078298665705,
+            0.9867396353836229
+          ],
+          "source_periodic_energy": 0.0001386414411775594,
+          "atlas_periodic_energy_same_frequency_band": 0.0001390084252886172,
+          "variance": 0.0015825646486846009
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.9992640292181391,
+            0.9959847893758998
+          ],
+          "source_repeat_correlation_mean": 0.9976244092970195,
+          "atlas_repeat_correlation_xy": [
+            0.9991371213616209,
+            0.9945419146776752
+          ],
+          "source_periodic_energy": 0.00021829516959534043,
+          "atlas_periodic_energy_same_frequency_band": 0.00021857656724066582,
+          "variance": 0.0032829098699488288
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.9997105655839845,
+            0.9947685248305823
+          ],
+          "source_repeat_correlation_mean": 0.9972395452072834,
+          "atlas_repeat_correlation_xy": [
+            0.999661013720621,
+            0.9928471248477967
+          ],
+          "source_periodic_energy": 6.236481764935983e-05,
+          "atlas_periodic_energy_same_frequency_band": 6.24634105689002e-05,
+          "variance": 0.000561241253393204
+        }
+      },
+      "chroma_correlation_mean": 0.9974319772521514,
+      "chroma_periodic_energy": 0.00028065998724470027,
+      "mean_normalized_chroma_periodic_energy": 0.007804632769763262,
+      "mean_normalized_luma_periodic_energy": 0.0038553608787781283,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 21408,
+        "between_brick_linear_rgb_variance": 0.005078706328866657,
+        "between_brick_opponent_chroma_variance": 0.0027035406236458255,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "previous",
+      "id": "ortho-30.0-seed0-previous",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 0.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.18364681376019995,
+      "linear_luminance_std": 0.041183746925827214,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.8378845803026674,
+            0.848206947484943
+          ],
+          "source_repeat_correlation_mean": 0.8430457638938051,
+          "atlas_repeat_correlation_xy": [
+            -0.2331370362936464,
+            -0.12212076534650566
+          ],
+          "source_periodic_energy": 4.503778209955495e-05,
+          "atlas_periodic_energy_same_frequency_band": 4.595910482046116e-05,
+          "variance": 0.0016961010108505826
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.8870102077604456,
+            0.8952895864054743
+          ],
+          "source_repeat_correlation_mean": 0.8911498970829599,
+          "atlas_repeat_correlation_xy": [
+            0.1378203936245748,
+            0.22761912760973746
+          ],
+          "source_periodic_energy": 0.00014876701999970763,
+          "atlas_periodic_energy_same_frequency_band": 0.00014918522359060816,
+          "variance": 0.0032581035204173932
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.8826958852997228,
+            0.8904309103670058
+          ],
+          "source_repeat_correlation_mean": 0.8865633978333642,
+          "atlas_repeat_correlation_xy": [
+            0.10331661167560265,
+            0.1974522193876859
+          ],
+          "source_periodic_energy": 3.7333811142401236e-05,
+          "atlas_periodic_energy_same_frequency_band": 3.733881471068935e-05,
+          "variance": 0.0005609984165172579
+        }
+      },
+      "chroma_correlation_mean": 0.8888566474581621,
+      "chroma_periodic_energy": 0.00018610083114210886,
+      "mean_normalized_chroma_periodic_energy": 0.005517997725175638,
+      "mean_normalized_luma_periodic_energy": 0.0013353963958523572,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 21408,
+        "between_brick_linear_rgb_variance": 0.005344678161329022,
+        "between_brick_opponent_chroma_variance": 0.0027782073520169074,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "direct",
+      "id": "ortho-30.0-seed0-direct",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 0.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.18624698535950174,
+      "linear_luminance_std": 0.03838072688614079,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.47783439209635037,
+            0.3719561394578777
+          ],
+          "source_repeat_correlation_mean": 0.424895265777114,
+          "atlas_repeat_correlation_xy": [
+            0.9994826553579722,
+            0.9846222835039083
+          ],
+          "source_periodic_energy": 5.2053059130401175e-05,
+          "atlas_periodic_energy_same_frequency_band": 0.00010975732185369348,
+          "variance": 0.0014730801963085303
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.18213903490538724,
+            0.037495669577155555
+          ],
+          "source_repeat_correlation_mean": 0.1098173522412714,
+          "atlas_repeat_correlation_xy": [
+            0.9993779747802896,
+            0.9850769543595354
+          ],
+          "source_periodic_energy": 4.389252127965035e-05,
+          "atlas_periodic_energy_same_frequency_band": 0.00022999644503314526,
+          "variance": 0.0032346978050323376
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.5067285481698096,
+            0.4289412518613072
+          ],
+          "source_repeat_correlation_mean": 0.4678349000155584,
+          "atlas_repeat_correlation_xy": [
+            0.9995032737548223,
+            0.9784420742832155
+          ],
+          "source_periodic_energy": 1.616687538394262e-05,
+          "atlas_periodic_energy_same_frequency_band": 3.179928895410988e-05,
+          "variance": 0.0004953320940280266
+        }
+      },
+      "chroma_correlation_mean": 0.2888261261284149,
+      "chroma_periodic_energy": 6.005939666359297e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0017314201256461168,
+      "mean_normalized_luma_periodic_energy": 0.0015006097161554854,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 21408,
+        "between_brick_linear_rgb_variance": 0.00443954405487255,
+        "between_brick_opponent_chroma_variance": 0.0025237365818491218,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "individual",
+      "id": "ortho-30.0-seed0-individual",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 0.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.18593157414818315,
+      "linear_luminance_std": 0.03591009451234927,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.6334703853975261,
+            0.6181118640274132
+          ],
+          "source_repeat_correlation_mean": 0.6257911247124697,
+          "atlas_repeat_correlation_xy": [
+            0.6520769731828381,
+            0.6348482176737261
+          ],
+          "source_periodic_energy": 5.1672080520255884e-05,
+          "atlas_periodic_energy_same_frequency_band": 5.379055724461643e-05,
+          "variance": 0.001289534887885857
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.3255759767499906,
+            0.2767035900105807
+          ],
+          "source_repeat_correlation_mean": 0.3011397833802857,
+          "atlas_repeat_correlation_xy": [
+            0.32508877089144095,
+            0.308721426396633
+          ],
+          "source_periodic_energy": 4.046105946423418e-05,
+          "atlas_periodic_energy_same_frequency_band": 4.7425685781823765e-05,
+          "variance": 0.0026232882474195316
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.6825103472326547,
+            0.6649754007311388
+          ],
+          "source_repeat_correlation_mean": 0.6737428739818967,
+          "atlas_repeat_correlation_xy": [
+            0.7015729757467188,
+            0.6652687309813227
+          ],
+          "source_periodic_energy": 1.6141289411235e-05,
+          "atlas_periodic_energy_same_frequency_band": 1.6695421739482633e-05,
+          "variance": 0.00044008902798846973
+        }
+      },
+      "chroma_correlation_mean": 0.4874413286810912,
+      "chroma_periodic_energy": 5.660234887546918e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0016372996218232687,
+      "mean_normalized_luma_periodic_energy": 0.001494684930492386,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 21408,
+        "between_brick_linear_rgb_variance": 0.0023937485406360175,
+        "between_brick_opponent_chroma_variance": 0.001365519971351681,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "baseline",
+      "id": "ortho-30.0-seed7-baseline",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 7.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.18963304295363242,
+      "linear_luminance_std": 0.039781461118020806,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.999580458234418,
+            0.9902958646856964
+          ],
+          "source_repeat_correlation_mean": 0.9949381614600572,
+          "atlas_repeat_correlation_xy": [
+            0.9995078298665705,
+            0.9867396353836229
+          ],
+          "source_periodic_energy": 0.0001386414411775594,
+          "atlas_periodic_energy_same_frequency_band": 0.0001390084252886172,
+          "variance": 0.0015825646486846009
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.9992640292181391,
+            0.9959847893758998
+          ],
+          "source_repeat_correlation_mean": 0.9976244092970195,
+          "atlas_repeat_correlation_xy": [
+            0.9991371213616209,
+            0.9945419146776752
+          ],
+          "source_periodic_energy": 0.00021829516959534043,
+          "atlas_periodic_energy_same_frequency_band": 0.00021857656724066582,
+          "variance": 0.0032829098699488288
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.9997105655839845,
+            0.9947685248305823
+          ],
+          "source_repeat_correlation_mean": 0.9972395452072834,
+          "atlas_repeat_correlation_xy": [
+            0.999661013720621,
+            0.9928471248477967
+          ],
+          "source_periodic_energy": 6.236481764935983e-05,
+          "atlas_periodic_energy_same_frequency_band": 6.24634105689002e-05,
+          "variance": 0.000561241253393204
+        }
+      },
+      "chroma_correlation_mean": 0.9974319772521514,
+      "chroma_periodic_energy": 0.00028065998724470027,
+      "mean_normalized_chroma_periodic_energy": 0.007804632769763262,
+      "mean_normalized_luma_periodic_energy": 0.0038553608787781283,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 21408,
+        "between_brick_linear_rgb_variance": 0.005078706328866657,
+        "between_brick_opponent_chroma_variance": 0.0027035406236458255,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "previous",
+      "id": "ortho-30.0-seed7-previous",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 7.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.18196278153850018,
+      "linear_luminance_std": 0.04119324673491714,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.8575674047614572,
+            0.8554321034921821
+          ],
+          "source_repeat_correlation_mean": 0.8564997541268197,
+          "atlas_repeat_correlation_xy": [
+            -0.25292199898456164,
+            -0.18499355402707612
+          ],
+          "source_periodic_energy": 4.388698762487244e-05,
+          "atlas_periodic_energy_same_frequency_band": 4.526238650247319e-05,
+          "variance": 0.0016968835765637613
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.897466934496622,
+            0.8979539046691756
+          ],
+          "source_repeat_correlation_mean": 0.8977104195828988,
+          "atlas_repeat_correlation_xy": [
+            0.11645279539954898,
+            0.16808358785521174
+          ],
+          "source_periodic_energy": 0.00014445584618751918,
+          "atlas_periodic_energy_same_frequency_band": 0.00014502746036269232,
+          "variance": 0.0032175405668280962
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.8944629184592503,
+            0.8929859436711642
+          ],
+          "source_repeat_correlation_mean": 0.8937244310652073,
+          "atlas_repeat_correlation_xy": [
+            0.07999767792303362,
+            0.13567550888992885
+          ],
+          "source_periodic_energy": 3.7019406837458835e-05,
+          "atlas_periodic_energy_same_frequency_band": 3.733679050310603e-05,
+          "variance": 0.000556791394151726
+        }
+      },
+      "chroma_correlation_mean": 0.895717425324053,
+      "chroma_periodic_energy": 0.000181475253024978,
+      "mean_normalized_chroma_periodic_energy": 0.005480905026661696,
+      "mean_normalized_luma_periodic_energy": 0.0013254722452162408,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 21408,
+        "between_brick_linear_rgb_variance": 0.005342563420842457,
+        "between_brick_opponent_chroma_variance": 0.0027583502902953283,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "direct",
+      "id": "ortho-30.0-seed7-direct",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 7.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.18625295527723634,
+      "linear_luminance_std": 0.038230804192546444,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.3544863749988301,
+            0.31228122226111577
+          ],
+          "source_repeat_correlation_mean": 0.3333837986299729,
+          "atlas_repeat_correlation_xy": [
+            0.9992862734538199,
+            0.9854853701842669
+          ],
+          "source_periodic_energy": 3.7874049931267234e-05,
+          "atlas_periodic_energy_same_frequency_band": 9.787458058496097e-05,
+          "variance": 0.0014615943892088267
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.057381118343276534,
+            0.11073233585288511
+          ],
+          "source_repeat_correlation_mean": 0.08405672709808082,
+          "atlas_repeat_correlation_xy": [
+            0.999300959673843,
+            0.9821976071646695
+          ],
+          "source_periodic_energy": 3.614503516728195e-05,
+          "atlas_periodic_energy_same_frequency_band": 0.0002087860817987435,
+          "variance": 0.00316854793995115
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.4620870847855214,
+            0.3921271401640901
+          ],
+          "source_repeat_correlation_mean": 0.42710711247480576,
+          "atlas_repeat_correlation_xy": [
+            0.9993914282810364,
+            0.982063689583879
+          ],
+          "source_periodic_energy": 1.4788686166395336e-05,
+          "atlas_periodic_energy_same_frequency_band": 3.3348020098596974e-05,
+          "variance": 0.0004953040318442906
+        }
+      },
+      "chroma_correlation_mean": 0.2555819197864433,
+      "chroma_periodic_energy": 5.093372133367729e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0014682468001236796,
+      "mean_normalized_luma_periodic_energy": 0.0010917806742414356,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 21408,
+        "between_brick_linear_rgb_variance": 0.00442004503863173,
+        "between_brick_opponent_chroma_variance": 0.002489647968222669,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    },
+    {
+      "arm": "individual",
+      "id": "ortho-30.0-seed7-individual",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 7.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.18581719267005864,
+      "linear_luminance_std": 0.035842526967669715,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.5630371784861835,
+            0.5601683136221374
+          ],
+          "source_repeat_correlation_mean": 0.5616027460541604,
+          "atlas_repeat_correlation_xy": [
+            0.5810013868136861,
+            0.5485323198728648
+          ],
+          "source_periodic_energy": 3.869479221707435e-05,
+          "atlas_periodic_energy_same_frequency_band": 4.129030675861132e-05,
+          "variance": 0.0012846867394281309
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.2958035502426847,
+            0.2899905198929807
+          ],
+          "source_repeat_correlation_mean": 0.2928970350678327,
+          "atlas_repeat_correlation_xy": [
+            0.29197459932882036,
+            0.2894847966101166
+          ],
+          "source_periodic_energy": 3.674388040507408e-05,
+          "atlas_periodic_energy_same_frequency_band": 4.2730401953721134e-05,
+          "variance": 0.002597575427259181
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.6379370712484378,
+            0.6290035909119067
+          ],
+          "source_repeat_correlation_mean": 0.6334703310801723,
+          "atlas_repeat_correlation_xy": [
+            0.6487615055885319,
+            0.6282529215874881
+          ],
+          "source_periodic_energy": 1.492279403906928e-05,
+          "atlas_periodic_energy_same_frequency_band": 1.575235527495017e-05,
+          "variance": 0.00043876867865986813
+        }
+      },
+      "chroma_correlation_mean": 0.4631836830740025,
+      "chroma_periodic_energy": 5.166667444414336e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0014963690602438984,
+      "mean_normalized_luma_periodic_energy": 0.0011206776996803569,
+      "fraction_any_channel_255": 0.0,
+      "brick_palette": {
+        "regions_with_4_core_pixels": 21408,
+        "between_brick_linear_rgb_variance": 0.0024486859281815077,
+        "between_brick_opponent_chroma_variance": 0.0013842614040228119,
+        "method": "known orthographic projection and native toroidal atlas region labels; exact alpha255 interior core; matched spatial regions, >=4 captured core pixels; mean linear RGB per region"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "previous",
+      "chroma_periodic_energy_ratio": 0.6968884525427625,
+      "luma_periodic_energy_ratio": 0.3130803092172172,
+      "chroma_correlation_ratio": 1.0492994412992545,
+      "luma_correlation_ratio": 1.0186322121634637,
+      "mean_luminance_ratio": 0.9443975479857258,
+      "variance_ratio": 0.9069106745120294,
+      "between_brick_rgb_palette_variance_ratio": 0.986839014787633,
+      "between_brick_chromatic_palette_variance_ratio": 0.9597136526756842
+    },
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "direct",
+      "chroma_periodic_energy_ratio": 0.5377463563058135,
+      "luma_periodic_energy_ratio": 0.7678939438025206,
+      "chroma_correlation_ratio": 0.3340556493748941,
+      "luma_correlation_ratio": 0.4970829347564256,
+      "mean_luminance_ratio": 0.9873102937664212,
+      "variance_ratio": 1.0639349759500336,
+      "between_brick_rgb_palette_variance_ratio": 2.2811298924359704,
+      "between_brick_chromatic_palette_variance_ratio": 2.346281634805239
+    },
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "individual",
+      "chroma_periodic_energy_ratio": 0.5006375452504458,
+      "luma_periodic_energy_ratio": 0.7855472177559183,
+      "chroma_correlation_ratio": 0.5785508481388453,
+      "luma_correlation_ratio": 0.7324771939839118,
+      "mean_luminance_ratio": 0.9832282986789976,
+      "variance_ratio": 1.0279095274884493,
+      "between_brick_rgb_palette_variance_ratio": 1.232201273196122,
+      "between_brick_chromatic_palette_variance_ratio": 1.2506698058641879
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "previous",
+      "chroma_periodic_energy_ratio": 0.6900591263491941,
+      "luma_periodic_energy_ratio": 0.3070473779233312,
+      "chroma_correlation_ratio": 0.9615061406325818,
+      "luma_correlation_ratio": 0.9098747959556369,
+      "mean_luminance_ratio": 0.9084999120045365,
+      "variance_ratio": 0.836759004405712,
+      "between_brick_rgb_palette_variance_ratio": 0.9090639713651332,
+      "between_brick_chromatic_palette_variance_ratio": 0.8864025762024076
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "direct",
+      "chroma_periodic_energy_ratio": 0.3972237082448785,
+      "luma_periodic_energy_ratio": 0.5263296659934431,
+      "chroma_correlation_ratio": 0.3108405116593476,
+      "luma_correlation_ratio": 0.40135360519309593,
+      "mean_luminance_ratio": 0.9873484799955767,
+      "variance_ratio": 1.0641137376298908,
+      "between_brick_rgb_palette_variance_ratio": 2.429142023861885,
+      "between_brick_chromatic_palette_variance_ratio": 2.4791708764230926
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "individual",
+      "chroma_periodic_energy_ratio": 0.4138858992680041,
+      "luma_periodic_energy_ratio": 0.48129625187129116,
+      "chroma_correlation_ratio": 0.5323578125574217,
+      "luma_correlation_ratio": 0.6058428829817901,
+      "mean_luminance_ratio": 0.9847999920664018,
+      "variance_ratio": 1.0244338950082525,
+      "between_brick_rgb_palette_variance_ratio": 1.2713989482150838,
+      "between_brick_chromatic_palette_variance_ratio": 1.3041260917861
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "previous",
+      "chroma_periodic_energy_ratio": 0.7070156774772908,
+      "luma_periodic_energy_ratio": 0.3463739032065869,
+      "chroma_correlation_ratio": 0.891145128419578,
+      "luma_correlation_ratio": 0.8473348360230226,
+      "mean_luminance_ratio": 0.9684325627000766,
+      "variance_ratio": 1.0717420057754676,
+      "between_brick_rgb_palette_variance_ratio": 1.0523699964596531,
+      "between_brick_chromatic_palette_variance_ratio": 1.0276181270286928
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "direct",
+      "chroma_periodic_energy_ratio": 0.22184517538787873,
+      "luma_periodic_energy_ratio": 0.3892267840387151,
+      "chroma_correlation_ratio": 0.2895697478279258,
+      "luma_correlation_ratio": 0.42705695915169883,
+      "mean_luminance_ratio": 0.9821441583102233,
+      "variance_ratio": 0.9308183381531541,
+      "between_brick_rgb_palette_variance_ratio": 0.8741486054507233,
+      "between_brick_chromatic_palette_variance_ratio": 0.933493123711886
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "individual",
+      "chroma_periodic_energy_ratio": 0.2097856068470641,
+      "luma_periodic_energy_ratio": 0.38769001851938006,
+      "chroma_correlation_ratio": 0.4886963119269092,
+      "luma_correlation_ratio": 0.6289748940719394,
+      "mean_luminance_ratio": 0.9804808869393382,
+      "variance_ratio": 0.8148386790755722,
+      "between_brick_rgb_palette_variance_ratio": 0.4713303714826521,
+      "between_brick_chromatic_palette_variance_ratio": 0.505085797272107
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "previous",
+      "chroma_periodic_energy_ratio": 0.7022630261215926,
+      "luma_periodic_energy_ratio": 0.34379978603619593,
+      "chroma_correlation_ratio": 0.8980235702806378,
+      "luma_correlation_ratio": 0.860857274657069,
+      "mean_luminance_ratio": 0.9595520838791385,
+      "variance_ratio": 1.0722364978733603,
+      "between_brick_rgb_palette_variance_ratio": 1.0519536029236567,
+      "between_brick_chromatic_palette_variance_ratio": 1.0202732913166253
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "direct",
+      "chroma_periodic_energy_ratio": 0.18812503335351882,
+      "luma_periodic_energy_ratio": 0.2831850787953867,
+      "chroma_correlation_ratio": 0.25623994980645387,
+      "luma_correlation_ratio": 0.3350799190783245,
+      "mean_luminance_ratio": 0.9821756397316128,
+      "variance_ratio": 0.9235606206821803,
+      "between_brick_rgb_palette_variance_ratio": 0.8703092386950614,
+      "between_brick_chromatic_palette_variance_ratio": 0.9208842458099578
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "individual",
+      "chroma_periodic_energy_ratio": 0.1917283111693784,
+      "luma_periodic_energy_ratio": 0.29068036298473077,
+      "chroma_correlation_ratio": 0.4643762117493345,
+      "luma_correlation_ratio": 0.5644599511893449,
+      "mean_luminance_ratio": 0.9798777142203703,
+      "variance_ratio": 0.811775203304294,
+      "between_brick_rgb_palette_variance_ratio": 0.48214757255475066,
+      "between_brick_chromatic_palette_variance_ratio": 0.5120179781711893
+    }
+  ],
+  "channels": [
+    {
+      "view": "close",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 367300,
+      "protected_max": 0.007843137254901933,
+      "all_pixel_max": 0.2901960784313726,
+      "all_pixel_mean": 0.008804900258714596
+    },
+    {
+      "view": "close",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 367300,
+      "protected_max": 0.019607843137254832,
+      "all_pixel_max": 0.7843137254901961,
+      "all_pixel_mean": 0.03696741387527233
+    },
+    {
+      "view": "close",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 367300,
+      "protected_max": 0.0039215686274510775,
+      "all_pixel_max": 0.2745098039215686,
+      "all_pixel_mean": 0.009290253948801742
+    },
+    {
+      "view": "close",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 367300,
+      "protected_max": 0.01176470588235301,
+      "all_pixel_max": 0.7725490196078431,
+      "all_pixel_mean": 0.03871873723447712
+    },
+    {
+      "view": "grazing",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 186810,
+      "protected_max": 0.007843137254901988,
+      "all_pixel_max": 0.26274509803921564,
+      "all_pixel_mean": 0.002841857865831518
+    },
+    {
+      "view": "grazing",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 186810,
+      "protected_max": 0.011764705882352955,
+      "all_pixel_max": 0.7372549019607844,
+      "all_pixel_mean": 0.01399922981345316
+    },
+    {
+      "view": "grazing",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 186810,
+      "protected_max": 0.0039215686274510775,
+      "all_pixel_max": 0.26666666666666666,
+      "all_pixel_mean": 0.0029275201978939723
+    },
+    {
+      "view": "grazing",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 186810,
+      "protected_max": 0.007843137254902044,
+      "all_pixel_max": 0.7372549019607844,
+      "all_pixel_mean": 0.01382806117238562
+    },
+    {
+      "view": "distant",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    }
+  ],
+  "edge_neighborhoods": [
+    {
+      "seed": 0,
+      "edge_neighborhood_count": 243,
+      "median_peak_shift_px": 0.0,
+      "p95_peak_shift_px": 17.0,
+      "median_edge_profile_width_proxy_ratio": 1.017154809511974,
+      "median_local_contrast_ratio": 1.0044442856214089,
+      "p05_local_contrast_ratio": 0.7334881596348943
+    },
+    {
+      "seed": 7,
+      "edge_neighborhood_count": 243,
+      "median_peak_shift_px": 0.0,
+      "p95_peak_shift_px": 17.0,
+      "median_edge_profile_width_proxy_ratio": 0.9993854105964439,
+      "median_local_contrast_ratio": 1.0171785926305208,
+      "p05_local_contrast_ratio": 0.8011781559751632
+    }
+  ]
+}
