@@ -15,6 +15,10 @@ uniform float paper_falloff : hint_range(0.0, 0.99, 0.01) = 0.6;
 uniform float normal_blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
 uniform float variation_seed : hint_range(0.0, 999.0, 1.0) = 0.0;
 uniform bool detile_enabled = true;
+// Optional source-UV lattice constraint; independent of blend mode.
+uniform bool structure_enabled = false;
+uniform vec2 structure_period = vec2(1.0);
+uniform float structure_stagger : hint_range(-1.0, 1.0, 0.01) = 0.0;
 uniform float texture_scale_m : hint_range(0.1, 10.0, 0.1) = 1.5;
 uniform float normal_strength : hint_range(0.0, 1.0, 0.01) = 0.5;
 uniform float roughness : hint_range(0.0, 1.0, 0.01) = 0.9;
@@ -54,11 +58,21 @@ void detile_triangle_grid(vec2 st, out float w1, out float w2, out float w3,
 // Per-cell transforms are shared by all texture maps. Rotating around the
 // lattice vertex keeps the transform stable throughout a cell.
 mat2 detile_rotation(ivec2 vertex) {
+	if (structure_enabled) {
+		return mat2(vec2(1.0, 0.0), vec2(0.0, 1.0));
+	}
 	float angle = (detile_hash2(vec2(vertex) + vec2(19.7, 53.1)).x * 2.0 - 1.0) * PI * rotation_strength;
 	float c = cos(angle); float s = sin(angle);
 	return mat2(vec2(c, s), vec2(-s, c));
 }
 vec2 detile_position(vec2 st, ivec2 vertex, mat2 rotation) {
+	if (structure_enabled) {
+		// Bounded integer shifts preserve a supplied template lattice. A zero
+		// period component locks that coordinate; full-repeat steps add no variety.
+		vec2 steps = floor(detile_hash2(vec2(vertex)) * 9.0) - vec2(4.0);
+		return st + vec2((steps.x + steps.y * structure_stagger) * structure_period.x,
+			steps.y * structure_period.y);
+	}
 	mat2 inverse_skew = mat2(vec2(1.0, 0.0), vec2(0.5, 1.0 / 1.15470054));
 	vec2 center = inverse_skew * vec2(vertex) / (2.0 * sqrt(3.0));
 	return rotation * (st - center) + center + detile_hash2(vec2(vertex));

@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+PASS: weights sum to one
+PASS: far weights relax to barycentric
+PASS: footprint changes sharp near weights
+PASS: zero barycentric support stays zero
+PASS: candidate permutation preserves weights
+PASS: disabled normal does not guide weights
+PASS: maximum contrast preserves normalized equal mixture
+PASS: correlated color and roughness stay aligned; max=0.0
+PASS: flat normals remain flat; max=0.0
+PASS: fixture detects independent paper weights; max=0.34509804844856
+PASS: nonflat normal shares color weights and inverse rotation; max=0.0
+PASS: quarter-turn inverse rotation leaves zero X slope
+PASS: nonflat fixture rejects independent normal weights; max=0.60000002384186
+PASS: nonflat fixture rejects forward normal rotation; max=1.0
+PASS: disabled roughness map uses constant
+PASS: footprint transition is continuous
+Coherent GPU checks: 0 failures

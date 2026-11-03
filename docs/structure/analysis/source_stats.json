@@ -1,0 +1,347 @@
+{
+  "brick_4": {
+    "map_dimensions": {
+      "albedo": [
+        1024,
+        1024
+      ],
+      "normal": [
+        1024,
+        1024
+      ],
+      "roughness": [
+        1024,
+        1024
+      ]
+    },
+    "shifts": [
+      {
+        "xy_pixels": [
+          136,
+          0
+        ],
+        "roughness_line_correlation": 0.656449,
+        "albedo_gray_correlation": 0.337948,
+        "albedo_gray_mean_absolute_difference_0_255": 24.776967
+      },
+      {
+        "xy_pixels": [
+          68,
+          73
+        ],
+        "roughness_line_correlation": 0.602814,
+        "albedo_gray_correlation": 0.25653,
+        "albedo_gray_mean_absolute_difference_0_255": 26.41038
+      },
+      {
+        "xy_pixels": [
+          0,
+          146
+        ],
+        "roughness_line_correlation": 0.614984,
+        "albedo_gray_correlation": 0.224168,
+        "albedo_gray_mean_absolute_difference_0_255": 26.720115
+      },
+      {
+        "xy_pixels": [
+          0,
+          73
+        ],
+        "roughness_line_correlation": 0.566003,
+        "albedo_gray_correlation": 0.232134,
+        "albedo_gray_mean_absolute_difference_0_255": 26.972368
+      },
+      {
+        "xy_pixels": [
+          128,
+          128
+        ],
+        "roughness_line_correlation": -0.115582,
+        "albedo_gray_correlation": 0.001836,
+        "albedo_gray_mean_absolute_difference_0_255": 32.066785
+      },
+      {
+        "xy_pixels": [
+          341,
+          241
+        ],
+        "roughness_line_correlation": -0.141321,
+        "albedo_gray_correlation": -0.016867,
+        "albedo_gray_mean_absolute_difference_0_255": 32.704669
+      }
+    ],
+    "roughness_gradient_profile_autocorrelation": {
+      "y": [
+        {
+          "pixels": 73,
+          "correlation": 0.707103
+        },
+        {
+          "pixels": 146,
+          "correlation": 0.573474
+        },
+        {
+          "pixels": 221,
+          "correlation": 0.39658
+        },
+        {
+          "pixels": 296,
+          "correlation": 0.37154
+        },
+        {
+          "pixels": 370,
+          "correlation": 0.35047
+        }
+      ],
+      "x": [
+        {
+          "pixels": 10,
+          "correlation": 0.444588
+        },
+        {
+          "pixels": 136,
+          "correlation": 0.405479
+        },
+        {
+          "pixels": 145,
+          "correlation": 0.339216
+        },
+        {
+          "pixels": 272,
+          "correlation": 0.264024
+        },
+        {
+          "pixels": 408,
+          "correlation": 0.262593
+        }
+      ]
+    }
+  },
+  "dark_wooden_planks": {
+    "map_dimensions": {
+      "albedo": [
+        1024,
+        1024
+      ],
+      "normal": [
+        1024,
+        1024
+      ],
+      "roughness": [
+        1024,
+        1024
+      ]
+    },
+    "shifts": [
+      {
+        "xy_pixels": [
+          128,
+          0
+        ],
+        "roughness_line_correlation": 0.698698,
+        "albedo_gray_correlation": 0.260762,
+        "albedo_gray_mean_absolute_difference_0_255": 8.436103
+      },
+      {
+        "xy_pixels": [
+          256,
+          0
+        ],
+        "roughness_line_correlation": 0.659686,
+        "albedo_gray_correlation": 0.195446,
+        "albedo_gray_mean_absolute_difference_0_255": 8.83938
+      },
+      {
+        "xy_pixels": [
+          512,
+          0
+        ],
+        "roughness_line_correlation": 0.630757,
+        "albedo_gray_correlation": 0.164242,
+        "albedo_gray_mean_absolute_difference_0_255": 9.086477
+      },
+      {
+        "xy_pixels": [
+          0,
+          114
+        ],
+        "roughness_line_correlation": 0.487307,
+        "albedo_gray_correlation": 0.068139,
+        "albedo_gray_mean_absolute_difference_0_255": 9.556032
+      },
+      {
+        "xy_pixels": [
+          256,
+          128
+        ],
+        "roughness_line_correlation": -0.126603,
+        "albedo_gray_correlation": 0.000235,
+        "albedo_gray_mean_absolute_difference_0_255": 10.000111
+      },
+      {
+        "xy_pixels": [
+          341,
+          241
+        ],
+        "roughness_line_correlation": -0.053612,
+        "albedo_gray_correlation": -0.074539,
+        "albedo_gray_mean_absolute_difference_0_255": 10.473663
+      }
+    ],
+    "roughness_gradient_profile_autocorrelation": {
+      "y": [
+        {
+          "pixels": 114,
+          "correlation": 0.218673
+        },
+        {
+          "pixels": 225,
+          "correlation": 0.166142
+        },
+        {
+          "pixels": 336,
+          "correlation": 0.140079
+        },
+        {
+          "pixels": 447,
+          "correlation": 0.112488
+        },
+        {
+          "pixels": 463,
+          "correlation": 0.103735
+        }
+      ],
+      "x": [
+        {
+          "pixels": 10,
+          "correlation": 0.801755
+        },
+        {
+          "pixels": 19,
+          "correlation": 0.781221
+        },
+        {
+          "pixels": 28,
+          "correlation": 0.735096
+        },
+        {
+          "pixels": 38,
+          "correlation": 0.698384
+        },
+        {
+          "pixels": 47,
+          "correlation": 0.663557
+        }
+      ]
+    }
+  },
+  "checkered_pavement_tiles": {
+    "map_dimensions": {
+      "albedo": [
+        1024,
+        1024
+      ],
+      "normal": [
+        1024,
+        1024
+      ],
+      "roughness": [
+        1024,
+        1024
+      ]
+    },
+    "shifts": [
+      {
+        "xy_pixels": [
+          205,
+          0
+        ],
+        "roughness_line_correlation": 0.897184,
+        "albedo_gray_correlation": 0.910057,
+        "albedo_gray_mean_absolute_difference_0_255": 6.417055
+      },
+      {
+        "xy_pixels": [
+          102,
+          102
+        ],
+        "roughness_line_correlation": 0.88751,
+        "albedo_gray_correlation": 0.905902,
+        "albedo_gray_mean_absolute_difference_0_255": 6.556928
+      },
+      {
+        "xy_pixels": [
+          102,
+          0
+        ],
+        "roughness_line_correlation": 0.905909,
+        "albedo_gray_correlation": -0.893336,
+        "albedo_gray_mean_absolute_difference_0_255": 37.931652
+      },
+      {
+        "xy_pixels": [
+          128,
+          128
+        ],
+        "roughness_line_correlation": -0.081208,
+        "albedo_gray_correlation": 0.252537,
+        "albedo_gray_mean_absolute_difference_0_255": 18.498476
+      },
+      {
+        "xy_pixels": [
+          341,
+          241
+        ],
+        "roughness_line_correlation": -0.094322,
+        "albedo_gray_correlation": -0.09969,
+        "albedo_gray_mean_absolute_difference_0_255": 24.611958
+      }
+    ],
+    "roughness_gradient_profile_autocorrelation": {
+      "y": [
+        {
+          "pixels": 205,
+          "correlation": 0.961173
+        },
+        {
+          "pixels": 102,
+          "correlation": 0.954147
+        },
+        {
+          "pixels": 307,
+          "correlation": 0.950199
+        },
+        {
+          "pixels": 512,
+          "correlation": 0.949258
+        },
+        {
+          "pixels": 410,
+          "correlation": 0.928665
+        }
+      ],
+      "x": [
+        {
+          "pixels": 102,
+          "correlation": 0.949114
+        },
+        {
+          "pixels": 205,
+          "correlation": 0.944066
+        },
+        {
+          "pixels": 307,
+          "correlation": 0.933598
+        },
+        {
+          "pixels": 512,
+          "correlation": 0.92821
+        },
+        {
+          "pixels": 410,
+          "correlation": 0.916412
+        }
+      ]
+    }
+  }
+}

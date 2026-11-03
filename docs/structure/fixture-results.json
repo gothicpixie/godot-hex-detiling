@@ -1,0 +1,11 @@
+{
+  "fixture_only": true,
+  "framebuffer": "8-bit clamped display channels",
+  "structure_phase_max_error_threshold": 0.008,
+  "unconstrained_checker_clipped_mean_absolute_phase_error": 0.53635504700733,
+  "structured_microappearance_mean_absolute_difference_shared": 0.03875974511057,
+  "structured_microappearance_mean_absolute_difference_paper": 0.03880357339963,
+  "structure_probe_passes": 24,
+  "structure_probe_failures": 0,
+  "source_material_assessment": "Qualitative matched captures only; no source photograph quality score."
+}

@@ -2,6 +2,15 @@ extends Node3D
 
 var detiled := true
 var toggle: Button
+var structure_toggle: CheckButton
+var rotation_slider: HSlider
+var current_texture := 0
+# Source-specific approximate motif lattices, in source UV.
+const STRUCTURE_PRESETS := {
+	3: Vector3(2.0 / 15.0, 1.0 / 14.0, 0.5),
+	4: Vector3(0.25, 0.0, 0.0),
+	7: Vector3(0.2, 0.2, 0.0),
+}
 const TEXTURE_NAMES := [
 	"Rocks Ground 04",
 	"Sandstone Cracks",
@@ -91,10 +100,13 @@ func _ready() -> void:
 		selector.add_item(texture_name)
 	selector.item_selected.connect(set_texture_set)
 	box.add_child(selector)
+	structure_toggle = CheckButton.new()
+	structure_toggle.toggled.connect(set_structure)
+	box.add_child(structure_toggle)
 	var rotation_label := Label.new()
 	rotation_label.text = "Tile rotation"
 	box.add_child(rotation_label)
-	var rotation_slider := HSlider.new()
+	rotation_slider = HSlider.new()
 	rotation_slider.min_value = 0.0
 	rotation_slider.max_value = 1.0
 	rotation_slider.step = 0.01
@@ -152,10 +164,33 @@ func _ready() -> void:
 func set_texture_set(index: int) -> void:
 	if index < 0 or index >= TEXTURE_SETS.size():
 		return
+	current_texture = index
 	var material := $Surface.material_override as ShaderMaterial
 	material.set_shader_parameter("albedo_map", load(TEXTURE_SETS[index][0]))
 	material.set_shader_parameter("normal_map", load(TEXTURE_SETS[index][1]))
 	material.set_shader_parameter("roughness_map", load(TEXTURE_SETS[index][2]))
+	var supported := STRUCTURE_PRESETS.has(index)
+	if structure_toggle:
+		structure_toggle.disabled = not supported
+		structure_toggle.text = "Preserve pattern · approximate source preset" if supported else "Preserve pattern · no preset for this source"
+	set_structure(supported and structure_toggle != null and structure_toggle.button_pressed)
+
+func set_structure(enabled: bool) -> void:
+	enabled = enabled and STRUCTURE_PRESETS.has(current_texture)
+	var material := $Surface.material_override as ShaderMaterial
+	if STRUCTURE_PRESETS.has(current_texture):
+		var preset: Vector3 = STRUCTURE_PRESETS[current_texture]
+		material.set_shader_parameter("structure_period", Vector2(preset.x, preset.y))
+		material.set_shader_parameter("structure_stagger", preset.z)
+	else:
+		material.set_shader_parameter("structure_period", Vector2.ONE)
+		material.set_shader_parameter("structure_stagger", 0.0)
+	material.set_shader_parameter("structure_enabled", enabled)
+	if structure_toggle:
+		structure_toggle.set_pressed_no_signal(enabled)
+	if rotation_slider:
+		rotation_slider.editable = not enabled
+		rotation_slider.tooltip_text = "Preserve pattern locks rotation to zero" if enabled else ""
 
 func set_detile(enabled: bool) -> void:
 	detiled = enabled

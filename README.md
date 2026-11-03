@@ -18,11 +18,17 @@ The new **coherent material** mode uses color brightness and normal relief to gu
 
 The camera loop and [17-material comparison](docs/coherent/README.md) use matched settings across modes. Changes are often subtle. Structured brick, plank, and tile layouts still break, and distant relaxation can soften texture. The [detailed evidence](docs/coherent/README.md#controlled-checks) includes synthetic channel-alignment and footprint checks; these do not establish general visual or temporal superiority.
 
+## Optional pattern preservation
+
+Enable **Preserve pattern** in the demo for Brick 4, Dark Wooden Planks, or Checkered Pavement Tiles to try source-specific constrained translations. This opt-in setting ignores rotation and works independently of the blend selector. It uses approximate motif periods, so irregular mortar, plank seams, and wrapped source boundaries can still misalign. It does not recognize patterns automatically or enforce a global layout around triplanar corners. The [matched comparisons](docs/structure/README.md#evidence-and-reproduction) show checker grids and long plank seams retained more clearly than unconstrained offsets, while brick joints still soften or double. Periodic sampling remains the most faithful to the original layout. See [settings, measured presets, and evidence](docs/structure/README.md).
+
+![Matched native crops comparing periodic, unconstrained offsets, unrestricted rotation, and structure-aware brick, wood, and paving](docs/structure/native-detail-crops.png)
+
 ## Try the demo
 
 1. Open `project.godot` in Godot 4 and allow the textures to import.
 2. Press **F5** to run. Press **Space** or click the button to toggle the effect.
-3. Press **1**, **2**, or **3** for camera views. Choose one of seventeen texture sets, adjust rotation and blend contrast, choose shared, paper-inspired, or coherent blending, and toggle footprint relaxation and the roughness map in the panel. Drag to rotate the surface and use the mouse wheel to zoom.
+3. Press **1**, **2**, or **3** for camera views. Choose one of seventeen texture sets, adjust rotation and blend contrast, choose shared, paper-inspired, or coherent blending, and toggle footprint relaxation and the roughness map in the panel. Brick, plank, and checker sources also offer an approximate Preserve pattern preset. Drag to rotate the surface and use the mouse wheel to zoom.
 
 Tested with Godot **4.7.2**, Compatibility renderer, on macOS. Other versions and hardware need testing. From a terminal, run `godot --path . --editor --quit` to import, then `godot --path .`.
 
@@ -89,7 +95,10 @@ The shader is a complete spatial material. To use it in an existing custom mater
 | `detile_enabled` | Compare stochastic and ordinary periodic sampling. |
 | `texture_scale_m` | Size of one repeat in world units, normally meters. |
 | `variation_seed` | Choose a different deterministic cell-offset and rotation pattern; 0 preserves the original pattern. Matching maps share the seed. Duplicate the material to give different surfaces different seeds. |
-| `rotation_strength` | Rotate cell samples; zero preserves the source orientation. |
+| `rotation_strength` | Rotate cell samples; zero preserves the source orientation. Ignored while `structure_enabled` is on. |
+| `structure_enabled` | Constrain cell transforms to a source-specific lattice and force identity rotation. Off by default; independent of blending. |
+| `structure_period` | Source-UV X/Y translation steps; zero locks that coordinate. Default `(1,1)` gives no meaningful variation with zero stagger. |
+| `structure_stagger` | Fraction of the X step added per Y step, e.g. `0.5` for a matching running-bond lattice. Default zero. |
 | `blend_contrast` | Adjust the color and roughness weight curve (and normals in shared-weight mode); 0.5 is neutral. Higher values may reveal the lattice. |
 | `paper_blend` | Enable separate luminance-weighted color/roughness and slope-weighted normal blending. Off by default; ignored when `coherent_blend` is enabled. |
 | `coherent_blend` | Use one content-guided mixture for color, normal slopes, and roughness. Off by default; takes precedence over `paper_blend`. |

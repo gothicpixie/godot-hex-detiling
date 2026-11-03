@@ -1,0 +1,7 @@
+# Structure-aware detiling design
+
+Add an opt-in transform constraint, independent of shared, paper, and coherent blend selection. Defaults remain unchanged. In structure mode, all PBR maps use identity rotation and the same seeded integer lattice translation. `structure_period` supplies the source-UV X and Y steps; `structure_stagger` gives the X-step fraction added per Y step. The shift is `ix*(period.x,0) + iy*(stagger*period.x,period.y)`, with each integer chosen from -4 through 4 using the existing cell hash. A zero period component locks that axis. No texture reads are added.
+
+This preserves template phase only when the supplied lattice matches the source. Full-source-repeat steps produce identical repeated samples and no meaningful variation. There is no automatic pattern recognition, new content synthesis, or guarantee of global layout across triplanar corners. Approximate scanned layouts can retain residual ghosting. Existing blend and filtering tradeoffs remain.
+
+Demo presets are restricted to the three measured source materials: brick uses `(2/15,1/14)` with half-step stagger; planks use `(.25,0)` to lock their transverse coordinate; checker paving uses `(.2,.2)` to preserve two-square color parity. These are source-specific approximations, not universal brick/wood/tile settings. The demo changes presets when switching among supported sources and disables structure mode on unsupported sources rather than carrying stale values. Inspector uniforms allow other layouts.
