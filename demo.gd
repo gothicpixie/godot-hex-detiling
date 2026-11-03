@@ -5,6 +5,7 @@ var toggle: Button
 const TEXTURE_SETS := [
 	["res://assets/rock_albedo.png", "res://assets/rock_normal.png", "res://assets/rock_roughness.png"],
 	["res://assets/sandstone_albedo.png", "res://assets/sandstone_normal.png", "res://assets/sandstone_roughness.png"],
+	["res://assets/boulder_albedo.png", "res://assets/boulder_normal.png", "res://assets/boulder_roughness.png"],
 ]
 
 func _ready() -> void:
@@ -55,6 +56,7 @@ func _ready() -> void:
 	var selector := OptionButton.new()
 	selector.add_item("Rocks Ground 04")
 	selector.add_item("Sandstone Cracks")
+	selector.add_item("Rock Boulder Cracked")
 	selector.item_selected.connect(set_texture_set)
 	box.add_child(selector)
 	var rotation_label := Label.new()

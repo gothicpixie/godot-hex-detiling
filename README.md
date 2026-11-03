@@ -10,7 +10,7 @@ The loop alternates two actual captures of the same terrain, camera, lights, and
 
 1. Open `project.godot` in Godot 4 and allow the textures to import.
 2. Press **F5** to run. Press **Space** or click the button to toggle the effect.
-3. Press **1**, **2**, or **3** for camera views. Choose a texture set, adjust rotation and blend contrast, and toggle the roughness map in the panel. Drag to rotate the surface and use the mouse wheel to zoom.
+3. Press **1**, **2**, or **3** for camera views. Choose one of three texture sets, adjust rotation and blend contrast, and toggle the roughness map in the panel. Drag to rotate the surface and use the mouse wheel to zoom.
 
 Tested with Godot **4.7.2**, Compatibility renderer, on macOS. Other versions and hardware need testing. From a terminal, run `godot --path . --editor --quit` to import, then `godot --path .`.
 
@@ -29,6 +29,19 @@ The following captures use Sandstone Cracks, with rotation at 0.75, blend contra
 | Regular | Detiled |
 | --- | --- |
 | ![Sandstone with regular tiling](docs/sandstone-periodic.png) | ![Sandstone with detiling](docs/sandstone-detiled.png) |
+
+### Material and mesh gallery
+
+These GPU captures compare the same camera, lighting, mesh, and material settings with detiling off and on. All four use rotation strength **0.65**, blend contrast **0.65**, and the matching roughness map. The repeat size is **1.5 m** for Rocks Ground and Sandstone Cracks, and **2.5 m** for Rock Boulder Cracked. Each image uses albedo, normal, and roughness maps. They are visual examples, not a proof that seams or artifacts are absent under every light or viewing distance.
+
+| Material / mesh | Regular tiling | Detiling |
+| --- | --- | --- |
+| Rocks Ground 04 on procedural terrain | ![Rocks terrain, regular tiling](docs/gallery/rocks-terrain-periodic.png) | ![Rocks terrain, detiled](docs/gallery/rocks-terrain-detiled.png) |
+| Sandstone Cracks on a sphere | ![Sandstone sphere, regular tiling](docs/gallery/sandstone-sphere-periodic.png) | ![Sandstone sphere, detiled](docs/gallery/sandstone-sphere-detiled.png) |
+| Rock Boulder Cracked on a vertical box | ![Cracked rock wall, regular tiling](docs/gallery/boulder-wall-periodic.png) | ![Cracked rock wall, detiled](docs/gallery/boulder-wall-detiled.png) |
+| Rock Boulder Cracked on a sphere | ![Cracked rock sphere, regular tiling](docs/gallery/boulder-sphere-periodic.png) | ![Cracked rock sphere, detiled](docs/gallery/boulder-sphere-detiled.png) |
+
+The cracked-rock wall makes the regular grid especially easy to see; the detiled version breaks it up, but changes and softens some detail. The sandstone sphere has less prominent repetition to begin with, so the difference is subtler. These are three rock or sandstone materials; they do not establish performance on wood, brick, or strongly directional textures. Sphere and box examples are controlled primitive meshes, not scans or detailed production assets.
 
 ## Add it to your project
 
@@ -56,10 +69,10 @@ Large organic surfaces are a useful starting point. Strong, recognizable feature
 
 ## Project checks
 
-After importing assets, run `godot --headless --path . --script res://tests/smoke.gd` to check scene loading, texture binding, and the sampling toggle. On a machine with a graphics display, `godot --path . --script res://tests/gpu_probe.gd` checks that a flat normal map leaves lighting unchanged at full rotation, and `godot --path . --script res://tests/capture.gd` regenerates the still images in `docs/`. These checks do not establish correctness for every normal map or renderer.
+After importing assets, run `godot --headless --path . --script res://tests/smoke.gd` to check scene loading, texture binding, and the sampling toggle. On a machine with a graphics display, `godot --path . --script res://tests/gpu_probe.gd` checks that a flat normal map leaves lighting unchanged at full rotation. Run `godot --path . --script res://tests/capture.gd` to regenerate the initial stills, or `godot --path . --script res://tests/material_gallery.gd` for the paired material and mesh gallery in `docs/gallery/`. These checks do not establish correctness for every normal map or renderer.
 
 ## Credits and license
 
 Adapted from the author's `chain-racing` material and cliff study. Based on Morten S. Mikkelsen's [Practical Real-Time Hex-Tiling](https://jcgt.org/published/0011/03/05/), JCGT, 2022. This adaptation adds optional cell rotation, a shared blend-weight curve, and multiplicative color normalization; it is not a verbatim implementation of every technique in the paper. See [third-party notices](addons/hex_detile/THIRD_PARTY_NOTICES.md) for the original Godot reference and its license.
 
-Code and documentation: [MIT License](LICENSE). The example texture sets are [Rocks Ground 04](https://polyhaven.com/a/rocks_ground_04) and [Sandstone Cracks](https://polyhaven.com/a/sandstone_cracks), by Rob Tuytel / Poly Haven, under [CC0](https://polyhaven.com/license). The sandstone maps were resized to 1024 pixels for this demo. Screenshots depict those textures. Godot is distributed separately under its own license.
+Code and documentation: [MIT License](LICENSE). The example texture sets are [Rocks Ground 04](https://polyhaven.com/a/rocks_ground_04) and [Sandstone Cracks](https://polyhaven.com/a/sandstone_cracks), by Rob Tuytel / Poly Haven, plus [Rock Boulder Cracked](https://polyhaven.com/a/rock_boulder_cracked), photography by Dimitrios Savva and processing by Dario Barresi / Poly Haven. All are [CC0](https://polyhaven.com/license). The sandstone and boulder maps were resized to 1024 pixels for this demo. Screenshots depict those textures. Godot is distributed separately under its own license.
