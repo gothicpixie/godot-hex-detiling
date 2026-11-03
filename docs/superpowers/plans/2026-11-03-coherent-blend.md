@@ -26,10 +26,10 @@ Zero-support triangle edges, flat normals, disabled roughness/normal input, mini
 - [x] Expose Shared / Paper / Coherent choices and footprint relaxation in demo.gd.
 - [x] Add reproducible seventeen-material, multi-view capture script and mode comparison benchmark.
 - [x] Inspect captures, record results and limits, add README entry, addon instructions and detailed docs/coherent/README.md.
-- [ ] Complete final full-diff review and validation, then commit and push only after coordinator review. Publication remains pending.
+- [x] Complete final full-diff review and validation, then commit and push after coordinator review. Feature commit `2cbb533` was fast-forwarded to main, passed the merged headless smoke check, and was pushed without force.
 
 ## Execution notes
 
 The user expanded the evaluation from nine to seventeen public scanned-material sets and requested lower-cost agents for code, assets, and tests, with an Astra coordinator integrating and reviewing. Twenty capture cases include the seventeen materials and three alternate views. Generated-material experiments remain separately reviewed and do not change this public count.
 
-The initial GPU probe failed before implementation with `FAIL: coherent material mode is missing` (exit 1). An added maximum-power/contrast fixture later exposed a collapsed equal mixture; normalization was fixed before the check passed. A nonflat correlated fixture also rejects deliberate independent-normal-weight and wrong-rotation mutations. These targeted results support the checked implementation steps; final review, release validation, commit, and push are separate pending work.
+The initial GPU probe failed before implementation with `FAIL: coherent material mode is missing` (exit 1). An added maximum-power/contrast fixture later exposed a collapsed equal mixture; normalization was fixed before the check passed. A nonflat correlated fixture also rejects deliberate independent-normal-weight and wrong-rotation mutations. These targeted results support the checked implementation steps. Final evidence review approved the documented results and presentation. The add-on archive passed CRC and byte-for-byte source verification, all documentation links resolved, and the reviewed feature was committed and pushed after a fresh merged headless smoke check.
