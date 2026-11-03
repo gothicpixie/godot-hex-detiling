@@ -8,7 +8,7 @@ uniform float texture_scale_m : hint_range(0.1, 10.0, 0.1) = 1.5;
 uniform float normal_strength : hint_range(0.0, 1.0, 0.01) = 0.5;
 uniform float roughness : hint_range(0.0, 1.0, 0.01) = 0.9;
 uniform float detile_blend_power : hint_range(1.0, 16.0, 0.1) = 7.0;
-uniform float detile_detrend : hint_range(0.0, 1.0, 0.01) = 1.0;
+uniform float detile_detrend : hint_range(0.0, 1.0, 0.01) = 0.0;
 uniform float detile_detrend_lod : hint_range(0.0, 12.0, 0.1) = 6.0;
 varying vec3 world_position;
 varying vec3 geometric_world_normal;
@@ -49,25 +49,21 @@ vec3 detile_sample_color(sampler2D tex, vec2 st, vec2 dx, vec2 dy) {
 	vec2 o1 = detile_hash2(vec2(v1));
 	vec2 o2 = detile_hash2(vec2(v2));
 	vec2 o3 = detile_hash2(vec2(v3));
-	vec3 target = textureLod(tex, vec2(0.5), 16.0).rgb;
 	vec3 c1 = textureGrad(tex, st + o1, dx, dy).rgb;
 	vec3 c2 = textureGrad(tex, st + o2, dx, dy).rgb;
 	vec3 c3 = textureGrad(tex, st + o3, dx, dy).rgb;
-	ivec2 map_size = textureSize(tex, 0);
-	float map_dimension = float(max(map_size.x, map_size.y));
-	float max_lod = log2(map_dimension);
-	// Keep tone normalization spatially comparable to the reference chain's
-	// 512px maps: 4K source maps use LOD 9 when the control remains at 6.
-	float effective_lod = clamp(
-		detile_detrend_lod + log2(max(map_dimension / 512.0, 0.0001)),
-		0.0, max_lod
-	);
-	vec3 l1 = textureLod(tex, st + o1, effective_lod).rgb;
-	vec3 l2 = textureLod(tex, st + o2, effective_lod).rgb;
-	vec3 l3 = textureLod(tex, st + o3, effective_lod).rgb;
-	c1 *= mix(vec3(1.0), target / max(l1, vec3(0.04)), detile_detrend);
-	c2 *= mix(vec3(1.0), target / max(l2, vec3(0.04)), detile_detrend);
-	c3 *= mix(vec3(1.0), target / max(l3, vec3(0.04)), detile_detrend);
+	if (detile_detrend > 0.0) {
+		vec3 target = textureLod(tex, vec2(0.5), 16.0).rgb;
+		ivec2 map_size = textureSize(tex, 0);
+		float map_dimension = float(max(map_size.x, map_size.y));
+		float effective_lod = clamp(detile_detrend_lod + log2(max(map_dimension / 512.0, 0.0001)), 0.0, log2(map_dimension));
+		vec3 l1 = textureLod(tex, st + o1, effective_lod).rgb;
+		vec3 l2 = textureLod(tex, st + o2, effective_lod).rgb;
+		vec3 l3 = textureLod(tex, st + o3, effective_lod).rgb;
+		c1 *= mix(vec3(1.0), target / max(l1, vec3(0.04)), detile_detrend);
+		c2 *= mix(vec3(1.0), target / max(l2, vec3(0.04)), detile_detrend);
+		c3 *= mix(vec3(1.0), target / max(l3, vec3(0.04)), detile_detrend);
+	}
 	return c1 * W.x + c2 * W.y + c3 * W.z;
 }
 

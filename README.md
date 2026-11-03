@@ -4,7 +4,7 @@
 
 ![A loop alternating between regular tiling and hex detiling on the same rock surface](docs/comparison.gif)
 
-The loop alternates two actual captures of the same surface, camera, lights, and material settings. Detiling reduces the obvious repeating marks, but also changes contrast and costs more sampling work. It is not a one-click fix for every texture.
+The loop alternates two actual captures of the same terrain, camera, lights, and material settings. Detiling reduces the obvious repeating marks, but also changes contrast and costs more sampling work. It is not a one-click fix for every texture.
 
 ## Try the demo
 
@@ -39,7 +39,7 @@ The shader is a complete spatial material. To use it in an existing custom mater
 
 ## How it works and when to use it
 
-The shader samples three randomly offset copies of a repeatable texture on a triangular lattice, blends them, and projects the result along three world axes. Color and normal maps share offsets. Tone normalization helps reduce broad patches from the blend, but can change contrast or suppress features. Offset-only sampling preserves orientation; it does not rotate tiles. World-space projection means moving or rotating an object moves it through the texture. Normal mapping is an approximation based on the geometric normal and sampled tangent components, not a general substitute for a mesh's tangent-space material.
+The shader samples three randomly offset copies of a repeatable texture on a triangular lattice, blends them, and projects the result along three world axes. Color and normal maps share offsets. Optional tone normalization helps reduce broad patches from the blend, but can change contrast or suppress features. It defaults to off; the demo uses the off setting. Offset-only sampling preserves orientation; it does not rotate tiles. World-space projection means moving or rotating an object moves it through the texture. Normal mapping is an approximation based on the geometric normal and sampled tangent components, not a general substitute for a mesh's tangent-space material.
 
 Large organic surfaces are a useful starting point. Strong, recognizable features can still repeat or form patches. Triplanar projection, multiple texture samples, and normalization add GPU work; this demo has no distance-based optimization. See the [benchmark and its limitations](benchmarks/README.md), and profile on your target hardware.
 

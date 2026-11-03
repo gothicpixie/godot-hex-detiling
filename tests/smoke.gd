@@ -9,6 +9,10 @@ func _initialize() -> void:
 	var demo := scene.instantiate()
 	root.add_child(demo)
 	await process_frame
+	if demo.get_node("Surface").mesh is BoxMesh:
+		push_error("Demo surface is still the flat box")
+		quit(1)
+		return
 	var material := demo.get_node("Surface").material_override as ShaderMaterial
 	assert(material != null and material.get_shader_parameter("albedo_map") != null)
 	assert(material.get_shader_parameter("detile_enabled") == true)
