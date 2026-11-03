@@ -1,0 +1,12 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+ENGINE={ "major": 4, "minor": 7, "patch": 2, "hex": 263938, "status": "stable", "build": "official", "hash": "ed1daf0bf001b61586d9930840f2f1394092c079", "timestamp": 0, "string": "4.7.2-stable (official)" } GPU=Apple M5 renderer=gl_compatibility
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":4.94269499999999,"median_whole_frame_ms":4.886,"p95_whole_frame_ms":5.43,"round":0,"samples":600,"scene":"terrain","test":"benchmark","variant":"frozen","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":4.06746333333333,"median_whole_frame_ms":4.028,"p95_whole_frame_ms":4.478,"round":0,"samples":600,"scene":"terrain","test":"benchmark","variant":"pack","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":2.93732333333334,"median_whole_frame_ms":2.84,"p95_whole_frame_ms":3.35,"round":0,"samples":600,"scene":"terrain","test":"benchmark","variant":"early","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":2.84796,"median_whole_frame_ms":2.488,"p95_whole_frame_ms":3.883,"round":0,"samples":600,"scene":"terrain","test":"benchmark","variant":"both","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.69014833333333,"median_whole_frame_ms":6.875,"p95_whole_frame_ms":7.377,"round":1,"samples":600,"scene":"terrain","test":"benchmark","variant":"both","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89993333333333,"median_whole_frame_ms":6.9,"p95_whole_frame_ms":7.407,"round":1,"samples":600,"scene":"terrain","test":"benchmark","variant":"early","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90004666666666,"median_whole_frame_ms":6.898,"p95_whole_frame_ms":7.47,"round":1,"samples":600,"scene":"terrain","test":"benchmark","variant":"pack","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.900015,"median_whole_frame_ms":6.9,"p95_whole_frame_ms":7.41,"round":1,"samples":600,"scene":"terrain","test":"benchmark","variant":"frozen","warmup":180}

@@ -1,0 +1,60 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+ENGINE={ "major": 4, "minor": 7, "patch": 2, "hex": 263938, "status": "stable", "build": "official", "hash": "ed1daf0bf001b61586d9930840f2f1394092c079", "timestamp": 0, "string": "4.7.2-stable (official)" } GPU=Apple M5 renderer=gl_compatibility
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.00392156862745098,"mean":0.0000000113471314451707,"rmse":0.00000667072370038992},"detrend":0.0,"guard":false,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.00392156862745098,"mean":0.000000034041394335512,"rmse":0.0000115540323723292},"detrend":0.6,"guard":false,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.00392156862745098,"mean":0.000000034041394335512,"rmse":0.0000115540323723292},"detrend":0.0,"guard":false,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.00392156862745098,"mean":0.0000000226942628903413,"rmse":0.00000943382792793506},"detrend":0.6,"guard":false,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.00392156862745098,"mean":0.0000000113471314451707,"rmse":0.00000667072370038992},"detrend":0.0,"guard":false,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.00392156862745098,"mean":0.0000000226942628903413,"rmse":0.00000943382792793506},"detrend":0.6,"guard":false,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.00392156862745098,"mean":0.00000000567356572258533,"rmse":0.00000471691396396753},"detrend":0.0,"guard":false,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":false,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.00392156862745098,"mean":0.00000000567356572258533,"rmse":0.00000471691396396753},"detrend":0.0,"guard":true,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,8.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.00392156862745098,"mean":0.00000000567356572258533,"rmse":0.00000471691396396753},"detrend":0.0,"guard":false,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":false,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.00392156862745098,"mean":0.00000000567356572258533,"rmse":0.00000471691396396753},"detrend":0.0,"guard":false,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":false,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":false,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":false,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":false,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":false,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.00392156862745098,"mean":0.00000000567356572258533,"rmse":0.00000471691396396753},"detrend":0.6,"guard":true,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[12.0,1.0,2.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":false,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":false,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":false,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":false,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":false,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":true,"pass":true,"seed":0.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":false,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":false,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":false,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.00392156862745098,"mean":0.00000000567356572258533,"rmse":0.00000471691396396753},"detrend":0.6,"guard":false,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":false,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.0,"guard":true,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+{"camera":[1.0,1.0,45.0],"delta":{"max":0.0,"mean":0.0,"rmse":0.0},"detrend":0.6,"guard":true,"maps":true,"pass":true,"seed":7.0,"test":"spatial"}
+motion captured wall-pan seed=0.0
+motion captured wall-pan seed=7.0
+motion captured approach-retreat seed=0.0
+motion captured approach-retreat seed=7.0
+motion captured grazing seed=0.0
+motion captured grazing seed=7.0
+motion captured terrain seed=0.0
+motion captured terrain seed=7.0

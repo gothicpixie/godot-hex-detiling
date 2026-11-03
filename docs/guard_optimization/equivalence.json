@@ -1,0 +1,7031 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"failures": 0,
+	"frame_tolerance_max": 0.00784313725490196,
+	"gpu": "Apple M5",
+	"readback": "RGBA8",
+	"records": [
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.000000034041394335512,
+				"rmse": 0.0000115540323723292
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.000000034041394335512,
+				"rmse": 0.0000115540323723292
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000226942628903413,
+				"rmse": 0.00000943382792793506
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000226942628903413,
+				"rmse": 0.00000943382792793506
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				12.0,
+				1.0,
+				2.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 0.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"detrend": 0.6,
+			"guard": false,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": false,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.0,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				45.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"detrend": 0.6,
+			"guard": true,
+			"maps": true,
+			"pass": true,
+			"seed": 7.0,
+			"test": "spatial"
+		},
+		{
+			"camera": [
+				-4.0,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 0,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.8297872543335,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 1,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.65957450866699,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 2,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.48936176300049,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 3,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.31914901733398,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 4,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.14893627166748,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 5,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.9787232875824,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 6,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.80851054191589,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.63829779624939,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 8,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.46808505058289,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 9,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.29787230491638,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.12765955924988,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 11,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.95744681358337,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.78723406791687,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.61702132225037,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 14,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.44680845737457,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 15,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.27659571170807,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 16,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.10638296604156,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 17,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.936170220375061,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 18,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.765957474708557,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.595744669437408,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.425531923770905,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 21,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.255319148302078,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.0851063802838326,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.0851063802838326,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.255319148302078,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.425531923770905,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.595744669437408,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 27,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.765957474708557,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.936170220375061,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.10638296604156,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.27659571170807,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 31,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.44680845737457,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.61702132225037,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.78723406791687,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.95744681358337,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 35,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.12765955924988,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 36,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.29787230491638,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 37,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.46808505058289,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 38,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.63829779624939,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.80851054191589,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 40,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.9787232875824,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.14893627166748,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 42,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.31914901733398,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 43,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.48936176300049,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 44,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.65957450866699,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 45,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.8297872543335,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 46,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				4.0,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 47,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-4.0,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 0,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.8297872543335,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 1,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.65957450866699,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 2,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.48936176300049,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 3,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.31914901733398,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 4,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-3.14893627166748,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 5,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.9787232875824,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 6,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.80851054191589,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.63829779624939,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 8,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.46808505058289,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 9,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.29787230491638,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-2.12765955924988,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 11,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.95744681358337,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.78723406791687,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 13,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.61702132225037,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.44680845737457,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 15,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.27659571170807,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 16,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-1.10638296604156,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 17,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.936170220375061,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.765957474708557,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.595744669437408,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.425531923770905,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 21,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.255319148302078,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				-0.0851063802838326,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.0851063802838326,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.255319148302078,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.425531923770905,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 26,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.595744669437408,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.765957474708557,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 28,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				0.936170220375061,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 29,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.10638296604156,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 30,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.27659571170807,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.44680845737457,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.61702132225037,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.78723406791687,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.95744681358337,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 35,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.12765955924988,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 36,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.29787230491638,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 37,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.46808505058289,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 38,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.63829779624939,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.80851054191589,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				2.9787232875824,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.14893627166748,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 42,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.31914901733398,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 43,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.48936176300049,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 44,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.65957450866699,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 45,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				3.8297872543335,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 46,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				4.0,
+				0.800000011920929,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 47,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "wall-pan"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 0,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				15.4807748794556
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 1,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				22.9281387329102
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 2,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				30.3088302612305
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 3,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				37.5898857116699
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 4,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				44.7387847900391
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 5,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				51.7235984802246
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 6,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				58.5131340026855
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				65.0770645141602
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 8,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				71.3860778808594
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 9,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				77.4119873046875
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				83.1278915405273
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 11,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				88.5082550048828
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				93.5290451049805
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				98.1678466796875
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				102.403930664062
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 15,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				106.218391418457
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 16,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				109.594184875488
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 17,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				112.516227722168
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				114.971481323242
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				116.94896697998
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				118.439865112305
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 21,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				119.437515258789
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				119.937454223633
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				119.937454223633
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				119.437515258789
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				118.439865112305
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				116.94896697998
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				114.971481323242
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				112.516227722168
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				109.594184875488
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				106.218391418457
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				102.403930664062
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				98.1678466796875
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				93.5290451049805
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				88.5082550048828
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 35,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				83.1278915405273
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 36,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				77.4119873046875
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 37,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				71.3860778808594
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 38,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				65.0770645141602
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				58.5131340026855
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				51.7235984802246
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				44.7387847900391
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 42,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				37.5898857116699
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 43,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				30.3088302612305
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 44,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				22.9281387329102
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 45,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				15.4807748794556
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 46,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 47,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 0,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				15.4807748794556
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 1,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				22.9281387329102
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 2,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				30.3088302612305
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 3,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				37.5898857116699
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 4,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				44.7387847900391
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 5,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				51.7235984802246
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 6,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				58.5131340026855
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				65.0770645141602
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 8,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				71.3860778808594
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 9,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				77.4119873046875
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				83.1278915405273
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 11,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				88.5082550048828
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				93.5290451049805
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				98.1678466796875
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				102.403930664062
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 15,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				106.218391418457
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 16,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				109.594184875488
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 17,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				112.516227722168
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				114.971481323242
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				116.94896697998
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				118.439865112305
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 21,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				119.437515258789
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				119.937454223633
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				119.937454223633
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				119.437515258789
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				118.439865112305
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				116.94896697998
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				114.971481323242
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				112.516227722168
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				109.594184875488
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				106.218391418457
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				102.403930664062
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				98.1678466796875
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				93.5290451049805
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				88.5082550048828
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 35,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				83.1278915405273
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 36,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				77.4119873046875
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 37,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				71.3860778808594
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 38,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				65.0770645141602
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				58.5131340026855
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				51.7235984802246
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				44.7387847900391
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 42,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				37.5898857116699
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 43,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				30.3088302612305
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 44,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				22.9281387329102
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 45,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				15.4807748794556
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 46,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				8.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 47,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				8.0,
+				1.0,
+				3.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 0,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.12765979766846,
+				1.0,
+				2.96808505058289
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 1,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.25531959533691,
+				1.0,
+				2.93617010116577
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 2,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.38297843933105,
+				1.0,
+				2.90425539016724
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 3,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.51063823699951,
+				1.0,
+				2.87234044075012
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 4,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.63829803466797,
+				1.0,
+				2.84042549133301
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 5,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.76595783233643,
+				1.0,
+				2.80851054191589
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 6,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.89361667633057,
+				1.0,
+				2.77659583091736
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 7,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.02127647399902,
+				1.0,
+				2.74468088150024
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 8,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.14893627166748,
+				1.0,
+				2.71276593208313
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 9,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.27659606933594,
+				1.0,
+				2.68085098266602
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 10,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.40425491333008,
+				1.0,
+				2.64893627166748
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 11,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.53191471099854,
+				1.0,
+				2.61702132225037
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.65957450866699,
+				1.0,
+				2.58510637283325
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.78723430633545,
+				1.0,
+				2.55319142341614
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.91489315032959,
+				1.0,
+				2.5212767124176
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 15,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.042552947998,
+				1.0,
+				2.48936176300049
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 16,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.1702127456665,
+				1.0,
+				2.45744681358337
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 17,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.297872543335,
+				1.0,
+				2.42553186416626
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.4255323410034,
+				1.0,
+				2.39361691474915
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.5531911849976,
+				1.0,
+				2.36170220375061
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 20,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.680850982666,
+				1.0,
+				2.3297872543335
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 21,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.8085107803345,
+				1.0,
+				2.29787230491638
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.9361705780029,
+				1.0,
+				2.26595735549927
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.0638294219971,
+				1.0,
+				2.23404264450073
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.1914892196655,
+				1.0,
+				2.20212769508362
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 25,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.319149017334,
+				1.0,
+				2.1702127456665
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.4468088150024,
+				1.0,
+				2.13829779624939
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.5744676589966,
+				1.0,
+				2.10638308525085
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.702127456665,
+				1.0,
+				2.07446813583374
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.8297872543335,
+				1.0,
+				2.04255318641663
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.957447052002,
+				1.0,
+				2.01063823699951
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.0851068496704,
+				1.0,
+				1.97872340679169
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.2127656936646,
+				1.0,
+				1.94680845737457
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.340425491333,
+				1.0,
+				1.91489362716675
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.4680852890015,
+				1.0,
+				1.88297867774963
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 35,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.5957450866699,
+				1.0,
+				1.85106384754181
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 36,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.7234039306641,
+				1.0,
+				1.81914889812469
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 37,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.8510637283325,
+				1.0,
+				1.78723406791687
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 38,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.978723526001,
+				1.0,
+				1.75531911849976
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.1063833236694,
+				1.0,
+				1.72340428829193
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.2340421676636,
+				1.0,
+				1.69148933887482
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.361701965332,
+				1.0,
+				1.65957450866699
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 42,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.4893617630005,
+				1.0,
+				1.62765955924988
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 43,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.6170215606689,
+				1.0,
+				1.59574472904205
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 44,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.7446804046631,
+				1.0,
+				1.56382977962494
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 45,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.8723402023315,
+				1.0,
+				1.53191494941711
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 46,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				14.0,
+				1.0,
+				1.5
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 47,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.0,
+				1.0,
+				3.0
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 0,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.12765979766846,
+				1.0,
+				2.96808505058289
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.000000017020697167756,
+				"rmse": 0.00000816993464052287
+			},
+			"frame": 1,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.25531959533691,
+				1.0,
+				2.93617010116577
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 2,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.38297843933105,
+				1.0,
+				2.90425539016724
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 3,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.51063823699951,
+				1.0,
+				2.87234044075012
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 4,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.63829803466797,
+				1.0,
+				2.84042549133301
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 5,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.76595783233643,
+				1.0,
+				2.80851054191589
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 6,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.89361667633057,
+				1.0,
+				2.77659583091736
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.02127647399902,
+				1.0,
+				2.74468088150024
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 8,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.14893627166748,
+				1.0,
+				2.71276593208313
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 9,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.27659606933594,
+				1.0,
+				2.68085098266602
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.40425491333008,
+				1.0,
+				2.64893627166748
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 11,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.53191471099854,
+				1.0,
+				2.61702132225037
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 12,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.65957450866699,
+				1.0,
+				2.58510637283325
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.78723430633545,
+				1.0,
+				2.55319142341614
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				9.91489315032959,
+				1.0,
+				2.5212767124176
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 15,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.042552947998,
+				1.0,
+				2.48936176300049
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 16,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.1702127456665,
+				1.0,
+				2.45744681358337
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 17,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.297872543335,
+				1.0,
+				2.42553186416626
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.4255323410034,
+				1.0,
+				2.39361691474915
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.5531911849976,
+				1.0,
+				2.36170220375061
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.680850982666,
+				1.0,
+				2.3297872543335
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 21,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.8085107803345,
+				1.0,
+				2.29787230491638
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				10.9361705780029,
+				1.0,
+				2.26595735549927
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.0638294219971,
+				1.0,
+				2.23404264450073
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.1914892196655,
+				1.0,
+				2.20212769508362
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.319149017334,
+				1.0,
+				2.1702127456665
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.4468088150024,
+				1.0,
+				2.13829779624939
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.5744676589966,
+				1.0,
+				2.10638308525085
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.702127456665,
+				1.0,
+				2.07446813583374
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.8297872543335,
+				1.0,
+				2.04255318641663
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				11.957447052002,
+				1.0,
+				2.01063823699951
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.0851068496704,
+				1.0,
+				1.97872340679169
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 32,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.2127656936646,
+				1.0,
+				1.94680845737457
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.340425491333,
+				1.0,
+				1.91489362716675
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.4680852890015,
+				1.0,
+				1.88297867774963
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 35,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.5957450866699,
+				1.0,
+				1.85106384754181
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 36,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.7234039306641,
+				1.0,
+				1.81914889812469
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 37,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.8510637283325,
+				1.0,
+				1.78723406791687
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 38,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				12.978723526001,
+				1.0,
+				1.75531911849976
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.1063833236694,
+				1.0,
+				1.72340428829193
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.2340421676636,
+				1.0,
+				1.69148933887482
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.361701965332,
+				1.0,
+				1.65957450866699
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 42,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.4893617630005,
+				1.0,
+				1.62765955924988
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 43,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.6170215606689,
+				1.0,
+				1.59574472904205
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 44,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.7446804046631,
+				1.0,
+				1.56382977962494
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 45,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				13.8723402023315,
+				1.0,
+				1.53191494941711
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 46,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				14.0,
+				1.0,
+				1.5
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 47,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "grazing"
+		},
+		{
+			"camera": [
+				8.0,
+				6.0,
+				3.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 0,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.99356698989868,
+				6.08510637283325,
+				3.40094685554504
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 1,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.97427845001221,
+				6.1702127456665,
+				3.8012490272522
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 2,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.94216585159302,
+				6.25531911849976,
+				4.20026254653931
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 3,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.89728021621704,
+				6.34042549133301,
+				4.59734535217285
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 4,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.83969354629517,
+				6.42553186416626,
+				4.99185991287231
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 5,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.7694993019104,
+				6.51063823699951,
+				5.38317060470581
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 6,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.68680953979492,
+				6.59574460983276,
+				5.77064895629883
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.59175777435303,
+				6.68085098266602,
+				6.15367126464844
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 8,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.4844970703125,
+				6.76595735549927,
+				6.5316219329834
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 9,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.36519908905029,
+				6.85106372833252,
+				6.90389251708984
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.23405647277832,
+				6.93617010116577,
+				7.26988506317139
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 11,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.09127950668335,
+				7.02127647399902,
+				7.62901067733765
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.93709850311279,
+				7.10638284683228,
+				7.98069190979004
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.7717604637146,
+				7.19148921966553,
+				8.32436275482178
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.59553241729736,
+				7.27659559249878,
+				8.6594705581665
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 15,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.4086971282959,
+				7.36170196533203,
+				8.98547744750977
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 16,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.21155500411987,
+				7.44680833816528,
+				9.30185794830322
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 17,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.00442361831665,
+				7.53191471099854,
+				9.60810279846191
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				5.7876353263855,
+				7.61702108383179,
+				9.90372180938721
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				5.56153964996338,
+				7.70212745666504,
+				10.1882371902466
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				5.32649898529053,
+				7.78723382949829,
+				10.4611921310425
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 21,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				5.08289289474487,
+				7.87234020233154,
+				10.7221479415894
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				4.83111190795898,
+				7.95744657516479,
+				10.9706840515137
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				4.57156133651733,
+				8.04255294799805,
+				11.2064027786255
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				4.30465888977051,
+				8.12765979766846,
+				11.4289226531982
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				4.03083324432373,
+				8.21276569366455,
+				11.6378870010376
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				3.75052547454834,
+				8.29787254333496,
+				11.8329601287842
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				3.46418571472168,
+				8.38297843933105,
+				12.0138273239136
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				3.17227482795715,
+				8.46808528900146,
+				12.1801986694336
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				2.87526226043701,
+				8.55319118499756,
+				12.3318061828613
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				2.5736255645752,
+				8.63829803466797,
+				12.4684057235718
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				2.2678496837616,
+				8.72340393066406,
+				12.5897779464722
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				1.95842683315277,
+				8.80851078033447,
+				12.6957273483276
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				1.64585423469543,
+				8.89361667633057,
+				12.7860841751099
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				1.3306348323822,
+				8.97872352600098,
+				12.8607025146484
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 35,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				1.01327538490295,
+				9.06382942199707,
+				12.9194622039795
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 36,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				0.694286406040192,
+				9.14893627166748,
+				12.96226978302
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 37,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				0.374180853366852,
+				9.23404216766357,
+				12.9890556335449
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 38,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				0.0534735210239887,
+				9.31914901733398,
+				12.99977684021
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-0.267319828271866,
+				9.40425491333008,
+				12.9944152832031
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-0.587683260440826,
+				9.48936176300049,
+				12.9729814529419
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-0.907101511955261,
+				9.57446765899658,
+				12.935507774353
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 42,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-1.22506093978882,
+				9.65957450866699,
+				12.8820562362671
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 43,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-1.54105031490326,
+				9.74468040466309,
+				12.8127117156982
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 44,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-1.85456120967865,
+				9.8297872543335,
+				12.7275867462158
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 45,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-2.16508960723877,
+				9.91489315032959,
+				12.6268167495728
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 46,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-2.4721360206604,
+				10.0,
+				12.5105648040771
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 47,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				8.0,
+				6.0,
+				3.0
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.000000017020697167756,
+				"rmse": 0.00000816993464052287
+			},
+			"frame": 0,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.99356698989868,
+				6.08510637283325,
+				3.40094685554504
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 1,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.97427845001221,
+				6.1702127456665,
+				3.8012490272522
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 2,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.94216585159302,
+				6.25531911849976,
+				4.20026254653931
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 3,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.89728021621704,
+				6.34042549133301,
+				4.59734535217285
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 4,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.83969354629517,
+				6.42553186416626,
+				4.99185991287231
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 5,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.7694993019104,
+				6.51063823699951,
+				5.38317060470581
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 6,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.68680953979492,
+				6.59574460983276,
+				5.77064895629883
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.59175777435303,
+				6.68085098266602,
+				6.15367126464844
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 8,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.4844970703125,
+				6.76595735549927,
+				6.5316219329834
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 9,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.36519908905029,
+				6.85106372833252,
+				6.90389251708984
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.23405647277832,
+				6.93617010116577,
+				7.26988506317139
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 11,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				7.09127950668335,
+				7.02127647399902,
+				7.62901067733765
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.93709850311279,
+				7.10638284683228,
+				7.98069190979004
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.7717604637146,
+				7.19148921966553,
+				8.32436275482178
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.59553241729736,
+				7.27659559249878,
+				8.6594705581665
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 15,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.4086971282959,
+				7.36170196533203,
+				8.98547744750977
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 16,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.21155500411987,
+				7.44680833816528,
+				9.30185794830322
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 17,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				6.00442361831665,
+				7.53191471099854,
+				9.60810279846191
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				5.7876353263855,
+				7.61702108383179,
+				9.90372180938721
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				5.56153964996338,
+				7.70212745666504,
+				10.1882371902466
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				5.32649898529053,
+				7.78723382949829,
+				10.4611921310425
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 21,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				5.08289289474487,
+				7.87234020233154,
+				10.7221479415894
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				4.83111190795898,
+				7.95744657516479,
+				10.9706840515137
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				4.57156133651733,
+				8.04255294799805,
+				11.2064027786255
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				4.30465888977051,
+				8.12765979766846,
+				11.4289226531982
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				4.03083324432373,
+				8.21276569366455,
+				11.6378870010376
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				3.75052547454834,
+				8.29787254333496,
+				11.8329601287842
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				3.46418571472168,
+				8.38297843933105,
+				12.0138273239136
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				3.17227482795715,
+				8.46808528900146,
+				12.1801986694336
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				2.87526226043701,
+				8.55319118499756,
+				12.3318061828613
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				2.5736255645752,
+				8.63829803466797,
+				12.4684057235718
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				2.2678496837616,
+				8.72340393066406,
+				12.5897779464722
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				1.95842683315277,
+				8.80851078033447,
+				12.6957273483276
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				1.64585423469543,
+				8.89361667633057,
+				12.7860841751099
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				1.3306348323822,
+				8.97872352600098,
+				12.8607025146484
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 35,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				1.01327538490295,
+				9.06382942199707,
+				12.9194622039795
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 36,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				0.694286406040192,
+				9.14893627166748,
+				12.96226978302
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 37,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				0.374180853366852,
+				9.23404216766357,
+				12.9890556335449
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 38,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				0.0534735210239887,
+				9.31914901733398,
+				12.99977684021
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-0.267319828271866,
+				9.40425491333008,
+				12.9944152832031
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-0.587683260440826,
+				9.48936176300049,
+				12.9729814529419
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-0.907101511955261,
+				9.57446765899658,
+				12.935507774353
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 42,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-1.22506093978882,
+				9.65957450866699,
+				12.8820562362671
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 43,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-1.54105031490326,
+				9.74468040466309,
+				12.8127117156982
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 44,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-1.85456120967865,
+				9.8297872543335,
+				12.7275867462158
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 45,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-2.16508960723877,
+				9.91489315032959,
+				12.6268167495728
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 46,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		},
+		{
+			"camera": [
+				-2.4721360206604,
+				10.0,
+				12.5105648040771
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 47,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "terrain"
+		}
+	],
+	"resolution": [
+		640,
+		360
+	]
+}

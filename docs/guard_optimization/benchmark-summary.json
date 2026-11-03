@@ -1,0 +1,158 @@
+[
+  {
+    "scene": "terrain",
+    "variant": "frozen",
+    "median_of_round_medians_ms": 4.421,
+    "min_round_median_ms": 4.421,
+    "max_round_median_ms": 4.735,
+    "round_medians_ms": [
+      4.421,
+      4.421,
+      4.735
+    ],
+    "relative_to_frozen": 1.0
+  },
+  {
+    "scene": "terrain",
+    "variant": "pack",
+    "median_of_round_medians_ms": 3.854,
+    "min_round_median_ms": 3.715,
+    "max_round_median_ms": 4.632,
+    "round_medians_ms": [
+      3.854,
+      3.715,
+      4.632
+    ],
+    "relative_to_frozen": 0.8717484731961095
+  },
+  {
+    "scene": "terrain",
+    "variant": "early",
+    "median_of_round_medians_ms": 2.592,
+    "min_round_median_ms": 2.558,
+    "max_round_median_ms": 3.691,
+    "round_medians_ms": [
+      2.592,
+      2.558,
+      3.691
+    ],
+    "relative_to_frozen": 0.5862926939606423
+  },
+  {
+    "scene": "terrain",
+    "variant": "both",
+    "median_of_round_medians_ms": 2.062,
+    "min_round_median_ms": 2.058,
+    "max_round_median_ms": 3.828,
+    "round_medians_ms": [
+      2.058,
+      2.062,
+      3.828
+    ],
+    "relative_to_frozen": 0.4664103144085048
+  },
+  {
+    "scene": "close-wall",
+    "variant": "frozen",
+    "median_of_round_medians_ms": 4.111,
+    "min_round_median_ms": 4.025,
+    "max_round_median_ms": 4.164,
+    "round_medians_ms": [
+      4.025,
+      4.164,
+      4.111
+    ],
+    "relative_to_frozen": 1.0
+  },
+  {
+    "scene": "close-wall",
+    "variant": "pack",
+    "median_of_round_medians_ms": 3.993,
+    "min_round_median_ms": 3.854,
+    "max_round_median_ms": 4.154,
+    "round_medians_ms": [
+      4.154,
+      3.993,
+      3.854
+    ],
+    "relative_to_frozen": 0.9712965215276089
+  },
+  {
+    "scene": "close-wall",
+    "variant": "early",
+    "median_of_round_medians_ms": 3.832,
+    "min_round_median_ms": 3.742,
+    "max_round_median_ms": 3.997,
+    "round_medians_ms": [
+      3.997,
+      3.832,
+      3.742
+    ],
+    "relative_to_frozen": 0.9321333009000243
+  },
+  {
+    "scene": "close-wall",
+    "variant": "both",
+    "median_of_round_medians_ms": 3.523,
+    "min_round_median_ms": 3.433,
+    "max_round_median_ms": 3.541,
+    "round_medians_ms": [
+      3.433,
+      3.541,
+      3.523
+    ],
+    "relative_to_frozen": 0.8569691072731697
+  },
+  {
+    "scene": "distant",
+    "variant": "frozen",
+    "median_of_round_medians_ms": 1.007,
+    "min_round_median_ms": 1.003,
+    "max_round_median_ms": 1.266,
+    "round_medians_ms": [
+      1.007,
+      1.266,
+      1.003
+    ],
+    "relative_to_frozen": 1.0
+  },
+  {
+    "scene": "distant",
+    "variant": "pack",
+    "median_of_round_medians_ms": 0.988,
+    "min_round_median_ms": 0.938,
+    "max_round_median_ms": 1.441,
+    "round_medians_ms": [
+      0.938,
+      1.441,
+      0.988
+    ],
+    "relative_to_frozen": 0.9811320754716982
+  },
+  {
+    "scene": "distant",
+    "variant": "early",
+    "median_of_round_medians_ms": 0.886,
+    "min_round_median_ms": 0.866,
+    "max_round_median_ms": 0.911,
+    "round_medians_ms": [
+      0.866,
+      0.886,
+      0.911
+    ],
+    "relative_to_frozen": 0.8798411122144986
+  },
+  {
+    "scene": "distant",
+    "variant": "both",
+    "median_of_round_medians_ms": 0.874,
+    "min_round_median_ms": 0.853,
+    "max_round_median_ms": 0.971,
+    "round_medians_ms": [
+      0.853,
+      0.874,
+      0.971
+    ],
+    "relative_to_frozen": 0.8679245283018869
+  }
+]

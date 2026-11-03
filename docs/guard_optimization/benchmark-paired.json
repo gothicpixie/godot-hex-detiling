@@ -1,0 +1,32 @@
+[
+  {
+    "scene": "terrain",
+    "paired_round_ratios_both_to_frozen": [
+      0.4655055417326396,
+      0.4664103144085048,
+      0.8084477296726504
+    ],
+    "median_paired_ratio": 0.4664103144085048,
+    "mean_paired_ratio": 0.5801211952712649
+  },
+  {
+    "scene": "close-wall",
+    "paired_round_ratios_both_to_frozen": [
+      0.852919254658385,
+      0.8503842459173871,
+      0.8569691072731697
+    ],
+    "median_paired_ratio": 0.852919254658385,
+    "mean_paired_ratio": 0.8534242026163139
+  },
+  {
+    "scene": "distant",
+    "paired_round_ratios_both_to_frozen": [
+      0.8470705064548164,
+      0.6903633491311216,
+      0.9680957128614158
+    ],
+    "median_paired_ratio": 0.8470705064548164,
+    "mean_paired_ratio": 0.8351765228157846
+  }
+]

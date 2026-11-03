@@ -1,0 +1,21 @@
+{
+  "archive": "dist/hex-detile-addon.zip",
+  "version": "0.7.0",
+  "files": 10,
+  "uid_sidecars": 3,
+  "crc_and_source_bytes_verified": true,
+  "sha256": "99f61f691277a97888803d9b3d3f7ebd1f9d65d10aee1029e99d491735849ebf",
+  "size_bytes": 12876,
+  "paths": [
+    "addons/hex_detile/LICENSE",
+    "addons/hex_detile/README.md",
+    "addons/hex_detile/THIRD_PARTY_NOTICES.md",
+    "addons/hex_detile/coherent_blend.gdshaderinc",
+    "addons/hex_detile/coherent_blend.gdshaderinc.uid",
+    "addons/hex_detile/hex_detile.gdshader",
+    "addons/hex_detile/hex_detile.gdshader.uid",
+    "addons/hex_detile/plugin.cfg",
+    "addons/hex_detile/plugin.gd",
+    "addons/hex_detile/plugin.gd.uid"
+  ]
+}

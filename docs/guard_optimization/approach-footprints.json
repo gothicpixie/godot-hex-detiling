@@ -1,0 +1,114 @@
+[
+	{
+		"camera": [
+			0.1,
+			0.1,
+			1.5
+		],
+		"center_footprint_texel_class": "below2",
+		"pixel_rgb": [
+			1.0,
+			0.0,
+			0.0
+		],
+		"trajectory_frame": 0
+	},
+	{
+		"camera": [
+			0.1,
+			0.1,
+			2.01003514738502
+		],
+		"center_footprint_texel_class": "below2",
+		"pixel_rgb": [
+			1.0,
+			0.0,
+			0.0
+		],
+		"trajectory_frame": 1
+	},
+	{
+		"camera": [
+			0.1,
+			0.1,
+			2.68997552917298
+		],
+		"center_footprint_texel_class": "between2and8",
+		"pixel_rgb": [
+			0.0,
+			1.0,
+			0.0
+		],
+		"trajectory_frame": 2
+	},
+	{
+		"camera": [
+			0.1,
+			0.1,
+			3.59054284037344
+		],
+		"center_footprint_texel_class": "between2and8",
+		"pixel_rgb": [
+			0.0,
+			1.0,
+			0.0
+		],
+		"trajectory_frame": 3
+	},
+	{
+		"camera": [
+			0.1,
+			0.1,
+			4.77396117775054
+		],
+		"center_footprint_texel_class": "between2and8",
+		"pixel_rgb": [
+			0.0,
+			1.0,
+			0.0
+		],
+		"trajectory_frame": 4
+	},
+	{
+		"camera": [
+			0.1,
+			0.1,
+			6.31469067483997
+		],
+		"center_footprint_texel_class": "between2and8",
+		"pixel_rgb": [
+			0.0,
+			1.0,
+			0.0
+		],
+		"trajectory_frame": 5
+	},
+	{
+		"camera": [
+			0.1,
+			0.1,
+			8.29921813502193
+		],
+		"center_footprint_texel_class": "above8",
+		"pixel_rgb": [
+			0.0,
+			0.0,
+			1.0
+		],
+		"trajectory_frame": 6
+	},
+	{
+		"camera": [
+			0.1,
+			0.1,
+			119.706709086968
+		],
+		"center_footprint_texel_class": "above8",
+		"pixel_rgb": [
+			0.0,
+			0.0,
+			1.0
+		],
+		"trajectory_frame": 23
+	}
+]

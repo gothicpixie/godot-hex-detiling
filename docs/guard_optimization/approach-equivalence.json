@@ -1,0 +1,1559 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"failures": 0,
+	"frame_tolerance_max": 0.00784313725490196,
+	"gpu": "Apple M5",
+	"readback": "RGBA8",
+	"records": [
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 0,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.01003503799438
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 1,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.68997550010681
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 2,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.59054279327393
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 3,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.77396106719971
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000226942628903413,
+				"rmse": 0.00000943382792793506
+			},
+			"frame": 4,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.31469058990479
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000226942628903413,
+				"rmse": 0.00000943382792793506
+			},
+			"frame": 5,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				8.29921817779541
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 6,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				10.8244066238403
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.9938621520996
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 8,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				17.9118118286133
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 9,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				22.6741523742676
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				28.356653213501
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 11,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				35.0007553100586
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				42.598087310791
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				51.0754280090332
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				60.2824783325195
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 15,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				69.9851455688477
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 16,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				79.8669128417969
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 17,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				89.5401763916016
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				98.5682983398438
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				106.497283935547
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				112.89421081543
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 21,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				117.387962341309
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				119.70671081543
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				119.70671081543
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				117.387962341309
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				112.89421081543
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				106.497283935547
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				98.5682983398438
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				89.5401763916016
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				79.8669128417969
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				69.9851455688477
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				60.2824783325195
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				51.0754280090332
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				42.598087310791
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				35.0007553100586
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 35,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				28.356653213501
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 36,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				22.6741523742676
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 37,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				17.9118118286133
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 38,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.9938621520996
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				10.8244066238403
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				8.29921817779541
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.31469058990479
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000226942628903413,
+				"rmse": 0.00000943382792793506
+			},
+			"frame": 42,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.77396106719971
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000226942628903413,
+				"rmse": 0.00000943382792793506
+			},
+			"frame": 43,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.59054279327393
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 44,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.68997550010681
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 45,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.01003503799438
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 46,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.00000000567356572258533,
+				"rmse": 0.00000471691396396753
+			},
+			"frame": 47,
+			"seed": 0.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 0,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.01003503799438
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 1,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.68997550010681
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 2,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.59054279327393
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.000000017020697167756,
+				"rmse": 0.00000816993464052287
+			},
+			"frame": 3,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.77396106719971
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 4,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.31469058990479
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 5,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				8.29921817779541
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 6,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				10.8244066238403
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 7,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.9938621520996
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 8,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				17.9118118286133
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 9,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				22.6741523742676
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 10,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				28.356653213501
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 11,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				35.0007553100586
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 12,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				42.598087310791
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 13,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				51.0754280090332
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 14,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				60.2824783325195
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 15,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				69.9851455688477
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 16,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				79.8669128417969
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 17,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				89.5401763916016
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 18,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				98.5682983398438
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 19,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				106.497283935547
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 20,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				112.89421081543
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 21,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				117.387962341309
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 22,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				119.70671081543
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 23,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				119.70671081543
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 24,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				117.387962341309
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 25,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				112.89421081543
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 26,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				106.497283935547
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 27,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				98.5682983398438
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 28,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				89.5401763916016
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 29,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				79.8669128417969
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 30,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				69.9851455688477
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 31,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				60.2824783325195
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 32,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				51.0754280090332
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 33,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				42.598087310791
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 34,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				35.0007553100586
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 35,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				28.356653213501
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 36,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				22.6741523742676
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 37,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				17.9118118286133
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 38,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.9938621520996
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 39,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				10.8244066238403
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 40,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				8.29921817779541
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 41,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.31469058990479
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 42,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				4.77396106719971
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 43,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.59054279327393
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.000000017020697167756,
+				"rmse": 0.00000816993464052287
+			},
+			"frame": 44,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.68997550010681
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 45,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.01003503799438
+			],
+			"delta": {
+				"max": 0.0,
+				"mean": 0.0,
+				"rmse": 0.0
+			},
+			"frame": 46,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		},
+		{
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"delta": {
+				"max": 0.00392156862745098,
+				"mean": 0.0000000113471314451707,
+				"rmse": 0.00000667072370038992
+			},
+			"frame": 47,
+			"seed": 7.0,
+			"test": "motion",
+			"trajectory": "approach-retreat"
+		}
+	],
+	"resolution": [
+		640,
+		360
+	]
+}

@@ -1,0 +1,15 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+{"grazing_16_to_1":false,"lod":0.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":true,"lod":0.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":false,"lod":1.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":true,"lod":1.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":false,"lod":2.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":true,"lod":2.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":false,"lod":3.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":true,"lod":3.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":false,"lod":5.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":true,"lod":5.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":false,"lod":10.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}
+{"grazing_16_to_1":true,"lod":10.0,"max_alpha_error":0.0,"max_rgb_linear_error":0.0,"pass":true,"quantization":0.000122549019607843}

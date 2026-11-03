@@ -1,0 +1,25 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+ENGINE={ "major": 4, "minor": 7, "patch": 2, "hex": 263938, "status": "stable", "build": "official", "hash": "ed1daf0bf001b61586d9930840f2f1394092c079", "timestamp": 0, "string": "4.7.2-stable (official)" } GPU=Apple M5 renderer=gl_compatibility
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":4.81634,"median_whole_frame_ms":4.744,"p95_whole_frame_ms":5.251,"round":0,"samples":600,"scene":"terrain","test":"benchmark","variant":"frozen","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":4.02338166666666,"median_whole_frame_ms":3.93,"p95_whole_frame_ms":4.718,"round":0,"samples":600,"scene":"terrain","test":"benchmark","variant":"pack","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":5.00249,"median_whole_frame_ms":2.862,"p95_whole_frame_ms":7.321,"round":0,"samples":600,"scene":"terrain","test":"benchmark","variant":"early","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89909333333333,"median_whole_frame_ms":6.846,"p95_whole_frame_ms":8.737,"round":0,"samples":600,"scene":"terrain","test":"benchmark","variant":"both","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90027,"median_whole_frame_ms":6.948,"p95_whole_frame_ms":8.705,"round":1,"samples":600,"scene":"terrain","test":"benchmark","variant":"both","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89924666666667,"median_whole_frame_ms":6.938,"p95_whole_frame_ms":8.393,"round":1,"samples":600,"scene":"terrain","test":"benchmark","variant":"early","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89660333333334,"median_whole_frame_ms":6.938,"p95_whole_frame_ms":8.086,"round":1,"samples":600,"scene":"terrain","test":"benchmark","variant":"pack","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90029,"median_whole_frame_ms":6.944,"p95_whole_frame_ms":7.96,"round":1,"samples":600,"scene":"terrain","test":"benchmark","variant":"frozen","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89889333333333,"median_whole_frame_ms":6.955,"p95_whole_frame_ms":8.574,"round":2,"samples":600,"scene":"terrain","test":"benchmark","variant":"early","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89995666666666,"median_whole_frame_ms":6.952,"p95_whole_frame_ms":7.948,"round":2,"samples":600,"scene":"terrain","test":"benchmark","variant":"frozen","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90046166666667,"median_whole_frame_ms":6.904,"p95_whole_frame_ms":8.671,"round":2,"samples":600,"scene":"terrain","test":"benchmark","variant":"both","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90026,"median_whole_frame_ms":6.937,"p95_whole_frame_ms":8.033,"round":2,"samples":600,"scene":"terrain","test":"benchmark","variant":"pack","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.898565,"median_whole_frame_ms":6.988,"p95_whole_frame_ms":8.362,"round":0,"samples":600,"scene":"close-wall","test":"benchmark","variant":"frozen","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89998666666667,"median_whole_frame_ms":6.954,"p95_whole_frame_ms":8.57,"round":0,"samples":600,"scene":"close-wall","test":"benchmark","variant":"pack","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89600333333334,"median_whole_frame_ms":6.969,"p95_whole_frame_ms":8.813,"round":0,"samples":600,"scene":"close-wall","test":"benchmark","variant":"early","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90406166666666,"median_whole_frame_ms":6.949,"p95_whole_frame_ms":9.042,"round":0,"samples":600,"scene":"close-wall","test":"benchmark","variant":"both","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90413833333333,"median_whole_frame_ms":6.919,"p95_whole_frame_ms":9.004,"round":1,"samples":600,"scene":"close-wall","test":"benchmark","variant":"both","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89588,"median_whole_frame_ms":6.947,"p95_whole_frame_ms":8.579,"round":1,"samples":600,"scene":"close-wall","test":"benchmark","variant":"early","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90014166666666,"median_whole_frame_ms":6.953,"p95_whole_frame_ms":8.57,"round":1,"samples":600,"scene":"close-wall","test":"benchmark","variant":"pack","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.89746666666667,"median_whole_frame_ms":6.951,"p95_whole_frame_ms":8.329,"round":1,"samples":600,"scene":"close-wall","test":"benchmark","variant":"frozen","warmup":180}
+{"gpu_timer_nonzero":0,"mean_whole_frame_ms":6.90065,"median_whole_frame_ms":6.939,"p95_whole_frame_ms":8.736,"round":2,"samples":600,"scene":"close-wall","test":"benchmark","variant":"early","warmup":180}

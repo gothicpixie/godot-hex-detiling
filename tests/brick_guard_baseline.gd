@@ -13,7 +13,7 @@ func run()->void:
 	mat.set_shader_parameter("structure_guard_enabled",false)
 	var current:Shader=mat.shader
 	var baseline:=Shader.new()
-	baseline.code=FileAccess.get_file_as_string("/tmp/hex-brick-guard-baseline.gdshader").replace('#include "coherent_blend.gdshaderinc"',FileAccess.get_file_as_string("/tmp/hex-brick-guard-baseline.gdshaderinc"))
+	baseline.code=FileAccess.get_file_as_string("res://docs/guard_optimization/fixtures/pre-guard-6c9cabf.gdshader").replace('#include "coherent_blend.gdshaderinc"',FileAccess.get_file_as_string("res://docs/guard_optimization/fixtures/pre-guard-6c9cabf.gdshaderinc"))
 	var failures:=0
 	for structured in [false,true]:
 		for seed in [0.0,7.0]:

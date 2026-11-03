@@ -80,3 +80,24 @@ The mean of round medians increased about 63.8% in this run. These are whole-fra
 ```sh
 godot --path . --rendering-method gl_compatibility --resolution 1280x720 --disable-vsync --max-fps 0 --script res://benchmarks/brick_guard_compare.gd
 ```
+
+
+## Packed guard and exact source fallback — November 3, 2026
+
+This comparison reruns frozen v0.6.0 (`3b9216b`, shader and matching helper), packing alone, exact source-only early return alone, and both. It uses a new metric: **CPU wall time immediately around `RenderingServer.force_draw(false)`**, excluding awaited frame scheduling. Driver overhead and GPU queue backpressure can contribute. This is not isolated GPU time, whole-frame latency or FPS; GPU timer samples remained zero. Do not compare these values or percentages with the historical process-frame measurements above.
+
+Apple M5, Godot 4.7.2 Compatibility, 1280 × 720, three rounds per scene/arm, 180 warmup and 600 measured calls per round. Each arm records 600 actual post-draw callbacks and one viewport draw call. Values are median of round medians; parentheses show their range.
+
+| Scene | Frozen, ms | Packing only, ms | Early return only, ms | Both, ms |
+| --- | ---: | ---: | ---: | ---: |
+| Terrain | 4.421 (4.421–4.735) | 3.854 (3.715–4.632) | 2.592 (2.558–3.691) | 2.062 (2.058–3.828) |
+| Close wall | 4.111 (4.025–4.164) | 3.993 (3.854–4.154) | 3.832 (3.742–3.997) | 3.523 (3.433–3.541) |
+| Distant wall | 1.007 (1.003–1.266) | 0.988 (0.938–1.441) | 0.886 (0.866–0.911) | 0.874 (0.853–0.971) |
+
+Both changes had the lowest median in each tested scene (53.4%, 14.3%, 13.2% shorter than the fresh frozen baseline respectively), so both are retained. Terrain round variation is large; distant geometry has low coverage and can be submission-bound. This is one device, renderer and workload, not a general GPU speedup. Initial interrupted CPU-overlap and background-scheduling logs are superseded diagnostics; only the final `benchmark.json` / `benchmark.log` support the table.
+
+See [protocol, exact settings and reproduction](../docs/guard_optimization/VALIDATION.md#benchmark-protocol), [raw rounds](../docs/guard_optimization/benchmark.json), [full table](../docs/guard_optimization/benchmark-table.md), and [matched output and motion](../docs/guard_optimization/README.md). Reproduce after import, with other GPU/CPU media jobs stopped:
+
+```sh
+godot --path . --always-on-top --disable-vsync --disable-render-loop --resolution 1280x720 --script res://tests/guard_optimization.gd -- --bench
+```

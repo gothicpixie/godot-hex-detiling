@@ -1,0 +1,106 @@
+[
+  {
+    "sequence": "grazing-seed0",
+    "frames": 48,
+    "worst_frame": {
+      "frame": 4,
+      "max": 0.003921568393707275,
+      "mean": 1.134713034645074e-08,
+      "rmse": 6.6707234509522095e-06
+    },
+    "max_increment_error": 0.003921568393707275,
+    "max_increment_rmse": 8.169934517354704e-06,
+    "outlier_frames_over_2_bytes": []
+  },
+  {
+    "sequence": "grazing-seed7",
+    "frames": 48,
+    "worst_frame": {
+      "frame": 1,
+      "max": 0.003921568393707275,
+      "mean": 1.702069596376532e-08,
+      "rmse": 8.169934517354704e-06
+    },
+    "max_increment_error": 0.003921568393707275,
+    "max_increment_rmse": 8.169934517354704e-06,
+    "outlier_frames_over_2_bytes": []
+  },
+  {
+    "sequence": "terrain-seed0",
+    "frames": 48,
+    "worst_frame": {
+      "frame": 0,
+      "max": 0.003921568393707275,
+      "mean": 5.67356517322537e-09,
+      "rmse": 4.71691373604699e-06
+    },
+    "max_increment_error": 0.003921568393707275,
+    "max_increment_rmse": 6.6707234509522095e-06,
+    "outlier_frames_over_2_bytes": []
+  },
+  {
+    "sequence": "terrain-seed7",
+    "frames": 48,
+    "worst_frame": {
+      "frame": 0,
+      "max": 0.003921568393707275,
+      "mean": 1.702069596376532e-08,
+      "rmse": 8.169934517354704e-06
+    },
+    "max_increment_error": 0.003921568393707275,
+    "max_increment_rmse": 9.43382747209398e-06,
+    "outlier_frames_over_2_bytes": []
+  },
+  {
+    "sequence": "wall-pan-seed0",
+    "frames": 48,
+    "worst_frame": {
+      "frame": 1,
+      "max": 0.003921568393707275,
+      "mean": 1.134713034645074e-08,
+      "rmse": 6.6707234509522095e-06
+    },
+    "max_increment_error": 0.003921568393707275,
+    "max_increment_rmse": 8.169934517354704e-06,
+    "outlier_frames_over_2_bytes": []
+  },
+  {
+    "sequence": "wall-pan-seed7",
+    "frames": 48,
+    "worst_frame": {
+      "frame": 0,
+      "max": 0.003921568393707275,
+      "mean": 1.134713034645074e-08,
+      "rmse": 6.6707234509522095e-06
+    },
+    "max_increment_error": 0.003921568393707275,
+    "max_increment_rmse": 9.43382747209398e-06,
+    "outlier_frames_over_2_bytes": []
+  },
+  {
+    "sequence": "approach-retreat-seed0",
+    "frames": 48,
+    "worst_frame": {
+      "frame": 4,
+      "max": 0.003921568393707275,
+      "mean": 2.269426069290148e-08,
+      "rmse": 9.43382747209398e-06
+    },
+    "max_increment_error": 0.003921568393707275,
+    "max_increment_rmse": 1.3341446901904419e-05,
+    "outlier_frames_over_2_bytes": []
+  },
+  {
+    "sequence": "approach-retreat-seed7",
+    "frames": 48,
+    "worst_frame": {
+      "frame": 3,
+      "max": 0.003921568393707275,
+      "mean": 1.702069596376532e-08,
+      "rmse": 8.169934517354704e-06
+    },
+    "max_increment_error": 0.003921568393707275,
+    "max_increment_rmse": 1.0547340025368612e-05,
+    "outlier_frames_over_2_bytes": []
+  }
+]

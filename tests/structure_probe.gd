@@ -119,14 +119,14 @@ func run() -> void:
 	material.set_shader_parameter("structure_stagger",0.91)
 	check(mean_difference(off,await render(selection))<0.001,"disabled mode ignores period/stagger")
 	var current_prefix := prefix
-	var old_shader := FileAccess.get_file_as_string("/tmp/hex-structure-baseline.gdshader")
+	var old_shader := FileAccess.get_file_as_string("res://docs/guard_optimization/fixtures/pre-structure-5b86dca.gdshader")
 	if not old_shader.is_empty():
-		prefix=old_shader.split("void vertex()")[0].replace('#include "coherent_blend.gdshaderinc"', FileAccess.get_file_as_string("/tmp/hex-structure-baseline.gdshaderinc")).replace("shader_type spatial;", "shader_type canvas_item;").replace("render_mode diffuse_burley, specular_schlick_ggx;", "render_mode unshaded;").replace("filter_linear_mipmap_anisotropic","filter_nearest")
+		prefix=old_shader.split("void vertex()")[0].replace('#include "coherent_blend.gdshaderinc"', FileAccess.get_file_as_string("res://docs/guard_optimization/fixtures/pre-structure-5b86dca.gdshaderinc")).replace("shader_type spatial;", "shader_type canvas_item;").replace("render_mode diffuse_burley, specular_schlick_ggx;", "render_mode unshaded;").replace("filter_linear_mipmap_anisotropic","filter_nearest")
 		check(mean_difference(off,await render(selection))<0.001,"disabled transforms match original shader at 5b86dca")
 		check(mean_difference(off_sample,await render(body))<0.001,"disabled sampled image matches original shader at 5b86dca")
 		prefix=current_prefix
 	else:
-		print("SKIP: original-shader regression; run git show 5b86dca:addons/hex_detile/hex_detile.gdshader > /tmp/hex-structure-baseline.gdshader")
+		check(false,"checked-in full original shader fixture available")
 	material.set_shader_parameter("structure_enabled",true)
 	for period in [Vector2.ZERO,Vector2(0.001,0.001),Vector2(10,10)]:
 		material.set_shader_parameter("structure_period",period)

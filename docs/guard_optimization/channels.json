@@ -1,0 +1,1447 @@
+{
+	"failures": 0,
+	"max_byte_tolerance": 2,
+	"readback": "RGBA8 (Compatibility does not expose floating canvas readback)",
+	"records": [
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 0.25,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 0.25,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 2.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 2.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 1,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 1,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 3.5,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 3.5,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 1,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 1,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 7.99,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 7.99,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 8.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 8.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 0.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.0,
+			"footprint_texels": 12.0,
+			"maps": true,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "color",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "normal",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "packed",
+			"pass": true,
+			"seed": 7.0
+		},
+		{
+			"channel": "roughness",
+			"detrend": 0.6,
+			"footprint_texels": 12.0,
+			"maps": false,
+			"max_byte_delta": 0,
+			"mode": "separate",
+			"pass": true,
+			"seed": 7.0
+		}
+	]
+}

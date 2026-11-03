@@ -18,6 +18,34 @@ vec3 coherent_weights(vec3 bary, vec3 brightness, vec3 relief, vec2 dx, vec2 dy)
 
 void coherent_sample_material(vec2 st, vec2 dx, vec2 dy,
 		out vec3 color, out vec3 normal, out float material_roughness) {
+	bool guarded = detile_enabled && structure_enabled && structure_guard_enabled;
+	float reference_mask = 0.0;
+	float guard_detail = 0.0;
+	vec4 anchor_sample = vec4(0.0);
+	if (guarded) {
+		// Packed alpha is linear data, independent of the source-color RGB decode.
+		anchor_sample = textureGrad(albedo_map, st, dx, dy);
+		reference_mask = structure_guard_in_albedo_alpha ? anchor_sample.a
+			: textureGrad(structure_guard_map, st, dx, dy).r;
+		vec2 mask_size = structure_guard_in_albedo_alpha ? vec2(textureSize(albedo_map, 0))
+			: vec2(textureSize(structure_guard_map, 0));
+		float mask_footprint = max(length(dx * mask_size), length(dy * mask_size));
+		guard_detail = 1.0 - smoothstep(2.0, 8.0, mask_footprint);
+		// GUARD_SOURCE_ONLY_BEGIN
+		// Only exact zero can discard donor work without approximating the mixture.
+		if (guard_detail == 0.0 || reference_mask == 0.0) {
+			color = anchor_sample.rgb;
+			vec2 source_slope = paper_normal_slope(textureGrad(normal_map, st, dx, dy).rgb,
+				mat2(vec2(1.0, 0.0), vec2(0.0, 1.0)));
+			normal = normalize(vec3(source_slope, 1.0));
+			material_roughness = roughness;
+			if (use_roughness_map) {
+				material_roughness = textureGrad(roughness_map, st, dx, dy).r;
+			}
+			return;
+		}
+		// GUARD_SOURCE_ONLY_END
+	}
 	float w1, w2, w3;
 	ivec2 v1, v2, v3;
 	detile_triangle_grid(st, w1, w2, w3, v1, v2, v3);
@@ -26,9 +54,12 @@ void coherent_sample_material(vec2 st, vec2 dx, vec2 dy,
 	vec2 dx1 = r1 * dx; vec2 dy1 = r1 * dy;
 	vec2 dx2 = r2 * dx; vec2 dy2 = r2 * dy;
 	vec2 dx3 = r3 * dx; vec2 dy3 = r3 * dy;
-	vec3 c1 = textureGrad(albedo_map, p1, dx1, dy1).rgb;
-	vec3 c2 = textureGrad(albedo_map, p2, dx2, dy2).rgb;
-	vec3 c3 = textureGrad(albedo_map, p3, dx3, dy3).rgb;
+	vec4 sample1 = textureGrad(albedo_map, p1, dx1, dy1);
+	vec3 c1 = sample1.rgb;
+	vec4 sample2 = textureGrad(albedo_map, p2, dx2, dy2);
+	vec3 c2 = sample2.rgb;
+	vec4 sample3 = textureGrad(albedo_map, p3, dx3, dy3);
+	vec3 c3 = sample3.rgb;
 	vec2 d1 = paper_normal_slope(textureGrad(normal_map, p1, dx1, dy1).rgb, r1);
 	vec2 d2 = paper_normal_slope(textureGrad(normal_map, p2, dx2, dy2).rgb, r2);
 	vec2 d3 = paper_normal_slope(textureGrad(normal_map, p3, dx3, dy3).rgb, r3);
@@ -48,23 +79,21 @@ void coherent_sample_material(vec2 st, vec2 dx, vec2 dy,
 	}
 	// Preserve the reference wherever its mask or a donor's mask is unsafe.
 	// Rejected weight returns to the reference; never amplify surviving donors.
-	bool guarded = detile_enabled && structure_enabled && structure_guard_enabled;
 	float anchor_weight = 0.0;
 	vec3 c0 = vec3(0.0);
 	vec2 d0 = vec2(0.0);
 	if (guarded) {
-		float reference_mask = textureGrad(structure_guard_map, st, dx, dy).r;
-		vec3 donor_mask = vec3(textureGrad(structure_guard_map, p1, dx1, dy1).r,
-			textureGrad(structure_guard_map, p2, dx2, dy2).r,
-			textureGrad(structure_guard_map, p3, dx3, dy3).r);
-		// Mips average black mortar into white interiors. Return to the source
-		// as a conservative mask footprint grows; this is a heuristic cutoff.
-		vec2 mask_size = vec2(textureSize(structure_guard_map, 0));
-		float mask_footprint = max(length(dx * mask_size), length(dy * mask_size));
-		float guard_detail = 1.0 - smoothstep(2.0, 8.0, mask_footprint);
+		vec3 donor_mask;
+		if (structure_guard_in_albedo_alpha) {
+			donor_mask = vec3(sample1.a, sample2.a, sample3.a);
+		} else {
+			donor_mask = vec3(textureGrad(structure_guard_map, p1, dx1, dy1).r,
+				textureGrad(structure_guard_map, p2, dx2, dy2).r,
+				textureGrad(structure_guard_map, p3, dx3, dy3).r);
+		}
 		W *= reference_mask * donor_mask * guard_detail;
 		anchor_weight = max(0.0, 1.0 - W.x - W.y - W.z);
-		c0 = textureGrad(albedo_map, st, dx, dy).rgb;
+		c0 = anchor_sample.rgb;
 		d0 = paper_normal_slope(textureGrad(normal_map, st, dx, dy).rgb,
 			mat2(vec2(1.0, 0.0), vec2(0.0, 1.0)));
 	}
@@ -89,9 +118,13 @@ void coherent_triplanar_material(vec3 p, float scale_m, vec3 n, vec3 weights,
 	vec2 z = vec2(sz * p.x, p.y) / scale_m;
 	vec3 cx, cy, cz, nx, ny, nz;
 	float rx, ry, rz;
-	coherent_sample_material(x, dFdx(x), dFdy(x), cx, nx, rx);
-	coherent_sample_material(y, dFdx(y), dFdy(y), cy, ny, ry);
-	coherent_sample_material(z, dFdx(z), dFdy(z), cz, nz, rz);
+	// Evaluate every projection derivative before any data-dependent source return.
+	vec2 dx_x = dFdx(x); vec2 dy_x = dFdy(x);
+	vec2 dx_y = dFdx(y); vec2 dy_y = dFdy(y);
+	vec2 dx_z = dFdx(z); vec2 dy_z = dFdy(z);
+	coherent_sample_material(x, dx_x, dy_x, cx, nx, rx);
+	coherent_sample_material(y, dx_y, dy_y, cy, ny, ry);
+	coherent_sample_material(z, dx_z, dy_z, cz, nz, rz);
 	color = cx * weights.x + cy * weights.y + cz * weights.z;
 	perturb = vec3(0.0, -nx.y, sx * nx.x) * weights.x
 		+ vec3(-sy * ny.x, 0.0, ny.y) * weights.y

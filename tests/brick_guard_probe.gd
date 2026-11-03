@@ -50,6 +50,9 @@ func run()->void:
 	var weight_prefix:=prefix
 	var include:=FileAccess.get_file_as_string("res://addons/hex_detile/coherent_blend.gdshaderinc")
 	include=include.replace("color = c0 * anchor_weight + c1 * W.x + c2 * W.y + c3 * W.z;","color = vec3(anchor_weight+W.x+W.y+W.z,0.5+0.25*min(anchor_weight,min(W.x,min(W.y,W.z))),0.5+0.25*max(anchor_weight,max(W.x,max(W.y,W.z))));")
+	# Exact source-only return is the one-hot anchor mixture (1,0,0,0).
+	# Instrument that real exit too; otherwise mask=0 displays source RGB.
+	include=include.replace("color = anchor_sample.rgb;", "color = vec3(1.0,0.5,0.75);")
 	prefix=prefix.replace('#include "res://addons/hex_detile/coherent_blend.gdshaderinc"',include)
 	for amount in [0.0,0.25,0.5,1.0]:
 		material.set_shader_parameter("structure_guard_map",solid(Color(amount,amount,amount,1)))
@@ -84,8 +87,8 @@ func run()->void:
 	# comparisons cannot accidentally test current code against itself.
 	material.set_shader_parameter("structure_guard_enabled",false)
 	var disabled:=await render(output)
-	var baseline:=FileAccess.get_file_as_string("/tmp/hex-brick-guard-baseline.gdshader")
-	var baseline_include:=FileAccess.get_file_as_string("/tmp/hex-brick-guard-baseline.gdshaderinc")
+	var baseline:=FileAccess.get_file_as_string("res://docs/guard_optimization/fixtures/pre-guard-6c9cabf.gdshader")
+	var baseline_include:=FileAccess.get_file_as_string("res://docs/guard_optimization/fixtures/pre-guard-6c9cabf.gdshaderinc")
 	if not baseline.is_empty() and not baseline_include.is_empty():
 		prefix=baseline.split("void vertex()")[0].replace('#include "coherent_blend.gdshaderinc"',baseline_include).replace("shader_type spatial;","shader_type canvas_item;").replace("render_mode diffuse_burley, specular_schlick_ggx;","render_mode unshaded;")
 		check(difference(disabled,await render(output))<0.001,"guard disabled matches frozen full shader at 6c9cabf")

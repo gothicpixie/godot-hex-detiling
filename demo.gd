@@ -109,7 +109,7 @@ func _ready() -> void:
 	structure_guard_toggle = CheckButton.new()
 	structure_guard_toggle.text = "Protect mortar · Brick 4 only"
 	structure_guard_toggle.button_pressed = structure_guard_preferred
-	structure_guard_toggle.tooltip_text = "Preserve the original mortar; vary safe interiors with common coherent material weights. Extra texture reads; distant views return to the original source."
+	structure_guard_toggle.tooltip_text = "Preserve the original mortar; vary safe interiors with common coherent material weights. Distant views return to the original source."
 	structure_guard_toggle.toggled.connect(func(enabled):
 		structure_guard_preferred = enabled
 		update_structure_guard())
@@ -207,8 +207,11 @@ func set_structure(enabled: bool) -> void:
 func update_structure_guard() -> void:
 	var material := $Surface.material_override as ShaderMaterial
 	var eligible := current_texture == 3 and bool(material.get_shader_parameter("structure_enabled"))
+	var active := eligible and structure_guard_preferred and detiled
 	material.set_shader_parameter("structure_guard_enabled", eligible and structure_guard_preferred)
-	material.set_shader_parameter("structure_guard_map", load("res://assets/gallery/brick_4_interior_mask.png") if current_texture == 3 else null)
+	material.set_shader_parameter("structure_guard_in_albedo_alpha", active)
+	material.set_shader_parameter("albedo_map", load("res://assets/gallery/brick_4_albedo_guard.png" if active else TEXTURE_SETS[current_texture][0]))
+	material.set_shader_parameter("structure_guard_map", load("res://assets/gallery/brick_4_interior_mask.png") if active else null)
 	if blend_selector:
 		blend_selector.disabled = eligible and structure_guard_preferred
 		blend_selector.tooltip_text = "Protect mortar uses coherent blending" if blend_selector.disabled else ""
@@ -219,6 +222,7 @@ func update_structure_guard() -> void:
 func set_detile(enabled: bool) -> void:
 	detiled = enabled
 	($Surface.material_override as ShaderMaterial).set_shader_parameter("detile_enabled", enabled)
+	update_structure_guard()
 	if toggle:
 		toggle.text = "DETILING ON     ·     click to compare" if enabled else "REGULAR TILING     ·     click to compare"
 

@@ -20,6 +20,8 @@ uniform bool structure_enabled = false;
 // Optional source-aligned mask: black protects the reference, white permits donors.
 // Guarding uses coherent weights and requires both structure and detiling.
 uniform bool structure_guard_enabled = false;
+// Opt-in packed linear mask in albedo alpha; RGB remains source color.
+uniform bool structure_guard_in_albedo_alpha = false;
 uniform sampler2D structure_guard_map : hint_default_black, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform vec2 structure_period = vec2(1.0);
 uniform float structure_stagger : hint_range(-1.0, 1.0, 0.01) = 0.0;
