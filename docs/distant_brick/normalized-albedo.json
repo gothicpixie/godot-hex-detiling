@@ -1,0 +1,67 @@
+{
+  "source": "assets/gallery/brick_4_albedo_guard.png",
+  "source_sha256": "5d1a3e3f47ae16987c51e8b647aa2b0474fca323b5fc3f2505b1a7c0e5760c4f",
+  "output": "assets/gallery/brick_4_albedo_guard_normalized.png",
+  "output_sha256": "f94dfcff9c6c9bc2f16b686ec8f8030100a4c5f873f844a97c4d63264acb64f0",
+  "alpha_sha256": "7904f180ae977019e2cd33a823f4f368d4881527666b42cc4281ad4f8cf9e7b9",
+  "size": [
+    1024,
+    1024
+  ],
+  "inputs_unchanged": true,
+  "license": "CC0-1.0",
+  "upstream_author": "Rob Tuytel / Poly Haven",
+  "libraries": {
+    "pillow": "12.2.0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "upstream_asset": "https://polyhaven.com/a/brick_4",
+  "algorithm": "sRGB decode; wrapped Gaussian of linear Rec709 luminance; geometric-mean target; scalar exp(strength*log(target/broad)) gain bounded0.85..1.18 before one global highlight-headroom exposure; multiply original linear RGB; sRGB encode/round without RGB clipping; copy alpha exactly",
+  "metrics": {
+    "sigma_pixels": 64.0,
+    "strength": 0.65,
+    "gain_bounds": [
+      0.85,
+      1.18
+    ],
+    "gain_actual": [
+      0.8820702855617061,
+      1.0685228250869958
+    ],
+    "gain_clamped_fraction": 0.0,
+    "global_highlight_headroom_exposure": 0.9603363661016131,
+    "relative_broad_luminance_std_before_after": [
+      0.056984705853419665,
+      0.03117010650953245
+    ],
+    "out_of_range_or_clipped_samples": 0,
+    "finite": true,
+    "broad_luminance_std_before": 0.01141728621321194,
+    "broad_luminance_std_after": 0.005981251422280486,
+    "linear_luminance_mean_before_after": [
+      0.20035702636739655,
+      0.1918906315078294
+    ],
+    "linear_luminance_percentiles_before": [
+      0.02936953864797034,
+      0.06774746361472458,
+      0.17971953935016335,
+      0.4057396754370319,
+      0.5170033703819541
+    ],
+    "linear_luminance_percentiles_after": [
+      0.02853601584727913,
+      0.06610882924219298,
+      0.17164743165726096,
+      0.3883284469941773,
+      0.49609504172694074
+    ],
+    "adjacent_log_luminance_edge_correlation": 0.9998962184620238,
+    "strong_edge_sign_agreement": 1.0,
+    "median_strong_edge_contrast_ratio": 1.002214939011834,
+    "max_adjacent_gain_difference": 0.0011688730824758187,
+    "alpha_exact": true,
+    "no_warp_or_resampling": true
+  }
+}

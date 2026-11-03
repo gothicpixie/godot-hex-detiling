@@ -1,0 +1,47 @@
+[
+  {
+    "script": "distant_brick_smoke",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "script": "smoke",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "script": "gpu_probe",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "script": "coherent_probe",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "script": "structure_smoke",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "script": "structure_probe",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "script": "brick_guard_smoke",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "script": "brick_guard_probe",
+    "exit_code": 0,
+    "pass": true
+  },
+  {
+    "script": "brick_guard_baseline",
+    "exit_code": 0,
+    "pass": true
+  }
+]

@@ -1,0 +1,1556 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"gpu": "Apple M5",
+	"records": [
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 0,
+			"id": "approach-seed0-baseline-00",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 0,
+			"id": "approach-seed0-both-00",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.22981953620911
+			],
+			"frame": 1,
+			"id": "approach-seed0-baseline-01",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.22981953620911
+			],
+			"frame": 1,
+			"id": "approach-seed0-both-01",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.72523975372314
+			],
+			"frame": 2,
+			"id": "approach-seed0-baseline-02",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.72523975372314
+			],
+			"frame": 2,
+			"id": "approach-seed0-both-02",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.1147041320801
+			],
+			"frame": 3,
+			"id": "approach-seed0-baseline-03",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.1147041320801
+			],
+			"frame": 3,
+			"id": "approach-seed0-both-03",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				23.2623634338379
+			],
+			"frame": 4,
+			"id": "approach-seed0-baseline-04",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				23.2623634338379
+			],
+			"frame": 4,
+			"id": "approach-seed0-both-04",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				36.6029357910156
+			],
+			"frame": 5,
+			"id": "approach-seed0-baseline-05",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				36.6029357910156
+			],
+			"frame": 5,
+			"id": "approach-seed0-both-05",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				50.0888252258301
+			],
+			"frame": 6,
+			"id": "approach-seed0-baseline-06",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				50.0888252258301
+			],
+			"frame": 6,
+			"id": "approach-seed0-both-06",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				58.7996864318848
+			],
+			"frame": 7,
+			"id": "approach-seed0-baseline-07",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				58.7996864318848
+			],
+			"frame": 7,
+			"id": "approach-seed0-both-07",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				58.7996864318848
+			],
+			"frame": 8,
+			"id": "approach-seed0-baseline-08",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				58.7996864318848
+			],
+			"frame": 8,
+			"id": "approach-seed0-both-08",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				50.0888252258301
+			],
+			"frame": 9,
+			"id": "approach-seed0-baseline-09",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				50.0888252258301
+			],
+			"frame": 9,
+			"id": "approach-seed0-both-09",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				36.6029357910156
+			],
+			"frame": 10,
+			"id": "approach-seed0-baseline-10",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				36.6029357910156
+			],
+			"frame": 10,
+			"id": "approach-seed0-both-10",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				23.2623634338379
+			],
+			"frame": 11,
+			"id": "approach-seed0-baseline-11",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				23.2623634338379
+			],
+			"frame": 11,
+			"id": "approach-seed0-both-11",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.1147041320801
+			],
+			"frame": 12,
+			"id": "approach-seed0-baseline-12",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.1147041320801
+			],
+			"frame": 12,
+			"id": "approach-seed0-both-12",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.72523975372314
+			],
+			"frame": 13,
+			"id": "approach-seed0-baseline-13",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.72523975372314
+			],
+			"frame": 13,
+			"id": "approach-seed0-both-13",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.22981953620911
+			],
+			"frame": 14,
+			"id": "approach-seed0-baseline-14",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.22981953620911
+			],
+			"frame": 14,
+			"id": "approach-seed0-both-14",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 15,
+			"id": "approach-seed0-baseline-15",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 15,
+			"id": "approach-seed0-both-15",
+			"seed": 0.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 0,
+			"id": "approach-seed7-baseline-00",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 0,
+			"id": "approach-seed7-both-00",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.22981953620911
+			],
+			"frame": 1,
+			"id": "approach-seed7-baseline-01",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.22981953620911
+			],
+			"frame": 1,
+			"id": "approach-seed7-both-01",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.72523975372314
+			],
+			"frame": 2,
+			"id": "approach-seed7-baseline-02",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.72523975372314
+			],
+			"frame": 2,
+			"id": "approach-seed7-both-02",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.1147041320801
+			],
+			"frame": 3,
+			"id": "approach-seed7-baseline-03",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.1147041320801
+			],
+			"frame": 3,
+			"id": "approach-seed7-both-03",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				23.2623634338379
+			],
+			"frame": 4,
+			"id": "approach-seed7-baseline-04",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				23.2623634338379
+			],
+			"frame": 4,
+			"id": "approach-seed7-both-04",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				36.6029357910156
+			],
+			"frame": 5,
+			"id": "approach-seed7-baseline-05",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				36.6029357910156
+			],
+			"frame": 5,
+			"id": "approach-seed7-both-05",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				50.0888252258301
+			],
+			"frame": 6,
+			"id": "approach-seed7-baseline-06",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				50.0888252258301
+			],
+			"frame": 6,
+			"id": "approach-seed7-both-06",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				58.7996864318848
+			],
+			"frame": 7,
+			"id": "approach-seed7-baseline-07",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				58.7996864318848
+			],
+			"frame": 7,
+			"id": "approach-seed7-both-07",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				58.7996864318848
+			],
+			"frame": 8,
+			"id": "approach-seed7-baseline-08",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				58.7996864318848
+			],
+			"frame": 8,
+			"id": "approach-seed7-both-08",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				50.0888252258301
+			],
+			"frame": 9,
+			"id": "approach-seed7-baseline-09",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				50.0888252258301
+			],
+			"frame": 9,
+			"id": "approach-seed7-both-09",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				36.6029357910156
+			],
+			"frame": 10,
+			"id": "approach-seed7-baseline-10",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				36.6029357910156
+			],
+			"frame": 10,
+			"id": "approach-seed7-both-10",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				23.2623634338379
+			],
+			"frame": 11,
+			"id": "approach-seed7-baseline-11",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				23.2623634338379
+			],
+			"frame": 11,
+			"id": "approach-seed7-both-11",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.1147041320801
+			],
+			"frame": 12,
+			"id": "approach-seed7-baseline-12",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				13.1147041320801
+			],
+			"frame": 12,
+			"id": "approach-seed7-both-12",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.72523975372314
+			],
+			"frame": 13,
+			"id": "approach-seed7-baseline-13",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				6.72523975372314
+			],
+			"frame": 13,
+			"id": "approach-seed7-both-13",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.22981953620911
+			],
+			"frame": 14,
+			"id": "approach-seed7-baseline-14",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				3.22981953620911
+			],
+			"frame": 14,
+			"id": "approach-seed7-both-14",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 15,
+			"id": "approach-seed7-baseline-15",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				1.5
+			],
+			"frame": 15,
+			"id": "approach-seed7-both-15",
+			"seed": 7.0,
+			"trajectory": "approach"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 0,
+			"id": "pan-seed0-baseline-00",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 0,
+			"id": "pan-seed0-both-00",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 1,
+			"id": "pan-seed0-baseline-01",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 1,
+			"id": "pan-seed0-both-01",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 2,
+			"id": "pan-seed0-baseline-02",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 2,
+			"id": "pan-seed0-both-02",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 3,
+			"id": "pan-seed0-baseline-03",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 3,
+			"id": "pan-seed0-both-03",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 4,
+			"id": "pan-seed0-baseline-04",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 4,
+			"id": "pan-seed0-both-04",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 5,
+			"id": "pan-seed0-baseline-05",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 5,
+			"id": "pan-seed0-both-05",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 6,
+			"id": "pan-seed0-baseline-06",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 6,
+			"id": "pan-seed0-both-06",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 7,
+			"id": "pan-seed0-baseline-07",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 7,
+			"id": "pan-seed0-both-07",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 8,
+			"id": "pan-seed0-baseline-08",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 8,
+			"id": "pan-seed0-both-08",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 9,
+			"id": "pan-seed0-baseline-09",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 9,
+			"id": "pan-seed0-both-09",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 10,
+			"id": "pan-seed0-baseline-10",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 10,
+			"id": "pan-seed0-both-10",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 11,
+			"id": "pan-seed0-baseline-11",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 11,
+			"id": "pan-seed0-both-11",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 12,
+			"id": "pan-seed0-baseline-12",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 12,
+			"id": "pan-seed0-both-12",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 13,
+			"id": "pan-seed0-baseline-13",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 13,
+			"id": "pan-seed0-both-13",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 14,
+			"id": "pan-seed0-baseline-14",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 14,
+			"id": "pan-seed0-both-14",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 15,
+			"id": "pan-seed0-baseline-15",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 15,
+			"id": "pan-seed0-both-15",
+			"seed": 0.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 0,
+			"id": "pan-seed7-baseline-00",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 0,
+			"id": "pan-seed7-both-00",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 1,
+			"id": "pan-seed7-baseline-01",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 1,
+			"id": "pan-seed7-both-01",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 2,
+			"id": "pan-seed7-baseline-02",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 2,
+			"id": "pan-seed7-both-02",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 3,
+			"id": "pan-seed7-baseline-03",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 3,
+			"id": "pan-seed7-both-03",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 4,
+			"id": "pan-seed7-baseline-04",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 4,
+			"id": "pan-seed7-both-04",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 5,
+			"id": "pan-seed7-baseline-05",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 5,
+			"id": "pan-seed7-both-05",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 6,
+			"id": "pan-seed7-baseline-06",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 6,
+			"id": "pan-seed7-both-06",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				-0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 7,
+			"id": "pan-seed7-baseline-07",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				-0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 7,
+			"id": "pan-seed7-both-07",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 8,
+			"id": "pan-seed7-baseline-08",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.533333361148834,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 8,
+			"id": "pan-seed7-both-08",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 9,
+			"id": "pan-seed7-baseline-09",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				1.60000002384186,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 9,
+			"id": "pan-seed7-both-09",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 10,
+			"id": "pan-seed7-baseline-10",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				2.66666674613953,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 10,
+			"id": "pan-seed7-both-10",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 11,
+			"id": "pan-seed7-baseline-11",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				3.73333334922791,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 11,
+			"id": "pan-seed7-both-11",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 12,
+			"id": "pan-seed7-baseline-12",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				4.80000019073486,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 12,
+			"id": "pan-seed7-both-12",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 13,
+			"id": "pan-seed7-baseline-13",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				5.86666679382324,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 13,
+			"id": "pan-seed7-both-13",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 14,
+			"id": "pan-seed7-baseline-14",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				6.93333339691162,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 14,
+			"id": "pan-seed7-both-14",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 15,
+			"id": "pan-seed7-baseline-15",
+			"seed": 7.0,
+			"trajectory": "pan"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				8.0,
+				0.400000005960464,
+				30.0
+			],
+			"frame": 15,
+			"id": "pan-seed7-both-15",
+			"seed": 7.0,
+			"trajectory": "pan"
+		}
+	],
+	"resolution": [
+		640,
+		360
+	]
+}

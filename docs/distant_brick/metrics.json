@@ -1,0 +1,705 @@
+{
+  "method": "linear luminance Gaussian sigma=sourceperiod/32; exact known full-source autocorr lags; raw Fourier phase-locked source harmonics1..6; no dropped cases",
+  "records": [
+    {
+      "arm": "baseline",
+      "id": "ortho-7.5-seed0-baseline",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 0.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "crop": [
+        1200,
+        720
+      ],
+      "mean_linear_luminance": 0.19412039126484124,
+      "linear_luminance_std": 0.07246490780643813,
+      "blurred_std": 0.014439967402858113,
+      "normalized_full_source_autocorrelation_xy": [
+        0.7968124676469719,
+        0.792246568063568
+      ],
+      "autocorrelation_mean": 0.7945295178552699,
+      "absolute_periodic_energy": 0.00015714424868681388,
+      "mean_normalized_periodic_energy": 0.004170193191853377,
+      "periodic_energy_over_total_variance": 0.7536436864084292,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "normalization",
+      "id": "ortho-7.5-seed0-normalization",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 0.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "crop": [
+        1200,
+        720
+      ],
+      "mean_linear_luminance": 0.1859097819151841,
+      "linear_luminance_std": 0.06857199057899019,
+      "blurred_std": 0.010225242745601488,
+      "normalized_full_source_autocorrelation_xy": [
+        0.7203538124047688,
+        0.7082999626933791
+      ],
+      "autocorrelation_mean": 0.714326887549074,
+      "absolute_periodic_energy": 6.601332718747478e-05,
+      "mean_normalized_periodic_energy": 0.0019099726117491073,
+      "periodic_energy_over_total_variance": 0.6313706200546774,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "macro",
+      "id": "ortho-7.5-seed0-macro",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 0.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "crop": [
+        1200,
+        720
+      ],
+      "mean_linear_luminance": 0.19085399893005914,
+      "linear_luminance_std": 0.07286438232710823,
+      "blurred_std": 0.019507790264114328,
+      "normalized_full_source_autocorrelation_xy": [
+        0.8302325274248786,
+        0.8356845054643517
+      ],
+      "autocorrelation_mean": 0.8329585164446152,
+      "absolute_periodic_energy": 0.0001458467954717596,
+      "mean_normalized_periodic_energy": 0.004004002713660226,
+      "periodic_energy_over_total_variance": 0.3832487402121656,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "both",
+      "id": "ortho-7.5-seed0-both",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 0.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "crop": [
+        1200,
+        720
+      ],
+      "mean_linear_luminance": 0.1828011674394739,
+      "linear_luminance_std": 0.06900967797645924,
+      "blurred_std": 0.016410309958042612,
+      "normalized_full_source_autocorrelation_xy": [
+        0.8113612166219168,
+        0.8238876957437874
+      ],
+      "autocorrelation_mean": 0.8176244561828521,
+      "absolute_periodic_energy": 6.251782783870243e-05,
+      "mean_normalized_periodic_energy": 0.0018708800770784668,
+      "periodic_energy_over_total_variance": 0.232150868110094,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "baseline",
+      "id": "ortho-7.5-seed7-baseline",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 7.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "crop": [
+        1200,
+        720
+      ],
+      "mean_linear_luminance": 0.19352566470434296,
+      "linear_luminance_std": 0.07255056782432087,
+      "blurred_std": 0.014293390102412082,
+      "normalized_full_source_autocorrelation_xy": [
+        0.7974011445458766,
+        0.7766091440606484
+      ],
+      "autocorrelation_mean": 0.7870051443032625,
+      "absolute_periodic_energy": 0.0001528971161182167,
+      "mean_normalized_periodic_energy": 0.0040824620698209505,
+      "periodic_energy_over_total_variance": 0.7483914207684487,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "normalization",
+      "id": "ortho-7.5-seed7-normalization",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 7.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "crop": [
+        1200,
+        720
+      ],
+      "mean_linear_luminance": 0.18546355193018518,
+      "linear_luminance_std": 0.06864516514851203,
+      "blurred_std": 0.010069603967966063,
+      "normalized_full_source_autocorrelation_xy": [
+        0.7181319698284669,
+        0.6808702311738173
+      ],
+      "autocorrelation_mean": 0.6995011005011421,
+      "absolute_periodic_energy": 6.262859117072274e-05,
+      "mean_normalized_periodic_energy": 0.0018207717076396902,
+      "periodic_energy_over_total_variance": 0.6176577025793243,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "macro",
+      "id": "ortho-7.5-seed7-macro",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 7.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "crop": [
+        1200,
+        720
+      ],
+      "mean_linear_luminance": 0.18170539557696996,
+      "linear_luminance_std": 0.07015312003942799,
+      "blurred_std": 0.017063013684050977,
+      "normalized_full_source_autocorrelation_xy": [
+        0.6337490491432429,
+        0.831054903550007
+      ],
+      "autocorrelation_mean": 0.732401976346625,
+      "absolute_periodic_energy": 0.0001325057852639469,
+      "mean_normalized_periodic_energy": 0.004013277527275746,
+      "periodic_energy_over_total_variance": 0.4551173185993887,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "both",
+      "id": "ortho-7.5-seed7-both",
+      "kind": "ortho",
+      "repeat_px": [
+        240.0,
+        240.000007629395
+      ],
+      "seed": 7.0,
+      "size": 7.5,
+      "period_px": 240.0,
+      "crop": [
+        1200,
+        720
+      ],
+      "mean_linear_luminance": 0.1741569063338814,
+      "linear_luminance_std": 0.06636529253703644,
+      "blurred_std": 0.013882843195823127,
+      "normalized_full_source_autocorrelation_xy": [
+        0.5248997641498012,
+        0.8153172054651326
+      ],
+      "autocorrelation_mean": 0.670108484807467,
+      "absolute_periodic_energy": 5.486596791612108e-05,
+      "mean_normalized_periodic_energy": 0.001808929504298086,
+      "periodic_energy_over_total_variance": 0.28467295426211486,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "baseline",
+      "id": "ortho-30.0-seed0-baseline",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 0.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "crop": [
+        1260,
+        720
+      ],
+      "mean_linear_luminance": 0.18961254884821552,
+      "linear_luminance_std": 0.039781461118020806,
+      "blurred_std": 0.017906572637933497,
+      "normalized_full_source_autocorrelation_xy": [
+        0.9998986149582698,
+        0.9966934619157185
+      ],
+      "autocorrelation_mean": 0.9982960384369941,
+      "absolute_periodic_energy": 0.0003022213229452541,
+      "mean_normalized_periodic_energy": 0.008406030276127439,
+      "periodic_energy_over_total_variance": 0.9425408132133727,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "normalization",
+      "id": "ortho-30.0-seed0-normalization",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 0.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "crop": [
+        1260,
+        720
+      ],
+      "mean_linear_luminance": 0.1815920448279164,
+      "linear_luminance_std": 0.03582733178390406,
+      "blurred_std": 0.012370386092098009,
+      "normalized_full_source_autocorrelation_xy": [
+        0.9998222496252998,
+        0.9932502317832389
+      ],
+      "autocorrelation_mean": 0.9965362407042693,
+      "absolute_periodic_energy": 0.00013596156767592147,
+      "mean_normalized_periodic_energy": 0.004123087252059231,
+      "periodic_energy_over_total_variance": 0.8884840878091126,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "macro",
+      "id": "ortho-30.0-seed0-macro",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 0.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "crop": [
+        1260,
+        720
+      ],
+      "mean_linear_luminance": 0.19165823523475006,
+      "linear_luminance_std": 0.04516452976018513,
+      "blurred_std": 0.026952451367545833,
+      "normalized_full_source_autocorrelation_xy": [
+        0.897046681167499,
+        0.9077425455371809
+      ],
+      "autocorrelation_mean": 0.90239461335234,
+      "absolute_periodic_energy": 0.0003086274657155096,
+      "mean_normalized_periodic_energy": 0.008401940522972379,
+      "periodic_energy_over_total_variance": 0.42485235555226647,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "both",
+      "id": "ortho-30.0-seed0-both",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 0.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "crop": [
+        1260,
+        720
+      ],
+      "mean_linear_luminance": 0.1835548421346278,
+      "linear_luminance_std": 0.041183746925827214,
+      "blurred_std": 0.022796960698928486,
+      "normalized_full_source_autocorrelation_xy": [
+        0.8689618592198206,
+        0.8817051745777118
+      ],
+      "autocorrelation_mean": 0.8753335168987662,
+      "absolute_periodic_energy": 0.00013922661044063692,
+      "mean_normalized_periodic_energy": 0.004132287779817364,
+      "periodic_energy_over_total_variance": 0.26789730767959935,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "baseline",
+      "id": "ortho-30.0-seed7-baseline",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 7.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "crop": [
+        1260,
+        720
+      ],
+      "mean_linear_luminance": 0.18961254884821552,
+      "linear_luminance_std": 0.039781461118020806,
+      "blurred_std": 0.017906572637933497,
+      "normalized_full_source_autocorrelation_xy": [
+        0.9998986149582698,
+        0.9966934619157185
+      ],
+      "autocorrelation_mean": 0.9982960384369941,
+      "absolute_periodic_energy": 0.0003022213229452541,
+      "mean_normalized_periodic_energy": 0.008406030276127439,
+      "periodic_energy_over_total_variance": 0.9425408132133727,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "normalization",
+      "id": "ortho-30.0-seed7-normalization",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 7.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "crop": [
+        1260,
+        720
+      ],
+      "mean_linear_luminance": 0.1815920448279164,
+      "linear_luminance_std": 0.03582733178390406,
+      "blurred_std": 0.012370386092098009,
+      "normalized_full_source_autocorrelation_xy": [
+        0.9998222496252998,
+        0.9932502317832389
+      ],
+      "autocorrelation_mean": 0.9965362407042693,
+      "absolute_periodic_energy": 0.00013596156767592147,
+      "mean_normalized_periodic_energy": 0.004123087252059231,
+      "periodic_energy_over_total_variance": 0.8884840878091126,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "macro",
+      "id": "ortho-30.0-seed7-macro",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 7.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "crop": [
+        1260,
+        720
+      ],
+      "mean_linear_luminance": 0.18998882664036792,
+      "linear_luminance_std": 0.04512966220628457,
+      "blurred_std": 0.027436570505793113,
+      "normalized_full_source_autocorrelation_xy": [
+        0.9072384198340936,
+        0.908886550174041
+      ],
+      "autocorrelation_mean": 0.9080624850040673,
+      "absolute_periodic_energy": 0.0003024700599631581,
+      "mean_normalized_periodic_energy": 0.008379657559818891,
+      "periodic_energy_over_total_variance": 0.4018118520237346,
+      "fraction_any_channel_255": 0.0
+    },
+    {
+      "arm": "both",
+      "id": "ortho-30.0-seed7-both",
+      "kind": "ortho",
+      "repeat_px": [
+        60.0,
+        60.0
+      ],
+      "seed": 7.0,
+      "size": 30.0,
+      "period_px": 60.0,
+      "crop": [
+        1260,
+        720
+      ],
+      "mean_linear_luminance": 0.18195934705607145,
+      "linear_luminance_std": 0.04119324673491714,
+      "blurred_std": 0.023378396783914325,
+      "normalized_full_source_autocorrelation_xy": [
+        0.8838003020639936,
+        0.8851297735996347
+      ],
+      "autocorrelation_mean": 0.8844650378318142,
+      "absolute_periodic_energy": 0.00013640872732309303,
+      "mean_normalized_periodic_energy": 0.004119963965339556,
+      "periodic_energy_over_total_variance": 0.24958168153088528,
+      "fraction_any_channel_255": 0.0
+    }
+  ],
+  "comparisons": [
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "normalization",
+      "periodic_energy_ratio": 0.45800578627395677,
+      "absolute_energy_ratio": 0.42008108943928546,
+      "autocorrelation_ratio": 0.8990564497557088,
+      "mean_luminance_ratio": 0.9577035194697537,
+      "variance_ratio": 0.8954431645497607
+    },
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "macro",
+      "periodic_energy_ratio": 0.9601480146009038,
+      "absolute_energy_ratio": 0.9281077525301614,
+      "autocorrelation_ratio": 1.048366986657814,
+      "mean_luminance_ratio": 0.9831733682716222,
+      "variance_ratio": 1.0110557128060362
+    },
+    {
+      "size": 7.5,
+      "seed": 0,
+      "arm": "both",
+      "periodic_energy_ratio": 0.44863151202042595,
+      "absolute_energy_ratio": 0.39783719965023673,
+      "autocorrelation_ratio": 1.0290674390423202,
+      "mean_luminance_ratio": 0.9416896712827847,
+      "variance_ratio": 0.9069106745120294
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "normalization",
+      "periodic_energy_ratio": 0.44599843831973335,
+      "absolute_energy_ratio": 0.4096126386209906,
+      "autocorrelation_ratio": 0.8888138858614604,
+      "mean_luminance_ratio": 0.9583408599243176,
+      "variance_ratio": 0.8952375225786499
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "macro",
+      "periodic_energy_ratio": 0.9830532307803562,
+      "absolute_energy_ratio": 0.8666336463893559,
+      "autocorrelation_ratio": 0.930619045692544,
+      "mean_luminance_ratio": 0.9389214389449001,
+      "variance_ratio": 0.9350015916131728
+    },
+    {
+      "size": 7.5,
+      "seed": 7,
+      "arm": "both",
+      "periodic_energy_ratio": 0.44309768795412774,
+      "absolute_energy_ratio": 0.3588423987912232,
+      "autocorrelation_ratio": 0.8514664607443139,
+      "mean_luminance_ratio": 0.8999163320273205,
+      "variance_ratio": 0.836759004405712
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "normalization",
+      "periodic_energy_ratio": 0.4904916014600283,
+      "absolute_energy_ratio": 0.44987417284435033,
+      "autocorrelation_ratio": 0.9982371985213123,
+      "mean_luminance_ratio": 0.9577005632326608,
+      "variance_ratio": 0.8110870565830248
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "macro",
+      "periodic_energy_ratio": 0.9995134738966294,
+      "absolute_energy_ratio": 1.0211968590032807,
+      "autocorrelation_ratio": 0.903934883649539,
+      "mean_luminance_ratio": 1.0107887710964327,
+      "variance_ratio": 1.2889424455134404
+    },
+    {
+      "size": 30.0,
+      "seed": 0,
+      "arm": "both",
+      "periodic_energy_ratio": 0.49158611664209484,
+      "absolute_energy_ratio": 0.46067765531506566,
+      "autocorrelation_ratio": 0.8768275974221563,
+      "mean_luminance_ratio": 0.9680521845711968,
+      "variance_ratio": 1.0717420057754676
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "normalization",
+      "periodic_energy_ratio": 0.4904916014600283,
+      "absolute_energy_ratio": 0.44987417284435033,
+      "autocorrelation_ratio": 0.9982371985213123,
+      "mean_luminance_ratio": 0.9577005632326608,
+      "variance_ratio": 0.8110870565830248
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "macro",
+      "periodic_energy_ratio": 0.9968626431927751,
+      "absolute_energy_ratio": 1.0008230293464404,
+      "autocorrelation_ratio": 0.9096124296213745,
+      "mean_luminance_ratio": 1.0019844561683184,
+      "variance_ratio": 1.2869530559438478
+    },
+    {
+      "size": 30.0,
+      "seed": 7,
+      "arm": "both",
+      "periodic_energy_ratio": 0.490120048346718,
+      "absolute_energy_ratio": 0.45135374960886787,
+      "autocorrelation_ratio": 0.8859747046743748,
+      "mean_luminance_ratio": 0.9596376830614178,
+      "variance_ratio": 1.0722364978733603
+    }
+  ],
+  "channels": [
+    {
+      "view": "close",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 367300,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0039215686274510775,
+      "all_pixel_mean": 2.4609091321713866e-06
+    },
+    {
+      "view": "close",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 367300,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0039215686274510775,
+      "all_pixel_mean": 1.0957073801742922e-05
+    },
+    {
+      "view": "close",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 367300,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0039215686274510775,
+      "all_pixel_mean": 2.97011165577342e-06
+    },
+    {
+      "view": "close",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 367300,
+      "protected_max": 0.0039215686274509665,
+      "all_pixel_max": 0.0039215686274510775,
+      "all_pixel_mean": 1.3505923202614377e-05
+    },
+    {
+      "view": "grazing",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 186810,
+      "protected_max": 0.0039215686274509665,
+      "all_pixel_max": 0.0039215686274510775,
+      "all_pixel_mean": 1.0340073529411764e-06
+    },
+    {
+      "view": "grazing",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 186810,
+      "protected_max": 0.0039215686274509665,
+      "all_pixel_max": 0.0039215686274510775,
+      "all_pixel_mean": 7.025292755991285e-06
+    },
+    {
+      "view": "grazing",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 186810,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0039215686274510775,
+      "all_pixel_mean": 8.73729121278141e-07
+    },
+    {
+      "view": "grazing",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 186810,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0039215686274510775,
+      "all_pixel_mean": 4.936002178649237e-06
+    },
+    {
+      "view": "distant",
+      "seed": 0,
+      "channel": "normal",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 0,
+      "channel": "roughness",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 7,
+      "channel": "normal",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    },
+    {
+      "view": "distant",
+      "seed": 7,
+      "channel": "roughness",
+      "protected_pixels": 7143,
+      "protected_max": 0.0,
+      "all_pixel_max": 0.0,
+      "all_pixel_mean": 0.0
+    }
+  ],
+  "edge_neighborhoods": [
+    {
+      "seed": 0,
+      "edge_neighborhood_count": 243,
+      "median_peak_shift_px": 0.0,
+      "p95_peak_shift_px": 1.0,
+      "median_gradient_width_ratio": 1.0003372897532588,
+      "median_local_contrast_ratio": 0.9939333190875997,
+      "p05_local_contrast_ratio": 0.9465180824330047
+    },
+    {
+      "seed": 7,
+      "edge_neighborhood_count": 243,
+      "median_peak_shift_px": 0.0,
+      "p95_peak_shift_px": 1.0,
+      "median_gradient_width_ratio": 1.0007932853027666,
+      "median_local_contrast_ratio": 0.9749013978666932,
+      "p05_local_contrast_ratio": 0.9156111450199965
+    }
+  ]
+}

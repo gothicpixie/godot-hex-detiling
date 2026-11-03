@@ -1,0 +1,11 @@
+# Distant brick color variation experiment
+
+User-approved local spike: determine whether reducing repeated broad source tones and adding stable world-space variation makes distant Brick 4 less visibly tiled without damaging mortar. Do not publish, tag or change existing defaults.
+
+Use an offline normalized copy of the packed brick image: wrapped sigma64px luminance lowpass, conservative scalar gain, unchanged dimensions/pixel positions and exact original guard alpha. Existing images, guard fade/cutoff, material weights, normal and roughness source maps and sampling remain unchanged. Normalized albedo can change coherent brightness votes and therefore interior normal/roughness mixtures; do not claim globally identical outputs. Protected source-only normal/roughness must remain unchanged. This is separate from the earlier unshipped two-band donor-blending prototype, which did not establish an improvement.
+
+Add `brick_macro_enabled=false` and `brick_macro_strength=0.18` (log2 gain amplitude). Three smooth directional waves with different frequencies and deterministic variation-seed phases form a world-anchored scalar field. Integrate each wave analytically over the derivative-defined pixel footprint. Apply the bounded luminance multiplier after all material sampling, so original-anchor and donor paths share it, including source-only early returns. No screen/time/camera phase or projection seams. Strength zero bypasses modulation.
+
+A demo checkbox is initially unchecked and eligible only for Brick 4 with Preserve pattern and Protect mortar enabled. While detiling is also active, it selects the normalized asset and enables macro variation; disabling restores v0.7.0 packed/original binding behavior. Preference persists across unsupported materials.
+
+Compare original, normalized-only, macro-only and combined, plus exact off-mode controls. Measure tonal repetition at whole-source offsets separately from expected brick-lattice edge frequency. Inspect native mortar edges, protected normal/roughness invariance, any interior-mixture changes and world-tracked motion through minification. Compare against a filtered/high-resolution reference for new temporal behavior; old/new equivalence alone cannot establish an improvement. The field cannot remove repeated unique joint geometry, and modest variation may be insufficient: report that honestly.

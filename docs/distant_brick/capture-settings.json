@@ -1,0 +1,340 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"gpu": "Apple M5",
+	"records": [
+		{
+			"arm": "baseline",
+			"id": "ortho-7.5-seed0-baseline",
+			"kind": "ortho",
+			"repeat_px": [
+				240.0,
+				240.000007629395
+			],
+			"seed": 0.0,
+			"size": 7.5
+		},
+		{
+			"arm": "normalization",
+			"id": "ortho-7.5-seed0-normalization",
+			"kind": "ortho",
+			"repeat_px": [
+				240.0,
+				240.000007629395
+			],
+			"seed": 0.0,
+			"size": 7.5
+		},
+		{
+			"arm": "macro",
+			"id": "ortho-7.5-seed0-macro",
+			"kind": "ortho",
+			"repeat_px": [
+				240.0,
+				240.000007629395
+			],
+			"seed": 0.0,
+			"size": 7.5
+		},
+		{
+			"arm": "both",
+			"id": "ortho-7.5-seed0-both",
+			"kind": "ortho",
+			"repeat_px": [
+				240.0,
+				240.000007629395
+			],
+			"seed": 0.0,
+			"size": 7.5
+		},
+		{
+			"arm": "baseline",
+			"id": "ortho-7.5-seed7-baseline",
+			"kind": "ortho",
+			"repeat_px": [
+				240.0,
+				240.000007629395
+			],
+			"seed": 7.0,
+			"size": 7.5
+		},
+		{
+			"arm": "normalization",
+			"id": "ortho-7.5-seed7-normalization",
+			"kind": "ortho",
+			"repeat_px": [
+				240.0,
+				240.000007629395
+			],
+			"seed": 7.0,
+			"size": 7.5
+		},
+		{
+			"arm": "macro",
+			"id": "ortho-7.5-seed7-macro",
+			"kind": "ortho",
+			"repeat_px": [
+				240.0,
+				240.000007629395
+			],
+			"seed": 7.0,
+			"size": 7.5
+		},
+		{
+			"arm": "both",
+			"id": "ortho-7.5-seed7-both",
+			"kind": "ortho",
+			"repeat_px": [
+				240.0,
+				240.000007629395
+			],
+			"seed": 7.0,
+			"size": 7.5
+		},
+		{
+			"arm": "baseline",
+			"id": "ortho-30.0-seed0-baseline",
+			"kind": "ortho",
+			"repeat_px": [
+				60.0,
+				60.0
+			],
+			"seed": 0.0,
+			"size": 30.0
+		},
+		{
+			"arm": "normalization",
+			"id": "ortho-30.0-seed0-normalization",
+			"kind": "ortho",
+			"repeat_px": [
+				60.0,
+				60.0
+			],
+			"seed": 0.0,
+			"size": 30.0
+		},
+		{
+			"arm": "macro",
+			"id": "ortho-30.0-seed0-macro",
+			"kind": "ortho",
+			"repeat_px": [
+				60.0,
+				60.0
+			],
+			"seed": 0.0,
+			"size": 30.0
+		},
+		{
+			"arm": "both",
+			"id": "ortho-30.0-seed0-both",
+			"kind": "ortho",
+			"repeat_px": [
+				60.0,
+				60.0
+			],
+			"seed": 0.0,
+			"size": 30.0
+		},
+		{
+			"arm": "baseline",
+			"id": "ortho-30.0-seed7-baseline",
+			"kind": "ortho",
+			"repeat_px": [
+				60.0,
+				60.0
+			],
+			"seed": 7.0,
+			"size": 30.0
+		},
+		{
+			"arm": "normalization",
+			"id": "ortho-30.0-seed7-normalization",
+			"kind": "ortho",
+			"repeat_px": [
+				60.0,
+				60.0
+			],
+			"seed": 7.0,
+			"size": 30.0
+		},
+		{
+			"arm": "macro",
+			"id": "ortho-30.0-seed7-macro",
+			"kind": "ortho",
+			"repeat_px": [
+				60.0,
+				60.0
+			],
+			"seed": 7.0,
+			"size": 30.0
+		},
+		{
+			"arm": "both",
+			"id": "ortho-30.0-seed7-both",
+			"kind": "ortho",
+			"repeat_px": [
+				60.0,
+				60.0
+			],
+			"seed": 7.0,
+			"size": 30.0
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.0
+			],
+			"id": "pbr-close-seed0-baseline",
+			"kind": "pbr",
+			"seed": 0.0,
+			"view": "close"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.0
+			],
+			"id": "pbr-close-seed0-both",
+			"kind": "pbr",
+			"seed": 0.0,
+			"view": "close"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.0
+			],
+			"id": "pbr-close-seed7-baseline",
+			"kind": "pbr",
+			"seed": 7.0,
+			"view": "close"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				0.100000001490116,
+				0.100000001490116,
+				2.0
+			],
+			"id": "pbr-close-seed7-both",
+			"kind": "pbr",
+			"seed": 7.0,
+			"view": "close"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				9.0,
+				1.0,
+				2.0
+			],
+			"id": "pbr-grazing-seed0-baseline",
+			"kind": "pbr",
+			"seed": 0.0,
+			"view": "grazing"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				9.0,
+				1.0,
+				2.0
+			],
+			"id": "pbr-grazing-seed0-both",
+			"kind": "pbr",
+			"seed": 0.0,
+			"view": "grazing"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				9.0,
+				1.0,
+				2.0
+			],
+			"id": "pbr-grazing-seed7-baseline",
+			"kind": "pbr",
+			"seed": 7.0,
+			"view": "grazing"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				9.0,
+				1.0,
+				2.0
+			],
+			"id": "pbr-grazing-seed7-both",
+			"kind": "pbr",
+			"seed": 7.0,
+			"view": "grazing"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				1.0,
+				1.0,
+				32.0
+			],
+			"id": "pbr-distant-seed0-baseline",
+			"kind": "pbr",
+			"seed": 0.0,
+			"view": "distant"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				1.0,
+				1.0,
+				32.0
+			],
+			"id": "pbr-distant-seed0-both",
+			"kind": "pbr",
+			"seed": 0.0,
+			"view": "distant"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				1.0,
+				1.0,
+				32.0
+			],
+			"id": "pbr-distant-seed7-baseline",
+			"kind": "pbr",
+			"seed": 7.0,
+			"view": "distant"
+		},
+		{
+			"arm": "both",
+			"camera": [
+				1.0,
+				1.0,
+				32.0
+			],
+			"id": "pbr-distant-seed7-both",
+			"kind": "pbr",
+			"seed": 7.0,
+			"view": "distant"
+		}
+	],
+	"resolution": [
+		1280,
+		720
+	]
+}

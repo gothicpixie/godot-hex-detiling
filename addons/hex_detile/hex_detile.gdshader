@@ -22,6 +22,9 @@ uniform bool structure_enabled = false;
 uniform bool structure_guard_enabled = false;
 // Opt-in packed linear mask in albedo alpha; RGB remains source color.
 uniform bool structure_guard_in_albedo_alpha = false;
+// Local experiment: a filtered, world-anchored scalar color field; off by default.
+uniform bool brick_macro_enabled = false;
+uniform float brick_macro_strength : hint_range(0.0, 1.0, 0.01) = 0.18;
 uniform sampler2D structure_guard_map : hint_default_black, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform vec2 structure_period = vec2(1.0);
 uniform float structure_stagger : hint_range(-1.0, 1.0, 0.01) = 0.0;
@@ -249,11 +252,37 @@ vec3 triplanar_normal_perturb(
 
 #include "coherent_blend.gdshaderinc"
 
+// Analytic box-pixel integral of a sine wave. Gradients are world-space, so
+// the field is shared by all triplanar projections and has no camera/time phase.
+float brick_macro_sinc(float half_width) {
+	return abs(half_width) < 0.0001 ? 1.0 : sin(half_width) / half_width;
+}
+float brick_macro_wave(vec3 p, vec3 dx, vec3 dy, vec3 frequency, float phase) {
+	float angle = TAU * dot(p, frequency) + phase;
+	float half_dx = PI * dot(dx, frequency);
+	float half_dy = PI * dot(dy, frequency);
+	return sin(angle) * brick_macro_sinc(half_dx) * brick_macro_sinc(half_dy);
+}
+float brick_macro_gain(vec3 p, vec3 dx, vec3 dy) {
+	p /= texture_scale_m; dx /= texture_scale_m; dy /= texture_scale_m;
+	float seed = variation_seed;
+	float field = brick_macro_wave(p, dx, dy, vec3(0.133, 0.071, 0.109), seed * 0.71)
+		+ brick_macro_wave(p, dx, dy, vec3(-0.079, 0.127, 0.043), seed * 1.37 + 1.9)
+		+ brick_macro_wave(p, dx, dy, vec3(0.053, -0.061, 0.151), seed * 2.11 + 4.1);
+	// Each integrated wave is bounded by one; gain remains within 2^(+/-strength).
+	return exp2(brick_macro_strength * field / 3.0);
+}
+
 void vertex() {
  world_position = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
  geometric_world_normal = normalize(MODEL_NORMAL_MATRIX * NORMAL);
 }
 void fragment() {
+ // Compute derivatives before any data-dependent return inside material sampling.
+ vec3 macro_dx = vec3(0.0); vec3 macro_dy = vec3(0.0);
+ if (brick_macro_enabled && brick_macro_strength > 0.0) {
+  macro_dx = dFdx(world_position); macro_dy = dFdy(world_position);
+ }
  vec3 n = normalize(geometric_world_normal);
  vec3 weights = pow(abs(n), vec3(4.0));
  weights /= max(weights.x + weights.y + weights.z, 0.0001);
@@ -267,6 +296,9 @@ void fragment() {
  } else {
   ALBEDO = triplanar_sample(albedo_map, world_position, texture_scale_m, n, weights).rgb;
   perturb = triplanar_normal_perturb(normal_map, world_position, texture_scale_m, n, weights);
+ }
+ if (brick_macro_enabled && brick_macro_strength > 0.0) {
+  ALBEDO *= brick_macro_gain(world_position, macro_dx, macro_dy);
  }
  perturb *= normal_strength;
  perturb -= n * dot(n, perturb);

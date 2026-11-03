@@ -1,0 +1,199 @@
+{
+	"no_TIME_in_source": true,
+	"probe": "16384 fixed world points across100x70m wall; only pixel derivatives change along captured approach; shader gain amplified2 beforeRGBA8",
+	"quantization_gain": 0.00196078431372549,
+	"records": [
+		{
+			"frame": 0,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.00270962549203256
+		},
+		{
+			"frame": 1,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.00739678867489123
+		},
+		{
+			"frame": 2,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.0168680679302019
+		},
+		{
+			"frame": 3,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.0341811237188305
+		},
+		{
+			"frame": 4,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.061677482422142
+		},
+		{
+			"frame": 5,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.0978254328565197
+		},
+		{
+			"frame": 6,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.134367147251469
+		},
+		{
+			"frame": 7,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.157970312151796
+		},
+		{
+			"frame": 8,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.157970312151796
+		},
+		{
+			"frame": 9,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.134367147251469
+		},
+		{
+			"frame": 10,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.0978254328565198
+		},
+		{
+			"frame": 11,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.0616774824221421
+		},
+		{
+			"frame": 12,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.0341811237188305
+		},
+		{
+			"frame": 13,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.0168680679302019
+		},
+		{
+			"frame": 14,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.00739678867489123
+		},
+		{
+			"frame": 15,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 0.0,
+			"world_pixel_footprint": 0.00270962549203257
+		},
+		{
+			"frame": 0,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.00270962549203256
+		},
+		{
+			"frame": 1,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.00739678867489123
+		},
+		{
+			"frame": 2,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.0168680679302019
+		},
+		{
+			"frame": 3,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.0341811237188305
+		},
+		{
+			"frame": 4,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.061677482422142
+		},
+		{
+			"frame": 5,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.0978254328565197
+		},
+		{
+			"frame": 6,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.134367147251469
+		},
+		{
+			"frame": 7,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.157970312151796
+		},
+		{
+			"frame": 8,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.157970312151796
+		},
+		{
+			"frame": 9,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.134367147251469
+		},
+		{
+			"frame": 10,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.0978254328565198
+		},
+		{
+			"frame": 11,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.0616774824221421
+		},
+		{
+			"frame": 12,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.0341811237188305
+		},
+		{
+			"frame": 13,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.0168680679302019
+		},
+		{
+			"frame": 14,
+			"max_fixed_world_gain_increment_quantized": 0.00196078431372549,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.00739678867489123
+		},
+		{
+			"frame": 15,
+			"max_fixed_world_gain_increment_quantized": 0.0,
+			"seed": 7.0,
+			"world_pixel_footprint": 0.00270962549203257
+		}
+	]
+}

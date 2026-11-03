@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+PASS: full spatial disabled guard old 6c9cabf structure=false seed=0.0 max RGB delta=0.0
+PASS: full spatial disabled guard old 6c9cabf structure=false seed=7.0 max RGB delta=0.0
+PASS: full spatial disabled guard old 6c9cabf structure=true seed=0.0 max RGB delta=0.0
+PASS: full spatial disabled guard old 6c9cabf structure=true seed=7.0 max RGB delta=0.0

@@ -6,6 +6,8 @@ var blend_selector: OptionButton
 var structure_toggle: CheckButton
 var structure_guard_toggle: CheckButton
 var structure_guard_preferred := true
+var brick_macro_toggle: CheckButton
+var brick_macro_preferred := false
 var rotation_slider: HSlider
 var current_texture := 0
 # Source-specific approximate motif lattices, in source UV.
@@ -114,6 +116,13 @@ func _ready() -> void:
 		structure_guard_preferred = enabled
 		update_structure_guard())
 	box.add_child(structure_guard_toggle)
+	brick_macro_toggle = CheckButton.new()
+	brick_macro_toggle.text = "Vary distant brick tones · experiment"
+	brick_macro_toggle.tooltip_text = "Compare normalized brick color with stable broad world variation. Mortar geometry is retained; repeated joint shapes remain."
+	brick_macro_toggle.toggled.connect(func(enabled):
+		brick_macro_preferred = enabled
+		update_structure_guard())
+	box.add_child(brick_macro_toggle)
 	var rotation_label := Label.new()
 	rotation_label.text = "Tile rotation"
 	box.add_child(rotation_label)
@@ -210,7 +219,15 @@ func update_structure_guard() -> void:
 	var active := eligible and structure_guard_preferred and detiled
 	material.set_shader_parameter("structure_guard_enabled", eligible and structure_guard_preferred)
 	material.set_shader_parameter("structure_guard_in_albedo_alpha", active)
-	material.set_shader_parameter("albedo_map", load("res://assets/gallery/brick_4_albedo_guard.png" if active else TEXTURE_SETS[current_texture][0]))
+	var macro_active := active and brick_macro_preferred
+	material.set_shader_parameter("brick_macro_enabled", macro_active)
+	var albedo_path: String = TEXTURE_SETS[current_texture][0]
+	if active:
+		albedo_path = "res://assets/gallery/brick_4_albedo_guard_normalized.png" if macro_active else "res://assets/gallery/brick_4_albedo_guard.png"
+	material.set_shader_parameter("albedo_map", load(albedo_path))
+	if brick_macro_toggle:
+		brick_macro_toggle.disabled = not (eligible and structure_guard_preferred)
+		brick_macro_toggle.set_pressed_no_signal(brick_macro_preferred)
 	material.set_shader_parameter("structure_guard_map", load("res://assets/gallery/brick_4_interior_mask.png") if active else null)
 	if blend_selector:
 		blend_selector.disabled = eligible and structure_guard_preferred

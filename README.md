@@ -28,6 +28,8 @@ Brick 4 now offers a separate **Protect mortar** option after enabling Preserve 
 
 [Earlier unguarded brick, wood and paving comparisons](docs/structure/native-detail-crops.png).
 
+This local branch also contains a default-off [distant brick tone experiment](docs/distant_brick/README.md). It reduces selected periodic color energy but leaves obvious repeated patches and misses the overall repetition target; it is not part of the published addon.
+
 ## Try the demo
 
 1. Open `project.godot` in Godot 4 and allow the textures to import.
