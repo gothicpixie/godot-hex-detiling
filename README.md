@@ -22,7 +22,11 @@ The camera loop and [17-material comparison](docs/coherent/README.md) use matche
 
 Enable **Preserve pattern** in the demo for Brick 4, Dark Wooden Planks, or Checkered Pavement Tiles to try source-specific constrained translations. This opt-in setting ignores rotation and works independently of the blend selector. It uses approximate motif periods, so irregular mortar, plank seams, and wrapped source boundaries can still misalign. It does not recognize patterns automatically or enforce a global layout around triplanar corners. The [matched comparisons](docs/structure/README.md#evidence-and-reproduction) show checker grids and long plank seams retained more clearly than unconstrained offsets, while brick joints still soften or double. Periodic sampling remains the most faithful to the original layout. See [settings, measured presets, and evidence](docs/structure/README.md).
 
-![Matched native crops comparing periodic, unconstrained offsets, unrestricted rotation, and structure-aware brick, wood, and paving](docs/structure/native-detail-crops.png)
+Brick 4 now offers a separate **Protect mortar** option after enabling Preserve pattern. It anchors masked mortar to the original source and permits variation only in safe source and donor interiors, using common coherent weights. It returns to original sampling at coarse footprints. This retains the repeating mortar layout, restricts interior variation, and adds texture reads; it depends on a source-aligned mask. The native comparison below shows periodic, existing structured, and guarded brick sampling. See [matched native crops, mask provenance, checks and cost](docs/brick_guard/README.md). Full PBR guarding adds 21 source-level texture reads (27 → 48); measured whole-frame intervals increased from 3.435 to 5.626 ms on Apple M5 Compatibility, not isolated GPU timings.
+
+![Matched native crops comparing periodic, existing structured and mortar-guarded brick](docs/brick_guard/native-comparison-seed0.jpg)
+
+[Earlier unguarded brick, wood and paving comparisons](docs/structure/native-detail-crops.png).
 
 ## Try the demo
 
@@ -97,6 +101,7 @@ The shader is a complete spatial material. To use it in an existing custom mater
 | `variation_seed` | Choose a different deterministic cell-offset and rotation pattern; 0 preserves the original pattern. Matching maps share the seed. Duplicate the material to give different surfaces different seeds. |
 | `rotation_strength` | Rotate cell samples; zero preserves the source orientation. Ignored while `structure_enabled` is on. |
 | `structure_enabled` | Constrain cell transforms to a source-specific lattice and force identity rotation. Off by default; independent of blending. |
+| `structure_guard_enabled`, `structure_guard_map` | Optional source-mask protection, active only with structure and detiling. Black retains original material; white permits safe donor variation. Missing mask defaults black. Overrides the blend selector with coherent common weights; off by default. |
 | `structure_period` | Source-UV X/Y translation steps; zero locks that coordinate. Default `(1,1)` gives no meaningful variation with zero stagger. |
 | `structure_stagger` | Fraction of the X step added per Y step, e.g. `0.5` for a matching running-bond lattice. Default zero. |
 | `blend_contrast` | Adjust the color and roughness weight curve (and normals in shared-weight mode); 0.5 is neutral. Higher values may reveal the lattice. |

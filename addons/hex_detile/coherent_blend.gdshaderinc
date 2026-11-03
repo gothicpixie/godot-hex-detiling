@@ -46,13 +46,38 @@ void coherent_sample_material(vec2 st, vec2 dx, vec2 dy,
 		c2 *= mix(vec3(1.0), target / max(textureLod(albedo_map, p2, lod).rgb, vec3(0.04)), detile_detrend);
 		c3 *= mix(vec3(1.0), target / max(textureLod(albedo_map, p3, lod).rgb, vec3(0.04)), detile_detrend);
 	}
-	color = c1 * W.x + c2 * W.y + c3 * W.z;
-	normal = normalize(vec3(d1 * W.x + d2 * W.y + d3 * W.z, 1.0));
+	// Preserve the reference wherever its mask or a donor's mask is unsafe.
+	// Rejected weight returns to the reference; never amplify surviving donors.
+	bool guarded = detile_enabled && structure_enabled && structure_guard_enabled;
+	float anchor_weight = 0.0;
+	vec3 c0 = vec3(0.0);
+	vec2 d0 = vec2(0.0);
+	if (guarded) {
+		float reference_mask = textureGrad(structure_guard_map, st, dx, dy).r;
+		vec3 donor_mask = vec3(textureGrad(structure_guard_map, p1, dx1, dy1).r,
+			textureGrad(structure_guard_map, p2, dx2, dy2).r,
+			textureGrad(structure_guard_map, p3, dx3, dy3).r);
+		// Mips average black mortar into white interiors. Return to the source
+		// as a conservative mask footprint grows; this is a heuristic cutoff.
+		vec2 mask_size = vec2(textureSize(structure_guard_map, 0));
+		float mask_footprint = max(length(dx * mask_size), length(dy * mask_size));
+		float guard_detail = 1.0 - smoothstep(2.0, 8.0, mask_footprint);
+		W *= reference_mask * donor_mask * guard_detail;
+		anchor_weight = max(0.0, 1.0 - W.x - W.y - W.z);
+		c0 = textureGrad(albedo_map, st, dx, dy).rgb;
+		d0 = paper_normal_slope(textureGrad(normal_map, st, dx, dy).rgb,
+			mat2(vec2(1.0, 0.0), vec2(0.0, 1.0)));
+	}
+	color = c0 * anchor_weight + c1 * W.x + c2 * W.y + c3 * W.z;
+	normal = normalize(vec3(d0 * anchor_weight + d1 * W.x + d2 * W.y + d3 * W.z, 1.0));
 	material_roughness = roughness;
 	if (use_roughness_map) {
 		vec3 values = vec3(textureGrad(roughness_map, p1, dx1, dy1).r,
 			textureGrad(roughness_map, p2, dx2, dy2).r, textureGrad(roughness_map, p3, dx3, dy3).r);
 		material_roughness = dot(values, W);
+		if (guarded) {
+			material_roughness += textureGrad(roughness_map, st, dx, dy).r * anchor_weight;
+		}
 	}
 }
 

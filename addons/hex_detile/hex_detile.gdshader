@@ -17,6 +17,10 @@ uniform float variation_seed : hint_range(0.0, 999.0, 1.0) = 0.0;
 uniform bool detile_enabled = true;
 // Optional source-UV lattice constraint; independent of blend mode.
 uniform bool structure_enabled = false;
+// Optional source-aligned mask: black protects the reference, white permits donors.
+// Guarding uses coherent weights and requires both structure and detiling.
+uniform bool structure_guard_enabled = false;
+uniform sampler2D structure_guard_map : hint_default_black, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform vec2 structure_period = vec2(1.0);
 uniform float structure_stagger : hint_range(-1.0, 1.0, 0.01) = 0.0;
 uniform float texture_scale_m : hint_range(0.1, 10.0, 0.1) = 1.5;
@@ -253,7 +257,7 @@ void fragment() {
  weights /= max(weights.x + weights.y + weights.z, 0.0001);
  vec3 perturb;
  float coherent_roughness = roughness;
- if (detile_enabled && coherent_blend) {
+ if (detile_enabled && (coherent_blend || (structure_enabled && structure_guard_enabled))) {
   coherent_triplanar_material(world_position, texture_scale_m, n, weights, ALBEDO, perturb, coherent_roughness);
  } else if (detile_enabled) {
   ALBEDO = detile_triplanar_color(albedo_map, world_position, texture_scale_m, n, weights);
@@ -266,7 +270,7 @@ void fragment() {
  perturb -= n * dot(n, perturb);
  NORMAL = normalize((VIEW_MATRIX * vec4(normalize(n + perturb), 0.0)).xyz);
  ROUGHNESS = coherent_roughness;
- if (use_roughness_map && !(detile_enabled && coherent_blend)) {
+ if (use_roughness_map && !(detile_enabled && (coherent_blend || (structure_enabled && structure_guard_enabled)))) {
   ROUGHNESS = detile_enabled ? detile_triplanar_data(roughness_map, world_position, texture_scale_m, n, weights).r : triplanar_sample(roughness_map, world_position, texture_scale_m, n, weights).r;
  }
 }

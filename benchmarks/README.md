@@ -63,3 +63,20 @@ godot --path . --rendering-method gl_compatibility --resolution 1280x720 --disab
 ```
 
 See [method and bounded quality checks](../docs/coherent/README.md) before interpreting this as a visual-quality comparison.
+
+## Brick mortar guard comparison — November 3, 2026
+
+Apple M5, Godot 4.7.2 Compatibility / OpenGL 4.1 through Metal, requested 1280 × 720, V-sync disabled, UI hidden, matched brick terrain, roughness enabled and detrending off. Three alternating rounds per mode used 60 warm-up and 180 measured process-frame intervals. Existing structured mode explicitly disabled the new guard; active guarding retained common coherent blending.
+
+| Mode | Median whole-frame intervals by round (ms) | Mean of round medians (ms) |
+| --- | --- | --- |
+| Existing structured | 3.432, 3.421, 3.452 | 3.435 |
+| Mortar guarded | 5.607, 5.681, 5.590 | 5.626 |
+
+The mean of round medians increased about 63.8% in this run. These are whole-frame intervals including CPU scheduling and presentation overhead, **not isolated GPU timings**; Godot returned zero GPU timer samples. This single-device comparison does not establish a general speed ratio. Active full PBR guarding adds 21 source-level reads (27 → 48 with detrending off); its distant fallback reduces donor contribution while retaining those reads.
+
+[Raw output](../docs/brick_guard/benchmark.log), [matched visual evidence and tradeoffs](../docs/brick_guard/README.md), and [complete validation](../docs/brick_guard/VALIDATION.md) accompany the result. Reproduce after importing, on a graphics display with other GPU tasks stopped:
+
+```sh
+godot --path . --rendering-method gl_compatibility --resolution 1280x720 --disable-vsync --max-fps 0 --script res://benchmarks/brick_guard_compare.gd
+```

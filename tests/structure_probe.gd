@@ -121,7 +121,7 @@ func run() -> void:
 	var current_prefix := prefix
 	var old_shader := FileAccess.get_file_as_string("/tmp/hex-structure-baseline.gdshader")
 	if not old_shader.is_empty():
-		prefix=old_shader.split("void vertex()")[0].replace('#include "coherent_blend.gdshaderinc"', '#include "res://addons/hex_detile/coherent_blend.gdshaderinc"').replace("shader_type spatial;", "shader_type canvas_item;").replace("render_mode diffuse_burley, specular_schlick_ggx;", "render_mode unshaded;").replace("filter_linear_mipmap_anisotropic","filter_nearest")
+		prefix=old_shader.split("void vertex()")[0].replace('#include "coherent_blend.gdshaderinc"', FileAccess.get_file_as_string("/tmp/hex-structure-baseline.gdshaderinc")).replace("shader_type spatial;", "shader_type canvas_item;").replace("render_mode diffuse_burley, specular_schlick_ggx;", "render_mode unshaded;").replace("filter_linear_mipmap_anisotropic","filter_nearest")
 		check(mean_difference(off,await render(selection))<0.001,"disabled transforms match original shader at 5b86dca")
 		check(mean_difference(off_sample,await render(body))<0.001,"disabled sampled image matches original shader at 5b86dca")
 		prefix=current_prefix

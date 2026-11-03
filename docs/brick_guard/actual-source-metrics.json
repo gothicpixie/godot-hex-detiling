@@ -1,0 +1,30 @@
+{
+	"dx": [
+		0.0003,
+		0
+	],
+	"dy": [
+		0,
+		0.0003
+	],
+	"error_readback": "RGBA8",
+	"interior_mean_color_l2_delta": 0.104976164450672,
+	"interior_pixels": 16648,
+	"mask_footprint_texels": 0.3072,
+	"protected_observed_max": [
+		0.0,
+		0.0,
+		0.0
+	],
+	"protected_pixels": 14492,
+	"resolution": [
+		192,
+		192
+	],
+	"seed": 0,
+	"structure_period": [
+		0.133333333333333,
+		0.0714285714285714
+	],
+	"structure_stagger": 0.5
+}

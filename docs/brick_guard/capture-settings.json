@@ -1,0 +1,199 @@
+{
+	"ambient_energy": 0.45,
+	"blend_contrast": 0.65,
+	"camera_target": [
+		0,
+		0,
+		0
+	],
+	"captures": [
+		{
+			"camera": [
+				1.0,
+				1.0,
+				10.0
+			],
+			"id": "brick-wall-seed0-periodic",
+			"mode": "periodic",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				10.0
+			],
+			"id": "brick-wall-seed0-structured",
+			"mode": "structured",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				10.0
+			],
+			"id": "brick-wall-seed0-guarded",
+			"mode": "guarded",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				7.0,
+				3.0,
+				9.0
+			],
+			"id": "brick-oblique-seed0-periodic",
+			"mode": "periodic",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				7.0,
+				3.0,
+				9.0
+			],
+			"id": "brick-oblique-seed0-structured",
+			"mode": "structured",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				7.0,
+				3.0,
+				9.0
+			],
+			"id": "brick-oblique-seed0-guarded",
+			"mode": "guarded",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				2.0,
+				12.0,
+				8.0
+			],
+			"id": "brick-elevated-seed0-periodic",
+			"mode": "periodic",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				2.0,
+				12.0,
+				8.0
+			],
+			"id": "brick-elevated-seed0-structured",
+			"mode": "structured",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				2.0,
+				12.0,
+				8.0
+			],
+			"id": "brick-elevated-seed0-guarded",
+			"mode": "guarded",
+			"seed": 0.0
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				10.0
+			],
+			"id": "brick-wall-seed7-periodic",
+			"mode": "periodic",
+			"seed": 7.0
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				10.0
+			],
+			"id": "brick-wall-seed7-structured",
+			"mode": "structured",
+			"seed": 7.0
+		},
+		{
+			"camera": [
+				1.0,
+				1.0,
+				10.0
+			],
+			"id": "brick-wall-seed7-guarded",
+			"mode": "guarded",
+			"seed": 7.0
+		},
+		{
+			"camera": [
+				7.0,
+				3.0,
+				9.0
+			],
+			"id": "brick-oblique-seed7-periodic",
+			"mode": "periodic",
+			"seed": 7.0
+		},
+		{
+			"camera": [
+				7.0,
+				3.0,
+				9.0
+			],
+			"id": "brick-oblique-seed7-structured",
+			"mode": "structured",
+			"seed": 7.0
+		},
+		{
+			"camera": [
+				7.0,
+				3.0,
+				9.0
+			],
+			"id": "brick-oblique-seed7-guarded",
+			"mode": "guarded",
+			"seed": 7.0
+		},
+		{
+			"camera": [
+				2.0,
+				12.0,
+				8.0
+			],
+			"id": "brick-elevated-seed7-periodic",
+			"mode": "periodic",
+			"seed": 7.0
+		},
+		{
+			"camera": [
+				2.0,
+				12.0,
+				8.0
+			],
+			"id": "brick-elevated-seed7-structured",
+			"mode": "structured",
+			"seed": 7.0
+		},
+		{
+			"camera": [
+				2.0,
+				12.0,
+				8.0
+			],
+			"id": "brick-elevated-seed7-guarded",
+			"mode": "guarded",
+			"seed": 7.0
+		}
+	],
+	"detile_detrend": 0.0,
+	"light_energy": 0.9,
+	"normal_strength": 0.8,
+	"resolution": [
+		1280,
+		720
+	],
+	"texture_scale_m": 2.5
+}

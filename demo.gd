@@ -2,7 +2,10 @@ extends Node3D
 
 var detiled := true
 var toggle: Button
+var blend_selector: OptionButton
 var structure_toggle: CheckButton
+var structure_guard_toggle: CheckButton
+var structure_guard_preferred := true
 var rotation_slider: HSlider
 var current_texture := 0
 # Source-specific approximate motif lattices, in source UV.
@@ -103,6 +106,14 @@ func _ready() -> void:
 	structure_toggle = CheckButton.new()
 	structure_toggle.toggled.connect(set_structure)
 	box.add_child(structure_toggle)
+	structure_guard_toggle = CheckButton.new()
+	structure_guard_toggle.text = "Protect mortar · Brick 4 only"
+	structure_guard_toggle.button_pressed = structure_guard_preferred
+	structure_guard_toggle.tooltip_text = "Preserve the original mortar; vary safe interiors with common coherent material weights. Extra texture reads; distant views return to the original source."
+	structure_guard_toggle.toggled.connect(func(enabled):
+		structure_guard_preferred = enabled
+		update_structure_guard())
+	box.add_child(structure_guard_toggle)
 	var rotation_label := Label.new()
 	rotation_label.text = "Tile rotation"
 	box.add_child(rotation_label)
@@ -136,7 +147,7 @@ func _ready() -> void:
 	seed_input.value_changed.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("variation_seed", value))
 	seed_row.add_child(seed_input)
 	box.add_child(seed_row)
-	var blend_selector := OptionButton.new()
+	blend_selector = OptionButton.new()
 	blend_selector.add_item("Blend: shared weights")
 	blend_selector.add_item("Blend: paper-inspired")
 	blend_selector.add_item("Blend: coherent material (experimental)")
@@ -188,9 +199,22 @@ func set_structure(enabled: bool) -> void:
 	material.set_shader_parameter("structure_enabled", enabled)
 	if structure_toggle:
 		structure_toggle.set_pressed_no_signal(enabled)
+	update_structure_guard()
 	if rotation_slider:
 		rotation_slider.editable = not enabled
 		rotation_slider.tooltip_text = "Preserve pattern locks rotation to zero" if enabled else ""
+
+func update_structure_guard() -> void:
+	var material := $Surface.material_override as ShaderMaterial
+	var eligible := current_texture == 3 and bool(material.get_shader_parameter("structure_enabled"))
+	material.set_shader_parameter("structure_guard_enabled", eligible and structure_guard_preferred)
+	material.set_shader_parameter("structure_guard_map", load("res://assets/gallery/brick_4_interior_mask.png") if current_texture == 3 else null)
+	if blend_selector:
+		blend_selector.disabled = eligible and structure_guard_preferred
+		blend_selector.tooltip_text = "Protect mortar uses coherent blending" if blend_selector.disabled else ""
+	if structure_guard_toggle:
+		structure_guard_toggle.disabled = not eligible
+		structure_guard_toggle.set_pressed_no_signal(structure_guard_preferred)
 
 func set_detile(enabled: bool) -> void:
 	detiled = enabled

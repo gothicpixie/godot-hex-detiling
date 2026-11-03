@@ -1,0 +1,27 @@
+{
+  "asset": "brick_4_interior_mask.png",
+  "author": "Derived by godot-hex-detiling preprocessing",
+  "license": "CC0-1.0",
+  "upstream_author": "Rob Tuytel",
+  "upstream_asset": "https://polyhaven.com/a/brick_4",
+  "license_url": "https://polyhaven.com/license",
+  "discovery_api": "https://api.polyhaven.com/files/brick_4",
+  "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/brick_4/brick_4_disp_1k.png",
+  "source_bytes": 666629,
+  "source_md5": "4df23e378c99c42ea1901f8c3e55c9fc",
+  "source_sha256": "ca79cf9a1c13b2d8f4ac1d19e06f3157f0bface6a6d8f10b52a49f1523813d79",
+  "mask_sha256": "d177b6ca31fb5632fcd646afd37d4922b99ecf07e3625721bd3f03e18e2bd210",
+  "algorithm": "height > threshold; Euclidean distance to unsafe on 3x3 repeated image; crop center; smoothstep(guard, guard+feather, distance); round to uint8",
+  "height_threshold_8bit": 96,
+  "guard_pixels": 3.0,
+  "feather_pixels": 5.0,
+  "size": [
+    1024,
+    1024
+  ],
+  "coverage": {
+    "protected_zero": 0.405426025390625,
+    "full_interior": 0.46285343170166016,
+    "mean_weight": 0.5266634099623736
+  }
+}
