@@ -37,9 +37,10 @@ func _initialize() -> void:
 		camera.position = item.camera
 		camera.look_at(Vector3.ZERO, Vector3.UP)
 		mat.set_shader_parameter("texture_scale_m", item.scale)
-		for mode in ["periodic", "offset", "rotated"]:
+		for mode in ["periodic", "offset", "rotated", "paper"]:
 			demo.set_detile(mode != "periodic")
-			mat.set_shader_parameter("rotation_strength", 0.65 if mode == "rotated" else 0.0)
+			mat.set_shader_parameter("rotation_strength", 0.65 if mode == "rotated" or mode == "paper" else 0.0)
+			mat.set_shader_parameter("paper_blend", mode == "paper")
 			await process_frame
 			await process_frame
 			await create_timer(0.5).timeout

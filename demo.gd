@@ -92,6 +92,10 @@ func _ready() -> void:
 	contrast_slider.value = 0.5
 	contrast_slider.value_changed.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("blend_contrast", value))
 	box.add_child(contrast_slider)
+	var paper_toggle := CheckButton.new()
+	paper_toggle.text = "Paper-inspired weighting"
+	paper_toggle.toggled.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("paper_blend", value))
+	box.add_child(paper_toggle)
 	var roughness_toggle := CheckButton.new()
 	roughness_toggle.text = "Use roughness map"
 	roughness_toggle.toggled.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("use_roughness_map", value))

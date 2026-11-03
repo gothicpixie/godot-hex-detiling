@@ -25,3 +25,21 @@ godot --path . --resolution 1280x720 --disable-vsync --max-fps 0 --script res://
 ```
 
 Do not use headless mode for this test. The script prints each round's median, mean, 95th-percentile frame interval, and any nonzero viewport GPU timing samples. Run several times and keep the machine's power, display, renderer, scene coverage and background workload consistent. Results may be noisy or refresh-limited even with V-sync disabled.
+
+## Paper-inspired mode comparison
+
+On the same machine and Compatibility renderer, a second run used the current terrain scene at 1280 × 720, rotation 0.65, blend contrast 0.65, and roughness-map sampling on. It alternated periodic, shared-weight detiling, and paper-inspired detiling twice; each round used 180 warm-up and 600 measured frames.
+
+| Mode | Median frame intervals by round (ms) |
+| --- | --- |
+| Periodic | 1.064, 1.065 |
+| Shared weights | 3.314, 3.316 |
+| Paper-inspired weights | 3.317, 3.352 |
+
+These are process-frame intervals, **not GPU times**. GPU timing again returned zero samples; the close shared/paper numbers cannot establish an isolated GPU cost or a general performance relationship. Results vary with hardware and scene. Raw output: [apple-m5-paper-compare.txt](apple-m5-paper-compare.txt).
+
+Reproduce on a graphics display after importing:
+
+```sh
+godot --path . --resolution 1280x720 --disable-vsync --max-fps 0 --script res://benchmarks/paper_compare.gd
+```

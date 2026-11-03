@@ -7,6 +7,9 @@ uniform sampler2D roughness_map : filter_linear_mipmap_anisotropic, repeat_enabl
 uniform bool use_roughness_map = false;
 uniform float rotation_strength : hint_range(0.0, 1.0, 0.01) = 0.0;
 uniform float blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
+uniform bool paper_blend = false;
+uniform float paper_falloff : hint_range(0.0, 0.99, 0.01) = 0.6;
+uniform float normal_blend_contrast : hint_range(0.01, 0.99, 0.01) = 0.5;
 uniform bool detile_enabled = true;
 uniform float texture_scale_m : hint_range(0.1, 10.0, 0.1) = 1.5;
 uniform float normal_strength : hint_range(0.0, 1.0, 0.01) = 0.5;
@@ -55,26 +58,45 @@ vec2 detile_position(vec2 st, ivec2 vertex, mat2 rotation) {
 	vec2 center = inverse_skew * vec2(vertex) / (2.0 * sqrt(3.0));
 	return rotation * (st - center) + center + detile_hash2(vec2(vertex));
 }
-vec3 detile_weights(float w1, float w2, float w3) {
+vec3 detile_base_weights(float w1, float w2, float w3) {
 	vec3 w = pow(vec3(w1, w2, w3), vec3(detile_blend_power));
+	return w / max(w.x + w.y + w.z, 0.000001);
+}
+vec3 detile_gain(vec3 w, float contrast) {
 	w /= max(w.x + w.y + w.z, 0.000001);
-	float k = log(1.0 - blend_contrast) / log(0.5);
+	float k = log(1.0 - contrast) / log(0.5);
 	vec3 side = 2.0 * step(vec3(0.5), w);
 	vec3 m = 2.0 * (1.0 - side);
 	w = 0.5 * side + 0.25 * m * pow(max(vec3(0.0), side + w * m), vec3(k));
 	return w / max(w.x + w.y + w.z, 0.000001);
+}
+vec3 paper_color_weights(vec3 base, vec3 c1, vec3 c2, vec3 c3) {
+	vec3 luminance = vec3(0.299, 0.587, 0.114);
+	vec3 brightness = max(vec3(0.0), vec3(dot(c1, luminance), dot(c2, luminance), dot(c3, luminance)));
+	return detile_gain(base * mix(vec3(1.0), brightness, paper_falloff), blend_contrast);
+}
+// Reconstruct Z from XY so the method also works with two-channel normal imports.
+// Clamp grazing slopes to avoid numerical blowups from compressed normal maps.
+vec2 paper_normal_slope(vec3 encoded, mat2 rotation) {
+	vec2 xy = encoded.xy * 2.0 - 1.0;
+	float z = sqrt(max(1.0 - dot(xy, xy), 0.0025));
+	return transpose(rotation) * (xy / z);
 }
 
 vec3 detile_sample_color(sampler2D tex, vec2 st, vec2 dx, vec2 dy) {
 	float w1, w2, w3;
 	ivec2 v1, v2, v3;
 	detile_triangle_grid(st, w1, w2, w3, v1, v2, v3);
-	vec3 W = detile_weights(w1, w2, w3);
+	vec3 base = detile_base_weights(w1, w2, w3);
+	vec3 W = detile_gain(base, blend_contrast);
 	mat2 r1 = detile_rotation(v1); mat2 r2 = detile_rotation(v2); mat2 r3 = detile_rotation(v3);
 	vec2 p1 = detile_position(st, v1, r1); vec2 p2 = detile_position(st, v2, r2); vec2 p3 = detile_position(st, v3, r3);
 	vec3 c1 = textureGrad(tex, p1, r1 * dx, r1 * dy).rgb;
 	vec3 c2 = textureGrad(tex, p2, r2 * dx, r2 * dy).rgb;
 	vec3 c3 = textureGrad(tex, p3, r3 * dx, r3 * dy).rgb;
+	if (paper_blend) {
+		W = paper_color_weights(base, c1, c2, c3);
+	}
 	if (detile_detrend > 0.0) {
 		vec3 target = textureLod(tex, vec2(0.5), 16.0).rgb;
 		ivec2 map_size = textureSize(tex, 0);
@@ -94,12 +116,27 @@ vec3 detile_sample_data(sampler2D tex, vec2 st, vec2 dx, vec2 dy, bool is_normal
 	float w1, w2, w3;
 	ivec2 v1, v2, v3;
 	detile_triangle_grid(st, w1, w2, w3, v1, v2, v3);
-	vec3 W = detile_weights(w1, w2, w3);
+	vec3 base = detile_base_weights(w1, w2, w3);
+	vec3 W = detile_gain(base, blend_contrast);
 	mat2 r1 = detile_rotation(v1); mat2 r2 = detile_rotation(v2); mat2 r3 = detile_rotation(v3);
 	vec2 p1 = detile_position(st, v1, r1); vec2 p2 = detile_position(st, v2, r2); vec2 p3 = detile_position(st, v3, r3);
 	vec3 c1 = textureGrad(tex, p1, r1 * dx, r1 * dy).rgb;
 	vec3 c2 = textureGrad(tex, p2, r2 * dx, r2 * dy).rgb;
 	vec3 c3 = textureGrad(tex, p3, r3 * dx, r3 * dy).rgb;
+	if (paper_blend && is_normal) {
+		vec2 d1 = paper_normal_slope(c1, r1);
+		vec2 d2 = paper_normal_slope(c2, r2);
+		vec2 d3 = paper_normal_slope(c3, r3);
+		vec3 slope2 = vec3(dot(d1, d1), dot(d2, d2), dot(d3, d3));
+		vec3 slope_weight = sqrt(slope2 / (vec3(1.0) + slope2));
+		W = detile_gain(base * mix(vec3(1.0), slope_weight, paper_falloff), normal_blend_contrast);
+		vec2 blended_slope = d1 * W.x + d2 * W.y + d3 * W.z;
+		vec3 normal = normalize(vec3(blended_slope, 1.0));
+		return normal * 0.5 + 0.5;
+	}
+	if (paper_blend && !is_normal) {
+		W = paper_color_weights(base, c1, c2, c3);
+	}
 	if (is_normal) {
 		c1.xy = transpose(r1) * (c1.xy * 2.0 - 1.0) * 0.5 + 0.5;
 		c2.xy = transpose(r2) * (c2.xy * 2.0 - 1.0) * 0.5 + 0.5;
