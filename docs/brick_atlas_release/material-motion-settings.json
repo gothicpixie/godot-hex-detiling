@@ -1,0 +1,596 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"gpu": "Apple M5",
+	"records": [
+		{
+			"arm": "baseline",
+			"camera": [
+				6.57784843444824,
+				1.20000004768372,
+				2.39414095878601
+			],
+			"frame": 0,
+			"id": "red_brick-orbit-baseline-00",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				6.57784843444824,
+				1.20000004768372,
+				2.39414095878601
+			],
+			"frame": 0,
+			"id": "red_brick-orbit-candidate-00",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.36742401123047,
+				1.20000004768372,
+				2.90790510177612
+			],
+			"frame": 1,
+			"id": "red_brick-orbit-baseline-01",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				6.36742401123047,
+				1.20000004768372,
+				2.90790510177612
+			],
+			"frame": 1,
+			"id": "red_brick-orbit-candidate-01",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.11694574356079,
+				1.20000004768372,
+				3.40337705612183
+			],
+			"frame": 2,
+			"id": "red_brick-orbit-baseline-02",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				6.11694574356079,
+				1.20000004768372,
+				3.40337705612183
+			],
+			"frame": 2,
+			"id": "red_brick-orbit-candidate-02",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.82798910140991,
+				1.20000004768372,
+				3.87744045257568
+			],
+			"frame": 3,
+			"id": "red_brick-orbit-baseline-03",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				5.82798910140991,
+				1.20000004768372,
+				3.87744045257568
+			],
+			"frame": 3,
+			"id": "red_brick-orbit-candidate-03",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.5023717880249,
+				1.20000004768372,
+				4.32711267471313
+			],
+			"frame": 4,
+			"id": "red_brick-orbit-baseline-04",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				5.5023717880249,
+				1.20000004768372,
+				4.32711267471313
+			],
+			"frame": 4,
+			"id": "red_brick-orbit-candidate-04",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.14214181900024,
+				1.20000004768372,
+				4.74956607818604
+			],
+			"frame": 5,
+			"id": "red_brick-orbit-baseline-05",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				5.14214181900024,
+				1.20000004768372,
+				4.74956607818604
+			],
+			"frame": 5,
+			"id": "red_brick-orbit-candidate-05",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				4.74956607818604,
+				1.20000004768372,
+				5.14214181900024
+			],
+			"frame": 6,
+			"id": "red_brick-orbit-baseline-06",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				4.74956607818604,
+				1.20000004768372,
+				5.14214181900024
+			],
+			"frame": 6,
+			"id": "red_brick-orbit-candidate-06",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				4.32711267471313,
+				1.20000004768372,
+				5.5023717880249
+			],
+			"frame": 7,
+			"id": "red_brick-orbit-baseline-07",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				4.32711267471313,
+				1.20000004768372,
+				5.5023717880249
+			],
+			"frame": 7,
+			"id": "red_brick-orbit-candidate-07",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				3.87744045257568,
+				1.20000004768372,
+				5.82798910140991
+			],
+			"frame": 8,
+			"id": "red_brick-orbit-baseline-08",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				3.87744045257568,
+				1.20000004768372,
+				5.82798910140991
+			],
+			"frame": 8,
+			"id": "red_brick-orbit-candidate-08",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				3.40337705612183,
+				1.20000004768372,
+				6.11694574356079
+			],
+			"frame": 9,
+			"id": "red_brick-orbit-baseline-09",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				3.40337705612183,
+				1.20000004768372,
+				6.11694574356079
+			],
+			"frame": 9,
+			"id": "red_brick-orbit-candidate-09",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				2.90790510177612,
+				1.20000004768372,
+				6.36742401123047
+			],
+			"frame": 10,
+			"id": "red_brick-orbit-baseline-10",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				2.90790510177612,
+				1.20000004768372,
+				6.36742401123047
+			],
+			"frame": 10,
+			"id": "red_brick-orbit-candidate-10",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				2.39414095878601,
+				1.20000004768372,
+				6.57784843444824
+			],
+			"frame": 11,
+			"id": "red_brick-orbit-baseline-11",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				2.39414095878601,
+				1.20000004768372,
+				6.57784843444824
+			],
+			"frame": 11,
+			"id": "red_brick-orbit-candidate-11",
+			"material": "red_brick",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.57784843444824,
+				1.20000004768372,
+				2.39414095878601
+			],
+			"frame": 0,
+			"id": "large_red_bricks-orbit-baseline-00",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				6.57784843444824,
+				1.20000004768372,
+				2.39414095878601
+			],
+			"frame": 0,
+			"id": "large_red_bricks-orbit-candidate-00",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.36742401123047,
+				1.20000004768372,
+				2.90790510177612
+			],
+			"frame": 1,
+			"id": "large_red_bricks-orbit-baseline-01",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				6.36742401123047,
+				1.20000004768372,
+				2.90790510177612
+			],
+			"frame": 1,
+			"id": "large_red_bricks-orbit-candidate-01",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				6.11694574356079,
+				1.20000004768372,
+				3.40337705612183
+			],
+			"frame": 2,
+			"id": "large_red_bricks-orbit-baseline-02",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				6.11694574356079,
+				1.20000004768372,
+				3.40337705612183
+			],
+			"frame": 2,
+			"id": "large_red_bricks-orbit-candidate-02",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.82798910140991,
+				1.20000004768372,
+				3.87744045257568
+			],
+			"frame": 3,
+			"id": "large_red_bricks-orbit-baseline-03",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				5.82798910140991,
+				1.20000004768372,
+				3.87744045257568
+			],
+			"frame": 3,
+			"id": "large_red_bricks-orbit-candidate-03",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.5023717880249,
+				1.20000004768372,
+				4.32711267471313
+			],
+			"frame": 4,
+			"id": "large_red_bricks-orbit-baseline-04",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				5.5023717880249,
+				1.20000004768372,
+				4.32711267471313
+			],
+			"frame": 4,
+			"id": "large_red_bricks-orbit-candidate-04",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				5.14214181900024,
+				1.20000004768372,
+				4.74956607818604
+			],
+			"frame": 5,
+			"id": "large_red_bricks-orbit-baseline-05",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				5.14214181900024,
+				1.20000004768372,
+				4.74956607818604
+			],
+			"frame": 5,
+			"id": "large_red_bricks-orbit-candidate-05",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				4.74956607818604,
+				1.20000004768372,
+				5.14214181900024
+			],
+			"frame": 6,
+			"id": "large_red_bricks-orbit-baseline-06",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				4.74956607818604,
+				1.20000004768372,
+				5.14214181900024
+			],
+			"frame": 6,
+			"id": "large_red_bricks-orbit-candidate-06",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				4.32711267471313,
+				1.20000004768372,
+				5.5023717880249
+			],
+			"frame": 7,
+			"id": "large_red_bricks-orbit-baseline-07",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				4.32711267471313,
+				1.20000004768372,
+				5.5023717880249
+			],
+			"frame": 7,
+			"id": "large_red_bricks-orbit-candidate-07",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				3.87744045257568,
+				1.20000004768372,
+				5.82798910140991
+			],
+			"frame": 8,
+			"id": "large_red_bricks-orbit-baseline-08",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				3.87744045257568,
+				1.20000004768372,
+				5.82798910140991
+			],
+			"frame": 8,
+			"id": "large_red_bricks-orbit-candidate-08",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				3.40337705612183,
+				1.20000004768372,
+				6.11694574356079
+			],
+			"frame": 9,
+			"id": "large_red_bricks-orbit-baseline-09",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				3.40337705612183,
+				1.20000004768372,
+				6.11694574356079
+			],
+			"frame": 9,
+			"id": "large_red_bricks-orbit-candidate-09",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				2.90790510177612,
+				1.20000004768372,
+				6.36742401123047
+			],
+			"frame": 10,
+			"id": "large_red_bricks-orbit-baseline-10",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				2.90790510177612,
+				1.20000004768372,
+				6.36742401123047
+			],
+			"frame": 10,
+			"id": "large_red_bricks-orbit-candidate-10",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"camera": [
+				2.39414095878601,
+				1.20000004768372,
+				6.57784843444824
+			],
+			"frame": 11,
+			"id": "large_red_bricks-orbit-baseline-11",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"camera": [
+				2.39414095878601,
+				1.20000004768372,
+				6.57784843444824
+			],
+			"frame": 11,
+			"id": "large_red_bricks-orbit-candidate-11",
+			"material": "large_red_bricks",
+			"shape": "cylinder"
+		}
+	],
+	"resolution": [
+		640,
+		360
+	]
+}

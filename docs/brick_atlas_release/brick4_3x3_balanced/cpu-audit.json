@@ -1,0 +1,49 @@
+{
+  "full_rgba8_mip_dimensions": [
+    3072,
+    1536,
+    768,
+    384,
+    192,
+    96,
+    48,
+    24,
+    12,
+    6,
+    3,
+    1
+  ],
+  "mip_levels_including_base": 12,
+  "mipmap_count": 11,
+  "full_rgba8_mip_bytes": 50331640,
+  "full_rgba8_mip_mib": 47.99999237060547,
+  "engine_native_npot_import_pending": true,
+  "seeds": [
+    {
+      "seed": 0,
+      "actual_core_per_source_mean_rgb_variance": [
+        1.3348969547700676e-05,
+        5.045355679266942e-06,
+        3.7697671106533993e-06
+      ],
+      "sum": 2.2164092337621015e-05,
+      "global_palette_counts_exact_83_each": 9,
+      "nine_distinct_targets_per_source_id": true,
+      "alpha_exact_pixels": 9437184,
+      "protected_rgba_exact_pixels": 3826080
+    },
+    {
+      "seed": 7,
+      "actual_core_per_source_mean_rgb_variance": [
+        1.38447901560543e-05,
+        5.296180771782801e-06,
+        3.592110379522241e-06
+      ],
+      "sum": 2.2733081307359345e-05,
+      "global_palette_counts_exact_83_each": 9,
+      "nine_distinct_targets_per_source_id": true,
+      "alpha_exact_pixels": 9437184,
+      "protected_rgba_exact_pixels": 3826080
+    }
+  ]
+}

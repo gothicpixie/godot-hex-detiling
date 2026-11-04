@@ -1,0 +1,24 @@
+{
+  "method": "Core alpha255 loglinear luminance residual after Gaussian sigma1.2, wrap. Source-only spatial coordinate aligned. Proxy for fine grain, not perceptual proof.",
+  "alpha_all_pixels_exact": 4194304,
+  "protected_rgba_pixels_exact": 1700480,
+  "source_native_resolution": 1024,
+  "atlas_resolution": 2048,
+  "proper_bricks": 332,
+  "palette_balanced_83_colors_each": 4,
+  "torus_seams_union_verified": true,
+  "full_rgba8_mip_bytes": 22369620,
+  "full_rgba8_mip_mib": 21.333332061767578,
+  "results": [
+    {
+      "seed": 0,
+      "core_log_luminance_highpass_correlation": 0.9988974361157654,
+      "core_log_luminance_highpass_std_ratio": 1.0006263412644023
+    },
+    {
+      "seed": 7,
+      "core_log_luminance_highpass_correlation": 0.9990019765537431,
+      "core_log_luminance_highpass_std_ratio": 1.0004972272396833
+    }
+  ]
+}

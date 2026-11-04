@@ -11,12 +11,46 @@ var brick_macro_preferred := false
 var brick_individual_toggle: CheckButton
 var brick_individual_preferred := false
 var rotation_slider: HSlider
+var contrast_slider: HSlider
+var coherent_filter_toggle: CheckButton
 var current_texture := 0
+var current_mesh := 0
+var mesh_selector: OptionButton
+var texture_selector: OptionButton
+var terrain_mesh: ArrayMesh
+var ui_panel: PanelContainer
+var controls_scroll: ScrollContainer
 # Source-specific approximate motif lattices, in source UV.
 const STRUCTURE_PRESETS := {
 	3: Vector3(2.0 / 15.0, 1.0 / 14.0, 0.5),
 	4: Vector3(0.25, 0.0, 0.0),
 	7: Vector3(0.2, 0.2, 0.0),
+	17: Vector3(1.0, 1.0, 0.0),
+	18: Vector3(1.0, 1.0, 0.0),
+}
+# Prepared source assets; the evaluator also reads these exact bindings.
+const BRICK_PRESETS := {
+	3: {
+		"mask": "res://assets/gallery/brick_4_interior_mask.png",
+		"packed_albedo": "res://assets/gallery/brick_4_albedo_guard.png",
+		"atlas": "res://assets/gallery/brick_4_individual_atlas_seed0.png",
+		"tiles_per_axis": 4,
+		"supported": true,
+	},
+	17: {
+		"mask": "res://assets/gallery/red_brick_interior_mask.png",
+		"packed_albedo": "res://assets/gallery/red_brick_albedo_guard.png",
+		"atlas": "res://assets/gallery/red_brick_individual_atlas_seed0.png",
+		"tiles_per_axis": 4,
+		"supported": false,
+	},
+	18: {
+		"mask": "res://assets/gallery/large_red_bricks_interior_mask.png",
+		"packed_albedo": "res://assets/gallery/large_red_bricks_albedo_guard.png",
+		"atlas": "res://assets/gallery/large_red_bricks_individual_atlas_seed0.png",
+		"tiles_per_axis": 4,
+		"supported": false,
+	},
 }
 const TEXTURE_NAMES := [
 	"Rocks Ground 04",
@@ -36,6 +70,8 @@ const TEXTURE_NAMES := [
 	"Sand 03",
 	"Mossy Rock",
 	"Terrazzo Tiles",
+	"Red Brick",
+	"Large Red Bricks",
 ]
 const TEXTURE_SETS := [
 	["res://assets/rock_albedo.png", "res://assets/rock_normal.png", "res://assets/rock_roughness.png"],
@@ -55,10 +91,13 @@ const TEXTURE_SETS := [
 	["res://assets/gallery/sand_03_albedo.jpg", "res://assets/gallery/sand_03_normal.jpg", "res://assets/gallery/sand_03_roughness.jpg"],
 	["res://assets/gallery/mossy_rock_albedo.jpg", "res://assets/gallery/mossy_rock_normal.jpg", "res://assets/gallery/mossy_rock_roughness.jpg"],
 	["res://assets/gallery/terrazzo_tiles_albedo.jpg", "res://assets/gallery/terrazzo_tiles_normal.jpg", "res://assets/gallery/terrazzo_tiles_roughness.jpg"],
+	["res://assets/gallery/red_brick_albedo.jpg", "res://assets/gallery/red_brick_normal.jpg", "res://assets/gallery/red_brick_roughness.jpg"],
+	["res://assets/gallery/large_red_bricks_albedo.jpg", "res://assets/gallery/large_red_bricks_normal.jpg", "res://assets/gallery/large_red_bricks_roughness.jpg"],
 ]
 
 func _ready() -> void:
-	$Surface.mesh = make_terrain()
+	terrain_mesh = make_terrain()
+	$Surface.mesh = terrain_mesh
 	set_view(0)
 	var environment := Environment.new()
 	environment.background_mode = Environment.BG_SKY
@@ -77,6 +116,7 @@ func _ready() -> void:
 	var layer := CanvasLayer.new()
 	add_child(layer)
 	var panel := PanelContainer.new()
+	ui_panel = panel
 	panel.position = Vector2(24, 24)
 	var panel_style := StyleBoxFlat.new()
 	panel_style.bg_color = Color(0.055, 0.068, 0.075, 0.91)
@@ -87,31 +127,43 @@ func _ready() -> void:
 	panel_style.content_margin_bottom = 14
 	panel.add_theme_stylebox_override("panel", panel_style)
 	layer.add_child(panel)
+	controls_scroll = ScrollContainer.new()
+	controls_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	controls_scroll.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_AUTO
+	controls_scroll.follow_focus = true
+	panel.add_child(controls_scroll)
 	var box := VBoxContainer.new()
+	box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	box.add_theme_constant_override("separation", 8)
-	panel.add_child(box)
+	controls_scroll.add_child(box)
 	var heading := Label.new()
 	heading.text = "HEX DETILING"
 	heading.add_theme_font_size_override("font_size", 20)
 	heading.add_theme_color_override("font_color", Color("efeadf"))
 	box.add_child(heading)
 	var subtitle := Label.new()
-	subtitle.text = "One terrain. One texture set. Two sampling modes."
+	subtitle.text = "Choose material and mesh. Compare modes."
 	subtitle.add_theme_color_override("font_color", Color("abb9b7"))
 	box.add_child(subtitle)
 	toggle = Button.new()
 	toggle.pressed.connect(func(): set_detile(not detiled))
 	box.add_child(toggle)
 	var selector := OptionButton.new()
+	texture_selector = selector
 	for texture_name in TEXTURE_NAMES:
 		selector.add_item(texture_name)
 	selector.item_selected.connect(set_texture_set)
 	box.add_child(selector)
+	mesh_selector = OptionButton.new()
+	for mesh_name in ["Mesh: Terrain", "Mesh: Wall", "Mesh: Box / corner", "Mesh: Cylinder"]:
+		mesh_selector.add_item(mesh_name)
+	mesh_selector.item_selected.connect(set_mesh)
+	box.add_child(mesh_selector)
 	structure_toggle = CheckButton.new()
 	structure_toggle.toggled.connect(set_structure)
 	box.add_child(structure_toggle)
 	structure_guard_toggle = CheckButton.new()
-	structure_guard_toggle.text = "Protect mortar · Brick 4 only"
+	structure_guard_toggle.text = "Protect mortar · prepared brick sources"
 	structure_guard_toggle.button_pressed = structure_guard_preferred
 	structure_guard_toggle.tooltip_text = "Preserve the original mortar; vary safe interiors with common coherent material weights. Distant views return to the original source."
 	structure_guard_toggle.toggled.connect(func(enabled):
@@ -124,14 +176,14 @@ func _ready() -> void:
 	brick_macro_toggle.toggled.connect(func(enabled):
 		brick_macro_preferred = enabled
 		update_structure_guard())
-	box.add_child(brick_macro_toggle)
 	brick_individual_toggle = CheckButton.new()
-	brick_individual_toggle.text = "Vary individual brick colors · experiment"
+	brick_individual_toggle.text = "Vary individual brick colors"
 	brick_individual_toggle.tooltip_text = "Blend source-aligned brick color variants with original normal and roughness maps. Mortar layout still repeats. Temporarily disables distant macro tones."
 	brick_individual_toggle.toggled.connect(func(enabled):
 		brick_individual_preferred = enabled
 		update_structure_guard())
 	box.add_child(brick_individual_toggle)
+	box.add_child(brick_macro_toggle)
 	var rotation_label := Label.new()
 	rotation_label.text = "Tile rotation"
 	box.add_child(rotation_label)
@@ -146,7 +198,7 @@ func _ready() -> void:
 	var contrast_label := Label.new()
 	contrast_label.text = "Blend contrast"
 	box.add_child(contrast_label)
-	var contrast_slider := HSlider.new()
+	contrast_slider = HSlider.new()
 	contrast_slider.min_value = 0.01
 	contrast_slider.max_value = 0.99
 	contrast_slider.step = 0.01
@@ -175,6 +227,7 @@ func _ready() -> void:
 		mat.set_shader_parameter("coherent_blend", index == 2))
 	box.add_child(blend_selector)
 	var filter_toggle := CheckButton.new()
+	coherent_filter_toggle = filter_toggle
 	filter_toggle.text = "Relax distant blends (coherent mode)"
 	filter_toggle.button_pressed = true
 	filter_toggle.toggled.connect(func(value): ($Surface.material_override as ShaderMaterial).set_shader_parameter("coherent_filter", value))
@@ -185,15 +238,25 @@ func _ready() -> void:
 	box.add_child(roughness_toggle)
 	set_texture_set(0)
 	var help := Label.new()
-	help.text = "SPACE  compare   ·   1 / 2 / 3  viewpoints   ·   scroll  zoom"
+	help.text = "SPACE compare · 1–3 views · wheel zoom"
 	help.add_theme_color_override("font_color", Color("abb9b7"))
 	box.add_child(help)
 	set_detile(true)
+	get_viewport().size_changed.connect(_resize_ui_panel)
+	call_deferred("_resize_ui_panel")
+
+func _resize_ui_panel() -> void:
+	if ui_panel == null:
+		return
+	var viewport_size := get_viewport().get_visible_rect().size
+	ui_panel.size = Vector2(minf(400.0, maxf(240.0, viewport_size.x - 48.0)), maxf(160.0, viewport_size.y - 48.0))
 
 func set_texture_set(index: int) -> void:
 	if index < 0 or index >= TEXTURE_SETS.size():
 		return
 	current_texture = index
+	if texture_selector:
+		texture_selector.select(index)
 	var material := $Surface.material_override as ShaderMaterial
 	material.set_shader_parameter("albedo_map", load(TEXTURE_SETS[index][0]))
 	material.set_shader_parameter("normal_map", load(TEXTURE_SETS[index][1]))
@@ -224,32 +287,47 @@ func set_structure(enabled: bool) -> void:
 
 func update_structure_guard() -> void:
 	var material := $Surface.material_override as ShaderMaterial
-	var eligible := current_texture == 3 and bool(material.get_shader_parameter("structure_enabled"))
+	var preset: Dictionary = BRICK_PRESETS.get(current_texture, {})
+	var eligible := not preset.is_empty() and bool(preset.get("supported", true)) and bool(material.get_shader_parameter("structure_enabled"))
 	var active := eligible and structure_guard_preferred and detiled
 	material.set_shader_parameter("structure_guard_enabled", eligible and structure_guard_preferred)
 	material.set_shader_parameter("structure_guard_in_albedo_alpha", active)
 	var individual_active := active and brick_individual_preferred
 	material.set_shader_parameter("brick_individual_enabled", individual_active)
-	material.set_shader_parameter("brick_individual_map", load("res://assets/gallery/brick_4_individual_atlas_seed0.png") if individual_active else null)
+	material.set_shader_parameter("brick_individual_map", load(String(preset["atlas"])) if individual_active else null)
+	material.set_shader_parameter("brick_individual_tiles_per_axis", preset.get("tiles_per_axis", 4))
 	if brick_individual_toggle:
 		brick_individual_toggle.disabled = not (eligible and structure_guard_preferred)
 		brick_individual_toggle.set_pressed_no_signal(brick_individual_preferred)
-	var macro_active := active and brick_macro_preferred and not individual_active
+		brick_individual_toggle.tooltip_text = "This source is a controlled authoring example. Its palette quality gates did not all pass; see the comparisons." if not preset.is_empty() and not preset.get("supported", true) else "Blend source-aligned brick color variants with original normal and roughness maps. Mortar layout still repeats. Temporarily disables distant macro tones."
+	var macro_active := active and current_texture == 3 and brick_macro_preferred and not individual_active
 	material.set_shader_parameter("brick_macro_enabled", macro_active)
 	var albedo_path: String = TEXTURE_SETS[current_texture][0]
 	if active:
-		albedo_path = "res://assets/gallery/brick_4_albedo_guard_normalized.png" if macro_active else "res://assets/gallery/brick_4_albedo_guard.png"
+		albedo_path = "res://assets/gallery/brick_4_albedo_guard_normalized.png" if macro_active else String(preset["packed_albedo"])
 	material.set_shader_parameter("albedo_map", load(albedo_path))
 	if brick_macro_toggle:
-		brick_macro_toggle.disabled = not (eligible and structure_guard_preferred) or individual_active
+		brick_macro_toggle.disabled = not (current_texture == 3 and eligible and structure_guard_preferred) or individual_active
 		brick_macro_toggle.set_pressed_no_signal(brick_macro_preferred)
-	material.set_shader_parameter("structure_guard_map", load("res://assets/gallery/brick_4_interior_mask.png") if active else null)
+	material.set_shader_parameter("structure_guard_map", load(String(preset["mask"])) if active else null)
 	if blend_selector:
 		blend_selector.disabled = eligible and structure_guard_preferred
-		blend_selector.tooltip_text = "Protect mortar uses coherent blending" if blend_selector.disabled else ""
+		blend_selector.tooltip_text = "Individual brick colors use aligned source PBR." if individual_active else ("Protect mortar uses coherent blending" if blend_selector.disabled else "")
+	if contrast_slider:
+		contrast_slider.editable = not individual_active
+		contrast_slider.tooltip_text = "Individual brick colors use their prepared palette blend." if individual_active else ""
+	if coherent_filter_toggle:
+		coherent_filter_toggle.disabled = individual_active
+		coherent_filter_toggle.tooltip_text = "Individual brick colors use their own distance filtering." if individual_active else ""
 	if structure_guard_toggle:
 		structure_guard_toggle.disabled = not eligible
 		structure_guard_toggle.set_pressed_no_signal(structure_guard_preferred)
+		if not preset.is_empty() and not preset.get("supported", true):
+			structure_guard_toggle.tooltip_text = "Prepared authoring example; palette quality support is disabled after the documented checks."
+		elif individual_active:
+			structure_guard_toggle.tooltip_text = "The original mortar layout is retained while prepared brick colors vary."
+		else:
+			structure_guard_toggle.tooltip_text = "Preserve the original mortar with common coherent weights. Available for validated prepared brick sources with Preserve pattern enabled."
 
 func set_detile(enabled: bool) -> void:
 	detiled = enabled
@@ -279,8 +357,39 @@ func make_terrain() -> ArrayMesh:
 	builder.generate_normals()
 	return builder.commit()
 
+func set_mesh(index: int) -> void:
+	if index < 0 or index > 3:
+		return
+	current_mesh = index
+	if index == 0:
+		$Surface.mesh = terrain_mesh
+	elif index == 1:
+		var wall := BoxMesh.new()
+		wall.size = Vector3(14.0, 8.0, 0.2)
+		$Surface.mesh = wall
+	elif index == 2:
+		var corner := BoxMesh.new()
+		corner.size = Vector3(8.0, 8.0, 8.0)
+		$Surface.mesh = corner
+	else:
+		var cylinder := CylinderMesh.new()
+		cylinder.top_radius = 4.0
+		cylinder.bottom_radius = 4.0
+		cylinder.height = 8.0
+		cylinder.radial_segments = 96
+		$Surface.mesh = cylinder
+	if mesh_selector:
+		mesh_selector.select(index)
+	set_view(0)
+
 func set_view(index: int) -> void:
 	var positions := [Vector3(0, 7, 9), Vector3(9, 6, 10), Vector3(2, 15, 10)]
+	if current_mesh == 1:
+		positions = [Vector3(0, 1, 14), Vector3(10, 3, 12), Vector3(1, 6, 14)]
+	elif current_mesh == 2:
+		positions = [Vector3(12, 7, 14), Vector3(14, 4, 5), Vector3(2, 14, 12)]
+	elif current_mesh == 3:
+		positions = [Vector3(0, 2, 13), Vector3(11, 3, 11), Vector3(0, 12, 11)]
 	if index < 0 or index >= positions.size():
 		return
 	$Surface.rotation = Vector3.ZERO
@@ -297,6 +406,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		$Surface.rotate_x(event.relative.y * 0.005)
 	elif event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
-			$Camera3D.position = $Camera3D.position.normalized() * maxf(8.0, $Camera3D.position.length() - 0.7)
+			$Camera3D.position = $Camera3D.position.normalized() * maxf(2.0 if current_mesh == 1 else 8.0, $Camera3D.position.length() - 0.7)
 		elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
-			$Camera3D.position = $Camera3D.position.normalized() * minf(20.0, $Camera3D.position.length() + 0.7)
+			$Camera3D.position = $Camera3D.position.normalized() * minf(20.0 if current_mesh == 0 else 40.0, $Camera3D.position.length() + 0.7)

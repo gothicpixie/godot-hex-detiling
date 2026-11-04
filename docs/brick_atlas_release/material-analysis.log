@@ -1,0 +1,202 @@
+{
+  "comparisons": [
+    {
+      "material": "red_brick",
+      "size_multiplier": 3.0,
+      "chroma_energy_ratio": 0.38051025084204765,
+      "chroma_correlation_ratio": 0.6269226500854724,
+      "luma_correlation_ratio": 0.8395151899652546,
+      "palette_variance_ratio": 0.5924272197853536,
+      "mean_luminance_ratio": 0.9911804467465141,
+      "absolute_baseline_chroma_variance": 0.005328435864313165,
+      "absolute_candidate_chroma_variance": 0.004870668012198929,
+      "color_metric_informative": true,
+      "distant_gate_pass": null
+    },
+    {
+      "material": "red_brick",
+      "size_multiplier": 12.0,
+      "chroma_energy_ratio": 0.26273875793241386,
+      "chroma_correlation_ratio": 0.5586550844519217,
+      "luma_correlation_ratio": 0.8319109427806787,
+      "palette_variance_ratio": 0.4979616381190966,
+      "mean_luminance_ratio": 0.9914532002928717,
+      "absolute_baseline_chroma_variance": 0.001999313398812535,
+      "absolute_candidate_chroma_variance": 0.0015779266084742657,
+      "color_metric_informative": true,
+      "distant_gate_pass": false
+    },
+    {
+      "material": "large_red_bricks",
+      "size_multiplier": 3.0,
+      "chroma_energy_ratio": 0.14301781788300236,
+      "chroma_correlation_ratio": 0.569652138289718,
+      "luma_correlation_ratio": 0.8289389621524035,
+      "palette_variance_ratio": 0.622088749404786,
+      "mean_luminance_ratio": 0.9980929186814724,
+      "absolute_baseline_chroma_variance": 0.005878900515043663,
+      "absolute_candidate_chroma_variance": 0.005092296166333596,
+      "color_metric_informative": true,
+      "distant_gate_pass": null
+    },
+    {
+      "material": "large_red_bricks",
+      "size_multiplier": 12.0,
+      "chroma_energy_ratio": 0.14699776464239211,
+      "chroma_correlation_ratio": 0.5920208644605598,
+      "luma_correlation_ratio": 0.7639408593058686,
+      "palette_variance_ratio": 0.5108670833897359,
+      "mean_luminance_ratio": 1.0009297195424796,
+      "absolute_baseline_chroma_variance": 0.0032491843140937584,
+      "absolute_candidate_chroma_variance": 0.0023596710124478,
+      "color_metric_informative": true,
+      "distant_gate_pass": false
+    }
+  ],
+  "protected_channels": [
+    {
+      "material": "red_brick",
+      "shape": "wall",
+      "field": "rgb",
+      "protected_pixels": 381509,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 63
+    },
+    {
+      "material": "red_brick",
+      "shape": "wall",
+      "field": "normal",
+      "protected_pixels": 381509,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "red_brick",
+      "shape": "wall",
+      "field": "roughness",
+      "protected_pixels": 381509,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "red_brick",
+      "shape": "corner",
+      "field": "rgb",
+      "protected_pixels": 36800,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 64
+    },
+    {
+      "material": "red_brick",
+      "shape": "corner",
+      "field": "normal",
+      "protected_pixels": 36800,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "red_brick",
+      "shape": "corner",
+      "field": "roughness",
+      "protected_pixels": 36800,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 0
+    },
+    {
+      "material": "red_brick",
+      "shape": "cylinder",
+      "field": "rgb",
+      "protected_pixels": 23991,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 60
+    },
+    {
+      "material": "red_brick",
+      "shape": "cylinder",
+      "field": "normal",
+      "protected_pixels": 23991,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "red_brick",
+      "shape": "cylinder",
+      "field": "roughness",
+      "protected_pixels": 23991,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 0
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "wall",
+      "field": "rgb",
+      "protected_pixels": 278764,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 70
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "wall",
+      "field": "normal",
+      "protected_pixels": 278764,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "wall",
+      "field": "roughness",
+      "protected_pixels": 278764,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "corner",
+      "field": "rgb",
+      "protected_pixels": 45804,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 59
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "corner",
+      "field": "normal",
+      "protected_pixels": 45804,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "corner",
+      "field": "roughness",
+      "protected_pixels": 45804,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 0
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "cylinder",
+      "field": "rgb",
+      "protected_pixels": 19410,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 55
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "cylinder",
+      "field": "normal",
+      "protected_pixels": 19410,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "cylinder",
+      "field": "roughness",
+      "protected_pixels": 19410,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 0
+    }
+  ]
+}

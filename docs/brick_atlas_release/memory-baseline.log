@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+{"accounting":"RenderingServer texture memory metric; process RSS is CPU RAM; neither establishes physical VRAM residency","arm":"baseline","engine":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0},"engine_texture_memory_after_bytes":7464567,"engine_texture_memory_before_bytes":1872163,"engine_texture_memory_increment_bytes":5592404,"fresh_process":true,"gpu":"Apple M5","height":1024,"path":"res://assets/gallery/brick_4_albedo_guard.png","process_RSS_after_bytes":227688448,"process_RSS_before_bytes":205602816,"width":1024}

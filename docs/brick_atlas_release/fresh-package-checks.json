@@ -1,0 +1,47 @@
+{
+  "archive": "/Users/gabrielphoenix/Documents/vscode-projects/godot-hex-detiling/dist/hex-detile-addon.zip",
+  "archive_sha256": "e64b771cfb2d5f738baf27155265d73c6730dbea3714b1aae0340a7938c37406",
+  "fresh_project": "/var/folders/qy/44wpx6lj3yj8vzs4wvcm88l00000gn/T/hex-addon-fresh-nev2cd34",
+  "archive_files": 10,
+  "crc_pass": true,
+  "source_bytes_match": {
+    "hex_detile.gdshader.uid": true,
+    "plugin.gd": true,
+    "LICENSE": true,
+    "plugin.cfg": true,
+    "coherent_blend.gdshaderinc": true,
+    "plugin.gd.uid": true,
+    "THIRD_PARTY_NOTICES.md": true,
+    "README.md": true,
+    "hex_detile.gdshader": true,
+    "coherent_blend.gdshaderinc.uid": true
+  },
+  "import_exit_code": 0,
+  "import_errors": false,
+  "runtime_exit_code": 0,
+  "runtime_errors": false,
+  "runtime_result": {
+    "default4_vs_explicit4_max_byte_delta": 0,
+    "engine": {
+      "build": "official",
+      "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "hex": 263938,
+      "major": 4,
+      "minor": 7,
+      "patch": 2,
+      "status": "stable",
+      "string": "4.7.2-stable (official)",
+      "timestamp": 0
+    },
+    "feature2_vs_off_max_byte_delta": 26,
+    "feature4_vs_off_max_byte_delta": 39,
+    "fresh_project": true,
+    "gpu": "Apple M5",
+    "pass": true,
+    "repository_assets_used": false,
+    "resolution": [
+      640,
+      360
+    ]
+  }
+}

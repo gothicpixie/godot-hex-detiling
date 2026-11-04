@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+{"default4_vs_explicit4_max_byte_delta":0,"engine":{"build":"official","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (official)","timestamp":0},"feature2_vs_off_max_byte_delta":26,"feature4_vs_off_max_byte_delta":39,"fresh_project":true,"gpu":"Apple M5","pass":true,"repository_assets_used":false,"resolution":[640,360]}

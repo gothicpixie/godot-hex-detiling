@@ -1,0 +1,749 @@
+{
+  "records": [
+    {
+      "arm": "baseline",
+      "id": "red_brick-ortho-3.0-baseline",
+      "kind": "ortho",
+      "material": "red_brick",
+      "scale_m": 1.4,
+      "size_multiplier": 3.0,
+      "source_repeat_px": 240.0,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.1639685393037122,
+      "linear_luminance_std": 0.026650036908783207,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.9978687064059002,
+            0.9739143509909982
+          ],
+          "source_repeat_correlation_mean": 0.9858915286984492,
+          "atlas_repeat_correlation_xy": [
+            0.9939617514723442,
+            null
+          ],
+          "source_periodic_energy": 4.934822019319422e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0007102244672395071
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.9973608947888258,
+            0.7079463052137339
+          ],
+          "source_repeat_correlation_mean": 0.8526536000012799,
+          "atlas_repeat_correlation_xy": [
+            0.9915231865381662,
+            null
+          ],
+          "source_periodic_energy": 0.00010411517975384662,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.005137231341036447
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.9962960337672949,
+            0.9174974928592676
+          ],
+          "source_repeat_correlation_mean": 0.9568967633132812,
+          "atlas_repeat_correlation_xy": [
+            0.9895753079666598,
+            null
+          ],
+          "source_periodic_energy": 8.236795000606974e-06,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0001912045232767171
+        }
+      },
+      "chroma_correlation_mean": 0.9047751816572805,
+      "chroma_periodic_energy": 0.0001123519747544536,
+      "mean_normalized_chroma_periodic_energy": 0.004178877636434802,
+      "mean_normalized_luma_periodic_energy": 0.001835483303376696,
+      "fraction_any_channel_255": 0.0,
+      "palette": {
+        "regions": 2019,
+        "absolute_between_brick_RGB_variance": 0.002097044266434205,
+        "absolute_between_brick_chroma_variance": 0.0014496285122001951
+      }
+    },
+    {
+      "arm": "candidate",
+      "id": "red_brick-ortho-3.0-candidate",
+      "kind": "ortho",
+      "material": "red_brick",
+      "scale_m": 1.4,
+      "size_multiplier": 3.0,
+      "source_repeat_px": 240.0,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.1625224100394268,
+      "linear_luminance_std": 0.024721562439787473,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.8528091994099763,
+            0.8025326285908516
+          ],
+          "source_repeat_correlation_mean": 0.8276709140004139,
+          "atlas_repeat_correlation_xy": [
+            0.8655825059356291,
+            null
+          ],
+          "source_periodic_energy": 2.5913254295797247e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0006111556494643107
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.7543810061711044,
+            0.19748576324872075
+          ],
+          "source_repeat_correlation_mean": 0.47593338470991253,
+          "atlas_repeat_correlation_xy": [
+            0.7434448567087262,
+            null
+          ],
+          "source_periodic_energy": 3.825894746210411e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.004710145195374431
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.7503849836741489,
+            0.5666444653706142
+          ],
+          "source_repeat_correlation_mean": 0.6585147245223815,
+          "atlas_repeat_correlation_xy": [
+            0.7680540716482582,
+            null
+          ],
+          "source_periodic_energy": 3.7413651865535966e-06,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.00016052281682449836
+        }
+      },
+      "chroma_correlation_mean": 0.567224054616147,
+      "chroma_periodic_energy": 4.200031264865771e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0015901057776780295,
+      "mean_normalized_luma_periodic_energy": 0.0009810597296947524,
+      "fraction_any_channel_255": 0.0,
+      "palette": {
+        "regions": 2019,
+        "absolute_between_brick_RGB_variance": 0.0012423461045304326,
+        "absolute_between_brick_chroma_variance": 0.0009218591748671103
+      }
+    },
+    {
+      "arm": "baseline",
+      "id": "red_brick-ortho-12.0-baseline",
+      "kind": "ortho",
+      "material": "red_brick",
+      "scale_m": 1.4,
+      "size_multiplier": 12.0,
+      "source_repeat_px": 60.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.16323676471503543,
+      "linear_luminance_std": 0.01745010414600656,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.9996111345922076,
+            0.9986284774673445
+          ],
+          "source_repeat_correlation_mean": 0.9991198060297761,
+          "atlas_repeat_correlation_xy": [
+            0.9995449045917401,
+            0.9981212966755755
+          ],
+          "source_periodic_energy": 4.674759212938391e-05,
+          "atlas_periodic_energy_same_frequency_band": 4.677316594955759e-05,
+          "variance": 0.00030450613470647526
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.9992190259867662,
+            0.9947307126526025
+          ],
+          "source_repeat_correlation_mean": 0.9969748693196843,
+          "atlas_repeat_correlation_xy": [
+            0.9990849863096954,
+            0.9928019544140783
+          ],
+          "source_periodic_energy": 7.751533826422798e-05,
+          "atlas_periodic_energy_same_frequency_band": 7.764984890814133e-05,
+          "variance": 0.0019134347058368379
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.9992948186030024,
+            0.9935880994405839
+          ],
+          "source_repeat_correlation_mean": 0.9964414590217932,
+          "atlas_repeat_correlation_xy": [
+            0.9991745374905785,
+            0.9912522447842135
+          ],
+          "source_periodic_energy": 7.754410176981833e-06,
+          "atlas_periodic_energy_same_frequency_band": 7.768622484861162e-06,
+          "variance": 8.587869297569701e-05
+        }
+      },
+      "chroma_correlation_mean": 0.9967081641707387,
+      "chroma_periodic_energy": 8.526974844120982e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0032000666550439255,
+      "mean_normalized_luma_periodic_energy": 0.0017543784696395057,
+      "fraction_any_channel_255": 0.0,
+      "palette": {
+        "regions": 29256,
+        "absolute_between_brick_RGB_variance": 0.0017328059434426313,
+        "absolute_between_brick_chroma_variance": 0.0012525723764880122
+      }
+    },
+    {
+      "arm": "candidate",
+      "id": "red_brick-ortho-12.0-candidate",
+      "kind": "ortho",
+      "material": "red_brick",
+      "scale_m": 1.4,
+      "size_multiplier": 12.0,
+      "source_repeat_px": 60.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.16184161278217638,
+      "linear_luminance_std": 0.01447739528484959,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.8334042961713403,
+            0.8289531033988196
+          ],
+          "source_repeat_correlation_mean": 0.8311786997850799,
+          "atlas_repeat_correlation_xy": [
+            0.8378108763979348,
+            0.8357988007027702
+          ],
+          "source_periodic_energy": 2.419319546289737e-05,
+          "atlas_periodic_energy_same_frequency_band": 2.4519494602162246e-05,
+          "variance": 0.00020959497423378518
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.46542554512212686,
+            0.451262761856667
+          ],
+          "source_repeat_correlation_mean": 0.45834415348939694,
+          "atlas_repeat_correlation_xy": [
+            0.4640965944700717,
+            0.4567008142870512
+          ],
+          "source_periodic_energy": 1.8793300696542733e-05,
+          "atlas_periodic_energy_same_frequency_band": 2.013560690224225e-05,
+          "variance": 0.0015211056198441723
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.6617960652870949,
+            0.6487799622490065
+          ],
+          "source_repeat_correlation_mean": 0.6552880137680507,
+          "atlas_repeat_correlation_xy": [
+            0.6684500909213431,
+            0.6584404936875707
+          ],
+          "source_periodic_energy": 3.2290443137317433e-06,
+          "atlas_periodic_energy_same_frequency_band": 3.3365535922780802e-06,
+          "variance": 5.682098863009344e-05
+        }
+      },
+      "chroma_correlation_mean": 0.5568160836287238,
+      "chroma_periodic_energy": 2.2022345010274476e-05,
+      "mean_normalized_chroma_periodic_energy": 0.0008407815382471752,
+      "mean_normalized_luma_periodic_energy": 0.000923661494128772,
+      "fraction_any_channel_255": 0.0,
+      "palette": {
+        "regions": 29256,
+        "absolute_between_brick_RGB_variance": 0.0008628708861391994,
+        "absolute_between_brick_chroma_variance": 0.0006614330793629492
+      }
+    },
+    {
+      "arm": "baseline",
+      "id": "large_red_bricks-ortho-3.0-baseline",
+      "kind": "ortho",
+      "material": "large_red_bricks",
+      "scale_m": 2.0,
+      "size_multiplier": 3.0,
+      "source_repeat_px": 240.0,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.22981786711342042,
+      "linear_luminance_std": 0.10116989530627073,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.9926866729990965,
+            0.9904897196523114
+          ],
+          "source_repeat_correlation_mean": 0.9915881963257039,
+          "atlas_repeat_correlation_xy": [
+            0.9786448892255788,
+            null
+          ],
+          "source_periodic_energy": 0.0008366157611629837,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.01023534771628178
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.9969361429275707,
+            0.9975336605651203
+          ],
+          "source_repeat_correlation_mean": 0.9972349017463455,
+          "atlas_repeat_correlation_xy": [
+            0.990540073853192,
+            null
+          ],
+          "source_periodic_energy": 0.0006811548546990867,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.004956172336536386
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.9968859771220799,
+            0.9945055359876938
+          ],
+          "source_repeat_correlation_mean": 0.9956957565548868,
+          "atlas_repeat_correlation_xy": [
+            0.9909883584150561,
+            null
+          ],
+          "source_periodic_energy": 0.00015267724362356646,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0009227281785072777
+        }
+      },
+      "chroma_correlation_mean": 0.9964653291506163,
+      "chroma_periodic_energy": 0.0008338320983226531,
+      "mean_normalized_chroma_periodic_energy": 0.015787415161892557,
+      "mean_normalized_luma_periodic_energy": 0.015840119826320127,
+      "fraction_any_channel_255": 0.0,
+      "palette": {
+        "regions": 1227,
+        "absolute_between_brick_RGB_variance": 0.004912464297432037,
+        "absolute_between_brick_chroma_variance": 0.002079973185691825
+      }
+    },
+    {
+      "arm": "candidate",
+      "id": "large_red_bricks-ortho-3.0-candidate",
+      "kind": "ortho",
+      "material": "large_red_bricks",
+      "scale_m": 2.0,
+      "size_multiplier": 3.0,
+      "source_repeat_px": 240.0,
+      "period_px": 240.0,
+      "atlas_period_px": 960.0,
+      "blur_sigma_px": 15.0,
+      "mean_linear_luminance": 0.22937958575238457,
+      "linear_luminance_std": 0.09872495556625108,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.8099947461873773,
+            0.833937434502228
+          ],
+          "source_repeat_correlation_mean": 0.8219660903448027,
+          "atlas_repeat_correlation_xy": [
+            0.7833024016572054,
+            null
+          ],
+          "source_periodic_energy": 0.00028237954427394723,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.00974661685155825
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.39816207120286046,
+            0.3508274466187618
+          ],
+          "source_repeat_correlation_mean": 0.37449475891081113,
+          "atlas_repeat_correlation_xy": [
+            0.4008769130375198,
+            null
+          ],
+          "source_periodic_energy": 7.390892518295356e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.004292421457017063
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.7400779625855485,
+            0.7814869415216938
+          ],
+          "source_repeat_correlation_mean": 0.7607824520536212,
+          "atlas_repeat_correlation_xy": [
+            0.746714487945724,
+            null
+          ],
+          "source_periodic_energy": 4.488950596360425e-05,
+          "atlas_periodic_energy_same_frequency_band": null,
+          "variance": 0.0007998747093165327
+        }
+      },
+      "chroma_correlation_mean": 0.5676386054822161,
+      "chroma_periodic_energy": 0.00011879843114655781,
+      "mean_normalized_chroma_periodic_energy": 0.0022578816664669,
+      "mean_normalized_luma_periodic_energy": 0.005366902490613384,
+      "fraction_any_channel_255": 0.0,
+      "palette": {
+        "regions": 1227,
+        "absolute_between_brick_RGB_variance": 0.0030559887712851568,
+        "absolute_between_brick_chroma_variance": 0.0014232432536025715
+      }
+    },
+    {
+      "arm": "baseline",
+      "id": "large_red_bricks-ortho-12.0-baseline",
+      "kind": "ortho",
+      "material": "large_red_bricks",
+      "scale_m": 2.0,
+      "size_multiplier": 12.0,
+      "source_repeat_px": 60.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.22402289238707349,
+      "linear_luminance_std": 0.06612050479439094,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.9997443338907045,
+            0.9969088854651261
+          ],
+          "source_repeat_correlation_mean": 0.9983266096779153,
+          "atlas_repeat_correlation_xy": [
+            0.9997004784341779,
+            0.9957934654211933
+          ],
+          "source_periodic_energy": 0.000806604670215634,
+          "atlas_periodic_energy_same_frequency_band": 0.0008072599811047714,
+          "variance": 0.004371921154265075
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.9998045292576941,
+            0.9982066119266492
+          ],
+          "source_repeat_correlation_mean": 0.9990055705921717,
+          "atlas_repeat_correlation_xy": [
+            0.9997709069501107,
+            0.9975702423158457
+          ],
+          "source_periodic_energy": 0.0007142808631971614,
+          "atlas_periodic_energy_same_frequency_band": 0.0007146334303396816,
+          "variance": 0.0026929107161251047
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.9998301432290478,
+            0.9984573338003342
+          ],
+          "source_repeat_correlation_mean": 0.9991437385146911,
+          "atlas_repeat_correlation_xy": [
+            0.9998009581338912,
+            0.9979036278396316
+          ],
+          "source_periodic_energy": 0.00015394992219327103,
+          "atlas_periodic_energy_same_frequency_band": 0.00015400789661138367,
+          "variance": 0.0005562735979686539
+        }
+      },
+      "chroma_correlation_mean": 0.9990746545534314,
+      "chroma_periodic_energy": 0.0008682307853904324,
+      "mean_normalized_chroma_periodic_energy": 0.017300170388628765,
+      "mean_normalized_luma_periodic_energy": 0.01607222234664147,
+      "fraction_any_channel_255": 0.0,
+      "palette": {
+        "regions": 18564,
+        "absolute_between_brick_RGB_variance": 0.0048609033876160735,
+        "absolute_between_brick_chroma_variance": 0.0019952302215693815
+      }
+    },
+    {
+      "arm": "candidate",
+      "id": "large_red_bricks-ortho-12.0-candidate",
+      "kind": "ortho",
+      "material": "large_red_bricks",
+      "scale_m": 2.0,
+      "size_multiplier": 12.0,
+      "source_repeat_px": 60.0,
+      "period_px": 60.0,
+      "atlas_period_px": 240.0,
+      "blur_sigma_px": 3.75,
+      "mean_linear_luminance": 0.22423117084808855,
+      "linear_luminance_std": 0.060218547945032494,
+      "channels": {
+        "luminance": {
+          "source_repeat_correlation_xy": [
+            0.7640111512592782,
+            0.7613138248712441
+          ],
+          "source_repeat_correlation_mean": 0.7626624880652612,
+          "atlas_repeat_correlation_xy": [
+            0.7696221475178158,
+            0.7595239390975675
+          ],
+          "source_periodic_energy": 0.00021301459119133233,
+          "atlas_periodic_energy_same_frequency_band": 0.00021775504330522822,
+          "variance": 0.003626273516608177
+        },
+        "R-G": {
+          "source_repeat_correlation_xy": [
+            0.5060359562189103,
+            0.4648611135983269
+          ],
+          "source_repeat_correlation_mean": 0.4854485349086186,
+          "atlas_repeat_correlation_xy": [
+            0.5042726698314898,
+            0.48516065799343683
+          ],
+          "source_periodic_energy": 9.138676579340972e-05,
+          "atlas_periodic_energy_same_frequency_band": 9.823427231020589e-05,
+          "variance": 0.0019577510691269643
+        },
+        "B-G": {
+          "source_repeat_correlation_xy": [
+            0.6966092623620589,
+            0.6983858304181343
+          ],
+          "source_repeat_correlation_mean": 0.6974975463900965,
+          "atlas_repeat_correlation_xy": [
+            0.7069490294066334,
+            0.6937065182760367
+          ],
+          "source_periodic_energy": 3.647864563455456e-05,
+          "atlas_periodic_energy_same_frequency_band": 3.758371608166269e-05,
+          "variance": 0.0004019199433208355
+        }
+      },
+      "chroma_correlation_mean": 0.5914730406493576,
+      "chroma_periodic_energy": 0.00012786541142796427,
+      "mean_normalized_chroma_periodic_energy": 0.0025430863750609324,
+      "mean_normalized_luma_periodic_energy": 0.0042365992374179965,
+      "fraction_any_channel_255": 0.0,
+      "palette": {
+        "regions": 18564,
+        "absolute_between_brick_RGB_variance": 0.00248327553627071,
+        "absolute_between_brick_chroma_variance": 0.0010720304461277956
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "material": "red_brick",
+      "size_multiplier": 3.0,
+      "chroma_energy_ratio": 0.38051025084204765,
+      "chroma_correlation_ratio": 0.6269226500854724,
+      "luma_correlation_ratio": 0.8395151899652546,
+      "palette_variance_ratio": 0.5924272197853536,
+      "mean_luminance_ratio": 0.9911804467465141,
+      "absolute_baseline_chroma_variance": 0.005328435864313165,
+      "absolute_candidate_chroma_variance": 0.004870668012198929,
+      "color_metric_informative": true,
+      "distant_gate_pass": null
+    },
+    {
+      "material": "red_brick",
+      "size_multiplier": 12.0,
+      "chroma_energy_ratio": 0.26273875793241386,
+      "chroma_correlation_ratio": 0.5586550844519217,
+      "luma_correlation_ratio": 0.8319109427806787,
+      "palette_variance_ratio": 0.4979616381190966,
+      "mean_luminance_ratio": 0.9914532002928717,
+      "absolute_baseline_chroma_variance": 0.001999313398812535,
+      "absolute_candidate_chroma_variance": 0.0015779266084742657,
+      "color_metric_informative": true,
+      "distant_gate_pass": false
+    },
+    {
+      "material": "large_red_bricks",
+      "size_multiplier": 3.0,
+      "chroma_energy_ratio": 0.14301781788300236,
+      "chroma_correlation_ratio": 0.569652138289718,
+      "luma_correlation_ratio": 0.8289389621524035,
+      "palette_variance_ratio": 0.622088749404786,
+      "mean_luminance_ratio": 0.9980929186814724,
+      "absolute_baseline_chroma_variance": 0.005878900515043663,
+      "absolute_candidate_chroma_variance": 0.005092296166333596,
+      "color_metric_informative": true,
+      "distant_gate_pass": null
+    },
+    {
+      "material": "large_red_bricks",
+      "size_multiplier": 12.0,
+      "chroma_energy_ratio": 0.14699776464239211,
+      "chroma_correlation_ratio": 0.5920208644605598,
+      "luma_correlation_ratio": 0.7639408593058686,
+      "palette_variance_ratio": 0.5108670833897359,
+      "mean_luminance_ratio": 1.0009297195424796,
+      "absolute_baseline_chroma_variance": 0.0032491843140937584,
+      "absolute_candidate_chroma_variance": 0.0023596710124478,
+      "color_metric_informative": true,
+      "distant_gate_pass": false
+    }
+  ],
+  "protected_channels": [
+    {
+      "material": "red_brick",
+      "shape": "wall",
+      "field": "rgb",
+      "protected_pixels": 381509,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 63
+    },
+    {
+      "material": "red_brick",
+      "shape": "wall",
+      "field": "normal",
+      "protected_pixels": 381509,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "red_brick",
+      "shape": "wall",
+      "field": "roughness",
+      "protected_pixels": 381509,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "red_brick",
+      "shape": "corner",
+      "field": "rgb",
+      "protected_pixels": 36800,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 64
+    },
+    {
+      "material": "red_brick",
+      "shape": "corner",
+      "field": "normal",
+      "protected_pixels": 36800,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "red_brick",
+      "shape": "corner",
+      "field": "roughness",
+      "protected_pixels": 36800,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 0
+    },
+    {
+      "material": "red_brick",
+      "shape": "cylinder",
+      "field": "rgb",
+      "protected_pixels": 23991,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 60
+    },
+    {
+      "material": "red_brick",
+      "shape": "cylinder",
+      "field": "normal",
+      "protected_pixels": 23991,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "red_brick",
+      "shape": "cylinder",
+      "field": "roughness",
+      "protected_pixels": 23991,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 0
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "wall",
+      "field": "rgb",
+      "protected_pixels": 278764,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 70
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "wall",
+      "field": "normal",
+      "protected_pixels": 278764,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "wall",
+      "field": "roughness",
+      "protected_pixels": 278764,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "corner",
+      "field": "rgb",
+      "protected_pixels": 45804,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 59
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "corner",
+      "field": "normal",
+      "protected_pixels": 45804,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "corner",
+      "field": "roughness",
+      "protected_pixels": 45804,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 0
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "cylinder",
+      "field": "rgb",
+      "protected_pixels": 19410,
+      "protected_max_byte_delta": 1,
+      "all_pixel_max_byte_delta": 55
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "cylinder",
+      "field": "normal",
+      "protected_pixels": 19410,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 1
+    },
+    {
+      "material": "large_red_bricks",
+      "shape": "cylinder",
+      "field": "roughness",
+      "protected_pixels": 19410,
+      "protected_max_byte_delta": 0,
+      "all_pixel_max_byte_delta": 0
+    }
+  ],
+  "projection_caveat": "Per-projection source phase preservation does not establish globally continuous brick courses on corners/curves."
+}

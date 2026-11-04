@@ -1,0 +1,96 @@
+{
+  "id": "large_red_bricks",
+  "name": "Large Red Bricks",
+  "authors": {
+    "Rob Tuytel": "All"
+  },
+  "source": "https://polyhaven.com/a/large_red_bricks",
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "source_size_meters": 2.0,
+  "api_info": "https://api.polyhaven.com/info/large_red_bricks",
+  "api_files": "https://api.polyhaven.com/files/large_red_bricks",
+  "maps": {
+    "albedo": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/large_red_bricks/large_red_bricks_diff_1k.jpg",
+      "md5": "d3fd2c63cd49fa3be86e0dd5d4b67b7b",
+      "bytes": 616870,
+      "extension": "jpg",
+      "path": "assets/gallery/large_red_bricks_albedo.jpg",
+      "sha256": "f9f1f0f2c0302c13741b92e2382c5c0e34beee32628fb1d6853a27a3071e05a9"
+    },
+    "normal": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/large_red_bricks/large_red_bricks_nor_gl_1k.jpg",
+      "md5": "099e9a23e028be31f3f0da40029f66a8",
+      "bytes": 887814,
+      "extension": "jpg",
+      "path": "assets/gallery/large_red_bricks_normal.jpg",
+      "sha256": "a8f3f10c0a2625a5291bf86a581e618c920fb2d29189bf29f75d842078164a4e"
+    },
+    "roughness": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/large_red_bricks/large_red_bricks_rough_1k.jpg",
+      "md5": "6895134f0f27b183a6e1d7878a3e4d66",
+      "bytes": 110868,
+      "extension": "jpg",
+      "path": "assets/gallery/large_red_bricks_roughness.jpg",
+      "sha256": "8555f5fec255316e337217ce24d79c287842525eb77f3a3297e15035ed7394e7"
+    },
+    "height": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/large_red_bricks/large_red_bricks_disp_1k.png",
+      "md5": "27173172049c0908a2cdbf56a9d9963a",
+      "bytes": 2029460,
+      "extension": "png",
+      "path": "assets/gallery/large_red_bricks_height.png",
+      "sha256": "a5530551ce07024a640bcf23ff082944117201644e175c01ef84abc52cd33c8d"
+    }
+  },
+  "mask_parameters": {
+    "height_small_sigma": 2.0,
+    "height_broad_sigma": 32.0,
+    "height_residual_threshold": -2500.0,
+    "red_excess_threshold": 45.0,
+    "edge_guard_pixels": 1.5,
+    "feather_pixels": 3.0,
+    "minimum_component_pixels": 1000
+  },
+  "structure_period": [
+    1,
+    1
+  ],
+  "structure_stagger": 0,
+  "structure_notes": "Whole-source repetition only; no inferred finer motif period.",
+  "mask": "assets/gallery/large_red_bricks_interior_mask.png",
+  "mask_sha256": "a73d7390c1294a8294fa9efbe86fd7e92ecb678f5437f18b434529590e94b27d",
+  "mask_regions": 72,
+  "protected_zero_fraction": 0.3649759292602539,
+  "fully_eligible_fraction": 0.5190601348876953,
+  "discarded_subthreshold_components": 41,
+  "mask_recipe": "Source-authored, reviewed thresholds on smoothed-minus-broad matching linear height; optional specified source RGB red-excess test; wrapped Euclidean guard/feather; discard small fragments. No roughness-as-height or ideal brick grid.",
+  "height_decode": "OpenCV unchanged uint16; gray+alpha validated equal RGB/nearly-opaque alpha; independent gray data retained at16bits, no premultiplication",
+  "packing": {
+    "albedo": {
+      "path": "assets/gallery/large_red_bricks_albedo.jpg",
+      "sha256": "f9f1f0f2c0302c13741b92e2382c5c0e34beee32628fb1d6853a27a3071e05a9"
+    },
+    "mask": {
+      "path": "assets/gallery/large_red_bricks_interior_mask.png",
+      "sha256": "a73d7390c1294a8294fa9efbe86fd7e92ecb678f5437f18b434529590e94b27d"
+    },
+    "output": {
+      "path": "assets/gallery/large_red_bricks_albedo_guard.png",
+      "sha256": "2d90f105642ac4c5d170e57a80f4b8d00790d47779ec44e6d90945400cead862"
+    },
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "pillow_version": "12.2.0",
+    "rgb_exact": true,
+    "alpha_exact": true,
+    "inputs_unchanged": true,
+    "rgb_sha256": "7cd1a62bd34235a38d02ed68a466c8912c0ffca6fd479de2fbc8e6d512c1feae",
+    "alpha_sha256": "9af395ca428a9c9a58f68f57166fe4ee35f47163498e276efc0e45fc395c3337",
+    "algorithm": "Decode albedo to RGB; copy L mask to alpha; save RGBA PNG; verify every channel byte including RGB at alpha=0"
+  }
+}

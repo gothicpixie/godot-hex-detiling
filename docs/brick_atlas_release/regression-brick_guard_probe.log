@@ -1,0 +1,21 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+PASS: black reference guard preserves original color, nonflat normal, roughness
+PASS: white interior retains meaningful variation; rejects frozen periodic copy
+PASS: guard color and roughness share weights
+PASS: compiled guarded weights normalized and bounded mask=0.0
+PASS: compiled guarded weights normalized and bounded mask=0.25
+PASS: compiled guarded weights normalized and bounded mask=0.5
+PASS: compiled guarded weights normalized and bounded mask=1.0
+PASS: black donor rejects foreign material despite white reference
+PASS: seed changes interior variation
+PASS: seed reset deterministic
+PASS: guard disabled matches frozen full shader at 6c9cabf
+PASS: missing guard map defaults safely to original
+PASS: coarse footprint anchors original material
+PASS: smooth mask boundary has no hard material seam
+Actual-source diagnostic protected pixels=14492 max color/normal/roughness=(0.0, 0.0, 0.0) interior pixels=16648 mean color L2 delta=0.10497616445067
+PASS: actual mask-black pixels preserve all material channels
+PASS: actual mask-white interiors retain measurable variation
+Brick guard GPU checks: 0 failures

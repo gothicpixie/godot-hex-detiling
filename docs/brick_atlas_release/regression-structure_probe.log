@@ -1,0 +1,28 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M5
+
+PASS: brick mortar phase preserved with stagger, negative coordinates, full rotation
+PASS: checker parity phase preserved
+PASS: checker fixture detects offset-only phase damage; mean=0.53635504700733
+PASS: board stripe phase and locked axis preserved
+PASS: nonflat normal orientation untouched at rotation_strength=1
+PASS: sampled row layout preserved paper=false
+PASS: sampled microappearance varies paper=false mean=0.03875974511057
+PASS: sampled row layout preserved paper=true
+PASS: sampled microappearance varies paper=true mean=0.03880357339963
+PASS: microappearance fixture rejects zero-shift mutation
+PASS: coherent sampled structure preserved
+PASS: coherent sampled nonflat normal orientation preserved
+PASS: structure candidates and weights align color and roughness
+PASS: no out-of-support color seams across lattice cell edges
+PASS: no coherent support seams across triangle diagonals
+PASS: full-texture lattice degenerates to periodic; no novelty claimed
+PASS: seed changes lattice selection
+PASS: seed reset deterministic
+PASS: disabled mode ignores period/stagger
+PASS: disabled transforms match original shader at 5b86dca
+PASS: disabled sampled image matches original shader at 5b86dca
+PASS: finite transforms at period=(0.0, 0.0)
+PASS: finite transforms at period=(0.001, 0.001)
+PASS: finite transforms at period=(10.0, 10.0)
+Structure GPU checks: 0 failures

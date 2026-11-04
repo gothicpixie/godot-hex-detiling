@@ -1,0 +1,111 @@
+{
+  "id": "red_brick",
+  "name": "Red Brick",
+  "authors": {
+    "Rob Tuytel": "All"
+  },
+  "source": "https://polyhaven.com/a/red_brick",
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "source_size_meters": 1.399999976158142,
+  "api_info": "https://api.polyhaven.com/info/red_brick",
+  "api_files": "https://api.polyhaven.com/files/red_brick",
+  "maps": {
+    "albedo": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick/red_brick_diff_1k.jpg",
+      "md5": "269e69449755abd1ede473e634b670e7",
+      "bytes": 766044,
+      "extension": "jpg",
+      "path": "assets/gallery/red_brick_albedo.jpg",
+      "sha256": "6dea3a2b5a3185ff48d299d182c405a9f787129d79677792db6de4afd81c47f6"
+    },
+    "normal": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick/red_brick_nor_gl_1k.jpg",
+      "md5": "3a49f27fb909b2db794f60bf1ce6659f",
+      "bytes": 1052038,
+      "extension": "jpg",
+      "path": "assets/gallery/red_brick_normal.jpg",
+      "sha256": "99bd2c60dfdb02b011cc3551bd9ab51d9b0be2807e3ba8f7a53c8a4c945b2f87"
+    },
+    "roughness": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick/red_brick_rough_1k.jpg",
+      "md5": "7ffbf7a7d2e0cff0a9c5f8848f9fada2",
+      "bytes": 178614,
+      "extension": "jpg",
+      "path": "assets/gallery/red_brick_roughness.jpg",
+      "sha256": "9bc9ece8264eb53d6f290bd2950ece5e462f83ce9e65b945fb1caf9972973ab9"
+    },
+    "height": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/red_brick/red_brick_disp_1k.png",
+      "md5": "3c4d42f23c79a074d411fe764dd31c38",
+      "bytes": 1646752,
+      "extension": "png",
+      "path": "assets/gallery/red_brick_height.png",
+      "sha256": "a76152c550d9fbeec216fa02a0ae3541e6e31241ce080614fded5272d2684c3a"
+    }
+  },
+  "mask_parameters": {
+    "height_small_sigma": 1.0,
+    "height_broad_sigma": 24.0,
+    "height_residual_threshold": 200.0,
+    "red_excess_threshold": null,
+    "edge_guard_pixels": 1.5,
+    "feather_pixels": 3.0,
+    "minimum_component_pixels": 1000,
+    "preserve_original_rectangles": [
+      [
+        546,
+        414,
+        712,
+        461
+      ],
+      [
+        379,
+        723,
+        539,
+        766
+      ]
+    ],
+    "preserve_original_rectangles_reason": "Two visually reviewed physical faces are split by source pits into disconnected safe islands. Preserve both entire faces as original instead of treating their pieces as independent bricks."
+  },
+  "structure_period": [
+    1,
+    1
+  ],
+  "structure_stagger": 0,
+  "structure_notes": "Whole-source repetition only; no inferred finer motif period.",
+  "mask": "assets/gallery/red_brick_interior_mask.png",
+  "mask_sha256": "d855ca99fd5b7ca35ec8265f11eae2dbfe0c1592986080a585814d7208f02e39",
+  "mask_regions": 119,
+  "protected_zero_fraction": 0.5088787078857422,
+  "fully_eligible_fraction": 0.34352684020996094,
+  "discarded_subthreshold_components": 103,
+  "mask_recipe": "Source-authored, reviewed thresholds on smoothed-minus-broad matching linear height; optional specified source RGB red-excess test; wrapped Euclidean guard/feather; discard small fragments. No roughness-as-height or ideal brick grid.",
+  "height_decode": "OpenCV unchanged uint16; gray+alpha validated equal RGB/nearly-opaque alpha; independent gray data retained at16bits, no premultiplication",
+  "packing": {
+    "albedo": {
+      "path": "assets/gallery/red_brick_albedo.jpg",
+      "sha256": "6dea3a2b5a3185ff48d299d182c405a9f787129d79677792db6de4afd81c47f6"
+    },
+    "mask": {
+      "path": "assets/gallery/red_brick_interior_mask.png",
+      "sha256": "d855ca99fd5b7ca35ec8265f11eae2dbfe0c1592986080a585814d7208f02e39"
+    },
+    "output": {
+      "path": "assets/gallery/red_brick_albedo_guard.png",
+      "sha256": "09e8bb7d5d83794444a431b794ac6c94f125771dc10d610ec0da47440579d19c"
+    },
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "RGBA",
+    "pillow_version": "12.2.0",
+    "rgb_exact": true,
+    "alpha_exact": true,
+    "inputs_unchanged": true,
+    "rgb_sha256": "56829abc337fa9cec45f23999b65fe40a79bffe2f92a6c8ea09eb78836ea6f3d",
+    "alpha_sha256": "a7f2d5256721e72f8694af839eb236e1fe5b4c3a0ae70b99b235438374285c7d",
+    "algorithm": "Decode albedo to RGB; copy L mask to alpha; save RGBA PNG; verify every channel byte including RGB at alpha=0"
+  }
+}

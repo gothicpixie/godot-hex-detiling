@@ -47,7 +47,9 @@ def source_palette():
     map_block = demo.split('const TEXTURE_SETS := [', 1)[1].split(']\n', 1)[0]
     names = re.findall(r'"([^"\n]+)"', name_block)
     sources = re.findall(r'\["(res://[^"\n]+)"', map_block)
-    assert len(names) == len(sources) == 17
+    assert len(names) == len(sources) >= 17
+    # This historical comparison covers its original seventeen capture sources.
+    names, sources = names[:17], sources[:17]
     cell, patch, columns, row_height = 232, 208, 5, 262
     canvas = Image.new('RGB', (columns * cell, 74 + 4 * row_height), '#182127')
     draw = ImageDraw.Draw(canvas)

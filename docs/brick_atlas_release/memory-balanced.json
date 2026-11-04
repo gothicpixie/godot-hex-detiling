@@ -1,0 +1,25 @@
+{
+	"accounting": "RenderingServer texture memory metric; process RSS is process resident memory; neither establishes physical VRAM residency",
+	"arm": "balanced",
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"engine_texture_memory_after_bytes": 24241783,
+	"engine_texture_memory_before_bytes": 1872163,
+	"engine_texture_memory_increment_bytes": 22369620,
+	"fresh_process": true,
+	"gpu": "Apple M5",
+	"height": 2048,
+	"path": "res://assets/gallery/brick_4_individual_atlas_2x2_balanced_seed0.png",
+	"process_RSS_after_bytes": 296206336,
+	"process_RSS_before_bytes": 204455936,
+	"width": 2048
+}

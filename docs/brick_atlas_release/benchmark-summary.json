@@ -1,0 +1,182 @@
+[
+  {
+    "scene": "close-wall",
+    "arm": "baseline",
+    "median_of_round_medians_ms": 0.92,
+    "range_round_medians_ms": [
+      0.92,
+      0.921
+    ],
+    "round_medians_ms": [
+      0.92,
+      0.92,
+      0.921
+    ],
+    "round_means_ms": [
+      0.9308875,
+      0.926020833333334,
+      0.9296625
+    ],
+    "gpu_timer_nonzero_samples": 0
+  },
+  {
+    "scene": "close-wall",
+    "arm": "four",
+    "median_of_round_medians_ms": 0.719,
+    "range_round_medians_ms": [
+      0.718,
+      0.755
+    ],
+    "round_medians_ms": [
+      0.718,
+      0.755,
+      0.719
+    ],
+    "round_means_ms": [
+      0.725208333333333,
+      0.7447875,
+      0.7274125
+    ],
+    "gpu_timer_nonzero_samples": 0
+  },
+  {
+    "scene": "close-wall",
+    "arm": "balanced",
+    "median_of_round_medians_ms": 0.748,
+    "range_round_medians_ms": [
+      0.703,
+      0.749
+    ],
+    "round_medians_ms": [
+      0.748,
+      0.749,
+      0.703
+    ],
+    "round_means_ms": [
+      0.740183333333333,
+      0.741029166666667,
+      0.724845833333333
+    ],
+    "gpu_timer_nonzero_samples": 0
+  },
+  {
+    "scene": "distant-wall",
+    "arm": "baseline",
+    "median_of_round_medians_ms": 0.742,
+    "range_round_medians_ms": [
+      0.732,
+      0.746
+    ],
+    "round_medians_ms": [
+      0.732,
+      0.746,
+      0.742
+    ],
+    "round_means_ms": [
+      0.734891666666666,
+      0.747308333333333,
+      0.738558333333333
+    ],
+    "gpu_timer_nonzero_samples": 0
+  },
+  {
+    "scene": "distant-wall",
+    "arm": "four",
+    "median_of_round_medians_ms": 1.019,
+    "range_round_medians_ms": [
+      1.016,
+      1.031
+    ],
+    "round_medians_ms": [
+      1.031,
+      1.019,
+      1.016
+    ],
+    "round_means_ms": [
+      1.08121666666667,
+      1.02759166666667,
+      1.024625
+    ],
+    "gpu_timer_nonzero_samples": 0
+  },
+  {
+    "scene": "distant-wall",
+    "arm": "balanced",
+    "median_of_round_medians_ms": 1.02,
+    "range_round_medians_ms": [
+      1.018,
+      1.021
+    ],
+    "round_medians_ms": [
+      1.021,
+      1.018,
+      1.02
+    ],
+    "round_means_ms": [
+      1.04699166666667,
+      1.02720416666667,
+      1.02833333333333
+    ],
+    "gpu_timer_nonzero_samples": 0
+  },
+  {
+    "scene": "sphere",
+    "arm": "baseline",
+    "median_of_round_medians_ms": 1.003,
+    "range_round_medians_ms": [
+      0.995,
+      1.073
+    ],
+    "round_medians_ms": [
+      1.003,
+      1.073,
+      0.995
+    ],
+    "round_means_ms": [
+      1.0117875,
+      1.1060125,
+      1.004425
+    ],
+    "gpu_timer_nonzero_samples": 0
+  },
+  {
+    "scene": "sphere",
+    "arm": "four",
+    "median_of_round_medians_ms": 0.849,
+    "range_round_medians_ms": [
+      0.84,
+      0.945
+    ],
+    "round_medians_ms": [
+      0.849,
+      0.945,
+      0.84
+    ],
+    "round_means_ms": [
+      0.8564,
+      0.956291666666667,
+      0.862129166666667
+    ],
+    "gpu_timer_nonzero_samples": 0
+  },
+  {
+    "scene": "sphere",
+    "arm": "balanced",
+    "median_of_round_medians_ms": 0.703,
+    "range_round_medians_ms": [
+      0.698,
+      0.737
+    ],
+    "round_medians_ms": [
+      0.737,
+      0.703,
+      0.698
+    ],
+    "round_means_ms": [
+      0.716537499999999,
+      0.707908333333333,
+      0.705479166666667
+    ],
+    "gpu_timer_nonzero_samples": 0
+  }
+]

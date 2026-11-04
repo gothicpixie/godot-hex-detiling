@@ -1,0 +1,50 @@
+[
+  {
+    "view": "close",
+    "seed": 0,
+    "canonical_exact_alpha0_pixels": 351386,
+    "protected_max_byte_rgb_delta": 1,
+    "protected_mean_byte_rgb_delta": 0.0039178187710001726,
+    "protected_changed_pixels": 3650
+  },
+  {
+    "view": "close",
+    "seed": 7,
+    "canonical_exact_alpha0_pixels": 351386,
+    "protected_max_byte_rgb_delta": 1,
+    "protected_mean_byte_rgb_delta": 0.004564780611635068,
+    "protected_changed_pixels": 4228
+  },
+  {
+    "view": "grazing",
+    "seed": 0,
+    "canonical_exact_alpha0_pixels": 158515,
+    "protected_max_byte_rgb_delta": 1,
+    "protected_mean_byte_rgb_delta": 0.002830436656888412,
+    "protected_changed_pixels": 1267
+  },
+  {
+    "view": "grazing",
+    "seed": 7,
+    "canonical_exact_alpha0_pixels": 158515,
+    "protected_max_byte_rgb_delta": 1,
+    "protected_mean_byte_rgb_delta": 0.003007076091642221,
+    "protected_changed_pixels": 1352
+  },
+  {
+    "view": "distant",
+    "seed": 0,
+    "canonical_exact_alpha0_pixels": 0,
+    "protected_max_byte_rgb_delta": null,
+    "protected_mean_byte_rgb_delta": null,
+    "protected_changed_pixels": 0
+  },
+  {
+    "view": "distant",
+    "seed": 7,
+    "canonical_exact_alpha0_pixels": 0,
+    "protected_max_byte_rgb_delta": null,
+    "protected_mean_byte_rgb_delta": null,
+    "protected_changed_pixels": 0
+  }
+]

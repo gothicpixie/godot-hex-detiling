@@ -1,0 +1,182 @@
+[
+  {
+    "arm": "two",
+    "strict_gate_pass": false,
+    "cases": [
+      {
+        "size": 7.5,
+        "seed": 0,
+        "pass": false,
+        "failures": [
+          {
+            "criterion": "noninferiority_chroma_periodic_energy_ratio",
+            "actual": 0.8626437282750716,
+            "reference": 0.51308189093474,
+            "maximum": 0.56308189093474
+          },
+          {
+            "criterion": "noninferiority_chroma_correlation_ratio",
+            "actual": 0.7031058272789859,
+            "reference": 0.5158137221778711,
+            "maximum": 0.5658137221778712
+          },
+          {
+            "criterion": "noninferiority_luma_correlation_ratio",
+            "actual": 0.8263753160629016,
+            "reference": 0.6687641724673237,
+            "maximum": 0.7187641724673237
+          }
+        ]
+      },
+      {
+        "size": 7.5,
+        "seed": 7,
+        "pass": false,
+        "failures": [
+          {
+            "criterion": "noninferiority_chroma_periodic_energy_ratio",
+            "actual": 0.8226227051462703,
+            "reference": 0.4309894783041365,
+            "maximum": 0.48098947830413646
+          },
+          {
+            "criterion": "noninferiority_chroma_correlation_ratio",
+            "actual": 0.6831240675170137,
+            "reference": 0.4674080600497429,
+            "maximum": 0.5174080600497429
+          },
+          {
+            "criterion": "noninferiority_luma_correlation_ratio",
+            "actual": 0.7034199595649765,
+            "reference": 0.5255760079056377,
+            "maximum": 0.5755760079056378
+          }
+        ]
+      },
+      {
+        "size": 30.0,
+        "seed": 0,
+        "pass": false,
+        "failures": [
+          {
+            "criterion": "noninferiority_chroma_periodic_energy_ratio",
+            "actual": 0.3858717833868598,
+            "reference": 0.20813973201662492,
+            "maximum": 0.25813973201662493
+          },
+          {
+            "criterion": "noninferiority_chroma_correlation_ratio",
+            "actual": 0.5859114061631756,
+            "reference": 0.43324333955568145,
+            "maximum": 0.48324333955568144
+          },
+          {
+            "criterion": "noninferiority_luma_correlation_ratio",
+            "actual": 0.665473866535724,
+            "reference": 0.5690242501847895,
+            "maximum": 0.6190242501847896
+          }
+        ]
+      },
+      {
+        "size": 30.0,
+        "seed": 7,
+        "pass": false,
+        "failures": [
+          {
+            "criterion": "noninferiority_chroma_periodic_energy_ratio",
+            "actual": 0.35082411272851444,
+            "reference": 0.1914125927449889,
+            "maximum": 0.24141259274498889
+          },
+          {
+            "criterion": "noninferiority_chroma_correlation_ratio",
+            "actual": 0.5740646244049019,
+            "reference": 0.4081344598867353,
+            "maximum": 0.4581344598867353
+          },
+          {
+            "criterion": "noninferiority_luma_correlation_ratio",
+            "actual": 0.6053479143946152,
+            "reference": 0.5018965522338534,
+            "maximum": 0.5518965522338535
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "arm": "balanced",
+    "strict_gate_pass": false,
+    "cases": [
+      {
+        "size": 7.5,
+        "seed": 0,
+        "pass": true,
+        "failures": []
+      },
+      {
+        "size": 7.5,
+        "seed": 7,
+        "pass": false,
+        "failures": [
+          {
+            "criterion": "noninferiority_luma_correlation_ratio",
+            "actual": 0.6729734479280397,
+            "reference": 0.5255760079056377,
+            "maximum": 0.5755760079056378
+          }
+        ]
+      },
+      {
+        "size": 30.0,
+        "seed": 0,
+        "pass": true,
+        "failures": []
+      },
+      {
+        "size": 30.0,
+        "seed": 7,
+        "pass": true,
+        "failures": []
+      }
+    ]
+  },
+  {
+    "arm": "three",
+    "strict_gate_pass": false,
+    "cases": [
+      {
+        "size": 7.5,
+        "seed": 0,
+        "pass": true,
+        "failures": []
+      },
+      {
+        "size": 7.5,
+        "seed": 7,
+        "pass": false,
+        "failures": [
+          {
+            "criterion": "noninferiority_luma_correlation_ratio",
+            "actual": 0.6608200427287725,
+            "reference": 0.5255760079056377,
+            "maximum": 0.5755760079056378
+          }
+        ]
+      },
+      {
+        "size": 30.0,
+        "seed": 0,
+        "pass": true,
+        "failures": []
+      },
+      {
+        "size": 30.0,
+        "seed": 7,
+        "pass": true,
+        "failures": []
+      }
+    ]
+  }
+]

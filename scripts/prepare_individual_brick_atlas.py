@@ -78,11 +78,79 @@ def annotate(rgb, labels, output):
     image.save(output)
 
 
+def balance_palette(targets, active, source_ids, bases, seed):
+    """Swap whole target assignments; preserve exact palette multiplicities."""
+    palette_ids = np.array(sorted(bases))
+    palette = np.array([bases[int(i)] for i in palette_ids])
+    center = palette.mean(axis=0)
+    covariance = np.cov(palette, rowvar=False, bias=True)
+    ridge = .1 * np.trace(covariance)/3
+    eigenvalues, eigenvectors = np.linalg.eigh(covariance)
+    whitening = eigenvectors @ np.diag(1/np.sqrt(eigenvalues+ridge))
+    whitened = {int(i): (bases[int(i)]-center) @ whitening for i in palette_ids}
+    group_ids = sorted({source_ids[i] for i in active})
+    groups = [np.array([j for j, region in enumerate(active) if source_ids[region] == i]) for i in group_ids]
+    group_of = np.zeros(len(targets), dtype=int)
+    for group, indices in enumerate(groups):
+        group_of[indices] = group
+
+    def sums_for(values):
+        return np.array([sum((whitened[int(values[i])] for i in indices), np.zeros(3)) for indices in groups])
+
+    def duplicates(values):
+        return sum(len(indices)-len(set(values[indices])) for indices in groups)
+
+    def score(values):
+        means = np.array([np.mean([bases[int(values[i])] for i in indices], axis=0) for indices in groups])
+        sums = sums_for(values)
+        return {
+            "whitened_mean_bias_score": float(np.mean([np.dot(row, row)/len(indices)**2 for row, indices in zip(sums, groups)])),
+            "per_source_target_mean_rgb_variance": means.var(axis=0).tolist(),
+            "per_source_target_mean_rgb_variance_sum": float(means.var(axis=0).sum()),
+            "duplicate_palette_choices_within_source_groups": int(duplicates(values)),
+        }
+
+    result = targets.copy()
+    before = score(result)
+    sums = sums_for(result)
+    rng = np.random.default_rng(seed+71093)
+    accepted = 0
+    duplicate_penalty = 20.0
+    for a, b in rng.integers(0, len(result), (250000, 2)):
+        ga, gb = group_of[a], group_of[b]
+        if ga == gb or result[a] == result[b]:
+            continue
+        av, bv = int(result[a]), int(result[b])
+        ia, ib = groups[ga], groups[gb]
+        old_duplicates = len(ia)-len(set(result[ia]))+len(ib)-len(set(result[ib]))
+        result[a], result[b] = bv, av
+        new_duplicates = len(ia)-len(set(result[ia]))+len(ib)-len(set(result[ib]))
+        delta = whitened[bv]-whitened[av]
+        change = 2*np.dot(sums[ga]-sums[gb], delta)+2*np.dot(delta, delta)
+        change += duplicate_penalty*(new_duplicates-old_duplicates)
+        if change < -1e-12:
+            sums[ga] += delta
+            sums[gb] -= delta
+            accepted += 1
+        else:
+            result[a], result[b] = av, bv
+    assert np.array_equal(np.sort(targets), np.sort(result))
+    return result, {
+        "method": "250000 deterministic random pair proposals; greedy whole-palette swaps across source-ID groups; covariance-whitened RGB mean-bias plus duplicate-choice penalty; exact global counts",
+        "covariance_regularizer_fraction_average_channel_variance": .1,
+        "covariance_regularizer_linear_rgb_variance": float(ridge),
+        "accepted_swaps": accepted, "before": before, "after": score(result),
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=Path("assets/gallery/brick_4_albedo_guard.png"))
     parser.add_argument("--tiles", type=int, default=4)
     parser.add_argument("--seeds", type=int, nargs="+", default=[0, 7])
+    parser.add_argument("--name", default="brick_4_individual_atlas", help="Output filename stem, followed by _seedN.png")
+    parser.add_argument("--balance-palette", action="store_true", help="Reduce per-source-ID color bias using deterministic palette swaps")
+    parser.add_argument("--source-provenance", type=Path, help="Optional authored source-material provenance JSON")
     parser.add_argument("--assets", type=Path, default=Path("assets/gallery"))
     parser.add_argument("--evidence", type=Path, default=Path("docs/individual_brick"))
     args = parser.parse_args()
@@ -165,11 +233,22 @@ def main():
         "within_brick_lowpass_sigma_pixels": 12.0,
         "within_brick_local_base_fraction": .8,
     }
+    if args.source_provenance:
+        material = json.loads(args.source_provenance.read_text())
+        common["upstream_author"] = ", ".join(material["authors"])+" / Poly Haven"
+        common["upstream_asset"] = material["source"]
+        common["license"] = material["license"]
+        common["source_material_id"] = material["id"]
+        common["source_material_provenance"] = str(args.source_provenance)
+        common["source_material_provenance_sha256"] = digest(args.source_provenance)
     seed_results = []
     for seed in args.seeds:
         rng = np.random.default_rng(seed)
         targets = np.tile(palette_ids, args.tiles**2)
         rng.shuffle(targets)
+        balance = None
+        if args.balance_palette:
+            targets, balance = balance_palette(targets, active, source_ids, bases, seed)
         output = tiled.copy()
         output_flat = output.reshape(-1, 4)
         records = []
@@ -212,7 +291,7 @@ def main():
         assert np.array_equal(output[..., 3], tiled[..., 3])
         protected = tiled[..., 3] == 0
         assert np.array_equal(output[..., :3][protected], tiled[..., :3][protected])
-        path = args.assets / f"brick_4_individual_atlas_seed{seed}.png"
+        path = args.assets / f"{args.name}_seed{seed}.png"
         if path.resolve() == args.source.resolve():
             raise ValueError("Output must not overwrite source")
         Image.fromarray(output).save(path, compress_level=9)
@@ -227,6 +306,7 @@ def main():
             "highlight_gamut_scaled_fraction": overflow_count/(width*height),
             "maximum_pre_gamut_linear_channel": max_unbounded,
             "palette_assignment_balanced": bool(np.all(np.unique(targets, return_counts=True)[1] == args.tiles**2)),
+            "source_mean_bias_optimization": balance,
             "regions": records,
         }
         (args.evidence / f"atlas-seed{seed}.json").write_text(json.dumps(data, indent=2)+"\n")
@@ -236,7 +316,7 @@ def main():
         preview = Image.new("RGB", (2048, 1080), "#151c22")
         draw = ImageDraw.Draw(preview)
         draw.text((8, 8), "Original repeating RGB", fill="white")
-        draw.text((1032, 8), f"Per-brick RGB palette / seed {seed} / finite 4x4 atlas", fill="white")
+        draw.text((1032, 8), f"Per-brick RGB palette / seed {seed} / finite {args.tiles}x{args.tiles} atlas", fill="white")
         preview.paste(Image.fromarray(tiled[..., :3]).resize((1024, 1024)), (0, 30))
         preview.paste(Image.fromarray(output[..., :3]).resize((1024, 1024)), (1024, 30))
         preview.save(args.evidence / f"atlas-overview-seed{seed}.jpg", quality=95)

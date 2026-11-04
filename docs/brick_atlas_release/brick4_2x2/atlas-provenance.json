@@ -1,0 +1,729 @@
+{
+  "source": "assets/gallery/brick_4_albedo_guard.png",
+  "source_sha256": "5d1a3e3f47ae16987c51e8b647aa2b0474fca323b5fc3f2505b1a7c0e5760c4f",
+  "license": "CC0-1.0",
+  "upstream_author": "Rob Tuytel / Poly Haven",
+  "upstream_asset": "https://polyhaven.com/a/brick_4",
+  "libraries": {
+    "pillow": "12.2.0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "source_size": [
+    1024,
+    1024
+  ],
+  "atlas_size": [
+    2048,
+    2048
+  ],
+  "tiles_per_axis": 2,
+  "source_regions": 84,
+  "recolored_source_regions": 83,
+  "ignored_tiny_source_regions": [
+    9
+  ],
+  "atlas_regions": 336,
+  "recolored_atlas_regions": 332,
+  "palette": [
+    {
+      "source_region": 1,
+      "base_linear_rgb": [
+        0.238397573812271,
+        0.10461648409110419,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 2,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.14412847085805777,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 3,
+      "base_linear_rgb": [
+        0.24228112246555486,
+        0.08650046203654976,
+        0.04091519690685319
+      ]
+    },
+    {
+      "source_region": 4,
+      "base_linear_rgb": [
+        0.25015828472995344,
+        0.11443537382697373,
+        0.042311410620809675
+      ]
+    },
+    {
+      "source_region": 5,
+      "base_linear_rgb": [
+        0.30946892281750854,
+        0.14126329114027164,
+        0.0822827071298148
+      ]
+    },
+    {
+      "source_region": 6,
+      "base_linear_rgb": [
+        0.3005437944157765,
+        0.14702726649759498,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 7,
+      "base_linear_rgb": [
+        0.23074004852434915,
+        0.10461648409110419,
+        0.03433980680868217
+      ]
+    },
+    {
+      "source_region": 8,
+      "base_linear_rgb": [
+        0.2874408377269175,
+        0.10946171077829933,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 10,
+      "base_linear_rgb": [
+        0.27467731206038465,
+        0.11697066775851084,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 11,
+      "base_linear_rgb": [
+        0.35153259950043936,
+        0.13286832155381798,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 12,
+      "base_linear_rgb": [
+        0.4232676699860717,
+        0.14995978981060856,
+        0.0822827071298148
+      ]
+    },
+    {
+      "source_region": 13,
+      "base_linear_rgb": [
+        0.4178850708481375,
+        0.14995978981060856,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 14,
+      "base_linear_rgb": [
+        0.3662525955988395,
+        0.11953842798834562,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 15,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.12743768043564743,
+        0.08437621154414882
+      ]
+    },
+    {
+      "source_region": 16,
+      "base_linear_rgb": [
+        0.43415363617474895,
+        0.14126329114027164,
+        0.07818742180518633
+      ]
+    },
+    {
+      "source_region": 17,
+      "base_linear_rgb": [
+        0.3712376804741491,
+        0.12213877222960187,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 18,
+      "base_linear_rgb": [
+        0.4969329950608704,
+        0.15292615199615017,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 19,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.11953842798834562,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 20,
+      "base_linear_rgb": [
+        0.29177064981753587,
+        0.09989872824711389,
+        0.04970656598412723
+      ]
+    },
+    {
+      "source_region": 21,
+      "base_linear_rgb": [
+        0.2788942634768104,
+        0.10461648409110419,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 22,
+      "base_linear_rgb": [
+        0.3712376804741491,
+        0.13843161503245183,
+        0.08437621154414882
+      ]
+    },
+    {
+      "source_region": 23,
+      "base_linear_rgb": [
+        0.2581828529215958,
+        0.10461648409110419,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 24,
+      "base_linear_rgb": [
+        0.43415363617474895,
+        0.1714411007328226,
+        0.0822827071298148
+      ]
+    },
+    {
+      "source_region": 25,
+      "base_linear_rgb": [
+        0.2831487404299921,
+        0.11953842798834562,
+        0.08021982031446832
+      ]
+    },
+    {
+      "source_region": 26,
+      "base_linear_rgb": [
+        0.45641102318040466,
+        0.1714411007328226,
+        0.0953074666309647
+      ]
+    },
+    {
+      "source_region": 27,
+      "base_linear_rgb": [
+        0.3762621229909065,
+        0.13286832155381798,
+        0.0822827071298148
+      ]
+    },
+    {
+      "source_region": 28,
+      "base_linear_rgb": [
+        0.3613067797835095,
+        0.15292615199615017,
+        0.09758734714186246
+      ]
+    },
+    {
+      "source_region": 29,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.11697066775851084,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 30,
+      "base_linear_rgb": [
+        0.25415209433082675,
+        0.08650046203654976,
+        0.027320891639074894
+      ]
+    },
+    {
+      "source_region": 31,
+      "base_linear_rgb": [
+        0.18116424424986022,
+        0.11697066775851084,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 32,
+      "base_linear_rgb": [
+        0.26225065752969623,
+        0.07618538148130785,
+        0.033104766570885055
+      ]
+    },
+    {
+      "source_region": 33,
+      "base_linear_rgb": [
+        0.2581828529215958,
+        0.09989872824711389,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 34,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.18782077230067787,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 35,
+      "base_linear_rgb": [
+        0.3712376804741491,
+        0.14412847085805777,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 36,
+      "base_linear_rgb": [
+        0.39675523072562685,
+        0.1559264637078274,
+        0.09758734714186246
+      ]
+    },
+    {
+      "source_region": 37,
+      "base_linear_rgb": [
+        0.3277780980565422,
+        0.11443537382697373,
+        0.052860647023180246
+      ]
+    },
+    {
+      "source_region": 38,
+      "base_linear_rgb": [
+        0.3564001441459435,
+        0.12213877222960187,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 39,
+      "base_linear_rgb": [
+        0.23455058216100522,
+        0.06301001765316767,
+        0.026241221894849898
+      ]
+    },
+    {
+      "source_region": 40,
+      "base_linear_rgb": [
+        0.4019777798321958,
+        0.12743768043564743,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 41,
+      "base_linear_rgb": [
+        0.38132601143253014,
+        0.14126329114027164,
+        0.08650046203654976
+      ]
+    },
+    {
+      "source_region": 42,
+      "base_linear_rgb": [
+        0.3564001441459435,
+        0.14126329114027164,
+        0.0822827071298148
+      ]
+    },
+    {
+      "source_region": 43,
+      "base_linear_rgb": [
+        0.386429433787049,
+        0.11443537382697373,
+        0.04970656598412723
+      ]
+    },
+    {
+      "source_region": 44,
+      "base_linear_rgb": [
+        0.2831487404299921,
+        0.08650046203654976,
+        0.04970656598412723
+      ]
+    },
+    {
+      "source_region": 45,
+      "base_linear_rgb": [
+        0.38132601143253014,
+        0.18116424424986022,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 46,
+      "base_linear_rgb": [
+        0.3277780980565422,
+        0.1301364766903643,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 47,
+      "base_linear_rgb": [
+        0.3662525955988395,
+        0.1301364766903643,
+        0.07421356838014963
+      ]
+    },
+    {
+      "source_region": 48,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.09305896284668745,
+        0.04091519690685319
+      ]
+    },
+    {
+      "source_region": 49,
+      "base_linear_rgb": [
+        0.3613067797835095,
+        0.13843161503245183,
+        0.07818742180518633
+      ]
+    },
+    {
+      "source_region": 50,
+      "base_linear_rgb": [
+        0.3762621229909065,
+        0.14995978981060856,
+        0.09084171118340768
+      ]
+    },
+    {
+      "source_region": 51,
+      "base_linear_rgb": [
+        0.4072402119017367,
+        0.15292615199615017,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 52,
+      "base_linear_rgb": [
+        0.38132601143253014,
+        0.11697066775851084,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 53,
+      "base_linear_rgb": [
+        0.2195261997292692,
+        0.14995978981060856,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 54,
+      "base_linear_rgb": [
+        0.3662525955988395,
+        0.11953842798834562,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 55,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.0953074666309647,
+        0.04970656598412723
+      ]
+    },
+    {
+      "source_region": 56,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.14702726649759498,
+        0.08437621154414882
+      ]
+    },
+    {
+      "source_region": 57,
+      "base_linear_rgb": [
+        0.4178850708481375,
+        0.17788841598362912,
+        0.09989872824711389
+      ]
+    },
+    {
+      "source_region": 58,
+      "base_linear_rgb": [
+        0.38132601143253014,
+        0.14995978981060856,
+        0.08437621154414882
+      ]
+    },
+    {
+      "source_region": 59,
+      "base_linear_rgb": [
+        0.24620132670783548,
+        0.09084171118340768,
+        0.04518620438567554
+      ]
+    },
+    {
+      "source_region": 60,
+      "base_linear_rgb": [
+        0.3564001441459435,
+        0.1559264637078274,
+        0.09758734714186246
+      ]
+    },
+    {
+      "source_region": 61,
+      "base_linear_rgb": [
+        0.4286904966139066,
+        0.16826940018969075,
+        0.09989872824711389
+      ]
+    },
+    {
+      "source_region": 62,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.14412847085805777,
+        0.08865558628577294
+      ]
+    },
+    {
+      "source_region": 63,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.09758734714186246,
+        0.05126945837404324
+      ]
+    },
+    {
+      "source_region": 64,
+      "base_linear_rgb": [
+        0.2874408377269175,
+        0.0953074666309647,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 65,
+      "base_linear_rgb": [
+        0.30946892281750854,
+        0.14412847085805777,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 66,
+      "base_linear_rgb": [
+        0.33716361504833037,
+        0.12743768043564743,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 67,
+      "base_linear_rgb": [
+        0.3613067797835095,
+        0.16826940018969075,
+        0.10702310297826761
+      ]
+    },
+    {
+      "source_region": 68,
+      "base_linear_rgb": [
+        0.33245153634617935,
+        0.13563332965520566,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 69,
+      "base_linear_rgb": [
+        0.32314320911295075,
+        0.15292615199615017,
+        0.09305896284668745
+      ]
+    },
+    {
+      "source_region": 70,
+      "base_linear_rgb": [
+        0.3613067797835095,
+        0.14412847085805777,
+        0.07421356838014963
+      ]
+    },
+    {
+      "source_region": 71,
+      "base_linear_rgb": [
+        0.25415209433082675,
+        0.07818742180518633,
+        0.03688945040110004
+      ]
+    },
+    {
+      "source_region": 72,
+      "base_linear_rgb": [
+        0.3005437944157765,
+        0.13563332965520566,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 73,
+      "base_linear_rgb": [
+        0.3712376804741491,
+        0.14702726649759498,
+        0.09084171118340768
+      ]
+    },
+    {
+      "source_region": 74,
+      "base_linear_rgb": [
+        0.14412847085805777,
+        0.10461648409110419,
+        0.05126945837404324
+      ]
+    },
+    {
+      "source_region": 75,
+      "base_linear_rgb": [
+        0.33716361504833037,
+        0.1119324278369056,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 76,
+      "base_linear_rgb": [
+        0.11443537382697373,
+        0.10224173308810132,
+        0.07324270953123355
+      ]
+    },
+    {
+      "source_region": 77,
+      "base_linear_rgb": [
+        0.24228112246555486,
+        0.08650046203654976,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 78,
+      "base_linear_rgb": [
+        0.14126329114027164,
+        0.08650046203654976,
+        0.0382043715953465
+      ]
+    },
+    {
+      "source_region": 79,
+      "base_linear_rgb": [
+        0.29177064981753587,
+        0.10702310297826761,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 80,
+      "base_linear_rgb": [
+        0.23455058216100522,
+        0.07818742180518633,
+        0.04518620438567554
+      ]
+    },
+    {
+      "source_region": 81,
+      "base_linear_rgb": [
+        0.32314320911295075,
+        0.11069706930760247,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 82,
+      "base_linear_rgb": [
+        0.35153259950043936,
+        0.14995978981060856,
+        0.0822827071298148
+      ]
+    },
+    {
+      "source_region": 83,
+      "base_linear_rgb": [
+        0.3277780980565422,
+        0.1301364766903643,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 84,
+      "base_linear_rgb": [
+        0.35153259950043936,
+        0.13843161503245183,
+        0.08021982031446832
+      ]
+    }
+  ],
+  "segmentation": "4-neighbor components of guard alpha>0 on full tiled atlas; union opposite outer boundaries; no ideal grid fit",
+  "algorithm": "robust per-source-brick median RGB palette from alpha255 core; within-brick alpha-normalized Gaussian sigma12 linear RGB field (80% local field,20% region median) removes broad source color; balanced source palette shuffle per actual atlas component; per-channel target/localbase correction feathered by original alpha; highlight common-RGB scale only if necessary; original alpha0 RGB copied exactly",
+  "within_brick_lowpass_sigma_pixels": 12.0,
+  "within_brick_local_base_fraction": 0.8,
+  "inputs_unchanged": true,
+  "seeds": [
+    {
+      "seed": 0,
+      "asset": "assets/gallery/brick_4_individual_atlas_2x2_seed0.png",
+      "sha256": "3b06ef3125a17ddab67fac9c3c3b189d1fdeabc18cf5735f0e3d24eda54ca1b5",
+      "alpha_sha256": "ba6adbe230bb460e15b5772eece5ec519ecb4fdf2f7647fcae2d8723b11886b2",
+      "protected_pixels_exact": 1700480,
+      "alpha_all_pixels_exact": true,
+      "no_coordinate_warp_or_resampling": true,
+      "finite_and_in_gamut": true,
+      "highlight_gamut_scaled_pixels": 41,
+      "highlight_gamut_scaled_fraction": 9.775161743164062e-06,
+      "maximum_pre_gamut_linear_channel": 1.4502052261014902,
+      "palette_assignment_balanced": true
+    },
+    {
+      "seed": 7,
+      "asset": "assets/gallery/brick_4_individual_atlas_2x2_seed7.png",
+      "sha256": "c560c60061fc563a5f5e6ab7e83fd2603dde235f9886bf0dee4fe05a6a0f5150",
+      "alpha_sha256": "ba6adbe230bb460e15b5772eece5ec519ecb4fdf2f7647fcae2d8723b11886b2",
+      "protected_pixels_exact": 1700480,
+      "alpha_all_pixels_exact": true,
+      "no_coordinate_warp_or_resampling": true,
+      "finite_and_in_gamut": true,
+      "highlight_gamut_scaled_pixels": 42,
+      "highlight_gamut_scaled_fraction": 1.0013580322265625e-05,
+      "maximum_pre_gamut_linear_channel": 1.5205245647817738,
+      "palette_assignment_balanced": true
+    }
+  ]
+}

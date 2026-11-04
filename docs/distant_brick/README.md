@@ -1,6 +1,8 @@
 # Distant brick variation: partial improvement, insufficient overall
 
-This local experiment reduces a measured component of repeated broad color, but the source's colored patches and irregular joint shapes remain visibly repeated. It **does not meet the predeclared overall repetition target**. Keep it default off on `codex/distant-brick-variation`; it is not merged, published or included in the v0.7.0 addon archive.
+Current status: this failed macro-tone method remains a default-off experimental comparison. It is distinct from the accepted per-brick 4×4 mode packaged with v0.8.0; see the [current release guide](../brick_atlas_release/README.md). The failed conclusions and measurements here remain unchanged.
+
+This local experiment reduces a measured component of repeated broad color, but the source's colored patches and irregular joint shapes remain visibly repeated. It **does not meet the predeclared overall repetition target**. It originated on `codex/distant-brick-variation` and was not included in v0.7.0. Its retained control is explicitly experimental and does not qualify as the accepted brick palette mode.
 
 In the project demo, select **Brick 4**, enable **Preserve pattern** and **Protect mortar**, then check **Vary distant brick tones · experiment**. Detiling must be on. Unchecking restores the v0.7.0 packed brick; disabling detiling restores the original JPEG. Other materials remain ineligible and the preference persists.
 

@@ -1,0 +1,31 @@
+{
+  "method": "Everyatlasalpha/protectedRGBAexact+torusseamlabels,exactglobalpalettecounts;finegrainproxyfirstnativetilealpha255coreexcluding16pxborders,loglinearluminanceGaussian1.2residual",
+  "source_native_size": 1024,
+  "atlas_size": 4096,
+  "mip_rgba8_mib": 85.33333206176758,
+  "torus_seam_union_verified": true,
+  "records": [
+    {
+      "seed": 0,
+      "alpha_exact_pixels": 16777216,
+      "protected_rgba_exact_pixels": 6123280,
+      "palette_colors": 72,
+      "each_global_palette_count": 16,
+      "proper_atlas_bricks": 1152,
+      "first_native_tile_core_log_luminance_highpass_correlation": 0.9985951747332923,
+      "first_native_tile_core_log_luminance_highpass_std_ratio": 1.0035475497493473,
+      "sha256": "c6eeb25f41cffd970ffda41e1570548551363592658fd8b77e3ed53c8f7fc5fa"
+    },
+    {
+      "seed": 7,
+      "alpha_exact_pixels": 16777216,
+      "protected_rgba_exact_pixels": 6123280,
+      "palette_colors": 72,
+      "each_global_palette_count": 16,
+      "proper_atlas_bricks": 1152,
+      "first_native_tile_core_log_luminance_highpass_correlation": 0.9987060087721715,
+      "first_native_tile_core_log_luminance_highpass_std_ratio": 1.0044868594235323,
+      "sha256": "b65c7041d1f5d35227ed7cec8de2f4813654575137ea4a1758bfdff954f9cb68"
+    }
+  ]
+}

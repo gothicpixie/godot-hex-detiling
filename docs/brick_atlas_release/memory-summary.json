@@ -1,0 +1,37 @@
+[
+  {
+    "arm": "baseline",
+    "theoretical_RGBA8_mip_texel_bytes": 5592404,
+    "engine_texture_accounting_increment_bytes": 5592404,
+    "process_RSS_increment_bytes": 22085632,
+    "RSS_is_process_memory_not_isolated_VRAM": true
+  },
+  {
+    "arm": "four",
+    "theoretical_RGBA8_mip_texel_bytes": 89478484,
+    "engine_texture_accounting_increment_bytes": 89478484,
+    "process_RSS_increment_bytes": 364756992,
+    "RSS_is_process_memory_not_isolated_VRAM": true
+  },
+  {
+    "arm": "two",
+    "theoretical_RGBA8_mip_texel_bytes": 22369620,
+    "engine_texture_accounting_increment_bytes": 22369620,
+    "process_RSS_increment_bytes": 92274688,
+    "RSS_is_process_memory_not_isolated_VRAM": true
+  },
+  {
+    "arm": "balanced",
+    "theoretical_RGBA8_mip_texel_bytes": 22369620,
+    "engine_texture_accounting_increment_bytes": 22369620,
+    "process_RSS_increment_bytes": 91750400,
+    "RSS_is_process_memory_not_isolated_VRAM": true
+  },
+  {
+    "arm": "three",
+    "theoretical_RGBA8_mip_texel_bytes": 50331640,
+    "engine_texture_accounting_increment_bytes": 50331640,
+    "process_RSS_increment_bytes": 205930496,
+    "RSS_is_process_memory_not_isolated_VRAM": true
+  }
+]

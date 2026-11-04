@@ -1,0 +1,9 @@
+{
+  "commit": "0f5322ad2636341a61a72b66ea6ca2ec27caf434",
+  "sha256": {
+    "addons/hex_detile/hex_detile.gdshader": "c12d019a437974ef6df5f1632ea85eadd328c853b724a2954fb48e151841302f",
+    "addons/hex_detile/coherent_blend.gdshaderinc": "dd4d826226d4ffbb24664151c464bdabfaa66cacadab7e51efde4ef018cb62f7",
+    "assets/gallery/brick_4_individual_atlas_seed0.png": "d7e96fac7aac1ea2396bea3d47865519cff7fee75c1b78deac49642ce4229f6d",
+    "assets/gallery/brick_4_individual_atlas_seed7.png": "062428311b0bd7eef08500b22f8369155c3d79790e6281551afe1b3821ecfb97"
+  }
+}

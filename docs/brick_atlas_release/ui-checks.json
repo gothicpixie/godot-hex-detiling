@@ -1,0 +1,67 @@
+{
+	"failures": 0,
+	"records": [
+		{
+			"focusable_controls": 9,
+			"inaccessible": [],
+			"panel_fits": true,
+			"panel_rect": "[P: (24.0, 24.0), S: (436.0, 672.0)]",
+			"scroll_max": 633.0,
+			"scroll_page": 633.0,
+			"size": [
+				1280,
+				720
+			],
+			"test": "controls_accessibility"
+		},
+		{
+			"focusable_controls": 9,
+			"inaccessible": [],
+			"panel_fits": true,
+			"panel_rect": "[P: (24.0, 24.0), S: (444.0, 552.0)]",
+			"scroll_max": 633.0,
+			"scroll_page": 524.0,
+			"size": [
+				800,
+				600
+			],
+			"test": "controls_accessibility"
+		},
+		{
+			"bbox_screen_max": "(2534.958, -5.27554)",
+			"bbox_screen_min": "(-1254.958, -851.5862)",
+			"camera": "(0.0, 7.0, 9.0)",
+			"index": 0,
+			"mesh_type": "ArrayMesh",
+			"some_bbox_points_behind_camera": true,
+			"test": "mesh_switch"
+		},
+		{
+			"bbox_screen_max": "(1018.492, 567.4546)",
+			"bbox_screen_min": "(261.5082, 144.6539)",
+			"camera": "(0.0, 1.0, 14.0)",
+			"index": 1,
+			"mesh_type": "BoxMesh",
+			"some_bbox_points_behind_camera": false,
+			"test": "mesh_switch"
+		},
+		{
+			"bbox_screen_max": "(862.5169, 627.0345)",
+			"bbox_screen_min": "(407.3973, 180.2542)",
+			"camera": "(12.0, 7.0, 14.0)",
+			"index": 2,
+			"mesh_type": "BoxMesh",
+			"some_bbox_points_behind_camera": false,
+			"test": "mesh_switch"
+		},
+		{
+			"bbox_screen_max": "(983.6572, 703.3067)",
+			"bbox_screen_min": "(296.3428, 72.59452)",
+			"camera": "(0.0, 2.0, 13.0)",
+			"index": 3,
+			"mesh_type": "CylinderMesh",
+			"some_bbox_points_behind_camera": false,
+			"test": "mesh_switch"
+		}
+	]
+}

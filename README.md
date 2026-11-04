@@ -2,13 +2,19 @@
 
 **Break up repeated rock, dirt, sand, and other organic textures across large 3D surfaces.** This Godot 4 shader uses stochastic hex-style tiling and world-space triplanar projection, with shared offsets and optional rotation for albedo, normal, and roughness maps.
 
-The demo now includes **seventeen CC0 material sets**: stone, brick, wood, grass, denim, snow, mud, plaster, leather, rubber, sand, moss-covered rock, and terrazzo. The palette below shows the **source albedo textures, not shader renders**; [matched render comparisons and detail crops](docs/coherent/README.md#seventeen-material-gallery) show how the blend modes treat them.
-
-![Source albedo textures — not shader renders; all seventeen demo materials](docs/coherent/source-albedo-palette.png)
+The demo includes **19 CC0 source material sets**. [Browse the source albedo previews](docs/brick_atlas_release/source-albedo-palette-19.png); these are textures, not shader renders. The original [17-material render comparison](docs/coherent/README.md#seventeen-material-gallery) remains a historical matched test. Brick 4 is the qualified brick-palette preset; the two new brick sources are documented authoring examples with palette controls disabled.
 
 ![A loop alternating between regular tiling and hex detiling on the same rock surface](docs/comparison.gif)
 
 The loop alternates two actual captures of the same terrain, camera, lights, and material settings. Detiling reduces the obvious repeating marks, but also changes contrast and costs more sampling work. It is not a one-click fix for every texture.
+
+## Prepared Brick 4 color variation
+
+The opt-in palette mode varies actual brick interiors using source-aligned variants. In the accepted distant tests, source-repeat color correlation fell 56.7% / 59.2%, while inspected mortar stayed aligned and sharp. Joint shapes, weathering and some protected rims still repeat. The accepted 4×4 atlas requires about **85.3 MiB of theoretical uncompressed RGBA8 texels including mipmaps**. Smaller 2×2/3×3 trials missed at least one quality check, so they did not replace the default.
+
+![Original Brick 4 left; accepted palette variation right, matched native crops](docs/brick_atlas_release/brick4-accepted-native.png)
+
+Start with **Brick 4 → Mesh: Wall → Preserve pattern → Protect mortar → Vary individual brick colors**. This mode uses aligned original normal/roughness maps; near interiors deliberately differ from coherent donor mixtures. [Settings, failed compact trials, measured rendering costs, material examples and limits](docs/brick_atlas_release/README.md) include the unfavorable distant-wall cost as well as the improvements. Corner and curved triplanar layouts are not guaranteed to form continuous brick courses.
 
 ## Optional coherent material blending
 
@@ -24,17 +30,18 @@ Enable **Preserve pattern** in the demo for Brick 4, Dark Wooden Planks, or Chec
 
 Brick 4 now offers a separate **Protect mortar** option after enabling Preserve pattern. It anchors masked mortar to the original source and permits variation only in safe source and donor interiors, using common coherent weights. It returns to original sampling at coarse footprints. This retains the repeating mortar layout, restricts interior variation, and adds texture reads; it depends on a source-aligned mask. The native comparison below shows periodic, existing structured, and guarded brick sampling. See [matched native crops, mask provenance, checks and cost](docs/brick_guard/README.md). The demo packs the guard into albedo alpha, reducing full PBR worst-case source-level reads from 48 to 36; exact source-only cases avoid donor sampling. The separate-mask API remains supported. See [packing requirements](docs/guard_optimization/PACKING.md) and [optimization measurements and motion](docs/guard_optimization/README.md); read counts are not timing estimates.
 
-![Matched native crops comparing periodic, existing structured and mortar-guarded brick](docs/brick_guard/native-comparison-seed0.jpg)
+[Historical native comparison: periodic, structured and mortar-guarded brick](docs/brick_guard/native-comparison-seed0.jpg).
 
 [Earlier unguarded brick, wood and paving comparisons](docs/structure/native-detail-crops.png).
 
-This local branch also contains a default-off [individual brick color experiment](docs/individual_brick/README.md), with native before/after comparisons. It reduces the measured repeating color pattern while retaining sharp mortar in the tested views, but uses a large atlas and retains repeated joint geometry. The [earlier macro-tone experiment](docs/distant_brick/README.md) remains available for comparison. Neither experiment is part of the published addon.
+The earlier [macro-tone experiment](docs/distant_brick/README.md) remains clearly experimental; it did not adequately remove the repeated colored patches.
 
 ## Try the demo
 
 1. Open `project.godot` in Godot 4 and allow the textures to import.
 2. Press **F5** to run. Press **Space** or click the button to toggle the effect.
-3. Press **1**, **2**, or **3** for camera views. Choose one of seventeen texture sets, adjust rotation and blend contrast, choose shared, paper-inspired, or coherent blending, and toggle footprint relaxation and the roughness map in the panel. Brick, plank, and checker sources also offer an approximate Preserve pattern preset. Drag to rotate the surface and use the mouse wheel to zoom.
+3. For bricks, choose **Brick 4** and **Mesh: Wall**; enable **Preserve pattern**, **Protect mortar** and **Vary individual brick colors**. The palette option is validated for Brick 4; Red Brick and Large Red Bricks remain disabled authoring examples.
+4. Choose among 19 source sets and Terrain, Wall, Box/corner or Cylinder. Press **1**, **2** or **3** for framed views; drag to rotate and use the wheel over the surface to zoom. The controls scroll in smaller windows. Organic surfaces retain the shared, paper-inspired and coherent comparison modes.
 
 Tested with Godot **4.7.2**, Compatibility renderer, on macOS. Other versions and hardware need testing. From a terminal, run `godot --path . --editor --quit` to import, then `godot --path .`.
 
@@ -105,6 +112,9 @@ The shader is a complete spatial material. To use it in an existing custom mater
 | `structure_enabled` | Constrain cell transforms to a source-specific lattice and force identity rotation. Off by default; independent of blending. |
 | `structure_guard_enabled`, `structure_guard_map` | Optional source-mask protection, active only with structure and detiling. Black retains original material; white permits safe donor variation. Missing mask defaults black. Overrides the blend selector with coherent common weights; off by default. |
 | `structure_guard_in_albedo_alpha` | Read the linear guard from albedo alpha instead of the separate mask; requires matching mask/albedo dimensions and safe RGBA import settings. Off by default. |
+| `brick_individual_enabled`, `brick_individual_map` | Optional prepared brick palette mode with aligned original PBR; requires detiling, structure and guard. Off by default. |
+| `brick_individual_tiles_per_axis` | Atlas source-tile count; defaults to 4. UVs, gradients and integer offsets use this count. Each tile retains native source resolution. |
+| `brick_individual_stochastic` | Mix source-aligned color variants; defaults true. False directly repeats the finite atlas as a comparison. |
 | `structure_period` | Source-UV X/Y translation steps; zero locks that coordinate. Default `(1,1)` gives no meaningful variation with zero stagger. |
 | `structure_stagger` | Fraction of the X step added per Y step, e.g. `0.5` for a matching running-bond lattice. Default zero. |
 | `blend_contrast` | Adjust the color and roughness weight curve (and normals in shared-weight mode); 0.5 is neutral. Higher values may reveal the lattice. |
@@ -123,7 +133,7 @@ The shader is a complete spatial material. To use it in an existing custom mater
 
 The shader samples three randomly offset copies of a repeatable texture on a triangular lattice, blends them, and projects the result along three world axes. The material maps share cell offsets and rotations. In the default mode they also share geometric blend weights; optional paper-inspired weighting calculates weights separately for color, roughness, and normals, which can shift how corresponding features blend. Optional rotation transforms texture derivatives for mip selection and rotates sampled normal components back into projection space. Rotation is off by default; directional textures may work better without it. `blend_contrast` changes the blend-weight curve to retain more definition, but high values can expose the grid; it does not guarantee contrast preservation. Optional tone normalization can reduce broad patches but can change color or suppress features; it defaults to off. World-space projection means moving or rotating an object moves it through the texture. In paper-inspired mode, color and roughness weights use sample luminance; normal samples are converted to slopes, weighted by slope magnitude, and blended before normal reconstruction. The implementation reconstructs normal Z from XY and caps grazing slopes for stability. This adapts the paper to the triplanar material; it is not a complete or exact reproduction. Normal mapping remains an approximation based on the geometric normal and sampled tangent components, not a general substitute for a mesh's tangent-space material.
 
-Large organic surfaces are a useful starting point. Strong, recognizable features can still repeat or form patches. Triplanar projection, multiple texture samples, and normalization add GPU work; this demo does not reduce texture sample counts with distance. See the [benchmark and its limitations](benchmarks/README.md), and profile on your target hardware.
+Large organic surfaces are a useful starting point. Strong, recognizable features can still repeat or form patches. Triplanar projection, multiple texture samples, and normalization add GPU work; legacy detiling keeps sampling its donors, while protected and palette routes can skip donor work in their exact or coarse fallback cases. Source-level counts are not runtime cost estimates. See the [benchmark and its limitations](benchmarks/README.md), and profile on your target hardware.
 
 ## Research and experiments
 
@@ -142,3 +152,5 @@ Code and documentation: [MIT License](LICENSE). The example texture sets are [Ro
 Additional gallery maps are from Poly Haven under [CC0](https://polyhaven.com/license): [Brick 4](https://polyhaven.com/a/brick_4) and [Denim Fabric](https://polyhaven.com/a/denim_fabric) by Rob Tuytel; [Dark Wooden Planks](https://polyhaven.com/a/dark_wooden_planks) and [Checkered Pavement Tiles](https://polyhaven.com/a/checkered_pavement_tiles) by Amal Kumar; [Grass Ground](https://polyhaven.com/a/grass_ground) by Charlotte Baglioni; and [Cobblestone 01](https://polyhaven.com/a/cobblestone_01) by Rob Tuytel. The 1K maps and their source URLs and checksums are listed in [SOURCES.json](assets/gallery/SOURCES.json).
 
 The eight-material expansion adds [Snow 02](https://polyhaven.com/a/snow_02), [Brown Mud 02](https://polyhaven.com/a/brown_mud_02), [Brown Leather](https://polyhaven.com/a/brown_leather), and [Mossy Rock](https://polyhaven.com/a/mossy_rock) by Rob Tuytel; [Blue Plaster Wall](https://polyhaven.com/a/blue_plaster_wall) by Dimitrios Savva; [Sand 03](https://polyhaven.com/a/sand_03) by Charlotte Baglioni; and [Rubber Tiles](https://polyhaven.com/a/rubber_tiles) and [Terrazzo Tiles](https://polyhaven.com/a/terrazzo_tiles) by Amal Kumar, all Poly Haven / CC0. Matching original 1K albedo, OpenGL normal, and roughness maps have verified download hashes in [SOURCES.json](assets/gallery/SOURCES.json); [preparation notes](assets/gallery/EXPANSION.md) explain the selection and imports.
+
+The prepared-source extension adds [Red Brick](https://polyhaven.com/a/red_brick) and [Large Red Bricks](https://polyhaven.com/a/large_red_bricks), both by Rob Tuytel / Poly Haven under CC0. Their native PBR/height downloads, authored mask exclusions and failed palette qualification results are documented in [source provenance](docs/brick_atlas_release/materials/SOURCES.md). They remain controlled authoring examples rather than fully qualified palette presets.

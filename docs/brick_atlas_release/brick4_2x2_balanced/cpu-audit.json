@@ -1,0 +1,40 @@
+[
+  {
+    "seed": 0,
+    "actual_core_per_source_mean_rgb_variance_before": [
+      0.0014335607144829944,
+      0.0001609272602013492,
+      6.688500695631468e-05
+    ],
+    "actual_core_per_source_mean_rgb_variance_after": [
+      2.4071586890474906e-05,
+      7.033028138228085e-06,
+      3.954491412409605e-06
+    ],
+    "sum_before": 0.0016613729816406582,
+    "sum_after": 3.50591064411126e-05,
+    "global_palette_counts_exact": true,
+    "four_distinct_targets_per_source_id": true,
+    "alpha_exact_pixels": 4194304,
+    "protected_rgba_exact_pixels": 1700480
+  },
+  {
+    "seed": 7,
+    "actual_core_per_source_mean_rgb_variance_before": [
+      0.0011416137509587573,
+      0.00014110935804579147,
+      6.075269776719638e-05
+    ],
+    "actual_core_per_source_mean_rgb_variance_after": [
+      1.9377418751479443e-05,
+      5.9342910463725835e-06,
+      4.070837390888764e-06
+    ],
+    "sum_before": 0.0013434758067717451,
+    "sum_after": 2.938254718874079e-05,
+    "global_palette_counts_exact": true,
+    "four_distinct_targets_per_source_id": true,
+    "alpha_exact_pixels": 4194304,
+    "protected_rgba_exact_pixels": 1700480
+  }
+]

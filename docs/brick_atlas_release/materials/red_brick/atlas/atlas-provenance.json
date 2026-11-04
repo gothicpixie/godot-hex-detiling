@@ -1,0 +1,1070 @@
+{
+  "source": "assets/gallery/red_brick_albedo_guard.png",
+  "source_sha256": "09e8bb7d5d83794444a431b794ac6c94f125771dc10d610ec0da47440579d19c",
+  "license": "CC0-1.0",
+  "upstream_author": "Rob Tuytel / Poly Haven",
+  "upstream_asset": "https://polyhaven.com/a/red_brick",
+  "libraries": {
+    "pillow": "12.2.0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "source_size": [
+    1024,
+    1024
+  ],
+  "atlas_size": [
+    4096,
+    4096
+  ],
+  "tiles_per_axis": 4,
+  "source_regions": 119,
+  "recolored_source_regions": 119,
+  "ignored_tiny_source_regions": [],
+  "atlas_regions": 1904,
+  "recolored_atlas_regions": 1904,
+  "palette": [
+    {
+      "source_region": 1,
+      "base_linear_rgb": [
+        0.33716361504833037,
+        0.11953842798834562,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 2,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.11443537382697373,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 3,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.10702310297826761,
+        0.04893919510550833
+      ]
+    },
+    {
+      "source_region": 4,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.13286832155381798,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 5,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.12477181756095049,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 6,
+      "base_linear_rgb": [
+        0.26635560480286247,
+        0.11953842798834562,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 7,
+      "base_linear_rgb": [
+        0.35153259950043936,
+        0.12213877222960187,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 8,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.1301364766903643,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 9,
+      "base_linear_rgb": [
+        0.32314320911295075,
+        0.12477181756095049,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 10,
+      "base_linear_rgb": [
+        0.2874408377269175,
+        0.13286832155381798,
+        0.07421356838014963
+      ]
+    },
+    {
+      "source_region": 11,
+      "base_linear_rgb": [
+        0.3277780980565422,
+        0.12477181756095049,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 12,
+      "base_linear_rgb": [
+        0.3049873140698863,
+        0.14126329114027164,
+        0.0822827071298148
+      ]
+    },
+    {
+      "source_region": 13,
+      "base_linear_rgb": [
+        0.33245153634617935,
+        0.12477181756095049,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 14,
+      "base_linear_rgb": [
+        0.26225065752969623,
+        0.11953842798834562,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 15,
+      "base_linear_rgb": [
+        0.33716361504833037,
+        0.12213877222960187,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 16,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.1301364766903643,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 17,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.12477181756095049,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 18,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.12743768043564743,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 19,
+      "base_linear_rgb": [
+        0.19806931955994886,
+        0.10702310297826761,
+        0.07036009569659588
+      ]
+    },
+    {
+      "source_region": 20,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.10702310297826761,
+        0.046665086336880095
+      ]
+    },
+    {
+      "source_region": 21,
+      "base_linear_rgb": [
+        0.32314320911295075,
+        0.1119324278369056,
+        0.05126945837404324
+      ]
+    },
+    {
+      "source_region": 22,
+      "base_linear_rgb": [
+        0.26635560480286247,
+        0.09758734714186246,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 23,
+      "base_linear_rgb": [
+        0.33245153634617935,
+        0.10224173308810132,
+        0.046665086336880095
+      ]
+    },
+    {
+      "source_region": 24,
+      "base_linear_rgb": [
+        0.3049873140698863,
+        0.08865558628577294,
+        0.043735029256973465
+      ]
+    },
+    {
+      "source_region": 25,
+      "base_linear_rgb": [
+        0.2788942634768104,
+        0.09305896284668745,
+        0.04970656598412723
+      ]
+    },
+    {
+      "source_region": 26,
+      "base_linear_rgb": [
+        0.35153259950043936,
+        0.12213877222960187,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 27,
+      "base_linear_rgb": [
+        0.33716361504833037,
+        0.11697066775851084,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 28,
+      "base_linear_rgb": [
+        0.3049873140698863,
+        0.11697066775851084,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 29,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.11443537382697373,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 30,
+      "base_linear_rgb": [
+        0.33716361504833037,
+        0.10702310297826761,
+        0.04817182422688942
+      ]
+    },
+    {
+      "source_region": 31,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.10224173308810132,
+        0.04970656598412723
+      ]
+    },
+    {
+      "source_region": 32,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.1119324278369056,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 33,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.11443537382697373,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 34,
+      "base_linear_rgb": [
+        0.32314320911295075,
+        0.10946171077829933,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 35,
+      "base_linear_rgb": [
+        0.3712376804741491,
+        0.12213877222960187,
+        0.052860647023180246
+      ]
+    },
+    {
+      "source_region": 36,
+      "base_linear_rgb": [
+        0.3613067797835095,
+        0.11697066775851084,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 37,
+      "base_linear_rgb": [
+        0.19120168274079138,
+        0.10461648409110419,
+        0.07036009569659588
+      ]
+    },
+    {
+      "source_region": 38,
+      "base_linear_rgb": [
+        0.3049873140698863,
+        0.10461648409110419,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 39,
+      "base_linear_rgb": [
+        0.3613067797835095,
+        0.13286832155381798,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 40,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.15292615199615017,
+        0.07421356838014963
+      ]
+    },
+    {
+      "source_region": 41,
+      "base_linear_rgb": [
+        0.386429433787049,
+        0.13843161503245183,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 42,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.13563332965520566,
+        0.07036009569659588
+      ]
+    },
+    {
+      "source_region": 43,
+      "base_linear_rgb": [
+        0.3005437944157765,
+        0.13563332965520566,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 44,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.11953842798834562,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 45,
+      "base_linear_rgb": [
+        0.3712376804741491,
+        0.11697066775851084,
+        0.052860647023180246
+      ]
+    },
+    {
+      "source_region": 46,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.12213877222960187,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 47,
+      "base_linear_rgb": [
+        0.3005437944157765,
+        0.13843161503245183,
+        0.07421356838014963
+      ]
+    },
+    {
+      "source_region": 48,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.11443537382697373,
+        0.06037864619729941
+      ]
+    },
+    {
+      "source_region": 49,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.11697066775851084,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 50,
+      "base_linear_rgb": [
+        0.24620132670783548,
+        0.11953842798834562,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 51,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.1301364766903643,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 52,
+      "base_linear_rgb": [
+        0.3049873140698863,
+        0.13563332965520566,
+        0.0822827071298148
+      ]
+    },
+    {
+      "source_region": 53,
+      "base_linear_rgb": [
+        0.3277780980565422,
+        0.1301364766903643,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 54,
+      "base_linear_rgb": [
+        0.26225065752969623,
+        0.12477181756095049,
+        0.07421356838014963
+      ]
+    },
+    {
+      "source_region": 55,
+      "base_linear_rgb": [
+        0.29177064981753587,
+        0.12743768043564743,
+        0.07227185068231748
+      ]
+    },
+    {
+      "source_region": 56,
+      "base_linear_rgb": [
+        0.23455058216100522,
+        0.10224173308810132,
+        0.05126945837404324
+      ]
+    },
+    {
+      "source_region": 57,
+      "base_linear_rgb": [
+        0.3005437944157765,
+        0.10702310297826761,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 58,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.12213877222960187,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 59,
+      "base_linear_rgb": [
+        0.3277780980565422,
+        0.11953842798834562,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 60,
+      "base_linear_rgb": [
+        0.30946892281750854,
+        0.10946171077829933,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 61,
+      "base_linear_rgb": [
+        0.35153259950043936,
+        0.12743768043564743,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 62,
+      "base_linear_rgb": [
+        0.3005437944157765,
+        0.11443537382697373,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 63,
+      "base_linear_rgb": [
+        0.30946892281750854,
+        0.1119324278369056,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 64,
+      "base_linear_rgb": [
+        0.29177064981753587,
+        0.09758734714186246,
+        0.046665086336880095
+      ]
+    },
+    {
+      "source_region": 65,
+      "base_linear_rgb": [
+        0.3277780980565422,
+        0.11953842798834562,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 66,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.1119324278369056,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 67,
+      "base_linear_rgb": [
+        0.3712376804741491,
+        0.13286832155381798,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 68,
+      "base_linear_rgb": [
+        0.2581828529215958,
+        0.11697066775851084,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 69,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.11697066775851084,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 70,
+      "base_linear_rgb": [
+        0.2874408377269175,
+        0.10224173308810132,
+        0.052860647023180246
+      ]
+    },
+    {
+      "source_region": 71,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.13843161503245183,
+        0.07618538148130785
+      ]
+    },
+    {
+      "source_region": 72,
+      "base_linear_rgb": [
+        0.2704977910130658,
+        0.08865558628577294,
+        0.042311410620809675
+      ]
+    },
+    {
+      "source_region": 73,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.12213877222960187,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 74,
+      "base_linear_rgb": [
+        0.27467731206038465,
+        0.13563332965520566,
+        0.07818742180518633
+      ]
+    },
+    {
+      "source_region": 75,
+      "base_linear_rgb": [
+        0.29177064981753587,
+        0.10461648409110419,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 76,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.11697066775851084,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 77,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.11953842798834562,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 78,
+      "base_linear_rgb": [
+        0.30946892281750854,
+        0.10946171077829933,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 79,
+      "base_linear_rgb": [
+        0.1559264637078274,
+        0.10461648409110419,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 80,
+      "base_linear_rgb": [
+        0.26635560480286247,
+        0.10702310297826761,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 81,
+      "base_linear_rgb": [
+        0.29177064981753587,
+        0.10461648409110419,
+        0.05448027644244237
+      ]
+    },
+    {
+      "source_region": 82,
+      "base_linear_rgb": [
+        0.2704977910130658,
+        0.1301364766903643,
+        0.07618538148130785
+      ]
+    },
+    {
+      "source_region": 83,
+      "base_linear_rgb": [
+        0.39157247774972326,
+        0.14412847085805777,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 84,
+      "base_linear_rgb": [
+        0.39675523072562685,
+        0.12477181756095049,
+        0.04970656598412723
+      ]
+    },
+    {
+      "source_region": 85,
+      "base_linear_rgb": [
+        0.33245153634617935,
+        0.12743768043564743,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 86,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.1301364766903643,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 87,
+      "base_linear_rgb": [
+        0.3419144249086609,
+        0.11953842798834562,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 88,
+      "base_linear_rgb": [
+        0.38132601143253014,
+        0.1301364766903643,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 89,
+      "base_linear_rgb": [
+        0.3662525955988395,
+        0.13843161503245183,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 90,
+      "base_linear_rgb": [
+        0.2704977910130658,
+        0.11697066775851084,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 91,
+      "base_linear_rgb": [
+        0.3277780980565422,
+        0.12743768043564743,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 92,
+      "base_linear_rgb": [
+        0.38132601143253014,
+        0.13563332965520566,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 93,
+      "base_linear_rgb": [
+        0.2874408377269175,
+        0.11697066775851084,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 94,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.10946171077829933,
+        0.05612849004960009
+      ]
+    },
+    {
+      "source_region": 95,
+      "base_linear_rgb": [
+        0.32314320911295075,
+        0.12213877222960187,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 96,
+      "base_linear_rgb": [
+        0.3467040563550296,
+        0.12743768043564743,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 97,
+      "base_linear_rgb": [
+        0.386429433787049,
+        0.14412847085805777,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 98,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.12213877222960187,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 99,
+      "base_linear_rgb": [
+        0.386429433787049,
+        0.14126329114027164,
+        0.06847816984440017
+      ]
+    },
+    {
+      "source_region": 100,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.11697066775851084,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 101,
+      "base_linear_rgb": [
+        0.2874408377269175,
+        0.12477181756095049,
+        0.07421356838014963
+      ]
+    },
+    {
+      "source_region": 102,
+      "base_linear_rgb": [
+        0.25015828472995344,
+        0.10702310297826761,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 103,
+      "base_linear_rgb": [
+        0.2831487404299921,
+        0.1119324278369056,
+        0.06301001765316767
+      ]
+    },
+    {
+      "source_region": 104,
+      "base_linear_rgb": [
+        0.21223075741405523,
+        0.09758734714186246,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 105,
+      "base_linear_rgb": [
+        0.25015828472995344,
+        0.09989872824711389,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 106,
+      "base_linear_rgb": [
+        0.23074004852434915,
+        0.10702310297826761,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 107,
+      "base_linear_rgb": [
+        0.23074004852434915,
+        0.10461648409110419,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 108,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.12743768043564743,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 109,
+      "base_linear_rgb": [
+        0.33245153634617935,
+        0.12477181756095049,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 110,
+      "base_linear_rgb": [
+        0.2961382707983211,
+        0.13286832155381798,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 111,
+      "base_linear_rgb": [
+        0.3049873140698863,
+        0.11697066775851084,
+        0.06480326669290577
+      ]
+    },
+    {
+      "source_region": 112,
+      "base_linear_rgb": [
+        0.2874408377269175,
+        0.1119324278369056,
+        0.05780543019106723
+      ]
+    },
+    {
+      "source_region": 113,
+      "base_linear_rgb": [
+        0.3005437944157765,
+        0.14126329114027164,
+        0.07421356838014963
+      ]
+    },
+    {
+      "source_region": 114,
+      "base_linear_rgb": [
+        0.31398871337571754,
+        0.12345529489527618,
+        0.0595112381629812
+      ]
+    },
+    {
+      "source_region": 115,
+      "base_linear_rgb": [
+        0.2874408377269175,
+        0.1119324278369056,
+        0.06124605423161761
+      ]
+    },
+    {
+      "source_region": 116,
+      "base_linear_rgb": [
+        0.19120168274079138,
+        0.10461648409110419,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 117,
+      "base_linear_rgb": [
+        0.3049873140698863,
+        0.12213877222960187,
+        0.06662593864377289
+      ]
+    },
+    {
+      "source_region": 118,
+      "base_linear_rgb": [
+        0.31854677812509186,
+        0.14126329114027164,
+        0.07036009569659588
+      ]
+    },
+    {
+      "source_region": 119,
+      "base_linear_rgb": [
+        0.3005437944157765,
+        0.1119324278369056,
+        0.0595112381629812
+      ]
+    }
+  ],
+  "segmentation": "4-neighbor components of guard alpha>0 on full tiled atlas; union opposite outer boundaries; no ideal grid fit",
+  "algorithm": "robust per-source-brick median RGB palette from alpha255 core; within-brick alpha-normalized Gaussian sigma12 linear RGB field (80% local field,20% region median) removes broad source color; balanced source palette shuffle per actual atlas component; per-channel target/localbase correction feathered by original alpha; highlight common-RGB scale only if necessary; original alpha0 RGB copied exactly",
+  "within_brick_lowpass_sigma_pixels": 12.0,
+  "within_brick_local_base_fraction": 0.8,
+  "source_material_id": "red_brick",
+  "source_material_provenance": "docs/brick_atlas_release/materials/red_brick/source-provenance.json",
+  "source_material_provenance_sha256": "c11669d9577ec5bb5aa586f81db84837821204f369ff7220d32ec57a126bfb8a",
+  "inputs_unchanged": true,
+  "seeds": [
+    {
+      "seed": 0,
+      "asset": "assets/gallery/red_brick_individual_atlas_seed0.png",
+      "sha256": "5c42b1dd7b3f42f990a09dbb15beccecc395bad18e9fa4eea894b2fffe9c25da",
+      "alpha_sha256": "a63b7f5828f4569fa4a40e9bc05b623aa725463d4b33a48614d771e5e00d88de",
+      "protected_pixels_exact": 8537568,
+      "alpha_all_pixels_exact": true,
+      "no_coordinate_warp_or_resampling": true,
+      "finite_and_in_gamut": true,
+      "highlight_gamut_scaled_pixels": 0,
+      "highlight_gamut_scaled_fraction": 0.0,
+      "maximum_pre_gamut_linear_channel": 0.8772020818249278,
+      "palette_assignment_balanced": true,
+      "source_mean_bias_optimization": {
+        "method": "250000 deterministic random pair proposals; greedy whole-palette swaps across source-ID groups; covariance-whitened RGB mean-bias plus duplicate-choice penalty; exact global counts",
+        "covariance_regularizer_fraction_average_channel_variance": 0.1,
+        "covariance_regularizer_linear_rgb_variance": 6.894941887396445e-05,
+        "accepted_swaps": 1272,
+        "before": {
+          "whitened_mean_bias_score": 0.10115179374022393,
+          "per_source_target_mean_rgb_variance": [
+            0.0001016679980588774,
+            1.0042531230823026e-05,
+            3.588633680111799e-06
+          ],
+          "per_source_target_mean_rgb_variance_sum": 0.00011529916296981223,
+          "duplicate_palette_choices_within_source_groups": 97
+        },
+        "after": {
+          "whitened_mean_bias_score": 9.127277843171918e-05,
+          "per_source_target_mean_rgb_variance": [
+            5.5953723597350624e-08,
+            6.762831533543134e-09,
+            3.7493735873112506e-09
+          ],
+          "per_source_target_mean_rgb_variance_sum": 6.6465928718205e-08,
+          "duplicate_palette_choices_within_source_groups": 0
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "asset": "assets/gallery/red_brick_individual_atlas_seed7.png",
+      "sha256": "b98c897922cbe1784be3b982dd076fa299b6673139b94728fe0878d2ce6edcc5",
+      "alpha_sha256": "a63b7f5828f4569fa4a40e9bc05b623aa725463d4b33a48614d771e5e00d88de",
+      "protected_pixels_exact": 8537568,
+      "alpha_all_pixels_exact": true,
+      "no_coordinate_warp_or_resampling": true,
+      "finite_and_in_gamut": true,
+      "highlight_gamut_scaled_pixels": 0,
+      "highlight_gamut_scaled_fraction": 0.0,
+      "maximum_pre_gamut_linear_channel": 0.8659646620364021,
+      "palette_assignment_balanced": true,
+      "source_mean_bias_optimization": {
+        "method": "250000 deterministic random pair proposals; greedy whole-palette swaps across source-ID groups; covariance-whitened RGB mean-bias plus duplicate-choice penalty; exact global counts",
+        "covariance_regularizer_fraction_average_channel_variance": 0.1,
+        "covariance_regularizer_linear_rgb_variance": 6.894941887396445e-05,
+        "accepted_swaps": 1437,
+        "before": {
+          "whitened_mean_bias_score": 0.10611155029581103,
+          "per_source_target_mean_rgb_variance": [
+            0.00010756066710601853,
+            9.78400400077051e-06,
+            3.947351730340534e-06
+          ],
+          "per_source_target_mean_rgb_variance_sum": 0.00012129202283712958,
+          "duplicate_palette_choices_within_source_groups": 107
+        },
+        "after": {
+          "whitened_mean_bias_score": 8.982702803288728e-05,
+          "per_source_target_mean_rgb_variance": [
+            5.051695040808053e-08,
+            6.895530884702035e-09,
+            3.5553671642419018e-09
+          ],
+          "per_source_target_mean_rgb_variance_sum": 6.096784845702447e-08,
+          "duplicate_palette_choices_within_source_groups": 0
+        }
+      }
+    }
+  ]
+}

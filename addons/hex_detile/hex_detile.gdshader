@@ -28,6 +28,8 @@ uniform bool brick_macro_enabled = false;
 uniform bool brick_individual_enabled = false;
 // Direct atlas remains a test ablation; aligned integer shifts keep geometry phase.
 uniform bool brick_individual_stochastic = true;
+// Atlas tile count; each tile retains the full original source resolution.
+uniform int brick_individual_tiles_per_axis = 4;
 uniform sampler2D brick_individual_map : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform float brick_macro_strength : hint_range(0.0, 1.0, 0.01) = 0.18;
 uniform sampler2D structure_guard_map : hint_default_black, filter_linear_mipmap_anisotropic, repeat_enable;
@@ -278,7 +280,7 @@ float brick_macro_gain(vec3 p, vec3 dx, vec3 dy) {
 	return exp2(brick_macro_strength * field / 3.0);
 }
 
-// Full-resolution atlas spans four source repeats. Every integer SOURCE-tile
+// Atlas tiles retain full source resolution. Every integer SOURCE-tile
 // offset keeps mortar and fine-detail geometry at the same phase. Only palettes vary.
 float brick_individual_detail(vec2 dx, vec2 dy) {
 	// Triangle grid uses st/2; start fading only as individual bricks become unresolved.
@@ -286,8 +288,9 @@ float brick_individual_detail(vec2 dx, vec2 dy) {
 	return 1.0 - smoothstep(0.125, 0.5, footprint);
 }
 vec3 brick_individual_color(vec2 uv, vec2 dx, vec2 dy, vec3 atlas_mean) {
+	float tiles = max(float(brick_individual_tiles_per_axis), 1.0);
 	if (!brick_individual_stochastic) {
-		return textureGrad(brick_individual_map, uv / 4.0, dx / 4.0, dy / 4.0).rgb;
+		return textureGrad(brick_individual_map, uv / tiles, dx / tiles, dy / tiles).rgb;
 	}
 	float detail = brick_individual_detail(dx, dy);
 	if (detail == 0.0) {
@@ -299,12 +302,12 @@ vec3 brick_individual_color(vec2 uv, vec2 dx, vec2 dy, vec3 atlas_mean) {
 	vec3 W = vec3(w1, w2, w3);
 	W *= W;
 	W /= max(W.x + W.y + W.z, 1e-20);
-	vec2 o1 = floor(detile_hash2(vec2(v1) + vec2(83.71, 27.13)) * 4.0);
-	vec2 o2 = floor(detile_hash2(vec2(v2) + vec2(83.71, 27.13)) * 4.0);
-	vec2 o3 = floor(detile_hash2(vec2(v3) + vec2(83.71, 27.13)) * 4.0);
-	vec4 c1 = textureGrad(brick_individual_map, (uv + o1) / 4.0, dx / 4.0, dy / 4.0);
-	vec4 c2 = textureGrad(brick_individual_map, (uv + o2) / 4.0, dx / 4.0, dy / 4.0);
-	vec4 c3 = textureGrad(brick_individual_map, (uv + o3) / 4.0, dx / 4.0, dy / 4.0);
+	vec2 o1 = floor(detile_hash2(vec2(v1) + vec2(83.71, 27.13)) * tiles);
+	vec2 o2 = floor(detile_hash2(vec2(v2) + vec2(83.71, 27.13)) * tiles);
+	vec2 o3 = floor(detile_hash2(vec2(v3) + vec2(83.71, 27.13)) * tiles);
+	vec4 c1 = textureGrad(brick_individual_map, (uv + o1) / tiles, dx / tiles, dy / tiles);
+	vec4 c2 = textureGrad(brick_individual_map, (uv + o2) / tiles, dx / tiles, dy / tiles);
+	vec4 c3 = textureGrad(brick_individual_map, (uv + o3) / tiles, dx / tiles, dy / tiles);
 	vec3 color = c1.rgb * W.x + c2.rgb * W.y + c3.rgb * W.z;
 	// All palette variants preserve native protected RGB. Select one to avoid
 	// rounding their identical colors; never let this bypass the coarse fade.

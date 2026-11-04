@@ -1,0 +1,188 @@
+{
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"gpu": "Apple M5",
+	"records": [
+		{
+			"arm": "baseline",
+			"id": "red_brick-ortho-3.0-baseline",
+			"kind": "ortho",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"size_multiplier": 3.0,
+			"source_repeat_px": 240.0
+		},
+		{
+			"arm": "candidate",
+			"id": "red_brick-ortho-3.0-candidate",
+			"kind": "ortho",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"size_multiplier": 3.0,
+			"source_repeat_px": 240.0
+		},
+		{
+			"arm": "baseline",
+			"id": "red_brick-ortho-12.0-baseline",
+			"kind": "ortho",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"size_multiplier": 12.0,
+			"source_repeat_px": 60.0
+		},
+		{
+			"arm": "candidate",
+			"id": "red_brick-ortho-12.0-candidate",
+			"kind": "ortho",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"size_multiplier": 12.0,
+			"source_repeat_px": 60.0
+		},
+		{
+			"arm": "baseline",
+			"id": "red_brick-wall-baseline",
+			"kind": "shape",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"shape": "wall"
+		},
+		{
+			"arm": "candidate",
+			"id": "red_brick-wall-candidate",
+			"kind": "shape",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"shape": "wall"
+		},
+		{
+			"arm": "baseline",
+			"id": "red_brick-corner-baseline",
+			"kind": "shape",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"shape": "corner"
+		},
+		{
+			"arm": "candidate",
+			"id": "red_brick-corner-candidate",
+			"kind": "shape",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"shape": "corner"
+		},
+		{
+			"arm": "baseline",
+			"id": "red_brick-cylinder-baseline",
+			"kind": "shape",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"id": "red_brick-cylinder-candidate",
+			"kind": "shape",
+			"material": "red_brick",
+			"scale_m": 1.4,
+			"shape": "cylinder"
+		},
+		{
+			"arm": "baseline",
+			"id": "large_red_bricks-ortho-3.0-baseline",
+			"kind": "ortho",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"size_multiplier": 3.0,
+			"source_repeat_px": 240.0
+		},
+		{
+			"arm": "candidate",
+			"id": "large_red_bricks-ortho-3.0-candidate",
+			"kind": "ortho",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"size_multiplier": 3.0,
+			"source_repeat_px": 240.0
+		},
+		{
+			"arm": "baseline",
+			"id": "large_red_bricks-ortho-12.0-baseline",
+			"kind": "ortho",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"size_multiplier": 12.0,
+			"source_repeat_px": 60.0
+		},
+		{
+			"arm": "candidate",
+			"id": "large_red_bricks-ortho-12.0-candidate",
+			"kind": "ortho",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"size_multiplier": 12.0,
+			"source_repeat_px": 60.0
+		},
+		{
+			"arm": "baseline",
+			"id": "large_red_bricks-wall-baseline",
+			"kind": "shape",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"shape": "wall"
+		},
+		{
+			"arm": "candidate",
+			"id": "large_red_bricks-wall-candidate",
+			"kind": "shape",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"shape": "wall"
+		},
+		{
+			"arm": "baseline",
+			"id": "large_red_bricks-corner-baseline",
+			"kind": "shape",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"shape": "corner"
+		},
+		{
+			"arm": "candidate",
+			"id": "large_red_bricks-corner-candidate",
+			"kind": "shape",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"shape": "corner"
+		},
+		{
+			"arm": "baseline",
+			"id": "large_red_bricks-cylinder-baseline",
+			"kind": "shape",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"shape": "cylinder"
+		},
+		{
+			"arm": "candidate",
+			"id": "large_red_bricks-cylinder-candidate",
+			"kind": "shape",
+			"material": "large_red_bricks",
+			"scale_m": 2.0,
+			"shape": "cylinder"
+		}
+	],
+	"resolution": [
+		1280,
+		720
+	]
+}

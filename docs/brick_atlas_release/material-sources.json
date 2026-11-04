@@ -1,0 +1,125 @@
+[
+  {
+    "id": "red_brick",
+    "name": "Red Brick",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/red_brick",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "source_size_meters": 1.399999976158142,
+    "api_info": "https://api.polyhaven.com/info/red_brick",
+    "api_files": "https://api.polyhaven.com/files/red_brick",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick/red_brick_diff_1k.jpg",
+        "md5": "269e69449755abd1ede473e634b670e7",
+        "bytes": 766044,
+        "extension": "jpg"
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick/red_brick_nor_gl_1k.jpg",
+        "md5": "3a49f27fb909b2db794f60bf1ce6659f",
+        "bytes": 1052038,
+        "extension": "jpg"
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/red_brick/red_brick_rough_1k.jpg",
+        "md5": "7ffbf7a7d2e0cff0a9c5f8848f9fada2",
+        "bytes": 178614,
+        "extension": "jpg"
+      },
+      "height": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/red_brick/red_brick_disp_1k.png",
+        "md5": "3c4d42f23c79a074d411fe764dd31c38",
+        "bytes": 1646752,
+        "extension": "png"
+      }
+    },
+    "mask_parameters": {
+      "height_small_sigma": 1.0,
+      "height_broad_sigma": 24.0,
+      "height_residual_threshold": 200.0,
+      "red_excess_threshold": null,
+      "edge_guard_pixels": 1.5,
+      "feather_pixels": 3.0,
+      "minimum_component_pixels": 1000,
+      "preserve_original_rectangles": [
+        [
+          546,
+          414,
+          712,
+          461
+        ],
+        [
+          379,
+          723,
+          539,
+          766
+        ]
+      ],
+      "preserve_original_rectangles_reason": "Two visually reviewed physical faces are split by source pits into disconnected safe islands. Preserve both entire faces as original instead of treating their pieces as independent bricks."
+    },
+    "structure_period": [
+      1,
+      1
+    ],
+    "structure_stagger": 0,
+    "structure_notes": "Whole-source repetition only; no inferred finer motif period."
+  },
+  {
+    "id": "large_red_bricks",
+    "name": "Large Red Bricks",
+    "authors": {
+      "Rob Tuytel": "All"
+    },
+    "source": "https://polyhaven.com/a/large_red_bricks",
+    "license": "CC0-1.0",
+    "license_url": "https://polyhaven.com/license",
+    "source_size_meters": 2.0,
+    "api_info": "https://api.polyhaven.com/info/large_red_bricks",
+    "api_files": "https://api.polyhaven.com/files/large_red_bricks",
+    "maps": {
+      "albedo": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/large_red_bricks/large_red_bricks_diff_1k.jpg",
+        "md5": "d3fd2c63cd49fa3be86e0dd5d4b67b7b",
+        "bytes": 616870,
+        "extension": "jpg"
+      },
+      "normal": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/large_red_bricks/large_red_bricks_nor_gl_1k.jpg",
+        "md5": "099e9a23e028be31f3f0da40029f66a8",
+        "bytes": 887814,
+        "extension": "jpg"
+      },
+      "roughness": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/large_red_bricks/large_red_bricks_rough_1k.jpg",
+        "md5": "6895134f0f27b183a6e1d7878a3e4d66",
+        "bytes": 110868,
+        "extension": "jpg"
+      },
+      "height": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/large_red_bricks/large_red_bricks_disp_1k.png",
+        "md5": "27173172049c0908a2cdbf56a9d9963a",
+        "bytes": 2029460,
+        "extension": "png"
+      }
+    },
+    "mask_parameters": {
+      "height_small_sigma": 2.0,
+      "height_broad_sigma": 32.0,
+      "height_residual_threshold": -2500.0,
+      "red_excess_threshold": 45.0,
+      "edge_guard_pixels": 1.5,
+      "feather_pixels": 3.0,
+      "minimum_component_pixels": 1000
+    },
+    "structure_period": [
+      1,
+      1
+    ],
+    "structure_stagger": 0,
+    "structure_notes": "Whole-source repetition only; no inferred finer motif period."
+  }
+]

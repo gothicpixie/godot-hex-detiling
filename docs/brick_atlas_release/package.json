@@ -1,0 +1,29 @@
+{
+  "archive": "dist/hex-detile-addon.zip",
+  "version": "0.8.0",
+  "files": 10,
+  "uid_sidecars": 3,
+  "crc_and_source_bytes_verified": true,
+  "sha256": "e64b771cfb2d5f738baf27155265d73c6730dbea3714b1aae0340a7938c37406",
+  "size_bytes": 15753,
+  "paths": [
+    "addons/hex_detile/LICENSE",
+    "addons/hex_detile/README.md",
+    "addons/hex_detile/THIRD_PARTY_NOTICES.md",
+    "addons/hex_detile/coherent_blend.gdshaderinc",
+    "addons/hex_detile/coherent_blend.gdshaderinc.uid",
+    "addons/hex_detile/hex_detile.gdshader",
+    "addons/hex_detile/hex_detile.gdshader.uid",
+    "addons/hex_detile/plugin.cfg",
+    "addons/hex_detile/plugin.gd",
+    "addons/hex_detile/plugin.gd.uid"
+  ],
+  "fresh_project_smoke": {
+    "pass": true,
+    "tested_archive_sha256": "e64b771cfb2d5f738baf27155265d73c6730dbea3714b1aae0340a7938c37406",
+    "report": "docs/brick_atlas_release/fresh-package-checks.json",
+    "import_exit_code": 0,
+    "runtime_exit_code": 0,
+    "repository_assets_used": false
+  }
+}
